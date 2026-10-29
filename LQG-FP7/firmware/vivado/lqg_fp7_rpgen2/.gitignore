@@ -1,0 +1,11 @@
+# Ignore Vivado generated files and directories
+lqg_fp7_rpgen2.cache/
+lqg_fp7_rpgen2.gen/
+lqg_fp7_rpgen2.hw/
+lqg_fp7_rpgen2.ip_user_files/
+lqg_fp7_rpgen2.runs/
+lqg_fp7_rpgen2.sim/
+lqg_fp7_rpgen2.tmp/
+
+# Ignore log files
+*.log

@@ -1,0 +1,6 @@
+# Simulink and cache files.
+*.slxc
+slprj/
+
+# Log files
+*.log

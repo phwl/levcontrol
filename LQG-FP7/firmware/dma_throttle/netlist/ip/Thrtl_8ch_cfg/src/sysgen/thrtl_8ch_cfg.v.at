@@ -1,0 +1,147 @@
+{
+  'Line_108' => {
+    'CodeInstance' => 'thrtl_8ch_cfg_struct/bitbasher',
+    'Instance' => 'bitbasher',
+    'SimulinkInstance' => 'DMA_throttle_sysgen_configurable_24a/Thrtl_8ch_cfg/BitBasher'
+  },
+  'Line_122' => {
+    'CodeInstance' => 'thrtl_8ch_cfg_struct/delay5',
+    'Instance' => 'delay5',
+    'SimulinkInstance' => 'DMA_throttle_sysgen_configurable_24a/Thrtl_8ch_cfg/Delay5'
+  },
+  'Line_129' => {
+    'CodeInstance' => 'thrtl_8ch_cfg_struct/delay6',
+    'Instance' => 'delay6',
+    'SimulinkInstance' => 'DMA_throttle_sysgen_configurable_24a/Thrtl_8ch_cfg/Delay6'
+  },
+  'Line_136' => {
+    'CodeInstance' => 'thrtl_8ch_cfg_struct/delay7',
+    'Instance' => 'delay7',
+    'SimulinkInstance' => 'DMA_throttle_sysgen_configurable_24a/Thrtl_8ch_cfg/Delay7'
+  },
+  'Line_143' => {
+    'CodeInstance' => 'thrtl_8ch_cfg_struct/delay8',
+    'Instance' => 'delay8',
+    'SimulinkInstance' => 'DMA_throttle_sysgen_configurable_24a/Thrtl_8ch_cfg/Delay8'
+  },
+  'Line_150' => {
+    'CodeInstance' => 'thrtl_8ch_cfg_struct/delay9',
+    'Instance' => 'delay9',
+    'SimulinkInstance' => 'DMA_throttle_sysgen_configurable_24a/Thrtl_8ch_cfg/Delay9'
+  },
+  'Line_157' => {
+    'CodeInstance' => 'thrtl_8ch_cfg_struct/inverter',
+    'Instance' => 'inverter',
+    'SimulinkInstance' => 'DMA_throttle_sysgen_configurable_24a/Thrtl_8ch_cfg/Inverter'
+  },
+  'Line_164' => {
+    'CodeInstance' => 'thrtl_8ch_cfg_struct/mcode',
+    'Instance' => 'mcode',
+    'SimulinkInstance' => 'DMA_throttle_sysgen_configurable_24a/Thrtl_8ch_cfg/MCode'
+  },
+  'Line_187' => {
+    'CodeInstance' => 'thrtl_8ch_cfg_struct/mux2',
+    'Instance' => 'mux2',
+    'SimulinkInstance' => 'DMA_throttle_sysgen_configurable_24a/Thrtl_8ch_cfg/Mux2'
+  },
+  'Line_200' => {
+    'CodeInstance' => 'thrtl_8ch_cfg_struct/register1',
+    'Instance' => 'register1',
+    'SimulinkInstance' => 'DMA_throttle_sysgen_configurable_24a/Thrtl_8ch_cfg/Register1'
+  },
+  'Line_212' => {
+    'CodeInstance' => 'thrtl_8ch_cfg_struct/register10',
+    'Instance' => 'register10',
+    'SimulinkInstance' => 'DMA_throttle_sysgen_configurable_24a/Thrtl_8ch_cfg/Register10'
+  },
+  'Line_224' => {
+    'CodeInstance' => 'thrtl_8ch_cfg_struct/register11',
+    'Instance' => 'register11',
+    'SimulinkInstance' => 'DMA_throttle_sysgen_configurable_24a/Thrtl_8ch_cfg/Register11'
+  },
+  'Line_236' => {
+    'CodeInstance' => 'thrtl_8ch_cfg_struct/register12',
+    'Instance' => 'register12',
+    'SimulinkInstance' => 'DMA_throttle_sysgen_configurable_24a/Thrtl_8ch_cfg/Register12'
+  },
+  'Line_248' => {
+    'CodeInstance' => 'thrtl_8ch_cfg_struct/register13',
+    'Instance' => 'register13',
+    'SimulinkInstance' => 'DMA_throttle_sysgen_configurable_24a/Thrtl_8ch_cfg/Register13'
+  },
+  'Line_260' => {
+    'CodeInstance' => 'thrtl_8ch_cfg_struct/register14',
+    'Instance' => 'register14',
+    'SimulinkInstance' => 'DMA_throttle_sysgen_configurable_24a/Thrtl_8ch_cfg/Register14'
+  },
+  'Line_272' => {
+    'CodeInstance' => 'thrtl_8ch_cfg_struct/register15',
+    'Instance' => 'register15',
+    'SimulinkInstance' => 'DMA_throttle_sysgen_configurable_24a/Thrtl_8ch_cfg/Register15'
+  },
+  'Line_284' => {
+    'CodeInstance' => 'thrtl_8ch_cfg_struct/register16',
+    'Instance' => 'register16',
+    'SimulinkInstance' => 'DMA_throttle_sysgen_configurable_24a/Thrtl_8ch_cfg/Register16'
+  },
+  'Line_296' => {
+    'CodeInstance' => 'thrtl_8ch_cfg_struct/register2',
+    'Instance' => 'register2',
+    'SimulinkInstance' => 'DMA_throttle_sysgen_configurable_24a/Thrtl_8ch_cfg/Register2'
+  },
+  'Line_308' => {
+    'CodeInstance' => 'thrtl_8ch_cfg_struct/register3',
+    'Instance' => 'register3',
+    'SimulinkInstance' => 'DMA_throttle_sysgen_configurable_24a/Thrtl_8ch_cfg/Register3'
+  },
+  'Line_320' => {
+    'CodeInstance' => 'thrtl_8ch_cfg_struct/register4',
+    'Instance' => 'register4',
+    'SimulinkInstance' => 'DMA_throttle_sysgen_configurable_24a/Thrtl_8ch_cfg/Register4'
+  },
+  'Line_332' => {
+    'CodeInstance' => 'thrtl_8ch_cfg_struct/register5',
+    'Instance' => 'register5',
+    'SimulinkInstance' => 'DMA_throttle_sysgen_configurable_24a/Thrtl_8ch_cfg/Register5'
+  },
+  'Line_344' => {
+    'CodeInstance' => 'thrtl_8ch_cfg_struct/register6',
+    'Instance' => 'register6',
+    'SimulinkInstance' => 'DMA_throttle_sysgen_configurable_24a/Thrtl_8ch_cfg/Register6'
+  },
+  'Line_356' => {
+    'CodeInstance' => 'thrtl_8ch_cfg_struct/register7',
+    'Instance' => 'register7',
+    'SimulinkInstance' => 'DMA_throttle_sysgen_configurable_24a/Thrtl_8ch_cfg/Register7'
+  },
+  'Line_368' => {
+    'CodeInstance' => 'thrtl_8ch_cfg_struct/register8',
+    'Instance' => 'register8',
+    'SimulinkInstance' => 'DMA_throttle_sysgen_configurable_24a/Thrtl_8ch_cfg/Register8'
+  },
+  'Line_376' => {
+    'CodeInstance' => 'thrtl_8ch_cfg_struct/trig_posedge_det',
+    'Instance' => 'trig_posedge_det',
+    'SimulinkInstance' => 'DMA_throttle_sysgen_configurable_24a/Thrtl_8ch_cfg/trig_posedge_det'
+  },
+  'Line_398' => {
+    'CodeInstance' => 'thrtl_8ch_cfg_default_clock_driver/clockdriver',
+    'Instance' => 'clockdriver',
+    'SimulinkInstance' => ''
+  },
+  'Line_454' => {
+    'CodeInstance' => 'thrtl_8ch_cfg_cfg_in_axi_lite_interface',
+    'Instance' => 'thrtl_8ch_cfg_cfg_in_axi_lite_interface',
+    'SimulinkInstance' => ''
+  },
+  'Line_482' => {
+    'CodeInstance' => 'thrtl_8ch_cfg_default_clock_driver',
+    'Instance' => 'thrtl_8ch_cfg_default_clock_driver',
+    'SimulinkInstance' => ''
+  },
+  'Line_489' => {
+    'CodeInstance' => 'thrtl_8ch_cfg_struct',
+    'Instance' => 'thrtl_8ch_cfg_struct',
+    'SimulinkInstance' => 'Thrtl_8ch_cfg'
+  }
+}

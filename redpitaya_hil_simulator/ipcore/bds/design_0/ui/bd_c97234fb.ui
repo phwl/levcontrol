@@ -1,0 +1,40 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.615572",
+   "Default View_TopLeft":"-596,-409",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0 TLS
+#  -string -flagsOSRD
+preplace port port-id_adc_clk -pg 1 -lvl 4 -x 800 -y 210 -defaultsOSRD
+preplace port port-id_adc_cdcs_o -pg 1 -lvl 4 -x 800 -y 230 -defaultsOSRD
+preplace port port-id_adc_clk_i_a -pg 1 -lvl 0 -x 0 -y 90 -defaultsOSRD
+preplace port port-id_adc_clk_i_b -pg 1 -lvl 0 -x 0 -y 110 -defaultsOSRD
+preplace portBus adc_dat_i_a -pg 1 -lvl 0 -x 0 -y 170 -defaultsOSRD
+preplace portBus adc_dat_i_b -pg 1 -lvl 0 -x 0 -y 270 -defaultsOSRD
+preplace portBus out_ADC_CH1 -pg 1 -lvl 4 -x 800 -y 50 -defaultsOSRD
+preplace portBus out_ADC_CH2 -pg 1 -lvl 4 -x 800 -y 150 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 1 -x 120 -y 170 -defaultsOSRD
+preplace inst xlslice_1 -pg 1 -lvl 1 -x 120 -y 270 -defaultsOSRD
+preplace inst xlconstant_2 -pg 1 -lvl 1 -x 120 -y 370 -defaultsOSRD
+preplace inst bypass_const -pg 1 -lvl 1 -x 120 -y 470 -defaultsOSRD
+preplace inst slice_ADC_CH1 -pg 1 -lvl 3 -x 680 -y 50 -defaultsOSRD
+preplace inst slice_ADC_CH2 -pg 1 -lvl 3 -x 680 -y 150 -defaultsOSRD
+preplace inst axis_red_pitaya_adc_1 -pg 1 -lvl 2 -x 410 -y 190 -defaultsOSRD
+preplace netloc adc_dat_i_a_1 1 0 1 NJ 170
+preplace netloc adc_dat_i_b_1 1 0 1 NJ 270
+preplace netloc xlslice_2_Dout 1 3 1 NJ 150
+preplace netloc xlslice_4_Dout 1 3 1 NJ 50
+preplace netloc axis_red_pitaya_adc_1_adc_clk 1 2 2 NJ 210 NJ
+preplace netloc axis_red_pitaya_adc_1_adc_csn 1 2 2 NJ 230 NJ
+preplace netloc axis_red_pitaya_adc_1_m_axis_tdata 1 2 1 580 50n
+preplace netloc bypass_const_dout 1 1 1 240J 250n
+preplace netloc xlconstant_2_dout 1 1 1 230 210n
+preplace netloc xlslice_0_Dout 1 1 1 NJ 170
+preplace netloc xlslice_1_Dout 1 1 1 220J 190n
+preplace netloc adc_clk_i_a_1 1 0 2 NJ 90 240J
+preplace netloc adc_clk_i_b_1 1 0 2 NJ 110 220J
+levelinfo -pg 1 0 120 410 680 800
+pagesize -pg 1 -db -bbox -sgen -170 0 980 520
+"
+}
+0

@@ -1,0 +1,79 @@
+
+latex to MathML https://temml.org/
+
+State space
+\dot{\boldsymbol{\xi}}(t) = \mathbf{(A-LC)}\boldsymbol{\xi}(t) + \mathbf{Bu}(t) + \mathbf{L}\boldsymbol{\chi}(t)
+
+Riccati eq
+J = \lim_{T \rightarrow \infty}  \mathbb{E} \left( \frac{1}{T}\int_{0}^{T} \boldsymbol{\xi}^\mathrm{T} \mathbf{Q}_\mathrm{LQR}  \boldsymbol{\xi} + \mathbf{u}^\mathrm{T}\mathbf{R}_\mathrm{LQR} \mathbf{u} \, \mathrm{d}t \right)
+
+
+State transition matrix
+
+\mathbf{A} = 
+\begin{bmatrix}
+0 & 1 & 0 & 0 & 0 & 0 & 0 \\
+-\sgn(\Omega_x)\abs{\Omega_x}^2 & -\Gamma & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 1 & 0 & 0 & 0 \\
+0 & 0 & -\sgn(\Omega_y)\abs{\Omega_y}^2 & -\Gamma & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 0 & -\sgn(\Omega_z)\abs{\Omega_z}^2 & -\Gamma & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 & -\tau_\phi
+\end{bmatrix},
+
+State vector
+
+\boldsymbol{\xi} = 
+\begin{bmatrix}
+x & \dot{x} & y & \dot{y} & z & \dot{z} & \phi \\
+\end{bmatrix}^\mathrm{T},
+
+Input matrix:
+
+\mathbf{B} = 
+\begin{bmatrix}
+c_{f1,x} & c_{f2,x} \\
+c_{f1,dx} & c_{f2,dx} \\
+c_{f1,y} & c_{f2,y} \\
+c_{f1,dy} & c_{f2,dy} \\
+c_{f1,z} & c_{f2,z} \\
+c_{f1,dz} & c_{f2,dz} \\
+c_{f1,\phi} & c_{f2,\phi}
+\end{bmatrix},
+
+Output matrix
+\boldsymbol{\chi}(t) = \mathbf{C}\boldsymbol{\xi}(t) + \mathbf{v}(t)
+\mathbf{C} = \begin{bmatrix} c_{e1,x} & c_{e1,dx} & c_{e1,y} & c_{e1,dy} & c_{e1,z} & c_{e1,dz} & c_{e1,\phi} \\
+ c_{e2,x} & c_{e2,dx} & c_{e2,y} & c_{e2,dy} & c_{e2,z} & c_{e2,dz} & c_{e2,\phi} \end{bmatrix}
+
+
+
+
+Q matrix\
+\mathbf{Q}_\mathrm{LQR} = \mathbf{q}_\mathrm{LQR}^\mathrm{T}\mathbf{q}_\mathrm{LQR}, \quad \mathbf{q}_\mathrm{LQR} = \sqrt{\frac{m}{2}}\begin{bmatrix}\abs{\Omega_x} & 1 & \abs{\Omega_y} & 1 & \abs{\Omega_z} & 1 & 1 \end{bmatrix}
+
+Transform
+\bar{\boldsymbol{\xi}} = \mathbf{T}\boldsymbol{\xi},\ \bar{\mathbf{A}} = \mathbf{T}\mathbf{A}\mathbf{T}^{-1} ,\\\bar{\mathbf{B}}= \mathbf{T}\mathbf{B},\ \bar{\mathbf{C}} = \mathbf{C}\mathbf{T}^{-1},
+\mathbf{T} = \mathrm{diag}\left(\begin{bmatrix}
+        c_{e,max} & c_{e,max}/\abs{\Omega_{x}} & c_{e,max} & c_{e,max}/\abs{\Omega_{y}} & c_{e,max} & c_{e,max}/\abs{\Omega_{z}} & c_{e,max} \end{bmatrix}\right)
+
+Discrete Lyap 
+0 = \left(\mathbf{A}_d-\mathbf{B}_d\mathbf{K}_d\right)\hat{\mathbf{P}}\left(\mathbf{A}_d-\mathbf{B}_d\mathbf{K}_d\right)^\mathrm{T} - \hat{\mathbf{P}} + \mathbf{LRL}^\mathrm{T}
+
+Closed loop
+\mathbf{A}_{cl} = (\mathbf{A-LC-BK}_\mathrm{LQR}), \quad \mathbf{B} = \mathbf{0}
+
+Numerical Transform
+\dot{\hat{\mathbf{P}}} = \mathbf{A}\hat{\mathbf{P}} + \hat{\mathbf{P}}\mathbf{A}^\mathrm{T} + \mathbf{LRL}^\mathrm{T}
+
+\hat{\mathbf{P}} = \mathbf{S}^\mathrm{T}\mathbf{S}
+
+\bar{\boldsymbol{\Sigma}}_\xi = \mathbb{I}\cdot \bar{\sigma}_\xi^2
+
+\mathbf{T}_\mathrm{bal} = \mathbf{S}\bar{\boldsymbol{\Sigma}}_\xi^{-1}
+
+\mathbf{T}_\mathrm{InOut} = \mathbb{I}\cdot\max\left(\begin{bmatrix}\mathbf{B} & \mathbf{L} \end{bmatrix} \right)
+
+\mathbf{T}_\mathrm{InOut} = \mathbb{I}\cdot1/\max\left(\mathbf{K}_\mathrm{LQR} \right)
+
+\mathbf{T}_\mathrm{num} = \mathbf{T}_\mathrm{bal}\mathbf{T}_\mathrm{InOut}

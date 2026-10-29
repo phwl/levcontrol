@@ -1,0 +1,1451 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal model reference</title>
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<h1>Internal model reference</h1>
+
+<h2>Introduction</h2>
+<p>This implementation allows configuration of a Linear Quadratic Gaussian (LQG) controller with the following parameters:
+    <ul>
+        <li>2-7 internal states - 3 mechanical degrees of freedom (2 states each), 1 detection drift parameter.</li>
+        <li>1-2 actuation inputs.</li>
+        <li>1-2 measurement outputs with additive white noise.</li>
+    </ul>
+</p>
+<p>Each degree of freedom (DOF) is considered a damped oscillator, defined by a resonance frequency <math><mi>Ω</mi></math> and a damping rate <math><mi>Γ</mi></math>,
+     driven by a Gaussian white noise <math><mi>w</mi></math>.
+     The system is expressed as a differential equation as: </p> 
+<math display="block" class="tml-display" style="display:block math;">
+  <mrow>
+    <mover>
+      <mi>q</mi>
+      <mo stretchy="false" class="chr-med wbk-med-acc" style="math-depth:0;">¨</mo>
+    </mover>
+    <mo form="prefix" stretchy="false">(</mo>
+    <mi>t</mi>
+    <mo form="postfix" stretchy="false">)</mo>
+    <mo>=</mo>
+    <mo form="prefix" stretchy="false">−</mo>
+    <mrow>
+      <mi>sgn</mi>
+      <mo>⁡</mo>
+    </mrow>
+    <mo form="prefix" stretchy="false">(</mo>
+    <mpadded lspace="0">
+      <mi mathvariant="normal">Ω</mi>
+    </mpadded>
+    <mo form="postfix" stretchy="false">)</mo>
+    <msup>
+      <mrow>
+        <mo fence="true" form="prefix">|</mo>
+        <mpadded lspace="0">
+          <mi mathvariant="normal">Ω</mi>
+        </mpadded>
+        <mo fence="true" form="postfix">|</mo>
+      </mrow>
+      <mn>2</mn>
+    </msup>
+    <mi>q</mi>
+    <mo form="prefix" stretchy="false">(</mo>
+    <mi>t</mi>
+    <mo form="postfix" stretchy="false">)</mo>
+    <mo>−</mo>
+    <mpadded lspace="0">
+      <mi mathvariant="normal">Γ</mi>
+    </mpadded>
+    <mover>
+      <mi>q</mi>
+      <mo stretchy="false" class="chr-med wbk-med-acc" style="math-depth:0;">˙</mo>
+    </mover>
+    <mo form="prefix" stretchy="false">(</mo>
+    <mi>t</mi>
+    <mo form="postfix" stretchy="false">)</mo>
+    <mo>+</mo>
+    <mfrac>
+      <msub>
+        <mi>c</mi>
+        <mrow>
+          <mi>f</mi>
+          <mn>1</mn>
+          <mo separator="true">,</mo>
+          <mi>q</mi>
+        </mrow>
+      </msub>
+      <mi>m</mi>
+    </mfrac>
+    <msub>
+      <mi>u</mi>
+      <mn>1</mn>
+    </msub>
+    <mo form="prefix" stretchy="false">(</mo>
+    <mi>t</mi>
+    <mo form="postfix" stretchy="false">)</mo>
+    <mo>+</mo>
+    <mfrac>
+      <msub>
+        <mi>c</mi>
+        <mrow>
+          <mi>f</mi>
+          <mn>2</mn>
+          <mo separator="true">,</mo>
+          <mi>q</mi>
+        </mrow>
+      </msub>
+      <mi>m</mi>
+    </mfrac>
+    <msub>
+      <mi>u</mi>
+      <mn>2</mn>
+    </msub>
+    <mo form="prefix" stretchy="false">(</mo>
+    <mi>t</mi>
+    <mo form="postfix" stretchy="false">)</mo>
+    <mo>+</mo>
+    <mfrac>
+      <mn>1</mn>
+      <mi>m</mi>
+    </mfrac>
+    <msub>
+      <mi>w</mi>
+      <mi>q</mi>
+    </msub>
+    <mo form="prefix" stretchy="false">(</mo>
+    <mi>t</mi>
+    <mo form="postfix" stretchy="false">)</mo>
+  </mrow>,
+</math>
+<p> with <math><mi>q</mi></math> as the displacement in one DOF, <math><msub><mi>c</mi><mrow><mi>f</mi><mn>1/2</mn><mo separator="true">,</mo><mi>q</mi></mrow></msub></math>
+     the actuator coupling coefficient for analog output 1 or 2 and the mass of the particle <math><mi>m</mi></math>.
+     In this implementation, all DOFs dynamics are independent and the output function <math><mi>𝝌</mi></math>
+    can be any linear combination of all internal states. </p> 
+<math display="block" class="tml-display" style="display:block math;">
+  <mrow>
+    <mi>𝝌</mi>
+    <mo form="prefix" stretchy="false">(</mo>
+    <mi>t</mi>
+    <mo form="postfix" stretchy="false">)</mo>
+    <mo>=</mo>
+    <mi>𝐂</mi>
+    <mi>𝝃</mi>
+    <mo form="prefix" stretchy="false">(</mo>
+    <mi>t</mi>
+    <mo form="postfix" stretchy="false">)</mo>
+    <mo>+</mo>
+    <mi>𝐯</mi>
+    <mo form="prefix" stretchy="false">(</mo>
+    <mi>t</mi>
+    <mo form="postfix" stretchy="false">)</mo>
+  </mrow>
+</math>   
+<p>You can find the overview of the state space matrices lower on this page.</p>
+<p>In principle, our FPGA implementation can support arbitrary linear discrete-time state space system with 7 states, 2 inputs and 2 outputs,
+     please reach out in case your use case falls outside of what is supported by the GUI.</p>
+
+<h2>State space model</h2>
+<p>The controller implements the discretized version of the following state-space structure</p>
+<math display="block" class="tml-display" style="display:block math;">
+  <mrow>
+    <mover>
+      <mi>𝝃</mi>
+      <mo stretchy="false" class="wbk-acc" style="math-depth:0;">˙</mo>
+    </mover>
+    <mo form="prefix" stretchy="false">(</mo>
+    <mi>t</mi>
+    <mo form="postfix" stretchy="false">)</mo>
+    <mo>=</mo>
+    <mrow>
+      <mo form="prefix" stretchy="false" lspace="0em" rspace="0em">(</mo>
+      <mi>𝐀</mi>
+      <mo>−</mo>
+      <mi>𝐋</mi>
+      <mi>𝐂</mi>
+      <mo form="postfix" stretchy="false" lspace="0em" rspace="0em">)</mo>
+    </mrow>
+    <mi>𝝃</mi>
+    <mo form="prefix" stretchy="false">(</mo>
+    <mi>t</mi>
+    <mo form="postfix" stretchy="false">)</mo>
+    <mo>+</mo>
+    <mrow>
+      <mi>𝐁</mi>
+      <mi>𝐮</mi>
+    </mrow>
+    <mo form="prefix" stretchy="false">(</mo>
+    <mi>t</mi>
+    <mo form="postfix" stretchy="false">)</mo>
+    <mo>+</mo>
+    <mi>𝐋</mi>
+    <mi>𝝌</mi>
+    <mo form="prefix" stretchy="false">(</mo>
+    <mi>t</mi>
+    <mo form="postfix" stretchy="false">)</mo>
+  </mrow>
+</math>
+<math display="block" class="tml-display" style="display:block math;">
+  <mrow>
+    <mi>𝐮</mi>
+    <mo form="prefix" stretchy="false">(</mo>
+    <mi>t</mi>
+    <mo form="postfix" stretchy="false">)</mo>
+    <mo>=</mo>
+    <mo form="prefix" stretchy="false">−</mo>
+    <mi>𝐊</mi>
+    <mi>𝝃</mi>
+    <mo form="prefix" stretchy="false">(</mo>
+    <mi>t</mi>
+    <mo form="postfix" stretchy="false">)</mo>
+  </mrow>
+</math>
+<p>with Kalman gain <math><mi>𝐋</mi></math> obtained as a solution to the Kalman filter Riccati equation and the feedback gain matrix <math><mi>𝐊</mi></math>
+as a solution to the infinite-horizon LQR problem with a cost function: </p>
+<math display="block" class="tml-display" style="display:block math;">
+  <mrow>
+    <mi>J</mi>
+    <mo>=</mo>
+    <munder>
+      <mi>lim</mi>
+      <mrow>
+        <mi>T</mi>
+        <mo stretchy="false">→</mo>
+        <mi>∞</mi>
+      </mrow>
+    </munder>
+    <mo>⁡</mo>
+    <mspace width="0.1667em"></mspace>
+    <mi>𝔼</mi>
+    <mrow>
+      <mo fence="true" form="prefix">(</mo>
+      <mfrac>
+        <mn>1</mn>
+        <mi>T</mi>
+      </mfrac>
+      <msubsup>
+        <mo movablelimits="false">∫</mo>
+        <mn>0</mn>
+        <mi>T</mi>
+      </msubsup>
+      <msup>
+        <mi>𝝃</mi>
+        <mpadded lspace="0">
+          <mi mathvariant="normal">T</mi>
+        </mpadded>
+      </msup>
+      <msub>
+        <mi>𝐐</mi>
+        <mpadded lspace="0">
+          <mi>LQR</mi>
+        </mpadded>
+      </msub>
+      <mi>𝝃</mi>
+      <mo>+</mo>
+      <msup>
+        <mi>𝐮</mi>
+        <mpadded lspace="0">
+          <mi mathvariant="normal">T</mi>
+        </mpadded>
+      </msup>
+      <msub>
+        <mi>𝐑</mi>
+        <mpadded lspace="0">
+          <mi>LQR</mi>
+        </mpadded>
+      </msub>
+      <mi>𝐮</mi>
+      <mspace width="0.1667em"></mspace>
+      <mpadded lspace="0">
+        <mi mathvariant="normal">d</mi>
+      </mpadded>
+      <mi>t</mi>
+      <mo fence="true" form="postfix">)</mo>
+    </mrow>
+  </mrow>
+.</math>
+<p>You can configure the <math><msub><mi>𝐑</mi> <mpadded lspace="0"><mi>LQR</mi></mpadded></msub></math> matrix in the <i>Tuning variables</i> tab. 
+By default, the <math><msub><mi>𝐐</mi> <mpadded lspace="0"><mi>LQR</mi></mpadded></msub></math> matrix is valued as</p>
+<math display="block" class="tml-display" style="display:block math;">
+  <mrow>
+    <msub>
+      <mi>𝐐</mi>
+      <mpadded lspace="0">
+        <mi>LQR</mi>
+      </mpadded>
+    </msub>
+    <mo>=</mo>
+    <msubsup>
+      <mi>𝐪</mi>
+      <mpadded lspace="0">
+        <mi>LQR</mi>
+      </mpadded>
+      <mpadded lspace="0">
+        <mi mathvariant="normal">T</mi>
+      </mpadded>
+    </msubsup>
+    <msub>
+      <mi>𝐪</mi>
+      <mpadded lspace="0">
+        <mi>LQR</mi>
+      </mpadded>
+    </msub>
+    <mo separator="true">,</mo>
+    <mspace width="1em"></mspace>
+    <msub>
+      <mi>𝐪</mi>
+      <mpadded lspace="0">
+        <mi>LQR</mi>
+      </mpadded>
+    </msub>
+    <mo>=</mo>
+    <msqrt>
+      <mfrac>
+        <mi>m</mi>
+        <mn>2</mn>
+      </mfrac>
+    </msqrt>
+    <mrow>
+      <mo fence="true" form="prefix">[</mo>
+      <mtable>
+        <mtr>
+          <mtd style="padding-left:0em;padding-right:5.9776pt;">
+            <mrow>
+              <mo fence="true" form="prefix">|</mo>
+              <msub>
+                <mpadded lspace="0">
+                  <mi mathvariant="normal">Ω</mi>
+                </mpadded>
+                <mi>x</mi>
+              </msub>
+              <mo fence="true" form="postfix">|</mo>
+            </mrow>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+            <mn>1</mn>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+            <mrow>
+              <mo fence="true" form="prefix">|</mo>
+              <msub>
+                <mpadded lspace="0">
+                  <mi mathvariant="normal">Ω</mi>
+                </mpadded>
+                <mi>y</mi>
+              </msub>
+              <mo fence="true" form="postfix">|</mo>
+            </mrow>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+            <mn>1</mn>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+            <mrow>
+              <mo fence="true" form="prefix">|</mo>
+              <msub>
+                <mpadded lspace="0">
+                  <mi mathvariant="normal">Ω</mi>
+                </mpadded>
+                <mi>z</mi>
+              </msub>
+              <mo fence="true" form="postfix">|</mo>
+            </mrow>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+            <mn>1</mn>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:0em;">
+            <mn>1</mn>
+          </mtd>
+        </mtr>
+      </mtable>
+      <mo fence="true" form="postfix">]</mo>
+    </mrow>
+  </mrow>
+</math>
+<p>You can also modify the weight by configuring the <i>Relative weighing of states</i> matrix (<math><msub><mi>𝐐</mi> <mpadded lspace="0"><mi>usr</mi></mpadded></msub></math>) 
+    in the <i>Tuning variables</i> tab. This matrix is multiplied element by element with
+    the <math><msub><mi>𝐐</mi> <mpadded lspace="0"><mi>LQR</mi></mpadded></msub></math>. Note that by setting all off-diagonal elements of 
+    <math><msub><mi>𝐐</mi> <mpadded lspace="0"><mi>usr</mi></mpadded></msub></math> to zero, the standard diagonal 
+    <math><msub><mi>𝐐</mi> <mpadded lspace="0"><mi>LQR</mi></mpadded></msub></math> is recovered. </p> 
+
+<h3>State space matrices reference</h3>
+<p>The state vector is defined as: </p> 
+<math display="block" class="tml-display" style="display:block math;">
+  <mrow>
+    <mi>𝝃</mi>
+    <mo>=</mo>
+    <msup>
+      <mrow>
+        <mo fence="true" form="prefix">[</mo>
+        <mtable>
+          <mtr>
+            <mtd style="padding-left:0em;padding-right:5.9776pt;">
+              <mi>x</mi>
+            </mtd>
+            <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+              <mover>
+                <mi>x</mi>
+                <mo stretchy="false" class="chr-sml wbk-sml-acc" style="math-depth:0;">˙</mo>
+              </mover>
+            </mtd>
+            <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+              <mi>y</mi>
+            </mtd>
+            <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+              <mover>
+                <mi>y</mi>
+                <mo stretchy="false" class="chr-sml wbk-sml-acc" style="math-depth:0;">˙</mo>
+              </mover>
+            </mtd>
+            <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+              <mi>z</mi>
+            </mtd>
+            <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+              <mover>
+                <mi>z</mi>
+                <mo stretchy="false" class="chr-sml wbk-sml-acc" style="math-depth:0;">˙</mo>
+              </mover>
+            </mtd>
+            <mtd style="padding-left:5.9776pt;padding-right:0em;">
+              <mi>ϕ</mi>
+            </mtd>
+          </mtr>
+        </mtable>
+        <mo fence="true" form="postfix">]</mo>
+      </mrow>
+      <mpadded lspace="0">
+        <mi mathvariant="normal">T</mi>
+      </mpadded>
+    </msup>
+    <mo separator="true">,</mo>
+  </mrow>
+</math>
+<p>State transition matrix: </p>
+<math display="block" class="tml-display" style="display:block math;">
+  <mrow>
+    <mi>𝐀</mi>
+    <mo>=</mo>
+    <mrow>
+      <mo fence="true" form="prefix">[</mo>
+      <mtable>
+        <mtr>
+          <mtd style="padding-left:0em;padding-right:5.9776pt;">
+            <mn>0</mn>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+            <mn>1</mn>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+            <mn>0</mn>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+            <mn>0</mn>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+            <mn>0</mn>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+            <mn>0</mn>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:0em;">
+            <mn>0</mn>
+          </mtd>
+        </mtr>
+        <mtr>
+          <mtd style="padding-left:0em;padding-right:5.9776pt;">
+            <mrow>
+              <mo>−</mo>
+              <mrow>
+                <mi>sgn</mi>
+                <mo>⁡</mo>
+              </mrow>
+              <mo form="prefix" stretchy="false">(</mo>
+              <msub>
+                <mpadded lspace="0">
+                  <mi mathvariant="normal">Ω</mi>
+                </mpadded>
+                <mi>x</mi>
+              </msub>
+              <mo form="postfix" stretchy="false">)</mo>
+              <msup>
+                <mrow>
+                  <mo fence="true" form="prefix">|</mo>
+                  <msub>
+                    <mpadded lspace="0">
+                      <mi mathvariant="normal">Ω</mi>
+                    </mpadded>
+                    <mi>x</mi>
+                  </msub>
+                  <mo fence="true" form="postfix">|</mo>
+                </mrow>
+                <mn>2</mn>
+              </msup>
+            </mrow>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+            <mrow>
+              <mo>−</mo>
+              <mpadded lspace="0">
+                <mi mathvariant="normal">Γ</mi>
+              </mpadded>
+            </mrow>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+            <mn>0</mn>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+            <mn>0</mn>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+            <mn>0</mn>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+            <mn>0</mn>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:0em;">
+            <mn>0</mn>
+          </mtd>
+        </mtr>
+        <mtr>
+          <mtd style="padding-left:0em;padding-right:5.9776pt;">
+            <mn>0</mn>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+            <mn>0</mn>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+            <mn>0</mn>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+            <mn>1</mn>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+            <mn>0</mn>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+            <mn>0</mn>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:0em;">
+            <mn>0</mn>
+          </mtd>
+        </mtr>
+        <mtr>
+          <mtd style="padding-left:0em;padding-right:5.9776pt;">
+            <mn>0</mn>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+            <mn>0</mn>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+            <mrow>
+              <mo>−</mo>
+              <mrow>
+                <mi>sgn</mi>
+                <mo>⁡</mo>
+              </mrow>
+              <mo form="prefix" stretchy="false">(</mo>
+              <msub>
+                <mpadded lspace="0">
+                  <mi mathvariant="normal">Ω</mi>
+                </mpadded>
+                <mi>y</mi>
+              </msub>
+              <mo form="postfix" stretchy="false">)</mo>
+              <msup>
+                <mrow>
+                  <mo fence="true" form="prefix">|</mo>
+                  <msub>
+                    <mpadded lspace="0">
+                      <mi mathvariant="normal">Ω</mi>
+                    </mpadded>
+                    <mi>y</mi>
+                  </msub>
+                  <mo fence="true" form="postfix">|</mo>
+                </mrow>
+                <mn>2</mn>
+              </msup>
+            </mrow>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+            <mrow>
+              <mo>−</mo>
+              <mpadded lspace="0">
+                <mi mathvariant="normal">Γ</mi>
+              </mpadded>
+            </mrow>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+            <mn>0</mn>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+            <mn>0</mn>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:0em;">
+            <mn>0</mn>
+          </mtd>
+        </mtr>
+        <mtr>
+          <mtd style="padding-left:0em;padding-right:5.9776pt;">
+            <mn>0</mn>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+            <mn>0</mn>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+            <mn>0</mn>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+            <mn>0</mn>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+            <mn>0</mn>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+            <mn>1</mn>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:0em;">
+            <mn>0</mn>
+          </mtd>
+        </mtr>
+        <mtr>
+          <mtd style="padding-left:0em;padding-right:5.9776pt;">
+            <mn>0</mn>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+            <mn>0</mn>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+            <mn>0</mn>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+            <mn>0</mn>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+            <mrow>
+              <mo>−</mo>
+              <mrow>
+                <mi>sgn</mi>
+                <mo>⁡</mo>
+              </mrow>
+              <mo form="prefix" stretchy="false">(</mo>
+              <msub>
+                <mpadded lspace="0">
+                  <mi mathvariant="normal">Ω</mi>
+                </mpadded>
+                <mi>z</mi>
+              </msub>
+              <mo form="postfix" stretchy="false">)</mo>
+              <msup>
+                <mrow>
+                  <mo fence="true" form="prefix">|</mo>
+                  <msub>
+                    <mpadded lspace="0">
+                      <mi mathvariant="normal">Ω</mi>
+                    </mpadded>
+                    <mi>z</mi>
+                  </msub>
+                  <mo fence="true" form="postfix">|</mo>
+                </mrow>
+                <mn>2</mn>
+              </msup>
+            </mrow>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+            <mrow>
+              <mo>−</mo>
+              <mpadded lspace="0">
+                <mi mathvariant="normal">Γ</mi>
+              </mpadded>
+            </mrow>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:0em;">
+            <mn>0</mn>
+          </mtd>
+        </mtr>
+        <mtr>
+          <mtd style="padding-left:0em;padding-right:5.9776pt;">
+            <mn>0</mn>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+            <mn>0</mn>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+            <mn>0</mn>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+            <mn>0</mn>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+            <mn>0</mn>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+            <mn>0</mn>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:0em;">
+            <mrow>
+              <mo>−</mo>
+              <msub>
+                <mi>1/τ</mi>
+                <mi>ϕ</mi>
+              </msub>
+            </mrow>
+          </mtd>
+        </mtr>
+      </mtable>
+      <mo fence="true" form="postfix">]</mo>
+    </mrow>
+    <mo separator="true">,</mo>
+  </mrow>
+</math>
+<p>Input matrix:</p>
+<math display="block" class="tml-display" style="display:block math;">
+  <mrow>
+    <mi>𝐁</mi>
+    <mo>=</mo>
+    <mrow>
+      <mo fence="true" form="prefix">[</mo>
+      <mtable>
+        <mtr>
+          <mtd style="padding-left:0em;padding-right:5.9776pt;">
+            <msub>
+              <mi>c</mi>
+              <mrow>
+                <mi>f</mi>
+                <mn>1</mn>
+                <mo separator="true">,</mo>
+                <mi>x</mi>
+              </mrow>
+            </msub>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:0em;">
+            <msub>
+              <mi>c</mi>
+              <mrow>
+                <mi>f</mi>
+                <mn>2</mn>
+                <mo separator="true">,</mo>
+                <mi>x</mi>
+              </mrow>
+            </msub>
+          </mtd>
+        </mtr>
+        <mtr>
+          <mtd style="padding-left:0em;padding-right:5.9776pt;">
+            <msub>
+              <mi>c</mi>
+              <mrow>
+                <mi>f</mi>
+                <mn>1</mn>
+                <mo separator="true">,</mo>
+                <mi>d</mi>
+                <mi>x</mi>
+              </mrow>
+            </msub>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:0em;">
+            <msub>
+              <mi>c</mi>
+              <mrow>
+                <mi>f</mi>
+                <mn>2</mn>
+                <mo separator="true">,</mo>
+                <mi>d</mi>
+                <mi>x</mi>
+              </mrow>
+            </msub>
+          </mtd>
+        </mtr>
+        <mtr>
+          <mtd style="padding-left:0em;padding-right:5.9776pt;">
+            <msub>
+              <mi>c</mi>
+              <mrow>
+                <mi>f</mi>
+                <mn>1</mn>
+                <mo separator="true">,</mo>
+                <mi>y</mi>
+              </mrow>
+            </msub>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:0em;">
+            <msub>
+              <mi>c</mi>
+              <mrow>
+                <mi>f</mi>
+                <mn>2</mn>
+                <mo separator="true">,</mo>
+                <mi>y</mi>
+              </mrow>
+            </msub>
+          </mtd>
+        </mtr>
+        <mtr>
+          <mtd style="padding-left:0em;padding-right:5.9776pt;">
+            <msub>
+              <mi>c</mi>
+              <mrow>
+                <mi>f</mi>
+                <mn>1</mn>
+                <mo separator="true">,</mo>
+                <mi>d</mi>
+                <mi>y</mi>
+              </mrow>
+            </msub>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:0em;">
+            <msub>
+              <mi>c</mi>
+              <mrow>
+                <mi>f</mi>
+                <mn>2</mn>
+                <mo separator="true">,</mo>
+                <mi>d</mi>
+                <mi>y</mi>
+              </mrow>
+            </msub>
+          </mtd>
+        </mtr>
+        <mtr>
+          <mtd style="padding-left:0em;padding-right:5.9776pt;">
+            <msub>
+              <mi>c</mi>
+              <mrow>
+                <mi>f</mi>
+                <mn>1</mn>
+                <mo separator="true">,</mo>
+                <mi>z</mi>
+              </mrow>
+            </msub>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:0em;">
+            <msub>
+              <mi>c</mi>
+              <mrow>
+                <mi>f</mi>
+                <mn>2</mn>
+                <mo separator="true">,</mo>
+                <mi>z</mi>
+              </mrow>
+            </msub>
+          </mtd>
+        </mtr>
+        <mtr>
+          <mtd style="padding-left:0em;padding-right:5.9776pt;">
+            <msub>
+              <mi>c</mi>
+              <mrow>
+                <mi>f</mi>
+                <mn>1</mn>
+                <mo separator="true">,</mo>
+                <mi>d</mi>
+                <mi>z</mi>
+              </mrow>
+            </msub>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:0em;">
+            <msub>
+              <mi>c</mi>
+              <mrow>
+                <mi>f</mi>
+                <mn>2</mn>
+                <mo separator="true">,</mo>
+                <mi>d</mi>
+                <mi>z</mi>
+              </mrow>
+            </msub>
+          </mtd>
+        </mtr>
+        <mtr>
+          <mtd style="padding-left:0em;padding-right:5.9776pt;">
+            <msub>
+              <mi>c</mi>
+              <mrow>
+                <mi>f</mi>
+                <mn>1</mn>
+                <mo separator="true">,</mo>
+                <mi>ϕ</mi>
+              </mrow>
+            </msub>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:0em;">
+            <msub>
+              <mi>c</mi>
+              <mrow>
+                <mi>f</mi>
+                <mn>2</mn>
+                <mo separator="true">,</mo>
+                <mi>ϕ</mi>
+              </mrow>
+            </msub>
+          </mtd>
+        </mtr>
+      </mtable>
+      <mo fence="true" form="postfix">]</mo>
+    </mrow>
+    <mo separator="true">,</mo>
+  </mrow>
+</math>
+<p>Output matrix:</p>
+<math display="block" class="tml-display" style="display:block math;">
+  <mrow>
+    <mi>𝐂</mi>
+    <mo>=</mo>
+    <mrow>
+      <mo fence="true" form="prefix">[</mo>
+      <mtable>
+        <mtr>
+          <mtd style="padding-left:0em;padding-right:5.9776pt;">
+            <msub>
+              <mi>c</mi>
+              <mrow>
+                <mi>e</mi>
+                <mn>1</mn>
+                <mo separator="true">,</mo>
+                <mi>x</mi>
+              </mrow>
+            </msub>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+            <msub>
+              <mi>c</mi>
+              <mrow>
+                <mi>e</mi>
+                <mn>1</mn>
+                <mo separator="true">,</mo>
+                <mi>d</mi>
+                <mi>x</mi>
+              </mrow>
+            </msub>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+            <msub>
+              <mi>c</mi>
+              <mrow>
+                <mi>e</mi>
+                <mn>1</mn>
+                <mo separator="true">,</mo>
+                <mi>y</mi>
+              </mrow>
+            </msub>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+            <msub>
+              <mi>c</mi>
+              <mrow>
+                <mi>e</mi>
+                <mn>1</mn>
+                <mo separator="true">,</mo>
+                <mi>d</mi>
+                <mi>y</mi>
+              </mrow>
+            </msub>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+            <msub>
+              <mi>c</mi>
+              <mrow>
+                <mi>e</mi>
+                <mn>1</mn>
+                <mo separator="true">,</mo>
+                <mi>z</mi>
+              </mrow>
+            </msub>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+            <msub>
+              <mi>c</mi>
+              <mrow>
+                <mi>e</mi>
+                <mn>1</mn>
+                <mo separator="true">,</mo>
+                <mi>d</mi>
+                <mi>z</mi>
+              </mrow>
+            </msub>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:0em;">
+            <msub>
+              <mi>c</mi>
+              <mrow>
+                <mi>e</mi>
+                <mn>1</mn>
+                <mo separator="true">,</mo>
+                <mi>ϕ</mi>
+              </mrow>
+            </msub>
+          </mtd>
+        </mtr>
+        <mtr>
+          <mtd style="padding-left:0em;padding-right:5.9776pt;">
+            <msub>
+              <mi>c</mi>
+              <mrow>
+                <mi>e</mi>
+                <mn>2</mn>
+                <mo separator="true">,</mo>
+                <mi>x</mi>
+              </mrow>
+            </msub>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+            <msub>
+              <mi>c</mi>
+              <mrow>
+                <mi>e</mi>
+                <mn>2</mn>
+                <mo separator="true">,</mo>
+                <mi>d</mi>
+                <mi>x</mi>
+              </mrow>
+            </msub>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+            <msub>
+              <mi>c</mi>
+              <mrow>
+                <mi>e</mi>
+                <mn>2</mn>
+                <mo separator="true">,</mo>
+                <mi>y</mi>
+              </mrow>
+            </msub>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+            <msub>
+              <mi>c</mi>
+              <mrow>
+                <mi>e</mi>
+                <mn>2</mn>
+                <mo separator="true">,</mo>
+                <mi>d</mi>
+                <mi>y</mi>
+              </mrow>
+            </msub>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+            <msub>
+              <mi>c</mi>
+              <mrow>
+                <mi>e</mi>
+                <mn>2</mn>
+                <mo separator="true">,</mo>
+                <mi>z</mi>
+              </mrow>
+            </msub>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+            <msub>
+              <mi>c</mi>
+              <mrow>
+                <mi>e</mi>
+                <mn>2</mn>
+                <mo separator="true">,</mo>
+                <mi>d</mi>
+                <mi>z</mi>
+              </mrow>
+            </msub>
+          </mtd>
+          <mtd style="padding-left:5.9776pt;padding-right:0em;">
+            <msub>
+              <mi>c</mi>
+              <mrow>
+                <mi>e</mi>
+                <mn>2</mn>
+                <mo separator="true">,</mo>
+                <mi>ϕ</mi>
+              </mrow>
+            </msub>
+          </mtd>
+        </mtr>
+      </mtable>
+      <mo fence="true" form="postfix">]</mo>
+    </mrow>
+  </mrow>
+</math>
+
+<h2>Internal model variants</h2>
+<h3>Standard</h3>
+<p>The standard model configuration corresponds to the system described in the previous section.</p>
+
+<h3>Standard transformed</h3>
+<p>The state space matrices are transformed with a linear transformation keeping input-output transfer function, but rescaling the 
+  internal states to a more favorable numerical range with</p>
+<math display="block" class="tml-display" style="display:block math;">
+  <mrow>
+    <mover>
+      <mi>𝝃</mi>
+      <mo stretchy="false" class="wbk-acc" style="math-depth:0;">‾</mo>
+    </mover>
+    <mo>=</mo>
+    <mi>𝐓</mi>
+    <mi>𝝃</mi>
+    <mo separator="true">,</mo>
+    <mtext>
+    </mtext>
+    <mover>
+      <mi>𝐀</mi>
+      <mo stretchy="false" class="wbk-acc" style="math-depth:0;">‾</mo>
+    </mover>
+    <mo>=</mo>
+    <mi>𝐓</mi>
+    <mi>𝐀</mi>
+    <msup>
+      <mi>𝐓</mi>
+      <mrow>
+        <mo lspace="0em" rspace="0em">−</mo>
+        <mn>1</mn>
+      </mrow>
+    </msup>
+    <mo separator="true">,</mo>
+    <mo></mo>
+    <mover>
+      <mi>𝐁</mi>
+      <mo stretchy="false" class="wbk-acc" style="math-depth:0;">‾</mo>
+    </mover>
+    <mo>=</mo>
+    <mi>𝐓</mi>
+    <mi>𝐁</mi>
+    <mo separator="true">,</mo>
+    <mtext>
+    </mtext>
+    <mover>
+      <mi>𝐂</mi>
+      <mo stretchy="false" class="wbk-acc" style="math-depth:0;">‾</mo>
+    </mover>
+    <mo>=</mo>
+    <mi>𝐂</mi>
+    <msup>
+      <mi>𝐓</mi>
+      <mrow>
+        <mo lspace="0em" rspace="0em">−</mo>
+        <mn>1</mn>
+      </mrow>
+    </msup>
+    <mo separator="true">,</mo>
+    <msub>
+      <mover>
+        <mi>𝐐</mi>
+        <mo stretchy="false" class="wbk-acc" style="math-depth:0;">‾</mo>
+      </mover>
+      <mpadded lspace="0">
+        <mi>LQR</mi>
+      </mpadded>
+    </msub>
+    <mo>=</mo>
+    <msup>
+      <mi>𝐓</mi>
+      <mpadded lspace="0">
+        <mi mathvariant="normal">T</mi>
+      </mpadded>
+    </msup>
+    <msub>
+      <mi>𝐐</mi>
+      <mpadded lspace="0">
+        <mi>LQR</mi>
+      </mpadded>
+    </msub>
+    <mi>𝐓</mi>
+  </mrow>
+</math>
+<math display="block" class="tml-display" style="display:block math;">
+  <mrow>
+    <mi>𝐓</mi>
+    <mo>=</mo>
+    <mpadded lspace="0">
+      <mi>diag</mi>
+    </mpadded>
+    <mrow>
+      <mo fence="true" form="prefix">(</mo>
+      <mrow>
+        <mo fence="true" form="prefix">[</mo>
+        <mtable>
+          <mtr>
+            <mtd style="padding-left:0em;padding-right:5.9776pt;">
+              <msub>
+                <mi>c</mi>
+                <mrow>
+                  <mi>e</mi>
+                  <mo separator="true">,</mo>
+                  <mi>m</mi>
+                  <mi>a</mi>
+                  <mi>x</mi>
+                </mrow>
+              </msub>
+            </mtd>
+            <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+              <mrow>
+                <msub>
+                  <mi>c</mi>
+                  <mrow>
+                    <mi>e</mi>
+                    <mo separator="true">,</mo>
+                    <mi>m</mi>
+                    <mi>a</mi>
+                    <mi>x</mi>
+                  </mrow>
+                </msub>
+                <mi>/</mi>
+                <mrow>
+                  <mo fence="true" form="prefix">|</mo>
+                  <msub>
+                    <mpadded lspace="0">
+                      <mi mathvariant="normal">Ω</mi>
+                    </mpadded>
+                    <mi>x</mi>
+                  </msub>
+                  <mo fence="true" form="postfix">|</mo>
+                </mrow>
+              </mrow>
+            </mtd>
+            <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+              <msub>
+                <mi>c</mi>
+                <mrow>
+                  <mi>e</mi>
+                  <mo separator="true">,</mo>
+                  <mi>m</mi>
+                  <mi>a</mi>
+                  <mi>x</mi>
+                </mrow>
+              </msub>
+            </mtd>
+            <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+              <mrow>
+                <msub>
+                  <mi>c</mi>
+                  <mrow>
+                    <mi>e</mi>
+                    <mo separator="true">,</mo>
+                    <mi>m</mi>
+                    <mi>a</mi>
+                    <mi>x</mi>
+                  </mrow>
+                </msub>
+                <mi>/</mi>
+                <mrow>
+                  <mo fence="true" form="prefix">|</mo>
+                  <msub>
+                    <mpadded lspace="0">
+                      <mi mathvariant="normal">Ω</mi>
+                    </mpadded>
+                    <mi>y</mi>
+                  </msub>
+                  <mo fence="true" form="postfix">|</mo>
+                </mrow>
+              </mrow>
+            </mtd>
+            <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+              <msub>
+                <mi>c</mi>
+                <mrow>
+                  <mi>e</mi>
+                  <mo separator="true">,</mo>
+                  <mi>m</mi>
+                  <mi>a</mi>
+                  <mi>x</mi>
+                </mrow>
+              </msub>
+            </mtd>
+            <mtd style="padding-left:5.9776pt;padding-right:5.9776pt;">
+              <mrow>
+                <msub>
+                  <mi>c</mi>
+                  <mrow>
+                    <mi>e</mi>
+                    <mo separator="true">,</mo>
+                    <mi>m</mi>
+                    <mi>a</mi>
+                    <mi>x</mi>
+                  </mrow>
+                </msub>
+                <mi>/</mi>
+                <mrow>
+                  <mo fence="true" form="prefix">|</mo>
+                  <msub>
+                    <mpadded lspace="0">
+                      <mi mathvariant="normal">Ω</mi>
+                    </mpadded>
+                    <mi>z</mi>
+                  </msub>
+                  <mo fence="true" form="postfix">|</mo>
+                </mrow>
+              </mrow>
+            </mtd>
+            <mtd style="padding-left:5.9776pt;padding-right:0em;">
+              <msub>
+                <mi>c</mi>
+                <mrow>
+                  <mi>e</mi>
+                  <mo separator="true">,</mo>
+                  <mi>m</mi>
+                  <mi>a</mi>
+                  <mi>x</mi>
+                </mrow>
+              </msub>
+            </mtd>
+          </mtr>
+        </mtable>
+        <mo fence="true" form="postfix">]</mo>
+      </mrow>
+      <mo fence="true" form="postfix">)</mo>
+    </mrow>
+  </mrow>
+,</math>
+<p>where <math><msub><mi>c</mi><mrow> <mi>e</mi><mo separator="true">,</mo><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub></math> is the 
+  (absolute) largest value in the <math><mi>𝐂</mi></math> matrix. </p>
+<h3>Closed-loop</h3>
+<p>This representation can be useful when dealing with unstable systems. In this case, for the state estimation step, the closed-loop dynamics are considered, 
+  setting the <i>state transition</i> matrix to </p>
+  <math display="block" class="tml-display" style="display:block math;">
+  <mrow>
+    <msub>
+      <mi>𝐀</mi>
+      <mrow>
+        <mi>c</mi>
+        <mi>l</mi>
+      </mrow>
+    </msub>
+    <mo>=</mo>
+    <mo form="prefix" stretchy="false">(</mo>
+    <msub>
+      <mrow>
+        <mi>𝐀</mi>
+        <mo>−</mo>
+        <mi>𝐋</mi>
+        <mi>𝐂</mi>
+        <mo>−</mo>
+        <mi>𝐁</mi>
+        <mi>𝐊</mi>
+      </mrow>
+      <mpadded lspace="0">
+        <mi>LQR</mi>
+      </mpadded>
+    </msub>
+    <mo form="postfix" stretchy="false">)</mo>
+    <mo separator="true">,</mo>
+    <mspace width="1em"></mspace>
+    <mi>𝐁</mi>
+    <mo>=</mo>
+    <mn>𝟎</mn>
+  </mrow>
+</math>
+<p>Note that in this representation, it is irrelevant whether the feedback output is enabled or not, as the estimator always assumes it is. This will lead to errors in
+  state estimation if the feedback is disabled, but can improve the stability of the estimator.
+</p>
+<h3>Closed-loop transformed</h3>
+<p>This variant combines the <i>Closed-loop</i> and <i>Standard transformed</i> variants, improving numerical behaviour of the plain <i>Closed-loop</i> variant.</p>
+
+<h2>Numerical state-space transformation</h2>
+<p>This additional transformation aims to improve numerical behaviour of the estimator, such that the states are scaled to take full advantage of the internal fixed-point data types 
+  (25 bits wide, 22 bits fraction width). The user input to this transformation is the desired state standard deviation <math><msub><mover><mi>σ</mi><mo stretchy="false" class="wbk-acc" style="math-depth:0;">‾</mo></mover><mi>ξ</mi></msub></math>.
+  The estimated state covariance <math><mover><mi>𝐏</mi><mo stretchy="false" class="wbk-acc" style="math-depth:0;">^</mo></mover></math> is obtained by solving the discrete-time Lyapunov equation</p>
+<math display="block" class="tml-display" style="display:block math;"><mrow><mn>0</mn><mo>=</mo><mrow><mo fence="true" form="prefix" stretchy="true">(</mo><msub><mi>𝐀</mi><mi>d</mi></msub><mo>−</mo><msub><mi>𝐁</mi><mi>d</mi></msub><msub><mi>𝐊</mi><mi>d</mi></msub><mo fence="true" form="postfix" stretchy="true">)</mo></mrow><mover><mi>𝐏</mi><mo stretchy="false" class="wbk-acc" style="math-depth:0;">^</mo></mover><msup><mrow><mo fence="true" form="prefix" stretchy="true">(</mo><msub><mi>𝐀</mi><mi>d</mi></msub><mo>−</mo><msub><mi>𝐁</mi><mi>d</mi></msub><msub><mi>𝐊</mi><mi>d</mi></msub><mo fence="true" form="postfix" stretchy="true">)</mo></mrow><mrow><mi mathvariant="normal">T</mi><mspace></mspace></mrow></msup><mo>−</mo><mover><mi>𝐏</mi><mo stretchy="false" class="wbk-acc" style="math-depth:0;">^</mo></mover><mo>+</mo><msup><mrow><mi>𝐋</mi><mi>𝐑</mi><mi>𝐋</mi></mrow><mrow><mi mathvariant="normal">T</mi><mspace></mspace></mrow></msup></mrow></math>
+<p> The target standard-deviation matrix <math><mrow><msub><mover><mi>𝚺</mi><mo stretchy="false" class="wbk-acc" style="math-depth:0;">‾</mo></mover><mi>ξ</mi></msub><mo>=</mo><mi>𝕀</mi><mo>⋅</mo><msub><mover><mi>σ</mi><mo stretchy="false" class="wbk-acc" style="math-depth:0;">‾</mo></mover><mi>ξ</mi></msub></mrow></math>
+   is an eye matrix with <math><msub><mover><mi>σ</mi><mo stretchy="false" class="wbk-acc" style="math-depth:0;">‾</mo></mover><mi>ξ</mi></msub></math> entries on the diagonal,
+   The transformation matrix is calculated with Cholesky decomposition of <math><mrow><mover><mi>𝐏</mi><mo stretchy="false" class="wbk-acc" style="math-depth:0;">^</mo></mover><mo>=</mo><msup><mi>𝐒</mi><mpadded lspace="0"><mi mathvariant="normal">T</mi></mpadded></msup><mi>𝐒</mi></mrow></math>. 
+  </p>
+<math display="block" class="tml-display" style="display:block math;">
+  <mrow>
+    <msub>
+      <mi>𝐓</mi>
+      <mpadded lspace="0">
+        <mi>bal</mi>
+      </mpadded>
+    </msub>
+    <mo>=</mo>
+    <mi>𝐒</mi>
+    <msubsup>
+      <mover>
+        <mi>𝚺</mi>
+        <mo stretchy="false" class="wbk-acc" style="math-depth:0;">‾</mo>
+      </mover>
+      <mi>ξ</mi>
+      <mrow>
+        <mo lspace="0em" rspace="0em">−</mo>
+        <mn>1</mn>
+      </mrow>
+    </msubsup>
+  </mrow>
+.</math>
+<p>
+As a last step, the magnitude of transformed, discretized actuation input <math><mi>𝐁</mi></math>, measurement input <math><mi>𝐋</mi></math> 
+and feedback gain <math><msub><mi>𝐊</mi><mpadded lspace="0"><mi>LQR</mi></mpadded></msub></math> matrices is tested, whether any elements overflow the internal datatype. 
+If that is true for the input matrices <math><mi>𝐁</mi></math> or <math><mi>𝐋</mi></math>, the system is additionally rescaled by 
+</p>
+<math display="block" class="tml-display" style="display:block math;">
+  <mrow>
+    <msub>
+      <mi>𝐓</mi>
+      <mpadded lspace="0">
+        <mi>InOut</mi>
+      </mpadded>
+    </msub>
+    <mo>=</mo>
+    <mi>𝕀</mi>
+    <mo>⋅</mo>
+    <mrow>
+      <mi>max</mi>
+      <mo>⁡</mo>
+    </mrow>
+    <mrow>
+      <mo fence="true" form="prefix">(</mo>
+      <mrow>
+        <mo fence="true" form="prefix">[</mo>
+        <mtable>
+          <mtr>
+            <mtd style="padding-left:0em;padding-right:5.9776pt;">
+              <mi>𝐁</mi>
+            </mtd>
+            <mtd style="padding-left:5.9776pt;padding-right:0em;">
+              <mi>𝐋</mi>
+            </mtd>
+          </mtr>
+        </mtable>
+        <mo fence="true" form="postfix">]</mo>
+      </mrow>
+      <mo fence="true" form="postfix">)</mo>
+    </mrow>
+  </mrow>
+,</math>
+<p>
+and, conversely, if any element of the feedback gain <math><msub><mi>𝐊</mi><mpadded lspace="0"><mi>LQR</mi></mpadded></msub></math> is overflowing, the transformation is
+</p>
+<math display="block" class="tml-display" style="display:block math;">
+  <mrow>
+    <msub>
+      <mi>𝐓</mi>
+      <mpadded lspace="0">
+        <mi>InOut</mi>
+      </mpadded>
+    </msub>
+    <mo>=</mo>
+    <mi>𝕀</mi>
+    <mo>⋅</mo>
+    <mn>1</mn>
+    <mi>/</mi>
+    <mrow>
+      <mspace width="0.1667em"></mspace>
+      <mi>max</mi>
+      <mo>⁡</mo>
+    </mrow>
+    <mrow>
+      <mo fence="true" form="prefix">(</mo>
+      <msub>
+        <mi>𝐊</mi>
+        <mpadded lspace="0">
+          <mi>LQR</mi>
+        </mpadded>
+      </msub>
+      <mo fence="true" form="postfix">)</mo>
+    </mrow>
+  </mrow>
+.</math>
+<p>Finally, the LQG matrices are transformed with <math><mrow><msub><mi>𝐓</mi><mpadded lspace="0"><mi>num</mi></mpadded></msub><mo>=</mo><msub><mi>𝐓</mi><mpadded lspace="0"><mi>bal</mi></mpadded></msub><msub><mi>𝐓</mi><mpadded lspace="0"><mi>InOut</mi></mpadded></msub></mrow></math>.</p>
+
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+
+# MATLAB autosave files.
+**.asv
+**.autosave
+# Logfiles of any kind
+**.log
+# Simulink cache files.
+**.slxc
+
+# VS-Code
+.vscode/
+
+# Matlab simulink project cache directories
+matlab/slprj
+matlab/hilsim_lib/slprj
+# Calibration value files.
+matlab/calib.mat
+matlab/hilsim_lib/code
+matlab/misc/slprj/
+
+# Build directory for the configuration server.
+conf_server/build
+
+ipcore/proj_ref_7020/proj_ref_7020.cache/
+ipcore/proj_ref_7020/proj_ref_7020.runs/
+
+# Vivado / Xilinx ignores
+.Xil/
+
+**.jou
+**.log
+**.backup.jou
+**.backup.log
+**.upgrade_log
+**.dmp
+vivado_pid*
+*~

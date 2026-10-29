@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Acquisition Tab</title>
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<h1>Data Acquisition Tab</h1>
+
+<p>In this tab, you can record and plot the internal states, as well as input and output signals.</p>
+
+<h2>Functionality</h2>
+<h3>Plot window</h3>
+<p>Displays the recorded (or simulated) data according to the Channel selection panel.</p>
+
+<p>Right clicking the plot window allows you to adjust the viewport to the current data. Note that this context menu is triggered only 
+    when the built-in plot tools are not active (those selected in the toolbar above the window).
+</p>
+
+<h3>Record data</h3>
+<p>Triggers data recording in the hardware and updates the plot window with <i>Number of frames to plot</i> frames.</p>
+
+<h3>Channel record & plot selection panel</h3>
+<p>Here you can configure which signals you want to record and to plot in order to, for example, save memory, allowing you to record more frames,
+    or to plot only the relevant signals, improving the responsiveness of the GUI. Note that the signals ticked <i>record</i>, but not <i>plot</i> still get recorded into
+    the memory and can be exported later.
+</p>
+
+<h3>Number of frames to record</h3>
+<p>Configure the number of frames to be recorded after pressing the <i>Record data</i> button. One frame contains all of the
+    channels marked for recording at the same time instance.
+</p>
+
+<h3>Number of frames to plot</h3>
+<p>Configure the number of frames to be plotted after pressing the <i>Record data</i> button. This value must be smaller
+than the <i>Number of frames to record</i>. </p>
+
+<h3>Recording decimation</h3>
+<p>This setting allows you to record only every N-th frame. Timing is aligned to the multiples of the LQG sampling rate at 64 ns.
+    Setting the value to 10 results in data captured at the sampling rate of 640 ns.
+</p>
+
+<h3>Reserved RAM</h3>
+<p><b>Important:</b> Configure this field to reflect the amount of RAM reserved (in Megabytes) on the specific Red Pitaya interfaced by the GUI.</p>
+
+<h3>Output file path</h3>
+<p>Path to the output Matlab file containing recorded data and parameters after pressing the <i>Save mat file</i> button.
+Use absolute path to avoid unexpected behaviour. You can right-click the edit field to trigger file explorer dialog.</p>
+
+<p>Note that the filename is amended with a timestamp (yyyy-MM-dd-hh-mm-ss). For example the entry <i>(...)\data\fpgaData.mat</i> creates file <i>fpgaData2026-01-17-11-02-23.mat</i> </p>
+
+<h3>Save mat file</h3>
+<p>Clicking the button exports the currently recorded data including the active parameter set to a Matlab file specified by the <i>Output file path</i> directory. 
+The function exports all of the newest recorded data in memory. 
+</p>
+
+<p><b>Note:</b> This operation requires fetching a potentially large amount of data from the Red Pitaya and can 
+take a long time.</p>
+
+<h3>Plot style switch</h3>
+<p>Switching the switch switches the style of the plot between linear time domain and log-log power spectral density plot.</p>
+
+
+</body>
+</html>

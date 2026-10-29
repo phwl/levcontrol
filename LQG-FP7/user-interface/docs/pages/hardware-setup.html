@@ -1,0 +1,31 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardware setup</title>
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<h1>Hardware Setup</h1>
+<p>For setting up the Red Pitaya (RP), refer to the <code>Readme.md</code> at the root of the repository.</p>
+<h2>Python server</h2>
+<p>First, make sure you have transferred all the server-relevant files to the RP, including the bitstream. </p>
+
+<p>Configure the RP with the correct bitstream, for example:</p>
+
+<code>echo "lqg_fp7_v1.2.2.bin" > /sys/class/fpga_manager/fpga0/firmware</code>
+
+<p>Then run the server using: </p>
+<code>coreconfig/server.py ip_description.yaml</code>
+
+<p>assuming the current working directory is the parent directory of <code>coreconfig</code> and also contains the <code>ip_description.yaml</code>
+file. The console will display logs of incoming HTTP requests, but you can safely ignore it and now work purely with the GUI. To shut the server down,
+simply press <code>Ctrl+C</code> while the cursor is active in the console.</p>
+
+
+</body>
+</html>

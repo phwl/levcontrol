@@ -1,0 +1,2780 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<style type="text/css">
+body {margin-top:6.35em; 
+      margin-left:6.35em; 
+      width:62.5em;
+      text-align:justify;
+      font-size:1em; 
+      font-family:"Arial", Serif;
+      color:#000000;}
+
+h1 {font-size:1.125em;
+    font-family:"Arial", Sans-serif;
+    color:#943634;}
+
+p {font-size:inherit;
+   width:62.5em;
+   font-family:inherit;
+   color:inherit;}
+
+ul {font-size:inherit;
+    width:62.5em;
+    font-family:inherit;
+    color:inherit;}
+
+li {width:46.15em;}
+
+.image {position: relative;
+        width: 100%;}
+
+table {border-collapse:collapse;
+       border-spacing:0;
+       caption-side:bottom;
+       border-style:solid;
+       border-width:thin;
+       font-size:1em;
+       width:62.5em;
+       font-family:inherit;
+       color:inherit;}
+
+.title_table {border-collapse:collapse;
+       border-spacing:0;
+       caption-side:bottom;
+       font-size:1em;
+       width:62.5em;
+       border-style:none;}
+
+.title_table_image_cell {border-bottom:thin solid #000000;}
+
+.title_table_design_cell {vertical-align:bottom;
+        font-size:1.875em;
+        text-align:right;
+        border-bottom:thin solid #000000;}
+
+.title_table_date_cell{font-size:1.25em;
+        vertical-align:bottom;
+        text-align:left;
+        border-bottom:thick solid #943634}
+
+.sg_row {font-size:inherit;
+         font-family:inherit;
+         color:inherit;
+         border-style:solid;
+         border-width:thin;}
+
+.sg_cell {margin:0;
+          padding:1em;
+          border-width:inherit;
+          border-style:inherit;
+          font-size:inherit;
+          font-family:inherit;
+          color:inherit;}
+
+.sg_cell_first_row {margin:0;
+          padding:1em;
+          border-width:inherit;
+          border-style:inherit;
+          border-bottom:thick solid #943634;
+          font-size:inherit;
+          font-family:inherit;
+          color:inherit;}
+
+.sg_caption {text-align:left;
+             caption-side:bottom;
+             font-family:inherit;
+             font-size:inherit;}
+</style>
+</head>
+<body>
+<table class="title_table">
+<tr>
+<td class="title_table_image_cell"></td>
+<td class="title_table_design_cell">hilsim_ipcore</td>
+</tr>
+<tr>
+<td colspan=2 class="title_table_date_cell"><b></b></td>
+</tr>
+</table>
+<h1>int hilsim_ipcore_Initialize(hilsim_ipcore* InstancePtr, u16 DeviceId)</h1>
+<p>
+Initialize hilsim_ipcore pointer with a specifc instance of the device based device id.
+<br/>
+  @param InstancePtr to be initialized
+<br/>
+  @param DeviceId device id assigned to the device in xparameters.h
+<br/>
+<br/>
+  @return int XST_SUCCESS if initialization is successful
+<br/>
+</p>
+<h1>void hilsim_ipcore_system_run_write(hilsim_ipcore *InstancePtr, u32 Data);</h1>
+<p>
+ Write to system_run gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the system_run instance to operate on.<br/>
+ @param	Data is value to be written to gateway system_run.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u32 hilsim_ipcore_system_run_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from system_run gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the system_run instance to operate on.<br/>
+<br/>
+ @return	u32<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_slice2_xd_presc_shift_write(hilsim_ipcore *InstancePtr, u8 Data);</h1>
+<p>
+ Write to slice2_xd_presc_shift gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice2_xd_presc_shift instance to operate on.<br/>
+ @param	Data is value to be written to gateway slice2_xd_presc_shift.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u8 hilsim_ipcore_slice2_xd_presc_shift_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from slice2_xd_presc_shift gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice2_xd_presc_shift instance to operate on.<br/>
+<br/>
+ @return	u8<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_slice2_xd_presc_mul_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to slice2_xd_presc_mul gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice2_xd_presc_mul instance to operate on.<br/>
+ @param	Data is value to be written to gateway slice2_xd_presc_mul.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_slice2_xd_presc_mul_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from slice2_xd_presc_mul gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice2_xd_presc_mul instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_slice2_xd_nlf_presc_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to slice2_xd_nlf_presc gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice2_xd_nlf_presc instance to operate on.<br/>
+ @param	Data is value to be written to gateway slice2_xd_nlf_presc.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_slice2_xd_nlf_presc_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from slice2_xd_nlf_presc gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice2_xd_nlf_presc instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_slice2_xd_nlf_gain_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to slice2_xd_nlf_gain gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice2_xd_nlf_gain instance to operate on.<br/>
+ @param	Data is value to be written to gateway slice2_xd_nlf_gain.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_slice2_xd_nlf_gain_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from slice2_xd_nlf_gain gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice2_xd_nlf_gain instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_slice2_xd_mux_write(hilsim_ipcore *InstancePtr, u32 Data);</h1>
+<p>
+ Write to slice2_xd_mux gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice2_xd_mux instance to operate on.<br/>
+ @param	Data is value to be written to gateway slice2_xd_mux.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u32 hilsim_ipcore_slice2_xd_mux_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from slice2_xd_mux gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice2_xd_mux instance to operate on.<br/>
+<br/>
+ @return	u32<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_slice2_xd_gain_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to slice2_xd_gain gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice2_xd_gain instance to operate on.<br/>
+ @param	Data is value to be written to gateway slice2_xd_gain.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_slice2_xd_gain_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from slice2_xd_gain gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice2_xd_gain instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_slice2_x_presc_shift_write(hilsim_ipcore *InstancePtr, u8 Data);</h1>
+<p>
+ Write to slice2_x_presc_shift gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice2_x_presc_shift instance to operate on.<br/>
+ @param	Data is value to be written to gateway slice2_x_presc_shift.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u8 hilsim_ipcore_slice2_x_presc_shift_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from slice2_x_presc_shift gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice2_x_presc_shift instance to operate on.<br/>
+<br/>
+ @return	u8<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_slice2_x_presc_mul_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to slice2_x_presc_mul gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice2_x_presc_mul instance to operate on.<br/>
+ @param	Data is value to be written to gateway slice2_x_presc_mul.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_slice2_x_presc_mul_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from slice2_x_presc_mul gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice2_x_presc_mul instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_slice2_x_nlf_presc_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to slice2_x_nlf_presc gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice2_x_nlf_presc instance to operate on.<br/>
+ @param	Data is value to be written to gateway slice2_x_nlf_presc.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_slice2_x_nlf_presc_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from slice2_x_nlf_presc gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice2_x_nlf_presc instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_slice2_x_nlf_gain_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to slice2_x_nlf_gain gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice2_x_nlf_gain instance to operate on.<br/>
+ @param	Data is value to be written to gateway slice2_x_nlf_gain.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_slice2_x_nlf_gain_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from slice2_x_nlf_gain gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice2_x_nlf_gain instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_slice2_x_mux_write(hilsim_ipcore *InstancePtr, u32 Data);</h1>
+<p>
+ Write to slice2_x_mux gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice2_x_mux instance to operate on.<br/>
+ @param	Data is value to be written to gateway slice2_x_mux.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u32 hilsim_ipcore_slice2_x_mux_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from slice2_x_mux gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice2_x_mux instance to operate on.<br/>
+<br/>
+ @return	u32<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_slice2_x_gain_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to slice2_x_gain gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice2_x_gain instance to operate on.<br/>
+ @param	Data is value to be written to gateway slice2_x_gain.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_slice2_x_gain_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from slice2_x_gain gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice2_x_gain instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_slice2_u_nlf_presc_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to slice2_u_nlf_presc gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice2_u_nlf_presc instance to operate on.<br/>
+ @param	Data is value to be written to gateway slice2_u_nlf_presc.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_slice2_u_nlf_presc_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from slice2_u_nlf_presc gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice2_u_nlf_presc instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_slice2_u_nlf_gain_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to slice2_u_nlf_gain gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice2_u_nlf_gain instance to operate on.<br/>
+ @param	Data is value to be written to gateway slice2_u_nlf_gain.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_slice2_u_nlf_gain_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from slice2_u_nlf_gain gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice2_u_nlf_gain instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_slice2_u_mux_write(hilsim_ipcore *InstancePtr, u32 Data);</h1>
+<p>
+ Write to slice2_u_mux gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice2_u_mux instance to operate on.<br/>
+ @param	Data is value to be written to gateway slice2_u_mux.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u32 hilsim_ipcore_slice2_u_mux_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from slice2_u_mux gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice2_u_mux instance to operate on.<br/>
+<br/>
+ @return	u32<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_slice2_u_gain_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to slice2_u_gain gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice2_u_gain instance to operate on.<br/>
+ @param	Data is value to be written to gateway slice2_u_gain.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_slice2_u_gain_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from slice2_u_gain gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice2_u_gain instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_slice1_xd_presc_shift_write(hilsim_ipcore *InstancePtr, u8 Data);</h1>
+<p>
+ Write to slice1_xd_presc_shift gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice1_xd_presc_shift instance to operate on.<br/>
+ @param	Data is value to be written to gateway slice1_xd_presc_shift.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u8 hilsim_ipcore_slice1_xd_presc_shift_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from slice1_xd_presc_shift gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice1_xd_presc_shift instance to operate on.<br/>
+<br/>
+ @return	u8<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_slice1_xd_presc_mul_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to slice1_xd_presc_mul gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice1_xd_presc_mul instance to operate on.<br/>
+ @param	Data is value to be written to gateway slice1_xd_presc_mul.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_slice1_xd_presc_mul_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from slice1_xd_presc_mul gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice1_xd_presc_mul instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_slice1_xd_nlf_presc_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to slice1_xd_nlf_presc gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice1_xd_nlf_presc instance to operate on.<br/>
+ @param	Data is value to be written to gateway slice1_xd_nlf_presc.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_slice1_xd_nlf_presc_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from slice1_xd_nlf_presc gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice1_xd_nlf_presc instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_slice1_xd_nlf_gain_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to slice1_xd_nlf_gain gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice1_xd_nlf_gain instance to operate on.<br/>
+ @param	Data is value to be written to gateway slice1_xd_nlf_gain.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_slice1_xd_nlf_gain_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from slice1_xd_nlf_gain gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice1_xd_nlf_gain instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_slice1_xd_mux_write(hilsim_ipcore *InstancePtr, u32 Data);</h1>
+<p>
+ Write to slice1_xd_mux gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice1_xd_mux instance to operate on.<br/>
+ @param	Data is value to be written to gateway slice1_xd_mux.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u32 hilsim_ipcore_slice1_xd_mux_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from slice1_xd_mux gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice1_xd_mux instance to operate on.<br/>
+<br/>
+ @return	u32<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_slice1_xd_gain_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to slice1_xd_gain gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice1_xd_gain instance to operate on.<br/>
+ @param	Data is value to be written to gateway slice1_xd_gain.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_slice1_xd_gain_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from slice1_xd_gain gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice1_xd_gain instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_slice1_x_presc_shift_write(hilsim_ipcore *InstancePtr, u8 Data);</h1>
+<p>
+ Write to slice1_x_presc_shift gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice1_x_presc_shift instance to operate on.<br/>
+ @param	Data is value to be written to gateway slice1_x_presc_shift.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u8 hilsim_ipcore_slice1_x_presc_shift_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from slice1_x_presc_shift gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice1_x_presc_shift instance to operate on.<br/>
+<br/>
+ @return	u8<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_slice1_x_presc_mul_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to slice1_x_presc_mul gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice1_x_presc_mul instance to operate on.<br/>
+ @param	Data is value to be written to gateway slice1_x_presc_mul.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_slice1_x_presc_mul_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from slice1_x_presc_mul gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice1_x_presc_mul instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_slice1_x_nlf_presc_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to slice1_x_nlf_presc gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice1_x_nlf_presc instance to operate on.<br/>
+ @param	Data is value to be written to gateway slice1_x_nlf_presc.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_slice1_x_nlf_presc_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from slice1_x_nlf_presc gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice1_x_nlf_presc instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_slice1_x_nlf_gain_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to slice1_x_nlf_gain gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice1_x_nlf_gain instance to operate on.<br/>
+ @param	Data is value to be written to gateway slice1_x_nlf_gain.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_slice1_x_nlf_gain_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from slice1_x_nlf_gain gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice1_x_nlf_gain instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_slice1_x_mux_write(hilsim_ipcore *InstancePtr, u32 Data);</h1>
+<p>
+ Write to slice1_x_mux gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice1_x_mux instance to operate on.<br/>
+ @param	Data is value to be written to gateway slice1_x_mux.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u32 hilsim_ipcore_slice1_x_mux_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from slice1_x_mux gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice1_x_mux instance to operate on.<br/>
+<br/>
+ @return	u32<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_slice1_x_gain_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to slice1_x_gain gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice1_x_gain instance to operate on.<br/>
+ @param	Data is value to be written to gateway slice1_x_gain.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_slice1_x_gain_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from slice1_x_gain gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice1_x_gain instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_slice1_u_nlf_presc_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to slice1_u_nlf_presc gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice1_u_nlf_presc instance to operate on.<br/>
+ @param	Data is value to be written to gateway slice1_u_nlf_presc.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_slice1_u_nlf_presc_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from slice1_u_nlf_presc gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice1_u_nlf_presc instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_slice1_u_nlf_gain_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to slice1_u_nlf_gain gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice1_u_nlf_gain instance to operate on.<br/>
+ @param	Data is value to be written to gateway slice1_u_nlf_gain.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_slice1_u_nlf_gain_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from slice1_u_nlf_gain gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice1_u_nlf_gain instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_slice1_u_mux_write(hilsim_ipcore *InstancePtr, u32 Data);</h1>
+<p>
+ Write to slice1_u_mux gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice1_u_mux instance to operate on.<br/>
+ @param	Data is value to be written to gateway slice1_u_mux.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u32 hilsim_ipcore_slice1_u_mux_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from slice1_u_mux gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice1_u_mux instance to operate on.<br/>
+<br/>
+ @return	u32<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_slice1_u_gain_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to slice1_u_gain gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice1_u_gain instance to operate on.<br/>
+ @param	Data is value to be written to gateway slice1_u_gain.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_slice1_u_gain_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from slice1_u_gain gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice1_u_gain instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_slice0_xd_presc_shift_write(hilsim_ipcore *InstancePtr, u8 Data);</h1>
+<p>
+ Write to slice0_xd_presc_shift gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice0_xd_presc_shift instance to operate on.<br/>
+ @param	Data is value to be written to gateway slice0_xd_presc_shift.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u8 hilsim_ipcore_slice0_xd_presc_shift_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from slice0_xd_presc_shift gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice0_xd_presc_shift instance to operate on.<br/>
+<br/>
+ @return	u8<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_slice0_xd_presc_mul_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to slice0_xd_presc_mul gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice0_xd_presc_mul instance to operate on.<br/>
+ @param	Data is value to be written to gateway slice0_xd_presc_mul.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_slice0_xd_presc_mul_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from slice0_xd_presc_mul gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice0_xd_presc_mul instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_slice0_xd_nlf_presc_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to slice0_xd_nlf_presc gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice0_xd_nlf_presc instance to operate on.<br/>
+ @param	Data is value to be written to gateway slice0_xd_nlf_presc.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_slice0_xd_nlf_presc_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from slice0_xd_nlf_presc gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice0_xd_nlf_presc instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_slice0_xd_nlf_gain_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to slice0_xd_nlf_gain gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice0_xd_nlf_gain instance to operate on.<br/>
+ @param	Data is value to be written to gateway slice0_xd_nlf_gain.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_slice0_xd_nlf_gain_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from slice0_xd_nlf_gain gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice0_xd_nlf_gain instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_slice0_xd_mux_write(hilsim_ipcore *InstancePtr, u32 Data);</h1>
+<p>
+ Write to slice0_xd_mux gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice0_xd_mux instance to operate on.<br/>
+ @param	Data is value to be written to gateway slice0_xd_mux.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u32 hilsim_ipcore_slice0_xd_mux_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from slice0_xd_mux gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice0_xd_mux instance to operate on.<br/>
+<br/>
+ @return	u32<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_slice0_xd_gain_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to slice0_xd_gain gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice0_xd_gain instance to operate on.<br/>
+ @param	Data is value to be written to gateway slice0_xd_gain.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_slice0_xd_gain_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from slice0_xd_gain gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice0_xd_gain instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_slice0_x_presc_shift_write(hilsim_ipcore *InstancePtr, u8 Data);</h1>
+<p>
+ Write to slice0_x_presc_shift gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice0_x_presc_shift instance to operate on.<br/>
+ @param	Data is value to be written to gateway slice0_x_presc_shift.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u8 hilsim_ipcore_slice0_x_presc_shift_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from slice0_x_presc_shift gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice0_x_presc_shift instance to operate on.<br/>
+<br/>
+ @return	u8<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_slice0_x_presc_mul_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to slice0_x_presc_mul gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice0_x_presc_mul instance to operate on.<br/>
+ @param	Data is value to be written to gateway slice0_x_presc_mul.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_slice0_x_presc_mul_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from slice0_x_presc_mul gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice0_x_presc_mul instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_slice0_x_nlf_presc_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to slice0_x_nlf_presc gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice0_x_nlf_presc instance to operate on.<br/>
+ @param	Data is value to be written to gateway slice0_x_nlf_presc.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_slice0_x_nlf_presc_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from slice0_x_nlf_presc gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice0_x_nlf_presc instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_slice0_x_nlf_gain_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to slice0_x_nlf_gain gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice0_x_nlf_gain instance to operate on.<br/>
+ @param	Data is value to be written to gateway slice0_x_nlf_gain.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_slice0_x_nlf_gain_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from slice0_x_nlf_gain gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice0_x_nlf_gain instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_slice0_x_mux_write(hilsim_ipcore *InstancePtr, u32 Data);</h1>
+<p>
+ Write to slice0_x_mux gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice0_x_mux instance to operate on.<br/>
+ @param	Data is value to be written to gateway slice0_x_mux.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u32 hilsim_ipcore_slice0_x_mux_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from slice0_x_mux gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice0_x_mux instance to operate on.<br/>
+<br/>
+ @return	u32<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_slice0_x_gain_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to slice0_x_gain gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice0_x_gain instance to operate on.<br/>
+ @param	Data is value to be written to gateway slice0_x_gain.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_slice0_x_gain_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from slice0_x_gain gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice0_x_gain instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_slice0_u_nlf_presc_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to slice0_u_nlf_presc gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice0_u_nlf_presc instance to operate on.<br/>
+ @param	Data is value to be written to gateway slice0_u_nlf_presc.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_slice0_u_nlf_presc_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from slice0_u_nlf_presc gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice0_u_nlf_presc instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_slice0_u_nlf_gain_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to slice0_u_nlf_gain gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice0_u_nlf_gain instance to operate on.<br/>
+ @param	Data is value to be written to gateway slice0_u_nlf_gain.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_slice0_u_nlf_gain_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from slice0_u_nlf_gain gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice0_u_nlf_gain instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_slice0_u_mux_write(hilsim_ipcore *InstancePtr, u32 Data);</h1>
+<p>
+ Write to slice0_u_mux gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice0_u_mux instance to operate on.<br/>
+ @param	Data is value to be written to gateway slice0_u_mux.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u32 hilsim_ipcore_slice0_u_mux_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from slice0_u_mux gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice0_u_mux instance to operate on.<br/>
+<br/>
+ @return	u32<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_slice0_u_gain_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to slice0_u_gain gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice0_u_gain instance to operate on.<br/>
+ @param	Data is value to be written to gateway slice0_u_gain.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_slice0_u_gain_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from slice0_u_gain gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the slice0_u_gain instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_out_mat_nlf_dac1_xx2_presc_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to out_mat_nlf_dac1_xx2_presc gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_nlf_dac1_xx2_presc instance to operate on.<br/>
+ @param	Data is value to be written to gateway out_mat_nlf_dac1_xx2_presc.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_out_mat_nlf_dac1_xx2_presc_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from out_mat_nlf_dac1_xx2_presc gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_nlf_dac1_xx2_presc instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_out_mat_nlf_dac1_xx2_gain_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to out_mat_nlf_dac1_xx2_gain gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_nlf_dac1_xx2_gain instance to operate on.<br/>
+ @param	Data is value to be written to gateway out_mat_nlf_dac1_xx2_gain.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_out_mat_nlf_dac1_xx2_gain_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from out_mat_nlf_dac1_xx2_gain gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_nlf_dac1_xx2_gain instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_out_mat_nlf_dac1_xx2_en_write(hilsim_ipcore *InstancePtr, u32 Data);</h1>
+<p>
+ Write to out_mat_nlf_dac1_xx2_en gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_nlf_dac1_xx2_en instance to operate on.<br/>
+ @param	Data is value to be written to gateway out_mat_nlf_dac1_xx2_en.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u32 hilsim_ipcore_out_mat_nlf_dac1_xx2_en_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from out_mat_nlf_dac1_xx2_en gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_nlf_dac1_xx2_en instance to operate on.<br/>
+<br/>
+ @return	u32<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_out_mat_nlf_dac1_xx1_presc_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to out_mat_nlf_dac1_xx1_presc gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_nlf_dac1_xx1_presc instance to operate on.<br/>
+ @param	Data is value to be written to gateway out_mat_nlf_dac1_xx1_presc.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_out_mat_nlf_dac1_xx1_presc_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from out_mat_nlf_dac1_xx1_presc gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_nlf_dac1_xx1_presc instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_out_mat_nlf_dac1_xx1_gain_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to out_mat_nlf_dac1_xx1_gain gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_nlf_dac1_xx1_gain instance to operate on.<br/>
+ @param	Data is value to be written to gateway out_mat_nlf_dac1_xx1_gain.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_out_mat_nlf_dac1_xx1_gain_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from out_mat_nlf_dac1_xx1_gain gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_nlf_dac1_xx1_gain instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_out_mat_nlf_dac1_xx1_en_write(hilsim_ipcore *InstancePtr, u32 Data);</h1>
+<p>
+ Write to out_mat_nlf_dac1_xx1_en gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_nlf_dac1_xx1_en instance to operate on.<br/>
+ @param	Data is value to be written to gateway out_mat_nlf_dac1_xx1_en.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u32 hilsim_ipcore_out_mat_nlf_dac1_xx1_en_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from out_mat_nlf_dac1_xx1_en gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_nlf_dac1_xx1_en instance to operate on.<br/>
+<br/>
+ @return	u32<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_out_mat_nlf_dac1_xx0_presc_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to out_mat_nlf_dac1_xx0_presc gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_nlf_dac1_xx0_presc instance to operate on.<br/>
+ @param	Data is value to be written to gateway out_mat_nlf_dac1_xx0_presc.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_out_mat_nlf_dac1_xx0_presc_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from out_mat_nlf_dac1_xx0_presc gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_nlf_dac1_xx0_presc instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_out_mat_nlf_dac1_xx0_gain_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to out_mat_nlf_dac1_xx0_gain gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_nlf_dac1_xx0_gain instance to operate on.<br/>
+ @param	Data is value to be written to gateway out_mat_nlf_dac1_xx0_gain.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_out_mat_nlf_dac1_xx0_gain_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from out_mat_nlf_dac1_xx0_gain gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_nlf_dac1_xx0_gain instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_out_mat_nlf_dac1_xx0_en_write(hilsim_ipcore *InstancePtr, u32 Data);</h1>
+<p>
+ Write to out_mat_nlf_dac1_xx0_en gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_nlf_dac1_xx0_en instance to operate on.<br/>
+ @param	Data is value to be written to gateway out_mat_nlf_dac1_xx0_en.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u32 hilsim_ipcore_out_mat_nlf_dac1_xx0_en_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from out_mat_nlf_dac1_xx0_en gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_nlf_dac1_xx0_en instance to operate on.<br/>
+<br/>
+ @return	u32<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_out_mat_nlf_dac0_xx2_presc_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to out_mat_nlf_dac0_xx2_presc gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_nlf_dac0_xx2_presc instance to operate on.<br/>
+ @param	Data is value to be written to gateway out_mat_nlf_dac0_xx2_presc.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_out_mat_nlf_dac0_xx2_presc_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from out_mat_nlf_dac0_xx2_presc gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_nlf_dac0_xx2_presc instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_out_mat_nlf_dac0_xx2_gain_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to out_mat_nlf_dac0_xx2_gain gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_nlf_dac0_xx2_gain instance to operate on.<br/>
+ @param	Data is value to be written to gateway out_mat_nlf_dac0_xx2_gain.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_out_mat_nlf_dac0_xx2_gain_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from out_mat_nlf_dac0_xx2_gain gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_nlf_dac0_xx2_gain instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_out_mat_nlf_dac0_xx2_en_write(hilsim_ipcore *InstancePtr, u32 Data);</h1>
+<p>
+ Write to out_mat_nlf_dac0_xx2_en gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_nlf_dac0_xx2_en instance to operate on.<br/>
+ @param	Data is value to be written to gateway out_mat_nlf_dac0_xx2_en.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u32 hilsim_ipcore_out_mat_nlf_dac0_xx2_en_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from out_mat_nlf_dac0_xx2_en gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_nlf_dac0_xx2_en instance to operate on.<br/>
+<br/>
+ @return	u32<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_out_mat_nlf_dac0_xx1_presc_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to out_mat_nlf_dac0_xx1_presc gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_nlf_dac0_xx1_presc instance to operate on.<br/>
+ @param	Data is value to be written to gateway out_mat_nlf_dac0_xx1_presc.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_out_mat_nlf_dac0_xx1_presc_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from out_mat_nlf_dac0_xx1_presc gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_nlf_dac0_xx1_presc instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_out_mat_nlf_dac0_xx1_gain_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to out_mat_nlf_dac0_xx1_gain gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_nlf_dac0_xx1_gain instance to operate on.<br/>
+ @param	Data is value to be written to gateway out_mat_nlf_dac0_xx1_gain.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_out_mat_nlf_dac0_xx1_gain_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from out_mat_nlf_dac0_xx1_gain gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_nlf_dac0_xx1_gain instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_out_mat_nlf_dac0_xx1_en_write(hilsim_ipcore *InstancePtr, u32 Data);</h1>
+<p>
+ Write to out_mat_nlf_dac0_xx1_en gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_nlf_dac0_xx1_en instance to operate on.<br/>
+ @param	Data is value to be written to gateway out_mat_nlf_dac0_xx1_en.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u32 hilsim_ipcore_out_mat_nlf_dac0_xx1_en_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from out_mat_nlf_dac0_xx1_en gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_nlf_dac0_xx1_en instance to operate on.<br/>
+<br/>
+ @return	u32<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_out_mat_nlf_dac0_xx0_presc_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to out_mat_nlf_dac0_xx0_presc gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_nlf_dac0_xx0_presc instance to operate on.<br/>
+ @param	Data is value to be written to gateway out_mat_nlf_dac0_xx0_presc.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_out_mat_nlf_dac0_xx0_presc_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from out_mat_nlf_dac0_xx0_presc gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_nlf_dac0_xx0_presc instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_out_mat_nlf_dac0_xx0_gain_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to out_mat_nlf_dac0_xx0_gain gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_nlf_dac0_xx0_gain instance to operate on.<br/>
+ @param	Data is value to be written to gateway out_mat_nlf_dac0_xx0_gain.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_out_mat_nlf_dac0_xx0_gain_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from out_mat_nlf_dac0_xx0_gain gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_nlf_dac0_xx0_gain instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_out_mat_nlf_dac0_xx0_en_write(hilsim_ipcore *InstancePtr, u32 Data);</h1>
+<p>
+ Write to out_mat_nlf_dac0_xx0_en gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_nlf_dac0_xx0_en instance to operate on.<br/>
+ @param	Data is value to be written to gateway out_mat_nlf_dac0_xx0_en.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u32 hilsim_ipcore_out_mat_nlf_dac0_xx0_en_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from out_mat_nlf_dac0_xx0_en gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_nlf_dac0_xx0_en instance to operate on.<br/>
+<br/>
+ @return	u32<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_out_mat_fac_dac1_xx2_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to out_mat_fac_dac1_xx2 gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_fac_dac1_xx2 instance to operate on.<br/>
+ @param	Data is value to be written to gateway out_mat_fac_dac1_xx2.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_out_mat_fac_dac1_xx2_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from out_mat_fac_dac1_xx2 gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_fac_dac1_xx2 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_out_mat_fac_dac1_xx1_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to out_mat_fac_dac1_xx1 gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_fac_dac1_xx1 instance to operate on.<br/>
+ @param	Data is value to be written to gateway out_mat_fac_dac1_xx1.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_out_mat_fac_dac1_xx1_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from out_mat_fac_dac1_xx1 gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_fac_dac1_xx1 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_out_mat_fac_dac1_xx0_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to out_mat_fac_dac1_xx0 gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_fac_dac1_xx0 instance to operate on.<br/>
+ @param	Data is value to be written to gateway out_mat_fac_dac1_xx0.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_out_mat_fac_dac1_xx0_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from out_mat_fac_dac1_xx0 gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_fac_dac1_xx0 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_out_mat_fac_dac0_xx2_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to out_mat_fac_dac0_xx2 gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_fac_dac0_xx2 instance to operate on.<br/>
+ @param	Data is value to be written to gateway out_mat_fac_dac0_xx2.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_out_mat_fac_dac0_xx2_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from out_mat_fac_dac0_xx2 gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_fac_dac0_xx2 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_out_mat_fac_dac0_xx1_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to out_mat_fac_dac0_xx1 gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_fac_dac0_xx1 instance to operate on.<br/>
+ @param	Data is value to be written to gateway out_mat_fac_dac0_xx1.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_out_mat_fac_dac0_xx1_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from out_mat_fac_dac0_xx1 gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_fac_dac0_xx1 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_out_mat_fac_dac0_xx0_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to out_mat_fac_dac0_xx0 gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_fac_dac0_xx0 instance to operate on.<br/>
+ @param	Data is value to be written to gateway out_mat_fac_dac0_xx0.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_out_mat_fac_dac0_xx0_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from out_mat_fac_dac0_xx0 gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_fac_dac0_xx0 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_out_mat_dac1_selx2_write(hilsim_ipcore *InstancePtr, u8 Data);</h1>
+<p>
+ Write to out_mat_dac1_selx2 gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_dac1_selx2 instance to operate on.<br/>
+ @param	Data is value to be written to gateway out_mat_dac1_selx2.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u8 hilsim_ipcore_out_mat_dac1_selx2_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from out_mat_dac1_selx2 gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_dac1_selx2 instance to operate on.<br/>
+<br/>
+ @return	u8<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_out_mat_dac1_selx1_write(hilsim_ipcore *InstancePtr, u8 Data);</h1>
+<p>
+ Write to out_mat_dac1_selx1 gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_dac1_selx1 instance to operate on.<br/>
+ @param	Data is value to be written to gateway out_mat_dac1_selx1.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u8 hilsim_ipcore_out_mat_dac1_selx1_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from out_mat_dac1_selx1 gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_dac1_selx1 instance to operate on.<br/>
+<br/>
+ @return	u8<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_out_mat_dac1_selx0_write(hilsim_ipcore *InstancePtr, u8 Data);</h1>
+<p>
+ Write to out_mat_dac1_selx0 gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_dac1_selx0 instance to operate on.<br/>
+ @param	Data is value to be written to gateway out_mat_dac1_selx0.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u8 hilsim_ipcore_out_mat_dac1_selx0_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from out_mat_dac1_selx0 gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_dac1_selx0 instance to operate on.<br/>
+<br/>
+ @return	u8<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_out_mat_dac0_selx2_write(hilsim_ipcore *InstancePtr, u8 Data);</h1>
+<p>
+ Write to out_mat_dac0_selx2 gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_dac0_selx2 instance to operate on.<br/>
+ @param	Data is value to be written to gateway out_mat_dac0_selx2.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u8 hilsim_ipcore_out_mat_dac0_selx2_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from out_mat_dac0_selx2 gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_dac0_selx2 instance to operate on.<br/>
+<br/>
+ @return	u8<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_out_mat_dac0_selx1_write(hilsim_ipcore *InstancePtr, u8 Data);</h1>
+<p>
+ Write to out_mat_dac0_selx1 gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_dac0_selx1 instance to operate on.<br/>
+ @param	Data is value to be written to gateway out_mat_dac0_selx1.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u8 hilsim_ipcore_out_mat_dac0_selx1_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from out_mat_dac0_selx1 gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_dac0_selx1 instance to operate on.<br/>
+<br/>
+ @return	u8<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_out_mat_dac0_selx0_write(hilsim_ipcore *InstancePtr, u8 Data);</h1>
+<p>
+ Write to out_mat_dac0_selx0 gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_dac0_selx0 instance to operate on.<br/>
+ @param	Data is value to be written to gateway out_mat_dac0_selx0.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u8 hilsim_ipcore_out_mat_dac0_selx0_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from out_mat_dac0_selx0 gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_mat_dac0_selx0 instance to operate on.<br/>
+<br/>
+ @return	u8<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_led_value_write(hilsim_ipcore *InstancePtr, u8 Data);</h1>
+<p>
+ Write to led_value gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the led_value instance to operate on.<br/>
+ @param	Data is value to be written to gateway led_value.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u8 hilsim_ipcore_led_value_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from led_value gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the led_value instance to operate on.<br/>
+<br/>
+ @return	u8<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_inp_mat_fac_u2_noise_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to inp_mat_fac_u2_noise gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the inp_mat_fac_u2_noise instance to operate on.<br/>
+ @param	Data is value to be written to gateway inp_mat_fac_u2_noise.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_inp_mat_fac_u2_noise_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from inp_mat_fac_u2_noise gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the inp_mat_fac_u2_noise instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_inp_mat_fac_u2_adc1_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to inp_mat_fac_u2_adc1 gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the inp_mat_fac_u2_adc1 instance to operate on.<br/>
+ @param	Data is value to be written to gateway inp_mat_fac_u2_adc1.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_inp_mat_fac_u2_adc1_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from inp_mat_fac_u2_adc1 gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the inp_mat_fac_u2_adc1 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_inp_mat_fac_u2_adc0_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to inp_mat_fac_u2_adc0 gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the inp_mat_fac_u2_adc0 instance to operate on.<br/>
+ @param	Data is value to be written to gateway inp_mat_fac_u2_adc0.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_inp_mat_fac_u2_adc0_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from inp_mat_fac_u2_adc0 gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the inp_mat_fac_u2_adc0 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_inp_mat_fac_u1_noise_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to inp_mat_fac_u1_noise gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the inp_mat_fac_u1_noise instance to operate on.<br/>
+ @param	Data is value to be written to gateway inp_mat_fac_u1_noise.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_inp_mat_fac_u1_noise_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from inp_mat_fac_u1_noise gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the inp_mat_fac_u1_noise instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_inp_mat_fac_u1_adc1_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to inp_mat_fac_u1_adc1 gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the inp_mat_fac_u1_adc1 instance to operate on.<br/>
+ @param	Data is value to be written to gateway inp_mat_fac_u1_adc1.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_inp_mat_fac_u1_adc1_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from inp_mat_fac_u1_adc1 gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the inp_mat_fac_u1_adc1 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_inp_mat_fac_u1_adc0_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to inp_mat_fac_u1_adc0 gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the inp_mat_fac_u1_adc0 instance to operate on.<br/>
+ @param	Data is value to be written to gateway inp_mat_fac_u1_adc0.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_inp_mat_fac_u1_adc0_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from inp_mat_fac_u1_adc0 gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the inp_mat_fac_u1_adc0 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_inp_mat_fac_u0_noise_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to inp_mat_fac_u0_noise gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the inp_mat_fac_u0_noise instance to operate on.<br/>
+ @param	Data is value to be written to gateway inp_mat_fac_u0_noise.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_inp_mat_fac_u0_noise_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from inp_mat_fac_u0_noise gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the inp_mat_fac_u0_noise instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_inp_mat_fac_u0_adc1_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to inp_mat_fac_u0_adc1 gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the inp_mat_fac_u0_adc1 instance to operate on.<br/>
+ @param	Data is value to be written to gateway inp_mat_fac_u0_adc1.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_inp_mat_fac_u0_adc1_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from inp_mat_fac_u0_adc1 gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the inp_mat_fac_u0_adc1 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_inp_mat_fac_u0_adc0_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to inp_mat_fac_u0_adc0 gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the inp_mat_fac_u0_adc0 instance to operate on.<br/>
+ @param	Data is value to be written to gateway inp_mat_fac_u0_adc0.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_inp_mat_fac_u0_adc0_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from inp_mat_fac_u0_adc0 gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the inp_mat_fac_u0_adc0 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_cfg_system_reset_write(hilsim_ipcore *InstancePtr, u32 Data);</h1>
+<p>
+ Write to cfg_system_reset gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the cfg_system_reset instance to operate on.<br/>
+ @param	Data is value to be written to gateway cfg_system_reset.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u32 hilsim_ipcore_cfg_system_reset_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from cfg_system_reset gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the cfg_system_reset instance to operate on.<br/>
+<br/>
+ @return	u32<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_cfg_noise_presc2_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to cfg_noise_presc2 gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the cfg_noise_presc2 instance to operate on.<br/>
+ @param	Data is value to be written to gateway cfg_noise_presc2.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_cfg_noise_presc2_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from cfg_noise_presc2 gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the cfg_noise_presc2 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_cfg_noise_presc1_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to cfg_noise_presc1 gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the cfg_noise_presc1 instance to operate on.<br/>
+ @param	Data is value to be written to gateway cfg_noise_presc1.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_cfg_noise_presc1_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from cfg_noise_presc1 gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the cfg_noise_presc1 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_cfg_noise_presc0_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to cfg_noise_presc0 gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the cfg_noise_presc0 instance to operate on.<br/>
+ @param	Data is value to be written to gateway cfg_noise_presc0.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_cfg_noise_presc0_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from cfg_noise_presc0 gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the cfg_noise_presc0 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_cfg_nlf_we_write(hilsim_ipcore *InstancePtr, u32 Data);</h1>
+<p>
+ Write to cfg_nlf_we gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the cfg_nlf_we instance to operate on.<br/>
+ @param	Data is value to be written to gateway cfg_nlf_we.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u32 hilsim_ipcore_cfg_nlf_we_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from cfg_nlf_we gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the cfg_nlf_we instance to operate on.<br/>
+<br/>
+ @return	u32<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_cfg_nlf_start_write(hilsim_ipcore *InstancePtr, u32 Data);</h1>
+<p>
+ Write to cfg_nlf_start gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the cfg_nlf_start instance to operate on.<br/>
+ @param	Data is value to be written to gateway cfg_nlf_start.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u32 hilsim_ipcore_cfg_nlf_start_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from cfg_nlf_start gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the cfg_nlf_start instance to operate on.<br/>
+<br/>
+ @return	u32<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_cfg_nlf_select_write(hilsim_ipcore *InstancePtr, u32 Data);</h1>
+<p>
+ Write to cfg_nlf_select gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the cfg_nlf_select instance to operate on.<br/>
+ @param	Data is value to be written to gateway cfg_nlf_select.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u32 hilsim_ipcore_cfg_nlf_select_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from cfg_nlf_select gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the cfg_nlf_select instance to operate on.<br/>
+<br/>
+ @return	u32<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_cfg_nlf_data_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to cfg_nlf_data gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the cfg_nlf_data instance to operate on.<br/>
+ @param	Data is value to be written to gateway cfg_nlf_data.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_cfg_nlf_data_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from cfg_nlf_data gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the cfg_nlf_data instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_cfg_nlf_addr_write(hilsim_ipcore *InstancePtr, u32 Data);</h1>
+<p>
+ Write to cfg_nlf_addr gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the cfg_nlf_addr instance to operate on.<br/>
+ @param	Data is value to be written to gateway cfg_nlf_addr.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u32 hilsim_ipcore_cfg_nlf_addr_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from cfg_nlf_addr gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the cfg_nlf_addr instance to operate on.<br/>
+<br/>
+ @return	u32<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_adc1_nlf_presc_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to adc1_nlf_presc gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the adc1_nlf_presc instance to operate on.<br/>
+ @param	Data is value to be written to gateway adc1_nlf_presc.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_adc1_nlf_presc_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from adc1_nlf_presc gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the adc1_nlf_presc instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_adc1_nlf_gain_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to adc1_nlf_gain gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the adc1_nlf_gain instance to operate on.<br/>
+ @param	Data is value to be written to gateway adc1_nlf_gain.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_adc1_nlf_gain_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from adc1_nlf_gain gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the adc1_nlf_gain instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_adc1_nlf_enable_write(hilsim_ipcore *InstancePtr, u32 Data);</h1>
+<p>
+ Write to adc1_nlf_enable gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the adc1_nlf_enable instance to operate on.<br/>
+ @param	Data is value to be written to gateway adc1_nlf_enable.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u32 hilsim_ipcore_adc1_nlf_enable_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from adc1_nlf_enable gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the adc1_nlf_enable instance to operate on.<br/>
+<br/>
+ @return	u32<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_adc0_nlf_presc_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to adc0_nlf_presc gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the adc0_nlf_presc instance to operate on.<br/>
+ @param	Data is value to be written to gateway adc0_nlf_presc.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_adc0_nlf_presc_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from adc0_nlf_presc gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the adc0_nlf_presc instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_adc0_nlf_gain_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to adc0_nlf_gain gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the adc0_nlf_gain instance to operate on.<br/>
+ @param	Data is value to be written to gateway adc0_nlf_gain.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_adc0_nlf_gain_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from adc0_nlf_gain gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the adc0_nlf_gain instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_adc0_nlf_enable_write(hilsim_ipcore *InstancePtr, u32 Data);</h1>
+<p>
+ Write to adc0_nlf_enable gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the adc0_nlf_enable instance to operate on.<br/>
+ @param	Data is value to be written to gateway adc0_nlf_enable.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u32 hilsim_ipcore_adc0_nlf_enable_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from adc0_nlf_enable gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the adc0_nlf_enable instance to operate on.<br/>
+<br/>
+ @return	u32<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>u32 hilsim_ipcore_cfg_nlf_done_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from cfg_nlf_done gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the cfg_nlf_done instance to operate on.<br/>
+<br/>
+ @return	u32<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_nlf_switch_sw_switch_write(hilsim_ipcore *InstancePtr, u32 Data);</h1>
+<p>
+ Write to nlf_switch_sw_switch gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the nlf_switch_sw_switch instance to operate on.<br/>
+ @param	Data is value to be written to gateway nlf_switch_sw_switch.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u32 hilsim_ipcore_nlf_switch_sw_switch_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from nlf_switch_sw_switch gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the nlf_switch_sw_switch instance to operate on.<br/>
+<br/>
+ @return	u32<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_nlf_switch_io_mask_write(hilsim_ipcore *InstancePtr, u32 Data);</h1>
+<p>
+ Write to nlf_switch_io_mask gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the nlf_switch_io_mask instance to operate on.<br/>
+ @param	Data is value to be written to gateway nlf_switch_io_mask.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u32 hilsim_ipcore_nlf_switch_io_mask_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from nlf_switch_io_mask gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the nlf_switch_io_mask instance to operate on.<br/>
+<br/>
+ @return	u32<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_dac1_calib_offset_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to dac1_calib_offset gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the dac1_calib_offset instance to operate on.<br/>
+ @param	Data is value to be written to gateway dac1_calib_offset.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_dac1_calib_offset_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from dac1_calib_offset gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the dac1_calib_offset instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_dac1_calib_factor_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to dac1_calib_factor gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the dac1_calib_factor instance to operate on.<br/>
+ @param	Data is value to be written to gateway dac1_calib_factor.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_dac1_calib_factor_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from dac1_calib_factor gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the dac1_calib_factor instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_dac0_calib_offset_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to dac0_calib_offset gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the dac0_calib_offset instance to operate on.<br/>
+ @param	Data is value to be written to gateway dac0_calib_offset.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_dac0_calib_offset_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from dac0_calib_offset gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the dac0_calib_offset instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_dac0_calib_factor_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to dac0_calib_factor gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the dac0_calib_factor instance to operate on.<br/>
+ @param	Data is value to be written to gateway dac0_calib_factor.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_dac0_calib_factor_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from dac0_calib_factor gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the dac0_calib_factor instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_adc1_calib_offset_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to adc1_calib_offset gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the adc1_calib_offset instance to operate on.<br/>
+ @param	Data is value to be written to gateway adc1_calib_offset.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_adc1_calib_offset_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from adc1_calib_offset gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the adc1_calib_offset instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_adc1_calib_factor_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to adc1_calib_factor gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the adc1_calib_factor instance to operate on.<br/>
+ @param	Data is value to be written to gateway adc1_calib_factor.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_adc1_calib_factor_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from adc1_calib_factor gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the adc1_calib_factor instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_adc0_calib_offset_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to adc0_calib_offset gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the adc0_calib_offset instance to operate on.<br/>
+ @param	Data is value to be written to gateway adc0_calib_offset.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_adc0_calib_offset_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from adc0_calib_offset gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the adc0_calib_offset instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void hilsim_ipcore_adc0_calib_factor_write(hilsim_ipcore *InstancePtr, int Data);</h1>
+<p>
+ Write to adc0_calib_factor gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the adc0_calib_factor instance to operate on.<br/>
+ @param	Data is value to be written to gateway adc0_calib_factor.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_adc0_calib_factor_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from adc0_calib_factor gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the adc0_calib_factor instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_adc0_value_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from adc0_value gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the adc0_value instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>int hilsim_ipcore_adc1_value_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from adc1_value gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the adc1_value instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>u32 hilsim_ipcore_nlf_switch_read(hilsim_ipcore *InstancePtr);</h1>
+<p>
+ Read from nlf_switch gateway of hilsim_ipcore. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the nlf_switch instance to operate on.<br/>
+<br/>
+ @return	u32<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+</body>
+</html>

@@ -1,0 +1,8 @@
+OPTION psf_version = 2.1;
+BEGIN driver hilsim_ipcore
+ OPTION supported_peripherals = (hilsim_ipcore_v1_0);
+ OPTION driver_state = ACTIVE;
+ OPTION copyfiles = all;
+ OPTION name = hilsim_ipcore;
+ OPTION version = 1.0;
+END driver

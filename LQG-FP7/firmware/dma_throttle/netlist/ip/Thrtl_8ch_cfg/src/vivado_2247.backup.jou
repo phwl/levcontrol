@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Mon Jan 26 16:04:45 2026
+# Process ID         : 2247
+# Current directory  : /home/user/host_home/work/acin/projects/universal_lqg/DMA_throttle_sysgen_configurable_24a/netlist/ip/Thrtl_8ch_cfg/src
+# Command line       : vivado -mode batch -source ProjectGeneration.tcl -notrace
+# Log file           : /home/user/host_home/work/acin/projects/universal_lqg/DMA_throttle_sysgen_configurable_24a/netlist/ip/Thrtl_8ch_cfg/src/vivado.log
+# Journal file       : /home/user/host_home/work/acin/projects/universal_lqg/DMA_throttle_sysgen_configurable_24a/netlist/ip/Thrtl_8ch_cfg/src/vivado.jou
+# Running On         : model-composer
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 22.04.5 LTS
+# Processor Detail   : AMD Ryzen AI 9 HX PRO 370 w/ Radeon 890M
+# CPU Frequency      : 5146.125 MHz
+# CPU Physical cores : 12
+# CPU Logical cores  : 24
+# Host memory        : 92410 MB
+# Swap memory        : 0 MB
+# Total Virtual      : 92410 MB
+# Available Virtual  : 79449 MB
+#-----------------------------------------------------------
+source ProjectGeneration.tcl -notrace

@@ -1,0 +1,11 @@
+_old/
+
+hil_sim_rpgen*.cache/
+hil_sim_rpgen*.gen/
+hil_sim_rpgen*.hw/
+hil_sim_rpgen*.ip_user_files/
+hil_sim_rpgen*.runs/
+hil_sim_rpgen*.sim/
+hil_sim_rpgen*.tmp/
+
+*.log

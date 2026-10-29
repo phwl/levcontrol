@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEMLab LQG7 documentation</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+    <div class="top-nav">
+        <button id="back-btn" title="Go back">← Back</button>
+        <h1>STEMLab LQG7 Documentation</h1>
+        <input type="search" placeholder="Search..." class="search-box" id="search-box">
+    </div>
+
+    <div class="container">
+        <nav class="sidebar">
+            <h2>Topics</h2>
+            <ul>
+                <li><a href="#" data-page="pages/getting-started.html">Getting Started</a></li>
+                <li><a href="#" data-page="pages/hardware-setup.html">Hardware setup</a></li>
+                <li><a href="#" data-page="pages/internal-model-reference.html">Internal model reference</a></li>
+                <li>
+                    <span class="submenu-toggle">Application Tabs</span>
+                    <ul class="submenu">
+                        <li><a href="#" data-page="pages/connect.html">Connect tab</a></li>
+                        <li><a href="#" data-page="pages/io-control.html">IO control panel</a></li>
+                        <li><a href="#" data-page="pages/data-acquisition.html">Data acquisition tab</a></li>
+                        <li><a href="#" data-page="pages/model-configuration.html">Model configuration tab</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" data-page="pages/about.html">About</a></li>
+            </ul>
+        </nav>
+        
+        <main class="content" id="content-area">
+            <!-- Content loads here -->
+        </main>
+    </div>
+
+    <script>
+        (function(){
+            // pending scroll info for search navigation
+            let pendingScroll = null;
+
+            // Load page content dynamically, optionally push state.
+            // Returns a promise that resolves after content is inserted.
+            function loadPage(pageUrl, pushState=true) {
+                return fetch(pageUrl)
+                    .then(response => response.text())
+                    .then(html => {
+                        const parser = new DOMParser();
+                        const doc = parser.parseFromString(html, 'text/html');
+                        const contentArea = document.getElementById('content-area');
+                        contentArea.innerHTML = doc.body.innerHTML;
+
+                        // Update page title
+                        const pageTitle = doc.querySelector('title');
+                        if (pageTitle) document.title = pageTitle.textContent;
+
+                        // Manage history
+                        try {
+                            const url = '?page=' + encodeURIComponent(pageUrl);
+                            if (pushState) history.pushState({page: pageUrl}, '', url);
+                            else history.replaceState({page: pageUrl}, '', url);
+                        } catch (err) {
+                            // ignore
+                        }
+                    })
+                    .catch(error => console.error('Error loading page:', error))
+                    .then(() => {
+                        // after inserting content, perform any pending scroll
+                        if (pendingScroll && pendingScroll.url === pageUrl) {
+                            const area = document.getElementById('content-area');
+                            const term = pendingScroll.term;
+                            const normalize = s => (s||'').replace(/\s+/g,' ').toLowerCase();
+
+                            // walk elements to find first one containing the normalized term
+                            const walker = document.createTreeWalker(area, NodeFilter.SHOW_ELEMENT, null, false);
+                            while (walker.nextNode()) {
+                                const el = walker.currentNode;
+                                if (el.textContent && normalize(el.textContent).includes(term)) {
+                                    if (el.scrollIntoView) {
+                                        el.scrollIntoView({behavior: 'smooth', block: 'center'});
+                                    }
+                                    // highlight the matched term inside this element
+                                    const innerHTML = el.innerHTML;
+                                    const regex = new RegExp(term.replace(/[.*+?^${}()|\\[\\]\\]/g, '\\$&'), 'i');
+                                    el.innerHTML = innerHTML.replace(regex, match => `<mark>${match}</mark>`);
+                                    break;
+                                }
+                            }
+                            pendingScroll = null;
+                        }
+                    });
+            }
+
+            // Initialize
+            document.addEventListener('DOMContentLoaded', function() {
+                // If URL contains a page param, load that; otherwise default
+                const params = new URLSearchParams(location.search);
+                const initialPage = params.get('page') || 'pages/getting-started.html';
+                // Replace history state for initial load
+                loadPage(initialPage, false);
+
+                // Submenu toggles
+                const submenuToggles = document.querySelectorAll('.submenu-toggle');
+                submenuToggles.forEach(toggle => {
+                    toggle.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        const submenu = this.nextElementSibling;
+                        this.classList.toggle('expanded');
+                        submenu.classList.toggle('expanded');
+                    });
+                });
+
+                // Back button
+                const backBtn = document.getElementById('back-btn');
+                if (backBtn) backBtn.addEventListener('click', function(){ history.back(); });
+
+                // Setup search with normalization (handles multi‑word queries like "K LQR")
+                const searchBox = document.getElementById('search-box');
+                if (searchBox) {
+                    const normalize = s => (s || '').replace(/\s+/g, ' ').toLowerCase();
+
+                    // gather pages from sidebar links
+                    const links = document.querySelectorAll('.sidebar a[data-page]');
+                    const pages = Array.from(links).map(a => ({
+                        url: a.getAttribute('data-page'),
+                        title: a.textContent.trim(),
+                        text: '',
+                        normalized: ''
+                    }));
+
+                    // preload page text for searching
+                    const fetches = pages.map(p =>
+                        fetch(p.url)
+                            .then(r => r.text())
+                            .then(html => {
+                                const doc = new DOMParser().parseFromString(html, 'text/html');
+                                p.text = doc.body.textContent || '';
+                                p.normalized = normalize(p.text);
+                            })
+                    );
+
+                    let lastQuery = '';
+                    let pendingScroll = null; // {term, url}
+
+                    searchBox.addEventListener('input', function(e) {
+                        let q = this.value.trim();
+                        q = normalize(q);
+                        if (q === lastQuery) return;
+                        lastQuery = q;
+
+                        if (!q) {
+                            // clear results and restore content
+                            loadPage((new URLSearchParams(location.search)).get('page') || 'pages/getting-started.html', false);
+                            return;
+                        }
+
+                        Promise.all(fetches).then(() => {
+                            const matches = pages.filter(p =>
+                                normalize(p.title).includes(q) || p.normalized.includes(q)
+                            );
+                            const contentArea = document.getElementById('content-area');
+                            if (matches.length === 0) {
+                                contentArea.innerHTML = `<p>No results found for "${q}"</p>`;
+                            } else {
+                                const list = matches.map(p => {
+                                    // snippet around first occurrence (from normalized text)
+                                    const idx = p.normalized.indexOf(q);
+                                    let snippet = '';
+                                    if (idx >= 0) {
+                                        const start = Math.max(0, idx - 30);
+                                        const end = Math.min(p.normalized.length, idx + q.length + 30);
+                                        snippet = p.normalized.substring(start, end);
+                                        if (start > 0) snippet = '…' + snippet;
+                                        if (end < p.normalized.length) snippet += '…';
+                                    }
+                                    return `<li><a href="#" data-page="${p.url}" data-term="${q}">${p.title}</a>${snippet?`<p class="snippet">${snippet}</p>`:''}</li>`;
+                                }).join('');
+                                contentArea.innerHTML = `<div class="search-results"><p>Results for "${q}":</p><ul>${list}</ul></div>`;
+                            }
+                        });
+                    });
+                }
+            });
+
+            // Global delegation for links with data-page (works for dynamically loaded content)
+            document.addEventListener('click', function(e) {
+                const target = e.target.closest && e.target.closest('[data-page]');
+                if (target) {
+                    e.preventDefault();
+                    const page = target.getAttribute('data-page');
+                    const term = target.getAttribute('data-term');
+                    if (page) {
+                        if (term) {
+                            pendingScroll = {url: page, term: term.toLowerCase()};
+                        }
+                        loadPage(page, true);
+                    }
+                }
+            });
+
+            // Handle browser navigation (back/forward)
+            window.addEventListener('popstate', function(e) {
+                const page = (e.state && e.state.page) || (new URLSearchParams(location.search)).get('page') || 'pages/getting-started.html';
+                loadPage(page, false);
+            });
+
+            // Ctrl/Cmd+Z to go back
+            document.addEventListener('keydown', function(e) {
+                const isUndo = (e.key && e.key.toLowerCase() === 'z') && (e.ctrlKey || e.metaKey);
+                if (isUndo) {
+                    e.preventDefault();
+                    history.back();
+                }
+            });
+        })();
+    </script>
+
+</body>
+</html>

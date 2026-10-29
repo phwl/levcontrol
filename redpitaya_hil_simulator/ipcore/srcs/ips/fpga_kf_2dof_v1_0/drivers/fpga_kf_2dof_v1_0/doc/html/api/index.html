@@ -1,0 +1,2529 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<style type="text/css">
+body {margin-top:6.35em; 
+      margin-left:6.35em; 
+      width:62.5em;
+      text-align:justify;
+      font-size:1em; 
+      font-family:"Arial", Serif;
+      color:#000000;}
+
+h1 {font-size:1.125em;
+    font-family:"Arial", Sans-serif;
+    color:#943634;}
+
+p {font-size:inherit;
+   width:62.5em;
+   font-family:inherit;
+   color:inherit;}
+
+ul {font-size:inherit;
+    width:62.5em;
+    font-family:inherit;
+    color:inherit;}
+
+li {width:46.15em;}
+
+.image {position: relative;
+        width: 100%;}
+
+table {border-collapse:collapse;
+       border-spacing:0;
+       caption-side:bottom;
+       border-style:solid;
+       border-width:thin;
+       font-size:1em;
+       width:62.5em;
+       font-family:inherit;
+       color:inherit;}
+
+.title_table {border-collapse:collapse;
+       border-spacing:0;
+       caption-side:bottom;
+       font-size:1em;
+       width:62.5em;
+       border-style:none;}
+
+.title_table_image_cell {border-bottom:thin solid #000000;}
+
+.title_table_design_cell {vertical-align:bottom;
+        font-size:1.875em;
+        text-align:right;
+        border-bottom:thin solid #000000;}
+
+.title_table_date_cell{font-size:1.25em;
+        vertical-align:bottom;
+        text-align:left;
+        border-bottom:thick solid #943634}
+
+.sg_row {font-size:inherit;
+         font-family:inherit;
+         color:inherit;
+         border-style:solid;
+         border-width:thin;}
+
+.sg_cell {margin:0;
+          padding:1em;
+          border-width:inherit;
+          border-style:inherit;
+          font-size:inherit;
+          font-family:inherit;
+          color:inherit;}
+
+.sg_cell_first_row {margin:0;
+          padding:1em;
+          border-width:inherit;
+          border-style:inherit;
+          border-bottom:thick solid #943634;
+          font-size:inherit;
+          font-family:inherit;
+          color:inherit;}
+
+.sg_caption {text-align:left;
+             caption-side:bottom;
+             font-family:inherit;
+             font-size:inherit;}
+</style>
+</head>
+<body>
+<table class="title_table">
+<tr>
+<td class="title_table_image_cell"></td>
+<td class="title_table_design_cell">fpga_kf_2dof</td>
+</tr>
+<tr>
+<td colspan=2 class="title_table_date_cell"><b></b></td>
+</tr>
+</table>
+<h1>int fpga_kf_2dof_Initialize(fpga_kf_2dof* InstancePtr, u16 DeviceId)</h1>
+<p>
+Initialize fpga_kf_2dof pointer with a specifc instance of the device based device id.
+<br/>
+  @param InstancePtr to be initialized
+<br/>
+  @param DeviceId device id assigned to the device in xparameters.h
+<br/>
+<br/>
+  @return int XST_SUCCESS if initialization is successful
+<br/>
+</p>
+<h1>void fpga_kf_2dof_x_ref_in_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to x_ref_in gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the x_ref_in instance to operate on.<br/>
+ @param	Data is value to be written to gateway x_ref_in.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_x_ref_in_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from x_ref_in gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the x_ref_in instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in79_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in79 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in79 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in79.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in79_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in79 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in79 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in78_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in78 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in78 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in78.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in78_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in78 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in78 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in77_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in77 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in77 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in77.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in77_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in77 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in77 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in76_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in76 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in76 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in76.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in76_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in76 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in76 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in75_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in75 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in75 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in75.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in75_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in75 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in75 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in74_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in74 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in74 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in74.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in74_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in74 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in74 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in73_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in73 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in73 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in73.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in73_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in73 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in73 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in72_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in72 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in72 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in72.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in72_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in72 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in72 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in71_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in71 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in71 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in71.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in71_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in71 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in71 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in70_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in70 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in70 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in70.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in70_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in70 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in70 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in69_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in69 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in69 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in69.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in69_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in69 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in69 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in68_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in68 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in68 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in68.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in68_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in68 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in68 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in67_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in67 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in67 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in67.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in67_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in67 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in67 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in66_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in66 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in66 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in66.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in66_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in66 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in66 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in65_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in65 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in65 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in65.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in65_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in65 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in65 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in64_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in64 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in64 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in64.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in64_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in64 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in64 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in63_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in63 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in63 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in63.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in63_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in63 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in63 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in62_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in62 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in62 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in62.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in62_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in62 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in62 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in61_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in61 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in61 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in61.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in61_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in61 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in61 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in60_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in60 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in60 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in60.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in60_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in60 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in60 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in59_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in59 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in59 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in59.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in59_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in59 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in59 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in58_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in58 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in58 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in58.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in58_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in58 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in58 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in57_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in57 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in57 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in57.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in57_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in57 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in57 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in56_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in56 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in56 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in56.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in56_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in56 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in56 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in55_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in55 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in55 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in55.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in55_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in55 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in55 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in54_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in54 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in54 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in54.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in54_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in54 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in54 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in53_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in53 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in53 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in53.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in53_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in53 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in53 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in52_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in52 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in52 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in52.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in52_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in52 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in52 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in51_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in51 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in51 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in51.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in51_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in51 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in51 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in50_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in50 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in50 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in50.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in50_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in50 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in50 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in49_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in49 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in49 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in49.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in49_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in49 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in49 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in48_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in48 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in48 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in48.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in48_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in48 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in48 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in47_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in47 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in47 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in47.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in47_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in47 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in47 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in46_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in46 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in46 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in46.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in46_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in46 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in46 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in45_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in45 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in45 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in45.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in45_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in45 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in45 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in44_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in44 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in44 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in44.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in44_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in44 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in44 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in43_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in43 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in43 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in43.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in43_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in43 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in43 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in42_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in42 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in42 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in42.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in42_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in42 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in42 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in41_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in41 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in41 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in41.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in41_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in41 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in41 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in40_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in40 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in40 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in40.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in40_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in40 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in40 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in39_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in39 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in39 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in39.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in39_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in39 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in39 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in38_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in38 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in38 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in38.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in38_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in38 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in38 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in37_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in37 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in37 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in37.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in37_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in37 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in37 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in36_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in36 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in36 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in36.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in36_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in36 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in36 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in35_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in35 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in35 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in35.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in35_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in35 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in35 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in34_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in34 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in34 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in34.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in34_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in34 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in34 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in33_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in33 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in33 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in33.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in33_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in33 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in33 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in32_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in32 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in32 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in32.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in32_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in32 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in32 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in31_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in31 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in31 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in31.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in31_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in31 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in31 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in30_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in30 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in30 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in30.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in30_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in30 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in30 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in29_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in29 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in29 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in29.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in29_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in29 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in29 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in28_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in28 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in28 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in28.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in28_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in28 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in28 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in27_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in27 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in27 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in27.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in27_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in27 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in27 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in26_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in26 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in26 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in26.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in26_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in26 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in26 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in25_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in25 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in25 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in25.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in25_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in25 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in25 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in24_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in24 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in24 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in24.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in24_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in24 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in24 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in23_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in23 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in23 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in23.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in23_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in23 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in23 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in22_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in22 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in22 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in22.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in22_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in22 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in22 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in21_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in21 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in21 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in21.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in21_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in21 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in21 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in20_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in20 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in20 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in20.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in20_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in20 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in20 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in19_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in19 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in19 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in19.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in19_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in19 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in19 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in18_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in18 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in18 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in18.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in18_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in18 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in18 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in17_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in17 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in17 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in17.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in17_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in17 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in17 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in16_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in16 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in16 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in16.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in16_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in16 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in16 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in9_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in9 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in9 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in9.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in9_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in9 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in9 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in8_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in8 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in8 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in8.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in8_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in8 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in8 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in7_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in7 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in7 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in7.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in7_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in7 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in7 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in6_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in6 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in6 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in6.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in6_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in6 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in6 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in5_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in5 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in5 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in5.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in5_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in5 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in5 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in4_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in4 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in4 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in4.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in4_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in4 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in4 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in3_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in3 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in3 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in3.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in3_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in3 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in3 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in2_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in2 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in2 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in2.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in2_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in2 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in2 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in15_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in15 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in15 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in15.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in15_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in15 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in15 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in14_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in14 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in14 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in14.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in14_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in14 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in14 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in13_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in13 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in13 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in13.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in13_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in13 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in13 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in12_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in12 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in12 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in12.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in12_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in12 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in12 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in11_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in11 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in11 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in11.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in11_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in11 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in11 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in10_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in10 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in10 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in10.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in10_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in10 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in10 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in1_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in1 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in1 instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in1.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in1_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in1 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in1 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_gateway_in_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to gateway_in gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in instance to operate on.<br/>
+ @param	Data is value to be written to gateway gateway_in.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_gateway_in_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from gateway_in gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the gateway_in instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_sw_override_in_write(fpga_kf_2dof *InstancePtr, u8 Data);</h1>
+<p>
+ Write to sw_override_in gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the sw_override_in instance to operate on.<br/>
+ @param	Data is value to be written to gateway sw_override_in.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u8 fpga_kf_2dof_sw_override_in_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from sw_override_in gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the sw_override_in instance to operate on.<br/>
+<br/>
+ @return	u8<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_reg_timer_period_write(fpga_kf_2dof *InstancePtr, u32 Data);</h1>
+<p>
+ Write to reg_timer_period gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the reg_timer_period instance to operate on.<br/>
+ @param	Data is value to be written to gateway reg_timer_period.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u32 fpga_kf_2dof_reg_timer_period_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from reg_timer_period gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the reg_timer_period instance to operate on.<br/>
+<br/>
+ @return	u32<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_reg_rp_switch_tf_write(fpga_kf_2dof *InstancePtr, u32 Data);</h1>
+<p>
+ Write to reg_rp_switch_tf gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the reg_rp_switch_tf instance to operate on.<br/>
+ @param	Data is value to be written to gateway reg_rp_switch_tf.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u32 fpga_kf_2dof_reg_rp_switch_tf_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from reg_rp_switch_tf gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the reg_rp_switch_tf instance to operate on.<br/>
+<br/>
+ @return	u32<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_reg_rp_switch_t0_write(fpga_kf_2dof *InstancePtr, u32 Data);</h1>
+<p>
+ Write to reg_rp_switch_t0 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the reg_rp_switch_t0 instance to operate on.<br/>
+ @param	Data is value to be written to gateway reg_rp_switch_t0.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u32 fpga_kf_2dof_reg_rp_switch_t0_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from reg_rp_switch_t0 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the reg_rp_switch_t0 instance to operate on.<br/>
+<br/>
+ @return	u32<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_reg_out_switch_tf_write(fpga_kf_2dof *InstancePtr, u32 Data);</h1>
+<p>
+ Write to reg_out_switch_tf gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the reg_out_switch_tf instance to operate on.<br/>
+ @param	Data is value to be written to gateway reg_out_switch_tf.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u32 fpga_kf_2dof_reg_out_switch_tf_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from reg_out_switch_tf gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the reg_out_switch_tf instance to operate on.<br/>
+<br/>
+ @return	u32<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_reg_out_switch_t0_write(fpga_kf_2dof *InstancePtr, u32 Data);</h1>
+<p>
+ Write to reg_out_switch_t0 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the reg_out_switch_t0 instance to operate on.<br/>
+ @param	Data is value to be written to gateway reg_out_switch_t0.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u32 fpga_kf_2dof_reg_out_switch_t0_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from reg_out_switch_t0 gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the reg_out_switch_t0 instance to operate on.<br/>
+<br/>
+ @return	u32<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_out_switch_on_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to out_switch_on gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_switch_on instance to operate on.<br/>
+ @param	Data is value to be written to gateway out_switch_on.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_out_switch_on_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from out_switch_on gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_switch_on instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_out_switch_off_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to out_switch_off gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_switch_off instance to operate on.<br/>
+ @param	Data is value to be written to gateway out_switch_off.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_out_switch_off_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from out_switch_off gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the out_switch_off instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_fb_src_switch_in_write(fpga_kf_2dof *InstancePtr, u8 Data);</h1>
+<p>
+ Write to fb_src_switch_in gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the fb_src_switch_in instance to operate on.<br/>
+ @param	Data is value to be written to gateway fb_src_switch_in.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u8 fpga_kf_2dof_fb_src_switch_in_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from fb_src_switch_in gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the fb_src_switch_in instance to operate on.<br/>
+<br/>
+ @return	u8<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_dma_trigger_time_write(fpga_kf_2dof *InstancePtr, u32 Data);</h1>
+<p>
+ Write to dma_trigger_time gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the dma_trigger_time instance to operate on.<br/>
+ @param	Data is value to be written to gateway dma_trigger_time.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u32 fpga_kf_2dof_dma_trigger_time_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from dma_trigger_time gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the dma_trigger_time instance to operate on.<br/>
+<br/>
+ @return	u32<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_barrier_ub_in_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to barrier_ub_in gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the barrier_ub_in instance to operate on.<br/>
+ @param	Data is value to be written to gateway barrier_ub_in.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_barrier_ub_in_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from barrier_ub_in gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the barrier_ub_in instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_barrier_lb_in_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to barrier_lb_in gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the barrier_lb_in instance to operate on.<br/>
+ @param	Data is value to be written to gateway barrier_lb_in.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_barrier_lb_in_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from barrier_lb_in gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the barrier_lb_in instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_barrier_ram_we_in_write(fpga_kf_2dof *InstancePtr, u32 Data);</h1>
+<p>
+ Write to barrier_ram_we_in gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the barrier_ram_we_in instance to operate on.<br/>
+ @param	Data is value to be written to gateway barrier_ram_we_in.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u32 fpga_kf_2dof_barrier_ram_we_in_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from barrier_ram_we_in gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the barrier_ram_we_in instance to operate on.<br/>
+<br/>
+ @return	u32<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_barrier_ram_addr_in_write(fpga_kf_2dof *InstancePtr, u32 Data);</h1>
+<p>
+ Write to barrier_ram_addr_in gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the barrier_ram_addr_in instance to operate on.<br/>
+ @param	Data is value to be written to gateway barrier_ram_addr_in.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u32 fpga_kf_2dof_barrier_ram_addr_in_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from barrier_ram_addr_in gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the barrier_ram_addr_in instance to operate on.<br/>
+<br/>
+ @return	u32<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_barrier_c_ofst_idx_in_write(fpga_kf_2dof *InstancePtr, u32 Data);</h1>
+<p>
+ Write to barrier_c_ofst_idx_in gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the barrier_c_ofst_idx_in instance to operate on.<br/>
+ @param	Data is value to be written to gateway barrier_c_ofst_idx_in.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u32 fpga_kf_2dof_barrier_c_ofst_idx_in_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from barrier_c_ofst_idx_in gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the barrier_c_ofst_idx_in instance to operate on.<br/>
+<br/>
+ @return	u32<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_barrier_c_idx_in_write(fpga_kf_2dof *InstancePtr, u32 Data);</h1>
+<p>
+ Write to barrier_c_idx_in gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the barrier_c_idx_in instance to operate on.<br/>
+ @param	Data is value to be written to gateway barrier_c_idx_in.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u32 fpga_kf_2dof_barrier_c_idx_in_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from barrier_c_idx_in gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the barrier_c_idx_in instance to operate on.<br/>
+<br/>
+ @return	u32<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_barrier_c1_data_in_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to barrier_c1_data_in gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the barrier_c1_data_in instance to operate on.<br/>
+ @param	Data is value to be written to gateway barrier_c1_data_in.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_barrier_c1_data_in_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from barrier_c1_data_in gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the barrier_c1_data_in instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_barrier_c0_data_in_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to barrier_c0_data_in gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the barrier_c0_data_in instance to operate on.<br/>
+ @param	Data is value to be written to gateway barrier_c0_data_in.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_barrier_c0_data_in_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from barrier_c0_data_in gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the barrier_c0_data_in instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_fixed_led_pattern_in_write(fpga_kf_2dof *InstancePtr, u32 Data);</h1>
+<p>
+ Write to fixed_led_pattern_in gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the fixed_led_pattern_in instance to operate on.<br/>
+ @param	Data is value to be written to gateway fixed_led_pattern_in.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u32 fpga_kf_2dof_fixed_led_pattern_in_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from fixed_led_pattern_in gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the fixed_led_pattern_in instance to operate on.<br/>
+<br/>
+ @return	u32<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_disco_mode_enable_write(fpga_kf_2dof *InstancePtr, u32 Data);</h1>
+<p>
+ Write to disco_mode_enable gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the disco_mode_enable instance to operate on.<br/>
+ @param	Data is value to be written to gateway disco_mode_enable.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u32 fpga_kf_2dof_disco_mode_enable_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from disco_mode_enable gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the disco_mode_enable instance to operate on.<br/>
+<br/>
+ @return	u32<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_ap_ip_switch_in_write(fpga_kf_2dof *InstancePtr, u8 Data);</h1>
+<p>
+ Write to ap_ip_switch_in gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the ap_ip_switch_in instance to operate on.<br/>
+ @param	Data is value to be written to gateway ap_ip_switch_in.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u8 fpga_kf_2dof_ap_ip_switch_in_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from ap_ip_switch_in gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the ap_ip_switch_in instance to operate on.<br/>
+<br/>
+ @return	u8<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_adc_ch2_offst_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to adc_ch2_offst gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the adc_ch2_offst instance to operate on.<br/>
+ @param	Data is value to be written to gateway adc_ch2_offst.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_adc_ch2_offst_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from adc_ch2_offst gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the adc_ch2_offst instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_adc_ch1_offst_write(fpga_kf_2dof *InstancePtr, int Data);</h1>
+<p>
+ Write to adc_ch1_offst gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the adc_ch1_offst instance to operate on.<br/>
+ @param	Data is value to be written to gateway adc_ch1_offst.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int fpga_kf_2dof_adc_ch1_offst_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from adc_ch1_offst gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the adc_ch1_offst instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void fpga_kf_2dof_registers_wren_in_write(fpga_kf_2dof *InstancePtr, u32 Data);</h1>
+<p>
+ Write to registers_wren_in gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the registers_wren_in instance to operate on.<br/>
+ @param	Data is value to be written to gateway registers_wren_in.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u32 fpga_kf_2dof_registers_wren_in_read(fpga_kf_2dof *InstancePtr);</h1>
+<p>
+ Read from registers_wren_in gateway of fpga_kf_2dof. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the registers_wren_in instance to operate on.<br/>
+<br/>
+ @return	u32<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+</body>
+</html>

@@ -1,0 +1,8 @@
+OPTION psf_version = 2.1;
+BEGIN driver fpga_kf_3dof_plus
+ OPTION supported_peripherals = (fpga_kf_3dof_plus_v1_0);
+ OPTION driver_state = ACTIVE;
+ OPTION copyfiles = all;
+ OPTION name = fpga_kf_3dof_plus;
+ OPTION version = 1.0;
+END driver

@@ -1,0 +1,8 @@
+OPTION psf_version = 2.1;
+BEGIN driver thrtl_8ch_cfg
+ OPTION supported_peripherals = (thrtl_8ch_cfg_v1_0);
+ OPTION driver_state = ACTIVE;
+ OPTION copyfiles = all;
+ OPTION name = thrtl_8ch_cfg;
+ OPTION version = 1.0;
+END driver

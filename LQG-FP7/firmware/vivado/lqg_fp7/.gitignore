@@ -1,0 +1,11 @@
+# Ignore Vivado generated files and directories
+lqg_fp7.cache/
+lqg_fp7.gen/
+lqg_fp7.hw/
+lqg_fp7.ip_user_files/
+lqg_fp7.runs/
+lqg_fp7.sim/
+lqg_fp7.tmp/
+
+# Ignore log files
+*.log

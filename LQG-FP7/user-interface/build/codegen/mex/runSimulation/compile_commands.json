@@ -1,0 +1,98 @@
+[
+  {
+    "directory": "D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\\codegen\\mex\\runSimulation",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2024a\\3P.instrset\\mingw_w64.instrset\\bin\\gcc -c -fexceptions -fno-omit-frame-pointer -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \"D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\\codegen\\mex\\runSimulation\" -I \"D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\" -I \"D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\\codegen\\mex\\runSimulation\\interface\" -I \"D:\\Utilities\\MatlabR2024a\\extern\\include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=runSimulation_mex -D__USE_MINGW_ANSI_STDIO=1 -msse2 -fno-predictive-commoning  runSimulation_data.c -o build/win64/runSimulation_data.o",
+    "file": "runSimulation_data.c",
+    "output": "build/win64/runSimulation_data.o"
+  },
+  {
+    "directory": "D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\\codegen\\mex\\runSimulation",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2024a\\3P.instrset\\mingw_w64.instrset\\bin\\gcc -c -fexceptions -fno-omit-frame-pointer -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \"D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\\codegen\\mex\\runSimulation\" -I \"D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\" -I \"D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\\codegen\\mex\\runSimulation\\interface\" -I \"D:\\Utilities\\MatlabR2024a\\extern\\include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=runSimulation_mex -D__USE_MINGW_ANSI_STDIO=1 -msse2 -fno-predictive-commoning  rt_nonfinite.c -o build/win64/rt_nonfinite.o",
+    "file": "rt_nonfinite.c",
+    "output": "build/win64/rt_nonfinite.o"
+  },
+  {
+    "directory": "D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\\codegen\\mex\\runSimulation",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2024a\\3P.instrset\\mingw_w64.instrset\\bin\\gcc -c -fexceptions -fno-omit-frame-pointer -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \"D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\\codegen\\mex\\runSimulation\" -I \"D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\" -I \"D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\\codegen\\mex\\runSimulation\\interface\" -I \"D:\\Utilities\\MatlabR2024a\\extern\\include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=runSimulation_mex -D__USE_MINGW_ANSI_STDIO=1 -msse2 -fno-predictive-commoning  runSimulation_initialize.c -o build/win64/runSimulation_initialize.o",
+    "file": "runSimulation_initialize.c",
+    "output": "build/win64/runSimulation_initialize.o"
+  },
+  {
+    "directory": "D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\\codegen\\mex\\runSimulation",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2024a\\3P.instrset\\mingw_w64.instrset\\bin\\gcc -c -fexceptions -fno-omit-frame-pointer -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \"D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\\codegen\\mex\\runSimulation\" -I \"D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\" -I \"D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\\codegen\\mex\\runSimulation\\interface\" -I \"D:\\Utilities\\MatlabR2024a\\extern\\include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=runSimulation_mex -D__USE_MINGW_ANSI_STDIO=1 -msse2 -fno-predictive-commoning  runSimulation_terminate.c -o build/win64/runSimulation_terminate.o",
+    "file": "runSimulation_terminate.c",
+    "output": "build/win64/runSimulation_terminate.o"
+  },
+  {
+    "directory": "D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\\codegen\\mex\\runSimulation",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2024a\\3P.instrset\\mingw_w64.instrset\\bin\\gcc -c -fexceptions -fno-omit-frame-pointer -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \"D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\\codegen\\mex\\runSimulation\" -I \"D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\" -I \"D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\\codegen\\mex\\runSimulation\\interface\" -I \"D:\\Utilities\\MatlabR2024a\\extern\\include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=runSimulation_mex -D__USE_MINGW_ANSI_STDIO=1 -msse2 -fno-predictive-commoning  runSimulation.c -o build/win64/runSimulation.o",
+    "file": "runSimulation.c",
+    "output": "build/win64/runSimulation.o"
+  },
+  {
+    "directory": "D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\\codegen\\mex\\runSimulation",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2024a\\3P.instrset\\mingw_w64.instrset\\bin\\gcc -c -fexceptions -fno-omit-frame-pointer -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \"D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\\codegen\\mex\\runSimulation\" -I \"D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\" -I \"D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\\codegen\\mex\\runSimulation\\interface\" -I \"D:\\Utilities\\MatlabR2024a\\extern\\include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=runSimulation_mex -D__USE_MINGW_ANSI_STDIO=1 -msse2 -fno-predictive-commoning  colon.c -o build/win64/colon.o",
+    "file": "colon.c",
+    "output": "build/win64/colon.o"
+  },
+  {
+    "directory": "D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\\codegen\\mex\\runSimulation",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2024a\\3P.instrset\\mingw_w64.instrset\\bin\\gcc -c -fexceptions -fno-omit-frame-pointer -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \"D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\\codegen\\mex\\runSimulation\" -I \"D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\" -I \"D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\\codegen\\mex\\runSimulation\\interface\" -I \"D:\\Utilities\\MatlabR2024a\\extern\\include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=runSimulation_mex -D__USE_MINGW_ANSI_STDIO=1 -msse2 -fno-predictive-commoning  randn.c -o build/win64/randn.o",
+    "file": "randn.c",
+    "output": "build/win64/randn.o"
+  },
+  {
+    "directory": "D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\\codegen\\mex\\runSimulation",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2024a\\3P.instrset\\mingw_w64.instrset\\bin\\gcc -c -fexceptions -fno-omit-frame-pointer -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \"D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\\codegen\\mex\\runSimulation\" -I \"D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\" -I \"D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\\codegen\\mex\\runSimulation\\interface\" -I \"D:\\Utilities\\MatlabR2024a\\extern\\include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=runSimulation_mex -D__USE_MINGW_ANSI_STDIO=1 -msse2 -fno-predictive-commoning  mtimes.c -o build/win64/mtimes.o",
+    "file": "mtimes.c",
+    "output": "build/win64/mtimes.o"
+  },
+  {
+    "directory": "D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\\codegen\\mex\\runSimulation",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2024a\\3P.instrset\\mingw_w64.instrset\\bin\\gcc -c -fexceptions -fno-omit-frame-pointer -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \"D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\\codegen\\mex\\runSimulation\" -I \"D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\" -I \"D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\\codegen\\mex\\runSimulation\\interface\" -I \"D:\\Utilities\\MatlabR2024a\\extern\\include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=runSimulation_mex -D__USE_MINGW_ANSI_STDIO=1 -msse2 -fno-predictive-commoning  eml_mtimes_helper.c -o build/win64/eml_mtimes_helper.o",
+    "file": "eml_mtimes_helper.c",
+    "output": "build/win64/eml_mtimes_helper.o"
+  },
+  {
+    "directory": "D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\\codegen\\mex\\runSimulation",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2024a\\3P.instrset\\mingw_w64.instrset\\bin\\gcc -c -fexceptions -fno-omit-frame-pointer -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \"D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\\codegen\\mex\\runSimulation\" -I \"D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\" -I \"D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\\codegen\\mex\\runSimulation\\interface\" -I \"D:\\Utilities\\MatlabR2024a\\extern\\include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=runSimulation_mex -D__USE_MINGW_ANSI_STDIO=1 -msse2 -fno-predictive-commoning  interface/_coder_runSimulation_api.c -o build/win64/_coder_runSimulation_api.o",
+    "file": "interface/_coder_runSimulation_api.c",
+    "output": "build/win64/_coder_runSimulation_api.o"
+  },
+  {
+    "directory": "D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\\codegen\\mex\\runSimulation",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2024a\\3P.instrset\\mingw_w64.instrset\\bin\\gcc -c -fexceptions -fno-omit-frame-pointer -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \"D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\\codegen\\mex\\runSimulation\" -I \"D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\" -I \"D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\\codegen\\mex\\runSimulation\\interface\" -I \"D:\\Utilities\\MatlabR2024a\\extern\\include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=runSimulation_mex -D__USE_MINGW_ANSI_STDIO=1 -msse2 -fno-predictive-commoning  interface/_coder_runSimulation_mex.c -o build/win64/_coder_runSimulation_mex.o",
+    "file": "interface/_coder_runSimulation_mex.c",
+    "output": "build/win64/_coder_runSimulation_mex.o"
+  },
+  {
+    "directory": "D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\\codegen\\mex\\runSimulation",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2024a\\3P.instrset\\mingw_w64.instrset\\bin\\gcc -c -fexceptions -fno-omit-frame-pointer -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \"D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\\codegen\\mex\\runSimulation\" -I \"D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\" -I \"D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\\codegen\\mex\\runSimulation\\interface\" -I \"D:\\Utilities\\MatlabR2024a\\extern\\include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=runSimulation_mex -D__USE_MINGW_ANSI_STDIO=1 -msse2 -fno-predictive-commoning  eml_int_forloop_overflow_check.c -o build/win64/eml_int_forloop_overflow_check.o",
+    "file": "eml_int_forloop_overflow_check.c",
+    "output": "build/win64/eml_int_forloop_overflow_check.o"
+  },
+  {
+    "directory": "D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\\codegen\\mex\\runSimulation",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2024a\\3P.instrset\\mingw_w64.instrset\\bin\\gcc -c -fexceptions -fno-omit-frame-pointer -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \"D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\\codegen\\mex\\runSimulation\" -I \"D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\" -I \"D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\\codegen\\mex\\runSimulation\\interface\" -I \"D:\\Utilities\\MatlabR2024a\\extern\\include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=runSimulation_mex -D__USE_MINGW_ANSI_STDIO=1 -msse2 -fno-predictive-commoning  chol.c -o build/win64/chol.o",
+    "file": "chol.c",
+    "output": "build/win64/chol.o"
+  },
+  {
+    "directory": "D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\\codegen\\mex\\runSimulation",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2024a\\3P.instrset\\mingw_w64.instrset\\bin\\gcc -c -fexceptions -fno-omit-frame-pointer -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \"D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\\codegen\\mex\\runSimulation\" -I \"D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\" -I \"D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\\codegen\\mex\\runSimulation\\interface\" -I \"D:\\Utilities\\MatlabR2024a\\extern\\include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=runSimulation_mex -D__USE_MINGW_ANSI_STDIO=1 -msse2 -fno-predictive-commoning  runSimulation_emxutil.c -o build/win64/runSimulation_emxutil.o",
+    "file": "runSimulation_emxutil.c",
+    "output": "build/win64/runSimulation_emxutil.o"
+  },
+  {
+    "directory": "D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\\codegen\\mex\\runSimulation",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2024a\\3P.instrset\\mingw_w64.instrset\\bin\\gcc -c -fexceptions -fno-omit-frame-pointer -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \"D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\\codegen\\mex\\runSimulation\" -I \"D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\" -I \"D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\\codegen\\mex\\runSimulation\\interface\" -I \"D:\\Utilities\\MatlabR2024a\\extern\\include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=runSimulation_mex -D__USE_MINGW_ANSI_STDIO=1 -msse2 -fno-predictive-commoning  interface/_coder_runSimulation_info.c -o build/win64/_coder_runSimulation_info.o",
+    "file": "interface/_coder_runSimulation_info.c",
+    "output": "build/win64/_coder_runSimulation_info.o"
+  },
+  {
+    "directory": "D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\\codegen\\mex\\runSimulation",
+    "command": "C:\\ProgramData\\MATLAB\\SupportPackages\\R2024a\\3P.instrset\\mingw_w64.instrset\\bin\\gcc -c -fexceptions -fno-omit-frame-pointer -m64 -DMATLAB_MEX_FILE  -DMATLAB_MEX_FILE -O2 -fwrapv -DNDEBUG -std=c99 -I \"D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\\codegen\\mex\\runSimulation\" -I \"D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\" -I \"D:\\02_ACIN_GitLab\\LQG-FP7\\user-interface\\build\\codegen\\mex\\runSimulation\\interface\" -I \"D:\\Utilities\\MatlabR2024a\\extern\\include\" -I \".\" -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS -DMODEL=runSimulation_mex -D__USE_MINGW_ANSI_STDIO=1 -msse2 -fno-predictive-commoning  D:/Utilities/MatlabR2024a/extern/version/c_mexapi_version.c -o build/win64/c_mexapi_version.o",
+    "file": "D:/Utilities/MatlabR2024a/extern/version/c_mexapi_version.c",
+    "output": "build/win64/c_mexapi_version.o"
+  }
+]

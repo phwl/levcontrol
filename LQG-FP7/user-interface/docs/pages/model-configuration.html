@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Configuration</title>
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<h1>Model Configuration tab</h1>
+<p>In this tab, you can configure and inspect up to two separate internal model configurations. Switch between the tabs to access parameters of each configuration.</p>
+
+<p>The LQG implementation supports models with between 1 and 3 degrees of freedom (here dubbed X, Y, Z), with arbitrary, potentially full input and output matrices.
+    You can also optionally enable a drift state.</p>
+
+<p>For more details about the implemented model structure, please follow the <a href="#" data-page="pages/internal-model-reference.html">Internal model reference</a> page. </p>
+
+<h2>Parameter manipulation buttons</h2>
+<h3>Push parameters button</h3>
+<p>Clicking this button recalculates the feedback and Kalman gains and pushes either the parameter Set 1 or 2 (depending on the position of the <i>Parameter set select</i> switch) to the hardware. <b>Note:</b> It is not necessary to push this button after switching either the <i>Parameter set select</i> or <i>Enable feedback</i> switches, as those execute the <i>Push parameters</i> callback.</p>
+
+<h3>Save parameters</h3>
+<p>This button summons a file-selection dialog to export the parameters into two separate .mat files (one for each set). Configured filename gets amended with the set number and a timestamp.</p>
+
+<h3>Load parameters</h3>
+<p>This button allows you to select a .mat parameter set and decide into which parameter set it is supposed to be uploaded. </p>
+
+<p><b>Important:</b> This function takes only the parameter files with the exact same structure as what the <i>Save parameters</i> button creates.</p>
+
+<h3>Import parameters</h3>
+<p>Contrary to the <i>Load parameters</i> function, this allows you to import parameters from a .json file. You can generate a template .json file by right-clicking the <i>Import parameters</i> button and clicking <i>Generate template json</i>. </p>
+
+<h2>Dynamic parameters panel</h2>
+<h3>X/Y/Z Frequency</h3>
+<p>Natural (undamped) frequency of the respective degrees of freedom. Set the frequency to a negative value to get an unstable mechanical mode (negative spring stiffness). <b>Unit:</b> Hertz</p>
+
+<h3>Phi time constant</h3>
+<p>Time constant of the drift state. <b>Unit:</b> seconds </p>
+
+<h3>X/Y/Z Damping</h3>
+<p>Damping rate of the respective degrees of freedom. <b>Unit:</b> Hertz </p>
+
+<h3>X/Y/Z/Phi Process noise</h3>
+<p>Natural (undamped) frequency of the respective degrees of freedom. <b>Unit:</b> Hertz </p>
+
+<h3>Particle mass</h3>
+<p>Mass of the particle. <b>Unit:</b> kg </p>
+
+
+<h2>Detection + Actuation tab</h2>
+<h3>Detection calibration coefficients</h3>
+<p>Fill in values in the X, Y, Z column for position measurements and, similarly, in the dX, dY, dZ column for velocity measurements. Leave a row empty (zero) if the analog input channel is unused.</p>
+    <p> <b>Unit:</b> V/m for X,Y,Z,Phi, V.s/m for dX,dY,dZ</p>
+
+<h3>Measurement noise variances</h3>
+<p>Fill in values of the measurement noise covariance. Note that the matrix should be symmetrical.</p>
+    <p> <b>Unit:</b> V^2/Hz</p>
+
+<h3>Actuator coupling coefficients</h3>
+<p>Fill in values in the X, Y, Z column for actuation acting in velocity and, similarly, in the dX, dY, dZ column for actuation acting in acceleration (e.g. electrodes acting on a particle). Leave a row empty (zero) if the analog output channel is unused.</p>
+    <p> <b>Unit:</b> N/V for X,Y,Z,Phi, V.s/m for dX,dY,dZ</p>
+
+
+<h2>Tuning variables tab</h2>
+<h3>Use X/Y/Z/Phi check boxes</h3>
+You can select which states are to be active for the state estimation. Note that this setting overrides any other configuration, e.g. the detection calibration. 
+
+<h3>Feedback-weighing matrix</h3>
+<p>Fill in the square-root values for the Feedback-weighing matrix (R matrix for the LQR). <b>Unit:</b> 1/V</p>
+
+<h3>Relative weighing of states</h3>
+<p>Fill in values in the state-weighing matrix (Q matrix for the LQR). Leave the matrix as eye matrix for the default energy weight. 
+    Note that the matrix should be symmetrical. <b>Unit:</b> unitless</p>
+
+<h3>Internal model format dropdown menu</h3>
+<p> Select which model transformation is to be used for the parameters set. Note that the transformed variants differ only numerically, but input-output behaviour is identical.</p>
+<ul>
+    <li><b>Standard - </b> The standard representation, no transformation.</li>
+    <li><b>Transformed standard (recommended) - </b> The standard representation "normalized" with natural frequency and the highest value in the detection calibration matrix. </li>
+    <li><b>Closed-loop - </b> This transformation can be useful for dealing with unstable systems. Instead of the standard state-transition matrix (A-LC), 
+        a closed feedback loop is simulated (A-BK-LC). This matrix is simulated irrespective of the state of the Enable Feedback switch, that only enables the actual voltage output. </li>
+    <li><b>Transformed closed-loop (recommended for unstable systems) - </b> Uses the combination of the <i>closed loop</i> and the <i>normalization</i> transformations, improving
+    numerical stability over the non-transformed closed-loop variant. </li>
+</ul>
+
+<h3>Recalculate LQR button</h3>
+<p>Clicking this button parses all the parameters within the set and updates the output tables in the <i>Feedback gain</i> tab. Note that this operation does not update the
+hardware until the <i>Push parameters</i> button is clicked, so you can use it to tweak the feedback gain before actually applying the settings. </p>
+
+
+<h2>Feedback gain tab</h2>
+<h3>K LQR matrix entries</h3>
+<p>You can inspect the resulting feedback gain matrix of the <i>Recalculate LQG</i> operation in this table. Note that the scale of the entries changes based on the internal model used!</p>
+
+<h3>Estimated output voltage standard deviation</h3>
+<p>Here you can inspect the estimated (triple) standard deviation of the output signal. Note that this estimate is calculated based on an ideal closed-loop system,
+    hence it will be most probably optimistic.  <b>Unit:</b> V</p>
+
+<h2>IO calibration tab</h2>
+<h3>Output/Input calibration</h3>
+<p>Set the value of offset to be added to the signal (i.e. value of DAC1 offset of 0.020 raises the output voltage by 20 millivolts).
+Set the gain correction to make sure the internal signals (as plotted in the <i>Data acquisition</i> tab) correspond to the real physical values.</p>
+
+<p>The internal calibrated input signal is calculated as <b>calibratedInputSignal = (rawInputSignal + offset)*factor</b>.</p>
+
+<p>The calibrated output signal is calculated as <b>calibratedOutputSignal = (rawOutputSignal*factor) + offset</b>.</p>
+
+
+<h2>Advanced Tab</h2>
+<p><b>Warning: For most of the use-cases, you don't need to modify anything here!</b> For more detail, follow the <i>Numerical transformation</i> section in the 
+ <a href="#" data-page="pages/internal-model-reference.html">Internal model reference</a> page. </p>
+
+<h3>Target state standard deviation</h3>
+<p>Set the target standard deviation of the estimated states. The LQG is rescaled such as to achieve this target with white noise with the variance
+    given by the <i>Measurement noise variance</i> at the input.</p>
+
+<h3>Transform the state space</h3>
+<p>Checking this box enables rescaling of the state space model for better numerical behaviour. Unless you are diagnosing issues, or know exactly why you don't want this,
+    keep this setting checked.
+</p>
+
+<h3>Limit the transformation</h3>
+<p>This option adds additional step to the transformation, tweaking the scaling such as none of the input- and output-matrix values do not overflow the available internal datatypes.
+     Same as the option above, you probably want this option enabled.
+</p>
+
+<h3>Undo the transformation for data plotting and export</h3>
+<p>If checked, the GUI will undo the state-space scaling for plotting and data export, and the feedback matrix inspection, getting the values according 
+    to the <i>Internal model format</i> setting.
+</p>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect Tab</title>
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<h1>Connect Tab</h1>
+
+<p>Make sure to set up the hardware according to the <a href="hardware-setup.html">Hardware Setup Guide</a>. If you want to demo the functionality of the app, switch the app into demo mode.</p>
+
+<h2>Overview</h2>
+<p>This tab allows you to configure the target IP address and connect to your Red Pitaya.</p>
+
+<h2>Functionality</h2>
+<h3>Connect button</h3>
+<p>Clicking this button probes the connection to the Red Pitaya at the configured IP address and default port 5000.
+     If the connection is sound, the app will unlock functionality requiring HW connection. If the connection fails, an error message is displayed and saved in the log.</p>
+
+<h3>Demo mode switch</h3>
+<p>Switching this toggle to the ON position will enable demo mode, which simulates hardware functionality without requiring a physical connection.
+    Note that in demo mode the virtual system is not simulated continuously, but only on demand.</p>
+
+<p> <b>Warning:</b> You can enable demo mode even when the app is connected to hardware, but in this case, it interacts only with the virtual system. 
+    If you, for example, change the parameters, or model configuration, these changes are not reflected in the real hardware, not even after switching the demo mode off.</p>
+
+<h3>Internal state reset button</h3>
+<p>Clicking this button will reset internal states (force them to zero). Usually, there's no need for this button, but it can help recover the controller from state overflow without restarting the Red Pitaya - if that becomes necessary, you will immediately see it and recognize it.</p>
+
+
+</body>
+</html>

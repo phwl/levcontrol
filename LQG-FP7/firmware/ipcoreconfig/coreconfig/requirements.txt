@@ -1,0 +1,4 @@
+pyyaml
+bitarray
+numpy
+flask

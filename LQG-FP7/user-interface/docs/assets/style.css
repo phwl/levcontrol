@@ -1,0 +1,81 @@
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; display: flex; flex-direction: column; height: 100vh; }
+
+/* Top Navigation */
+.top-nav { background-color: #f3f2f1; border-bottom: 1px solid #edebe9; padding: 10px 20px; display: flex; align-items: center; }
+.top-nav h1 { font-size: 18px; margin: 0; color: #323130; }
+
+/* Main Content Wrapper */
+.container { display: flex; flex: 1; overflow: hidden; }
+
+/* Sidebar */
+.sidebar { width: 250px; background-color: #faf9f8; border-right: 1px solid #edebe9; padding: 20px; overflow-y: auto; }
+.sidebar h2 { font-size: 16px; margin-top: 0; }
+.sidebar ul { list-style: none; padding: 0; }
+.sidebar ul li { margin-bottom: 10px; }
+.sidebar ul li a { text-decoration: none; color: #0078d4; }
+.sidebar ul li a:hover { text-decoration: underline; }
+
+/* Submenu Styling */
+.submenu-toggle { 
+    display: block; 
+    cursor: pointer; 
+    color: #0078d4; 
+    user-select: none;
+    padding: 2px 0;
+}
+.submenu-toggle:hover { 
+    text-decoration: underline; 
+}
+.submenu-toggle::before {
+    content: '▶ ';
+    display: inline-block;
+    transition: transform 0.2s;
+    margin-right: 5px;
+}
+.submenu-toggle.expanded::before {
+    transform: rotate(90deg);
+}
+.submenu {
+    list-style: none;
+    padding: 8px 0 0 30px;
+    margin: 5px 0 0 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+.submenu.expanded {
+    max-height: 500px;
+}
+.submenu li { 
+    margin-bottom: 8px;
+    margin-left: 15px;
+}
+
+/* Back button in top navigation */
+.top-nav button#back-btn {
+    background: transparent;
+    border: none;
+    color: #0078d4;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 12px;
+    padding: 6px 8px;
+}
+.top-nav button#back-btn:hover { text-decoration: underline; }
+
+/* Content Area */
+.content { flex: 1; padding: 30px; overflow-y: auto; }
+.content h1 { font-size: 24px; color: #201f1e; }
+.content p { color: #323130; line-height: 1.6; }
+
+/* Utility */
+.search-box { margin-left: auto; padding: 5px; border: 1px solid #8a8886; }
+/* search results */
+.search-results { padding: 1rem; }
+.search-results ul { list-style: none; padding: 0; }
+.search-results li { margin: 0.5rem 0; }
+.search-results a { color: #007acc; text-decoration: none; }
+.search-results a:hover { text-decoration: underline; }
+
+/* snippet under search result */
+.snippet { font-size: 0.9em; color: #555; margin: 0.3rem 0 0.5rem; }

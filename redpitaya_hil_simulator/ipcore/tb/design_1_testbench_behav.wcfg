@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="design_1_testbench_func_impl.wdb" id="1">
+         <top_modules>
+            <top_module name="design_1_testbench" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1167060fs"></ZoomStartTime>
+      <ZoomEndTime time="1822561fs"></ZoomEndTime>
+      <Cursor1Time time="1421060fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="276"></NameColumnWidth>
+      <ValueColumnWidth column_width="60"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="18" />
+   <wvobject fp_name="/design_1_testbench/adc_cdcs_o" type="logic">
+      <obj_property name="ElementShortName">adc_cdcs_o</obj_property>
+      <obj_property name="ObjectShortName">adc_cdcs_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_testbench/adc_clk_i_a" type="logic">
+      <obj_property name="ElementShortName">adc_clk_i_a</obj_property>
+      <obj_property name="ObjectShortName">adc_clk_i_a</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_testbench/adc_clk_i_b" type="logic">
+      <obj_property name="ElementShortName">adc_clk_i_b</obj_property>
+      <obj_property name="ObjectShortName">adc_clk_i_b</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_testbench/adc_dat_i_a" type="array">
+      <obj_property name="ElementShortName">adc_dat_i_a[15:0]</obj_property>
+      <obj_property name="ObjectShortName">adc_dat_i_a[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_testbench/adc_dat_i_b" type="array">
+      <obj_property name="ElementShortName">adc_dat_i_b[15:0]</obj_property>
+      <obj_property name="ObjectShortName">adc_dat_i_b[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_testbench/dac_clk_o" type="logic">
+      <obj_property name="ElementShortName">dac_clk_o</obj_property>
+      <obj_property name="ObjectShortName">dac_clk_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_testbench/dac_dat_o" type="array">
+      <obj_property name="ElementShortName">dac_dat_o[13:0]</obj_property>
+      <obj_property name="ObjectShortName">dac_dat_o[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_testbench/led_o" type="array">
+      <obj_property name="ElementShortName">led_o[7:0]</obj_property>
+      <obj_property name="ObjectShortName">led_o[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_testbench/design_1_i/throttle_0/inst/trigger_in" type="logic">
+      <obj_property name="ElementShortName">trigger_in</obj_property>
+      <obj_property name="ObjectShortName">trigger_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_testbench/design_1_i/throttle_0/inst/m_axis_dma_tdata" type="array">
+      <obj_property name="ElementShortName">m_axis_dma_tdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_dma_tdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_testbench/design_1_i/throttle_0/inst/m_axis_dma_tlast" type="array">
+      <obj_property name="ElementShortName">m_axis_dma_tlast[0:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_dma_tlast[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_testbench/design_1_i/throttle_0/inst/m_axis_dma_tready" type="array">
+      <obj_property name="ElementShortName">m_axis_dma_tready[0:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_dma_tready[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_testbench/design_1_i/throttle_0/inst/m_axis_dma_tvalid" type="array">
+      <obj_property name="ElementShortName">m_axis_dma_tvalid[0:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_dma_tvalid[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_testbench/design_1_i/throttle_0/inst/decim_in" type="array">
+      <obj_property name="ElementShortName">decim_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">decim_in[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_testbench/design_1_i/throttle_0/inst/frames_no_in" type="array">
+      <obj_property name="ElementShortName">frames_no_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">frames_no_in[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_testbench/design_1_i/throttle_0/inst/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_testbench/design_1_i/throttle_0/inst/throttle_struct/data_in_a" type="array">
+      <obj_property name="ElementShortName">data_in_a[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in_a[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_1_testbench/design_1_i/throttle_0/inst/throttle_struct/data_in_b" type="array">
+      <obj_property name="ElementShortName">data_in_b[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in_b[31:0]</obj_property>
+   </wvobject>
+</wave_config>

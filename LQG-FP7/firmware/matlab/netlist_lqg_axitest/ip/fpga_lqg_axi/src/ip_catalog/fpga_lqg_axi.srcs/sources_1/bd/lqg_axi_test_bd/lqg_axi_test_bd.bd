@@ -1,0 +1,4489 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x971369453540EAEA",
+      "design_src": "SYSGEN",
+      "device": "xc7z020clg400-2",
+      "gen_directory": "../../../../fpga_lqg_axi.gen/sources_1/bd/lqg_axi_test_bd",
+      "name": "lqg_axi_test_bd",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2024.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "lqg_axi_test_1": "",
+      "processing_system_1": "",
+      "processing_system_1_axi_periph": {
+        "s00_couplers": {
+          "auto_pc": ""
+        }
+      },
+      "rst_processing_system_1_50M": ""
+    },
+    "interface_ports": {
+      "DDR": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:interface:ddrx:1.0",
+        "vlnv": "xilinx.com:interface:ddrx_rtl:1.0",
+        "parameters": {
+          "AXI_ARBITRATION_SCHEME": {
+            "value": "TDM",
+            "value_src": "default"
+          },
+          "BURST_LENGTH": {
+            "value": "8",
+            "value_src": "default"
+          },
+          "CAN_DEBUG": {
+            "value": "false",
+            "value_src": "default"
+          },
+          "CAS_LATENCY": {
+            "value": "11",
+            "value_src": "default"
+          },
+          "CAS_WRITE_LATENCY": {
+            "value": "11",
+            "value_src": "default"
+          },
+          "CS_ENABLED": {
+            "value": "true",
+            "value_src": "default"
+          },
+          "DATA_MASK_ENABLED": {
+            "value": "true",
+            "value_src": "default"
+          },
+          "DATA_WIDTH": {
+            "value": "8",
+            "value_src": "default"
+          },
+          "MEMORY_TYPE": {
+            "value": "COMPONENTS",
+            "value_src": "default"
+          },
+          "MEM_ADDR_MAP": {
+            "value": "ROW_COLUMN_BANK",
+            "value_src": "default"
+          },
+          "SLOT": {
+            "value": "Single",
+            "value_src": "default"
+          },
+          "TIMEPERIOD_PS": {
+            "value": "1250",
+            "value_src": "default"
+          }
+        },
+        "port_maps": {
+          "CAS_N": {
+            "physical_name": "DDR_cas_n",
+            "direction": "IO"
+          },
+          "CKE": {
+            "physical_name": "DDR_cke",
+            "direction": "IO"
+          },
+          "CK_N": {
+            "physical_name": "DDR_ck_n",
+            "direction": "IO"
+          },
+          "CK_P": {
+            "physical_name": "DDR_ck_p",
+            "direction": "IO"
+          },
+          "CS_N": {
+            "physical_name": "DDR_cs_n",
+            "direction": "IO"
+          },
+          "RESET_N": {
+            "physical_name": "DDR_reset_n",
+            "direction": "IO"
+          },
+          "ODT": {
+            "physical_name": "DDR_odt",
+            "direction": "IO"
+          },
+          "RAS_N": {
+            "physical_name": "DDR_ras_n",
+            "direction": "IO"
+          },
+          "WE_N": {
+            "physical_name": "DDR_we_n",
+            "direction": "IO"
+          },
+          "BA": {
+            "physical_name": "DDR_ba",
+            "direction": "IO",
+            "left": "2",
+            "right": "0"
+          },
+          "ADDR": {
+            "physical_name": "DDR_addr",
+            "direction": "IO",
+            "left": "14",
+            "right": "0"
+          },
+          "DM": {
+            "physical_name": "DDR_dm",
+            "direction": "IO",
+            "left": "3",
+            "right": "0"
+          },
+          "DQ": {
+            "physical_name": "DDR_dq",
+            "direction": "IO",
+            "left": "31",
+            "right": "0"
+          },
+          "DQS_N": {
+            "physical_name": "DDR_dqs_n",
+            "direction": "IO",
+            "left": "3",
+            "right": "0"
+          },
+          "DQS_P": {
+            "physical_name": "DDR_dqs_p",
+            "direction": "IO",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      },
+      "FIXED_IO": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:display_processing_system7:fixedio:1.0",
+        "vlnv": "xilinx.com:display_processing_system7:fixedio_rtl:1.0",
+        "parameters": {
+          "CAN_DEBUG": {
+            "value": "false",
+            "value_src": "default"
+          }
+        },
+        "port_maps": {
+          "MIO": {
+            "physical_name": "FIXED_IO_mio",
+            "direction": "IO",
+            "left": "53",
+            "right": "0"
+          },
+          "DDR_VRN": {
+            "physical_name": "FIXED_IO_ddr_vrn",
+            "direction": "IO"
+          },
+          "DDR_VRP": {
+            "physical_name": "FIXED_IO_ddr_vrp",
+            "direction": "IO"
+          },
+          "PS_SRSTB": {
+            "physical_name": "FIXED_IO_ps_srstb",
+            "direction": "IO"
+          },
+          "PS_CLK": {
+            "physical_name": "FIXED_IO_ps_clk",
+            "direction": "IO"
+          },
+          "PS_PORB": {
+            "physical_name": "FIXED_IO_ps_porb",
+            "direction": "IO"
+          }
+        }
+      }
+    },
+    "ports": {
+      "lqg_f_res_gw_0": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_res_gw_1": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_res_gw_10": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_res_gw_11": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_res_gw_12": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_res_gw_13": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_res_gw_14": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_res_gw_15": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_res_gw_16": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_res_gw_17": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_res_gw_18": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_res_gw_19": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_res_gw_2": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_res_gw_20": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_res_gw_21": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_res_gw_22": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_res_gw_23": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_res_gw_24": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_res_gw_25": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_res_gw_26": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_res_gw_27": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_res_gw_28": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_res_gw_29": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_res_gw_3": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_res_gw_30": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_res_gw_31": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_res_gw_32": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_res_gw_33": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_res_gw_34": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_res_gw_35": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_res_gw_36": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_res_gw_37": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_res_gw_38": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_res_gw_39": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_res_gw_4": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_res_gw_40": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_res_gw_41": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_res_gw_42": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_res_gw_43": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_res_gw_44": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_res_gw_45": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_res_gw_46": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_res_gw_47": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_res_gw_48": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_res_gw_5": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_res_gw_6": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_res_gw_7": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_res_gw_8": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_res_gw_9": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_shift_gw_0": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_shift_gw_1": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_shift_gw_10": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_shift_gw_11": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_shift_gw_12": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_shift_gw_13": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_shift_gw_14": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_shift_gw_15": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_shift_gw_16": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_shift_gw_17": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_shift_gw_18": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_shift_gw_19": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_shift_gw_2": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_shift_gw_20": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_shift_gw_21": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_shift_gw_22": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_shift_gw_23": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_shift_gw_24": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_shift_gw_25": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_shift_gw_26": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_shift_gw_27": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_shift_gw_28": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_shift_gw_29": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_shift_gw_3": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_shift_gw_30": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_shift_gw_31": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_shift_gw_32": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_shift_gw_33": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_shift_gw_34": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_shift_gw_35": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_shift_gw_36": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_shift_gw_37": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_shift_gw_38": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_shift_gw_39": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_shift_gw_4": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_shift_gw_40": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_shift_gw_41": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_shift_gw_42": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_shift_gw_43": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_shift_gw_44": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_shift_gw_45": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_shift_gw_46": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_shift_gw_47": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_shift_gw_48": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_shift_gw_5": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_shift_gw_6": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_shift_gw_7": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_shift_gw_8": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_f_shift_gw_9": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_gamma_res_gw_0": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_gamma_res_gw_1": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_gamma_res_gw_10": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_gamma_res_gw_11": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_gamma_res_gw_12": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_gamma_res_gw_13": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_gamma_res_gw_2": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_gamma_res_gw_3": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_gamma_res_gw_4": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_gamma_res_gw_5": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_gamma_res_gw_6": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_gamma_res_gw_7": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_gamma_res_gw_8": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_gamma_res_gw_9": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_gamma_shift_gw_0": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_gamma_shift_gw_1": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_gamma_shift_gw_10": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_gamma_shift_gw_11": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_gamma_shift_gw_12": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_gamma_shift_gw_13": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_gamma_shift_gw_2": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_gamma_shift_gw_3": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_gamma_shift_gw_4": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_gamma_shift_gw_5": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_gamma_shift_gw_6": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_gamma_shift_gw_7": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_gamma_shift_gw_8": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_gamma_shift_gw_9": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_k_res_gw_0": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_k_res_gw_1": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_k_res_gw_10": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_k_res_gw_11": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_k_res_gw_12": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_k_res_gw_13": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_k_res_gw_2": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_k_res_gw_3": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_k_res_gw_4": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_k_res_gw_5": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_k_res_gw_6": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_k_res_gw_7": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_k_res_gw_8": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_k_res_gw_9": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_k_shift_gw_0": {
+        "type": "data",
+        "direction": "I",
+        "left": "5",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_k_shift_gw_1": {
+        "type": "data",
+        "direction": "I",
+        "left": "5",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_k_shift_gw_10": {
+        "type": "data",
+        "direction": "I",
+        "left": "5",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_k_shift_gw_11": {
+        "type": "data",
+        "direction": "I",
+        "left": "5",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_k_shift_gw_12": {
+        "type": "data",
+        "direction": "I",
+        "left": "5",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_k_shift_gw_13": {
+        "type": "data",
+        "direction": "I",
+        "left": "5",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_k_shift_gw_2": {
+        "type": "data",
+        "direction": "I",
+        "left": "5",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_k_shift_gw_3": {
+        "type": "data",
+        "direction": "I",
+        "left": "5",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_k_shift_gw_4": {
+        "type": "data",
+        "direction": "I",
+        "left": "5",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_k_shift_gw_5": {
+        "type": "data",
+        "direction": "I",
+        "left": "5",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_k_shift_gw_6": {
+        "type": "data",
+        "direction": "I",
+        "left": "5",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_k_shift_gw_7": {
+        "type": "data",
+        "direction": "I",
+        "left": "5",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_k_shift_gw_8": {
+        "type": "data",
+        "direction": "I",
+        "left": "5",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_k_shift_gw_9": {
+        "type": "data",
+        "direction": "I",
+        "left": "5",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_l_res_gw_0": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_l_res_gw_1": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_l_res_gw_10": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_l_res_gw_11": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_l_res_gw_12": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_l_res_gw_13": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_l_res_gw_2": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_l_res_gw_3": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_l_res_gw_4": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_l_res_gw_5": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_l_res_gw_6": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_l_res_gw_7": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_l_res_gw_8": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_l_res_gw_9": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_l_shift_gw_0": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_l_shift_gw_1": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_l_shift_gw_10": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_l_shift_gw_11": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_l_shift_gw_12": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_l_shift_gw_13": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_l_shift_gw_2": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_l_shift_gw_3": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_l_shift_gw_4": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_l_shift_gw_5": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_l_shift_gw_6": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_l_shift_gw_7": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_l_shift_gw_8": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_l_shift_gw_9": {
+        "type": "data",
+        "direction": "I",
+        "left": "4",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_led_in": {
+        "type": "data",
+        "direction": "I",
+        "left": "7",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "lqg_led_out": {
+        "type": "data",
+        "direction": "O",
+        "left": "7",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": [
+              "xilinx.com:interface:datatypes:1.0 {",
+              "DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {}",
+              "maximum {}} value 8} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format",
+              "long minimum {} maximum {}} value 0} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value false}}}}}",
+              "}"
+            ],
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "proc_sys_clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "lqg_axi_test_bd_proc_sys_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "uk_factor_gw_0": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "uk_factor_gw_1": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "uk_gw_0": {
+        "type": "data",
+        "direction": "O",
+        "left": "13",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": [
+              "xilinx.com:interface:datatypes:1.0 {",
+              "DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {}",
+              "maximum {}} value 14} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format",
+              "long minimum {} maximum {}} value 12} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}}",
+              "}"
+            ],
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "uk_gw_1": {
+        "type": "data",
+        "direction": "O",
+        "left": "13",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": [
+              "xilinx.com:interface:datatypes:1.0 {",
+              "DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {}",
+              "maximum {}} value 14} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format",
+              "long minimum {} maximum {}} value 12} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}}",
+              "}"
+            ],
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "uk_offset_gw_0": {
+        "type": "data",
+        "direction": "I",
+        "left": "13",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "uk_offset_gw_1": {
+        "type": "data",
+        "direction": "I",
+        "left": "13",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "xkhat_gw_0": {
+        "type": "data",
+        "direction": "O",
+        "left": "24",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": [
+              "xilinx.com:interface:datatypes:1.0 {",
+              "DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {}",
+              "maximum {}} value 25} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format",
+              "long minimum {} maximum {}} value 22} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}}",
+              "}"
+            ],
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "xkhat_gw_1": {
+        "type": "data",
+        "direction": "O",
+        "left": "24",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": [
+              "xilinx.com:interface:datatypes:1.0 {",
+              "DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {}",
+              "maximum {}} value 25} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format",
+              "long minimum {} maximum {}} value 22} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}}",
+              "}"
+            ],
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "xkhat_gw_2": {
+        "type": "data",
+        "direction": "O",
+        "left": "24",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": [
+              "xilinx.com:interface:datatypes:1.0 {",
+              "DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {}",
+              "maximum {}} value 25} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format",
+              "long minimum {} maximum {}} value 22} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}}",
+              "}"
+            ],
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "xkhat_gw_3": {
+        "type": "data",
+        "direction": "O",
+        "left": "24",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": [
+              "xilinx.com:interface:datatypes:1.0 {",
+              "DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {}",
+              "maximum {}} value 25} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format",
+              "long minimum {} maximum {}} value 22} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}}",
+              "}"
+            ],
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "xkhat_gw_4": {
+        "type": "data",
+        "direction": "O",
+        "left": "24",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": [
+              "xilinx.com:interface:datatypes:1.0 {",
+              "DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {}",
+              "maximum {}} value 25} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format",
+              "long minimum {} maximum {}} value 22} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}}",
+              "}"
+            ],
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "xkhat_gw_5": {
+        "type": "data",
+        "direction": "O",
+        "left": "24",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": [
+              "xilinx.com:interface:datatypes:1.0 {",
+              "DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {}",
+              "maximum {}} value 25} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format",
+              "long minimum {} maximum {}} value 22} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}}",
+              "}"
+            ],
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "xkhat_gw_6": {
+        "type": "data",
+        "direction": "O",
+        "left": "24",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": [
+              "xilinx.com:interface:datatypes:1.0 {",
+              "DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value {}} bitwidth {attribs {resolve_type immediate dependency {} format long minimum {}",
+              "maximum {}} value 25} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} real {fixed {fractwidth {attribs {resolve_type immediate dependency {} format",
+              "long minimum {} maximum {}} value 22} signed {attribs {resolve_type immediate dependency {} format bool minimum {} maximum {}} value true}}}}}",
+              "}"
+            ],
+            "value_src": "const_prop"
+          }
+        }
+      },
+      "yk_factor_gw_0": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "yk_factor_gw_1": {
+        "type": "data",
+        "direction": "I",
+        "left": "17",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "yk_gw_0": {
+        "type": "data",
+        "direction": "I",
+        "left": "13",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "yk_gw_1": {
+        "type": "data",
+        "direction": "I",
+        "left": "13",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "yk_offset_gw_0": {
+        "type": "data",
+        "direction": "I",
+        "left": "13",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "yk_offset_gw_1": {
+        "type": "data",
+        "direction": "I",
+        "left": "13",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "lqg_axi_test_1": {
+        "vlnv": "acin:vmc:lqg_axi_test:1.0",
+        "ip_revision": "405959052",
+        "xci_name": "lqg_axi_test_bd_lqg_axi_test_1_0",
+        "xci_path": "ip/lqg_axi_test_bd_lqg_axi_test_1_0/lqg_axi_test_bd_lqg_axi_test_1_0.xci",
+        "inst_hier_path": "lqg_axi_test_1",
+        "interface_ports": {
+          "axi_sys_s_axi": {
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+            "mode": "Slave",
+            "memory_map_ref": "axi_sys_s_axi"
+          }
+        }
+      },
+      "processing_system_1": {
+        "vlnv": "xilinx.com:ip:processing_system7:5.5",
+        "ip_revision": "6",
+        "xci_name": "lqg_axi_test_bd_processing_system_1_0",
+        "xci_path": "ip/lqg_axi_test_bd_processing_system_1_0/lqg_axi_test_bd_processing_system_1_0.xci",
+        "inst_hier_path": "processing_system_1",
+        "parameters": {
+          "PCW_ACT_APU_PERIPHERAL_FREQMHZ": {
+            "value": "666.666687"
+          },
+          "PCW_ACT_CAN_PERIPHERAL_FREQMHZ": {
+            "value": "10.000000"
+          },
+          "PCW_ACT_DCI_PERIPHERAL_FREQMHZ": {
+            "value": "10.158730"
+          },
+          "PCW_ACT_ENET0_PERIPHERAL_FREQMHZ": {
+            "value": "10.000000"
+          },
+          "PCW_ACT_ENET1_PERIPHERAL_FREQMHZ": {
+            "value": "10.000000"
+          },
+          "PCW_ACT_FPGA0_PERIPHERAL_FREQMHZ": {
+            "value": "50.000000"
+          },
+          "PCW_ACT_FPGA1_PERIPHERAL_FREQMHZ": {
+            "value": "10.000000"
+          },
+          "PCW_ACT_FPGA2_PERIPHERAL_FREQMHZ": {
+            "value": "10.000000"
+          },
+          "PCW_ACT_FPGA3_PERIPHERAL_FREQMHZ": {
+            "value": "10.000000"
+          },
+          "PCW_ACT_PCAP_PERIPHERAL_FREQMHZ": {
+            "value": "200.000000"
+          },
+          "PCW_ACT_QSPI_PERIPHERAL_FREQMHZ": {
+            "value": "10.000000"
+          },
+          "PCW_ACT_SDIO_PERIPHERAL_FREQMHZ": {
+            "value": "10.000000"
+          },
+          "PCW_ACT_SMC_PERIPHERAL_FREQMHZ": {
+            "value": "10.000000"
+          },
+          "PCW_ACT_SPI_PERIPHERAL_FREQMHZ": {
+            "value": "10.000000"
+          },
+          "PCW_ACT_TPIU_PERIPHERAL_FREQMHZ": {
+            "value": "200.000000"
+          },
+          "PCW_ACT_TTC0_CLK0_PERIPHERAL_FREQMHZ": {
+            "value": "111.111115"
+          },
+          "PCW_ACT_TTC0_CLK1_PERIPHERAL_FREQMHZ": {
+            "value": "111.111115"
+          },
+          "PCW_ACT_TTC0_CLK2_PERIPHERAL_FREQMHZ": {
+            "value": "111.111115"
+          },
+          "PCW_ACT_TTC1_CLK0_PERIPHERAL_FREQMHZ": {
+            "value": "111.111115"
+          },
+          "PCW_ACT_TTC1_CLK1_PERIPHERAL_FREQMHZ": {
+            "value": "111.111115"
+          },
+          "PCW_ACT_TTC1_CLK2_PERIPHERAL_FREQMHZ": {
+            "value": "111.111115"
+          },
+          "PCW_ACT_UART_PERIPHERAL_FREQMHZ": {
+            "value": "10.000000"
+          },
+          "PCW_ACT_WDT_PERIPHERAL_FREQMHZ": {
+            "value": "111.111115"
+          },
+          "PCW_CLK0_FREQ": {
+            "value": "50000000"
+          },
+          "PCW_CLK1_FREQ": {
+            "value": "10000000"
+          },
+          "PCW_CLK2_FREQ": {
+            "value": "10000000"
+          },
+          "PCW_CLK3_FREQ": {
+            "value": "10000000"
+          },
+          "PCW_DDR_RAM_HIGHADDR": {
+            "value": "0x1FFFFFFF"
+          },
+          "PCW_EN_CLK0_PORT": {
+            "value": "1"
+          },
+          "PCW_FCLK_CLK0_BUF": {
+            "value": "TRUE"
+          },
+          "PCW_FPGA_FCLK0_ENABLE": {
+            "value": "1"
+          },
+          "PCW_UIPARAM_ACT_DDR_FREQ_MHZ": {
+            "value": "533.333374"
+          },
+          "PCW_USE_M_AXI_GP0": {
+            "value": "1"
+          }
+        },
+        "interface_ports": {
+          "M_AXI_GP0": {
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+            "mode": "Master",
+            "address_space_ref": "Data",
+            "base_address": {
+              "minimum": "0x40000000",
+              "maximum": "0x7FFFFFFF",
+              "width": "32"
+            }
+          }
+        },
+        "addressing": {
+          "address_spaces": {
+            "Data": {
+              "range": "4G",
+              "width": "32",
+              "local_memory_map": {
+                "name": "Data",
+                "description": "Address Space Segments",
+                "address_blocks": {
+                  "segment1": {
+                    "name": "segment1",
+                    "display_name": "segment1",
+                    "base_address": "0x00000000",
+                    "range": "256K",
+                    "width": "18",
+                    "usage": "register"
+                  },
+                  "segment2": {
+                    "name": "segment2",
+                    "display_name": "segment2",
+                    "base_address": "0x00040000",
+                    "range": "256K",
+                    "width": "19",
+                    "usage": "register"
+                  },
+                  "segment3": {
+                    "name": "segment3",
+                    "display_name": "segment3",
+                    "base_address": "0x00080000",
+                    "range": "512K",
+                    "width": "20",
+                    "usage": "register"
+                  },
+                  "segment4": {
+                    "name": "segment4",
+                    "display_name": "segment4",
+                    "base_address": "0x00100000",
+                    "range": "1023M",
+                    "width": "30",
+                    "usage": "register"
+                  },
+                  "M_AXI_GP0": {
+                    "name": "M_AXI_GP0",
+                    "display_name": "M_AXI_GP0",
+                    "base_address": "0x40000000",
+                    "range": "1G",
+                    "width": "31",
+                    "usage": "register"
+                  },
+                  "M_AXI_GP1": {
+                    "name": "M_AXI_GP1",
+                    "display_name": "M_AXI_GP1",
+                    "base_address": "0x80000000",
+                    "range": "1G",
+                    "width": "32",
+                    "usage": "register"
+                  },
+                  "IO_Peripheral_Registers": {
+                    "name": "IO_Peripheral_Registers",
+                    "display_name": "IO Peripheral Registers",
+                    "base_address": "0xE0000000",
+                    "range": "3M",
+                    "width": "32",
+                    "usage": "register"
+                  },
+                  "SMC_Memories": {
+                    "name": "SMC_Memories",
+                    "display_name": "SMC Memories",
+                    "base_address": "0xE1000000",
+                    "range": "80M",
+                    "width": "32",
+                    "usage": "register"
+                  },
+                  "SLCR_Registers": {
+                    "name": "SLCR_Registers",
+                    "display_name": "SLCR Registers",
+                    "base_address": "0xF8000000",
+                    "range": "3K",
+                    "width": "32",
+                    "usage": "register"
+                  },
+                  "PS_System_Registers": {
+                    "name": "PS_System_Registers",
+                    "display_name": "PS System Registers",
+                    "base_address": "0xF8001000",
+                    "range": "8252K",
+                    "width": "32",
+                    "usage": "register"
+                  },
+                  "CPU_Private_Registers": {
+                    "name": "CPU_Private_Registers",
+                    "display_name": "CPU Private Registers",
+                    "base_address": "0xF8900000",
+                    "range": "6156K",
+                    "width": "32",
+                    "usage": "register"
+                  },
+                  "segment5": {
+                    "name": "segment5",
+                    "display_name": "segment5",
+                    "base_address": "0xFC000000",
+                    "range": "32M",
+                    "width": "32",
+                    "usage": "register"
+                  },
+                  "segment6": {
+                    "name": "segment6",
+                    "display_name": "segment6",
+                    "base_address": "0xFFFC0000",
+                    "range": "256K",
+                    "width": "32",
+                    "usage": "register"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "processing_system_1_axi_periph": {
+        "vlnv": "xilinx.com:ip:axi_interconnect:2.1",
+        "xci_path": "ip/lqg_axi_test_bd_processing_system_1_axi_periph_0/lqg_axi_test_bd_processing_system_1_axi_periph_0.xci",
+        "inst_hier_path": "processing_system_1_axi_periph",
+        "xci_name": "lqg_axi_test_bd_processing_system_1_axi_periph_0",
+        "parameters": {
+          "NUM_MI": {
+            "value": "1"
+          }
+        },
+        "interface_ports": {
+          "S00_AXI": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
+          },
+          "M00_AXI": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
+          }
+        },
+        "ports": {
+          "ACLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "ARESETN"
+              }
+            }
+          },
+          "ARESETN": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "S00_ACLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_BUSIF": {
+                "value": "S00_AXI"
+              },
+              "ASSOCIATED_RESET": {
+                "value": "S00_ARESETN"
+              }
+            }
+          },
+          "S00_ARESETN": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "M00_ACLK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_BUSIF": {
+                "value": "M00_AXI"
+              },
+              "ASSOCIATED_RESET": {
+                "value": "M00_ARESETN"
+              }
+            }
+          },
+          "M00_ARESETN": {
+            "type": "rst",
+            "direction": "I"
+          }
+        },
+        "components": {
+          "s00_couplers": {
+            "interface_ports": {
+              "M_AXI": {
+                "mode": "Master",
+                "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
+                "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
+              },
+              "S_AXI": {
+                "mode": "Slave",
+                "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
+                "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
+              }
+            },
+            "ports": {
+              "M_ACLK": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "ASSOCIATED_BUSIF": {
+                    "value": "M_AXI"
+                  },
+                  "ASSOCIATED_RESET": {
+                    "value": "M_ARESETN"
+                  }
+                }
+              },
+              "M_ARESETN": {
+                "type": "rst",
+                "direction": "I"
+              },
+              "S_ACLK": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                  "ASSOCIATED_BUSIF": {
+                    "value": "S_AXI"
+                  },
+                  "ASSOCIATED_RESET": {
+                    "value": "S_ARESETN"
+                  }
+                }
+              },
+              "S_ARESETN": {
+                "type": "rst",
+                "direction": "I"
+              }
+            },
+            "components": {
+              "auto_pc": {
+                "vlnv": "xilinx.com:ip:axi_protocol_converter:2.1",
+                "ip_revision": "33",
+                "xci_name": "lqg_axi_test_bd_processing_system_1_axi_periph_imp_auto_pc_0",
+                "xci_path": "ip/lqg_axi_test_bd_processing_system_1_axi_periph_imp_auto_pc_0/lqg_axi_test_bd_processing_system_1_axi_periph_imp_auto_pc_0.xci",
+                "inst_hier_path": "processing_system_1_axi_periph/s00_couplers/auto_pc",
+                "parameters": {
+                  "MI_PROTOCOL": {
+                    "value": "AXI4LITE"
+                  },
+                  "SI_PROTOCOL": {
+                    "value": "AXI3"
+                  }
+                },
+                "interface_ports": {
+                  "S_AXI": {
+                    "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+                    "mode": "Slave",
+                    "bridges": [
+                      "M_AXI"
+                    ]
+                  }
+                }
+              }
+            },
+            "interface_nets": {
+              "auto_pc_to_s00_couplers": {
+                "interface_ports": [
+                  "M_AXI",
+                  "auto_pc/M_AXI"
+                ]
+              },
+              "s00_couplers_to_auto_pc": {
+                "interface_ports": [
+                  "S_AXI",
+                  "auto_pc/S_AXI"
+                ]
+              }
+            },
+            "nets": {
+              "S_ACLK_1": {
+                "ports": [
+                  "S_ACLK",
+                  "auto_pc/aclk"
+                ]
+              },
+              "S_ARESETN_1": {
+                "ports": [
+                  "S_ARESETN",
+                  "auto_pc/aresetn"
+                ]
+              }
+            }
+          }
+        },
+        "interface_nets": {
+          "processing_system_1_axi_periph_to_s00_couplers": {
+            "interface_ports": [
+              "S00_AXI",
+              "s00_couplers/S_AXI"
+            ]
+          },
+          "s00_couplers_to_processing_system_1_axi_periph": {
+            "interface_ports": [
+              "s00_couplers/M_AXI",
+              "M00_AXI"
+            ]
+          }
+        },
+        "nets": {
+          "S00_ACLK_1": {
+            "ports": [
+              "S00_ACLK",
+              "s00_couplers/S_ACLK"
+            ]
+          },
+          "S00_ARESETN_1": {
+            "ports": [
+              "S00_ARESETN",
+              "s00_couplers/S_ARESETN"
+            ]
+          },
+          "processing_system_1_axi_periph_ACLK_net": {
+            "ports": [
+              "M00_ACLK",
+              "s00_couplers/M_ACLK"
+            ]
+          },
+          "processing_system_1_axi_periph_ARESETN_net": {
+            "ports": [
+              "M00_ARESETN",
+              "s00_couplers/M_ARESETN"
+            ]
+          }
+        }
+      },
+      "rst_processing_system_1_50M": {
+        "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
+        "ip_revision": "16",
+        "xci_name": "lqg_axi_test_bd_rst_processing_system_1_50M_0",
+        "xci_path": "ip/lqg_axi_test_bd_rst_processing_system_1_50M_0/lqg_axi_test_bd_rst_processing_system_1_50M_0.xci",
+        "inst_hier_path": "rst_processing_system_1_50M"
+      }
+    },
+    "interface_nets": {
+      "processing_system_1_DDR": {
+        "interface_ports": [
+          "DDR",
+          "processing_system_1/DDR"
+        ]
+      },
+      "processing_system_1_FIXED_IO": {
+        "interface_ports": [
+          "FIXED_IO",
+          "processing_system_1/FIXED_IO"
+        ]
+      },
+      "processing_system_1_M_AXI_GP0": {
+        "interface_ports": [
+          "processing_system_1/M_AXI_GP0",
+          "processing_system_1_axi_periph/S00_AXI"
+        ]
+      },
+      "processing_system_1_axi_periph_M00_AXI": {
+        "interface_ports": [
+          "processing_system_1_axi_periph/M00_AXI",
+          "lqg_axi_test_1/axi_sys_s_axi"
+        ]
+      }
+    },
+    "nets": {
+      "lqg_axi_test_1_lqg_led_out": {
+        "ports": [
+          "lqg_axi_test_1/lqg_led_out",
+          "lqg_led_out"
+        ]
+      },
+      "lqg_axi_test_1_uk_gw_0": {
+        "ports": [
+          "lqg_axi_test_1/uk_gw_0",
+          "uk_gw_0"
+        ]
+      },
+      "lqg_axi_test_1_uk_gw_1": {
+        "ports": [
+          "lqg_axi_test_1/uk_gw_1",
+          "uk_gw_1"
+        ]
+      },
+      "lqg_axi_test_1_xkhat_gw_0": {
+        "ports": [
+          "lqg_axi_test_1/xkhat_gw_0",
+          "xkhat_gw_0"
+        ]
+      },
+      "lqg_axi_test_1_xkhat_gw_1": {
+        "ports": [
+          "lqg_axi_test_1/xkhat_gw_1",
+          "xkhat_gw_1"
+        ]
+      },
+      "lqg_axi_test_1_xkhat_gw_2": {
+        "ports": [
+          "lqg_axi_test_1/xkhat_gw_2",
+          "xkhat_gw_2"
+        ]
+      },
+      "lqg_axi_test_1_xkhat_gw_3": {
+        "ports": [
+          "lqg_axi_test_1/xkhat_gw_3",
+          "xkhat_gw_3"
+        ]
+      },
+      "lqg_axi_test_1_xkhat_gw_4": {
+        "ports": [
+          "lqg_axi_test_1/xkhat_gw_4",
+          "xkhat_gw_4"
+        ]
+      },
+      "lqg_axi_test_1_xkhat_gw_5": {
+        "ports": [
+          "lqg_axi_test_1/xkhat_gw_5",
+          "xkhat_gw_5"
+        ]
+      },
+      "lqg_axi_test_1_xkhat_gw_6": {
+        "ports": [
+          "lqg_axi_test_1/xkhat_gw_6",
+          "xkhat_gw_6"
+        ]
+      },
+      "lqg_f_res_gw_0_1": {
+        "ports": [
+          "lqg_f_res_gw_0",
+          "lqg_axi_test_1/lqg_f_res_gw_0"
+        ]
+      },
+      "lqg_f_res_gw_10_1": {
+        "ports": [
+          "lqg_f_res_gw_10",
+          "lqg_axi_test_1/lqg_f_res_gw_10"
+        ]
+      },
+      "lqg_f_res_gw_11_1": {
+        "ports": [
+          "lqg_f_res_gw_11",
+          "lqg_axi_test_1/lqg_f_res_gw_11"
+        ]
+      },
+      "lqg_f_res_gw_12_1": {
+        "ports": [
+          "lqg_f_res_gw_12",
+          "lqg_axi_test_1/lqg_f_res_gw_12"
+        ]
+      },
+      "lqg_f_res_gw_13_1": {
+        "ports": [
+          "lqg_f_res_gw_13",
+          "lqg_axi_test_1/lqg_f_res_gw_13"
+        ]
+      },
+      "lqg_f_res_gw_14_1": {
+        "ports": [
+          "lqg_f_res_gw_14",
+          "lqg_axi_test_1/lqg_f_res_gw_14"
+        ]
+      },
+      "lqg_f_res_gw_15_1": {
+        "ports": [
+          "lqg_f_res_gw_15",
+          "lqg_axi_test_1/lqg_f_res_gw_15"
+        ]
+      },
+      "lqg_f_res_gw_16_1": {
+        "ports": [
+          "lqg_f_res_gw_16",
+          "lqg_axi_test_1/lqg_f_res_gw_16"
+        ]
+      },
+      "lqg_f_res_gw_17_1": {
+        "ports": [
+          "lqg_f_res_gw_17",
+          "lqg_axi_test_1/lqg_f_res_gw_17"
+        ]
+      },
+      "lqg_f_res_gw_18_1": {
+        "ports": [
+          "lqg_f_res_gw_18",
+          "lqg_axi_test_1/lqg_f_res_gw_18"
+        ]
+      },
+      "lqg_f_res_gw_19_1": {
+        "ports": [
+          "lqg_f_res_gw_19",
+          "lqg_axi_test_1/lqg_f_res_gw_19"
+        ]
+      },
+      "lqg_f_res_gw_1_1": {
+        "ports": [
+          "lqg_f_res_gw_1",
+          "lqg_axi_test_1/lqg_f_res_gw_1"
+        ]
+      },
+      "lqg_f_res_gw_20_1": {
+        "ports": [
+          "lqg_f_res_gw_20",
+          "lqg_axi_test_1/lqg_f_res_gw_20"
+        ]
+      },
+      "lqg_f_res_gw_21_1": {
+        "ports": [
+          "lqg_f_res_gw_21",
+          "lqg_axi_test_1/lqg_f_res_gw_21"
+        ]
+      },
+      "lqg_f_res_gw_22_1": {
+        "ports": [
+          "lqg_f_res_gw_22",
+          "lqg_axi_test_1/lqg_f_res_gw_22"
+        ]
+      },
+      "lqg_f_res_gw_23_1": {
+        "ports": [
+          "lqg_f_res_gw_23",
+          "lqg_axi_test_1/lqg_f_res_gw_23"
+        ]
+      },
+      "lqg_f_res_gw_24_1": {
+        "ports": [
+          "lqg_f_res_gw_24",
+          "lqg_axi_test_1/lqg_f_res_gw_24"
+        ]
+      },
+      "lqg_f_res_gw_25_1": {
+        "ports": [
+          "lqg_f_res_gw_25",
+          "lqg_axi_test_1/lqg_f_res_gw_25"
+        ]
+      },
+      "lqg_f_res_gw_26_1": {
+        "ports": [
+          "lqg_f_res_gw_26",
+          "lqg_axi_test_1/lqg_f_res_gw_26"
+        ]
+      },
+      "lqg_f_res_gw_27_1": {
+        "ports": [
+          "lqg_f_res_gw_27",
+          "lqg_axi_test_1/lqg_f_res_gw_27"
+        ]
+      },
+      "lqg_f_res_gw_28_1": {
+        "ports": [
+          "lqg_f_res_gw_28",
+          "lqg_axi_test_1/lqg_f_res_gw_28"
+        ]
+      },
+      "lqg_f_res_gw_29_1": {
+        "ports": [
+          "lqg_f_res_gw_29",
+          "lqg_axi_test_1/lqg_f_res_gw_29"
+        ]
+      },
+      "lqg_f_res_gw_2_1": {
+        "ports": [
+          "lqg_f_res_gw_2",
+          "lqg_axi_test_1/lqg_f_res_gw_2"
+        ]
+      },
+      "lqg_f_res_gw_30_1": {
+        "ports": [
+          "lqg_f_res_gw_30",
+          "lqg_axi_test_1/lqg_f_res_gw_30"
+        ]
+      },
+      "lqg_f_res_gw_31_1": {
+        "ports": [
+          "lqg_f_res_gw_31",
+          "lqg_axi_test_1/lqg_f_res_gw_31"
+        ]
+      },
+      "lqg_f_res_gw_32_1": {
+        "ports": [
+          "lqg_f_res_gw_32",
+          "lqg_axi_test_1/lqg_f_res_gw_32"
+        ]
+      },
+      "lqg_f_res_gw_33_1": {
+        "ports": [
+          "lqg_f_res_gw_33",
+          "lqg_axi_test_1/lqg_f_res_gw_33"
+        ]
+      },
+      "lqg_f_res_gw_34_1": {
+        "ports": [
+          "lqg_f_res_gw_34",
+          "lqg_axi_test_1/lqg_f_res_gw_34"
+        ]
+      },
+      "lqg_f_res_gw_35_1": {
+        "ports": [
+          "lqg_f_res_gw_35",
+          "lqg_axi_test_1/lqg_f_res_gw_35"
+        ]
+      },
+      "lqg_f_res_gw_36_1": {
+        "ports": [
+          "lqg_f_res_gw_36",
+          "lqg_axi_test_1/lqg_f_res_gw_36"
+        ]
+      },
+      "lqg_f_res_gw_37_1": {
+        "ports": [
+          "lqg_f_res_gw_37",
+          "lqg_axi_test_1/lqg_f_res_gw_37"
+        ]
+      },
+      "lqg_f_res_gw_38_1": {
+        "ports": [
+          "lqg_f_res_gw_38",
+          "lqg_axi_test_1/lqg_f_res_gw_38"
+        ]
+      },
+      "lqg_f_res_gw_39_1": {
+        "ports": [
+          "lqg_f_res_gw_39",
+          "lqg_axi_test_1/lqg_f_res_gw_39"
+        ]
+      },
+      "lqg_f_res_gw_3_1": {
+        "ports": [
+          "lqg_f_res_gw_3",
+          "lqg_axi_test_1/lqg_f_res_gw_3"
+        ]
+      },
+      "lqg_f_res_gw_40_1": {
+        "ports": [
+          "lqg_f_res_gw_40",
+          "lqg_axi_test_1/lqg_f_res_gw_40"
+        ]
+      },
+      "lqg_f_res_gw_41_1": {
+        "ports": [
+          "lqg_f_res_gw_41",
+          "lqg_axi_test_1/lqg_f_res_gw_41"
+        ]
+      },
+      "lqg_f_res_gw_42_1": {
+        "ports": [
+          "lqg_f_res_gw_42",
+          "lqg_axi_test_1/lqg_f_res_gw_42"
+        ]
+      },
+      "lqg_f_res_gw_43_1": {
+        "ports": [
+          "lqg_f_res_gw_43",
+          "lqg_axi_test_1/lqg_f_res_gw_43"
+        ]
+      },
+      "lqg_f_res_gw_44_1": {
+        "ports": [
+          "lqg_f_res_gw_44",
+          "lqg_axi_test_1/lqg_f_res_gw_44"
+        ]
+      },
+      "lqg_f_res_gw_45_1": {
+        "ports": [
+          "lqg_f_res_gw_45",
+          "lqg_axi_test_1/lqg_f_res_gw_45"
+        ]
+      },
+      "lqg_f_res_gw_46_1": {
+        "ports": [
+          "lqg_f_res_gw_46",
+          "lqg_axi_test_1/lqg_f_res_gw_46"
+        ]
+      },
+      "lqg_f_res_gw_47_1": {
+        "ports": [
+          "lqg_f_res_gw_47",
+          "lqg_axi_test_1/lqg_f_res_gw_47"
+        ]
+      },
+      "lqg_f_res_gw_48_1": {
+        "ports": [
+          "lqg_f_res_gw_48",
+          "lqg_axi_test_1/lqg_f_res_gw_48"
+        ]
+      },
+      "lqg_f_res_gw_4_1": {
+        "ports": [
+          "lqg_f_res_gw_4",
+          "lqg_axi_test_1/lqg_f_res_gw_4"
+        ]
+      },
+      "lqg_f_res_gw_5_1": {
+        "ports": [
+          "lqg_f_res_gw_5",
+          "lqg_axi_test_1/lqg_f_res_gw_5"
+        ]
+      },
+      "lqg_f_res_gw_6_1": {
+        "ports": [
+          "lqg_f_res_gw_6",
+          "lqg_axi_test_1/lqg_f_res_gw_6"
+        ]
+      },
+      "lqg_f_res_gw_7_1": {
+        "ports": [
+          "lqg_f_res_gw_7",
+          "lqg_axi_test_1/lqg_f_res_gw_7"
+        ]
+      },
+      "lqg_f_res_gw_8_1": {
+        "ports": [
+          "lqg_f_res_gw_8",
+          "lqg_axi_test_1/lqg_f_res_gw_8"
+        ]
+      },
+      "lqg_f_res_gw_9_1": {
+        "ports": [
+          "lqg_f_res_gw_9",
+          "lqg_axi_test_1/lqg_f_res_gw_9"
+        ]
+      },
+      "lqg_f_shift_gw_0_1": {
+        "ports": [
+          "lqg_f_shift_gw_0",
+          "lqg_axi_test_1/lqg_f_shift_gw_0"
+        ]
+      },
+      "lqg_f_shift_gw_10_1": {
+        "ports": [
+          "lqg_f_shift_gw_10",
+          "lqg_axi_test_1/lqg_f_shift_gw_10"
+        ]
+      },
+      "lqg_f_shift_gw_11_1": {
+        "ports": [
+          "lqg_f_shift_gw_11",
+          "lqg_axi_test_1/lqg_f_shift_gw_11"
+        ]
+      },
+      "lqg_f_shift_gw_12_1": {
+        "ports": [
+          "lqg_f_shift_gw_12",
+          "lqg_axi_test_1/lqg_f_shift_gw_12"
+        ]
+      },
+      "lqg_f_shift_gw_13_1": {
+        "ports": [
+          "lqg_f_shift_gw_13",
+          "lqg_axi_test_1/lqg_f_shift_gw_13"
+        ]
+      },
+      "lqg_f_shift_gw_14_1": {
+        "ports": [
+          "lqg_f_shift_gw_14",
+          "lqg_axi_test_1/lqg_f_shift_gw_14"
+        ]
+      },
+      "lqg_f_shift_gw_15_1": {
+        "ports": [
+          "lqg_f_shift_gw_15",
+          "lqg_axi_test_1/lqg_f_shift_gw_15"
+        ]
+      },
+      "lqg_f_shift_gw_16_1": {
+        "ports": [
+          "lqg_f_shift_gw_16",
+          "lqg_axi_test_1/lqg_f_shift_gw_16"
+        ]
+      },
+      "lqg_f_shift_gw_17_1": {
+        "ports": [
+          "lqg_f_shift_gw_17",
+          "lqg_axi_test_1/lqg_f_shift_gw_17"
+        ]
+      },
+      "lqg_f_shift_gw_18_1": {
+        "ports": [
+          "lqg_f_shift_gw_18",
+          "lqg_axi_test_1/lqg_f_shift_gw_18"
+        ]
+      },
+      "lqg_f_shift_gw_19_1": {
+        "ports": [
+          "lqg_f_shift_gw_19",
+          "lqg_axi_test_1/lqg_f_shift_gw_19"
+        ]
+      },
+      "lqg_f_shift_gw_1_1": {
+        "ports": [
+          "lqg_f_shift_gw_1",
+          "lqg_axi_test_1/lqg_f_shift_gw_1"
+        ]
+      },
+      "lqg_f_shift_gw_20_1": {
+        "ports": [
+          "lqg_f_shift_gw_20",
+          "lqg_axi_test_1/lqg_f_shift_gw_20"
+        ]
+      },
+      "lqg_f_shift_gw_21_1": {
+        "ports": [
+          "lqg_f_shift_gw_21",
+          "lqg_axi_test_1/lqg_f_shift_gw_21"
+        ]
+      },
+      "lqg_f_shift_gw_22_1": {
+        "ports": [
+          "lqg_f_shift_gw_22",
+          "lqg_axi_test_1/lqg_f_shift_gw_22"
+        ]
+      },
+      "lqg_f_shift_gw_23_1": {
+        "ports": [
+          "lqg_f_shift_gw_23",
+          "lqg_axi_test_1/lqg_f_shift_gw_23"
+        ]
+      },
+      "lqg_f_shift_gw_24_1": {
+        "ports": [
+          "lqg_f_shift_gw_24",
+          "lqg_axi_test_1/lqg_f_shift_gw_24"
+        ]
+      },
+      "lqg_f_shift_gw_25_1": {
+        "ports": [
+          "lqg_f_shift_gw_25",
+          "lqg_axi_test_1/lqg_f_shift_gw_25"
+        ]
+      },
+      "lqg_f_shift_gw_26_1": {
+        "ports": [
+          "lqg_f_shift_gw_26",
+          "lqg_axi_test_1/lqg_f_shift_gw_26"
+        ]
+      },
+      "lqg_f_shift_gw_27_1": {
+        "ports": [
+          "lqg_f_shift_gw_27",
+          "lqg_axi_test_1/lqg_f_shift_gw_27"
+        ]
+      },
+      "lqg_f_shift_gw_28_1": {
+        "ports": [
+          "lqg_f_shift_gw_28",
+          "lqg_axi_test_1/lqg_f_shift_gw_28"
+        ]
+      },
+      "lqg_f_shift_gw_29_1": {
+        "ports": [
+          "lqg_f_shift_gw_29",
+          "lqg_axi_test_1/lqg_f_shift_gw_29"
+        ]
+      },
+      "lqg_f_shift_gw_2_1": {
+        "ports": [
+          "lqg_f_shift_gw_2",
+          "lqg_axi_test_1/lqg_f_shift_gw_2"
+        ]
+      },
+      "lqg_f_shift_gw_30_1": {
+        "ports": [
+          "lqg_f_shift_gw_30",
+          "lqg_axi_test_1/lqg_f_shift_gw_30"
+        ]
+      },
+      "lqg_f_shift_gw_31_1": {
+        "ports": [
+          "lqg_f_shift_gw_31",
+          "lqg_axi_test_1/lqg_f_shift_gw_31"
+        ]
+      },
+      "lqg_f_shift_gw_32_1": {
+        "ports": [
+          "lqg_f_shift_gw_32",
+          "lqg_axi_test_1/lqg_f_shift_gw_32"
+        ]
+      },
+      "lqg_f_shift_gw_33_1": {
+        "ports": [
+          "lqg_f_shift_gw_33",
+          "lqg_axi_test_1/lqg_f_shift_gw_33"
+        ]
+      },
+      "lqg_f_shift_gw_34_1": {
+        "ports": [
+          "lqg_f_shift_gw_34",
+          "lqg_axi_test_1/lqg_f_shift_gw_34"
+        ]
+      },
+      "lqg_f_shift_gw_35_1": {
+        "ports": [
+          "lqg_f_shift_gw_35",
+          "lqg_axi_test_1/lqg_f_shift_gw_35"
+        ]
+      },
+      "lqg_f_shift_gw_36_1": {
+        "ports": [
+          "lqg_f_shift_gw_36",
+          "lqg_axi_test_1/lqg_f_shift_gw_36"
+        ]
+      },
+      "lqg_f_shift_gw_37_1": {
+        "ports": [
+          "lqg_f_shift_gw_37",
+          "lqg_axi_test_1/lqg_f_shift_gw_37"
+        ]
+      },
+      "lqg_f_shift_gw_38_1": {
+        "ports": [
+          "lqg_f_shift_gw_38",
+          "lqg_axi_test_1/lqg_f_shift_gw_38"
+        ]
+      },
+      "lqg_f_shift_gw_39_1": {
+        "ports": [
+          "lqg_f_shift_gw_39",
+          "lqg_axi_test_1/lqg_f_shift_gw_39"
+        ]
+      },
+      "lqg_f_shift_gw_3_1": {
+        "ports": [
+          "lqg_f_shift_gw_3",
+          "lqg_axi_test_1/lqg_f_shift_gw_3"
+        ]
+      },
+      "lqg_f_shift_gw_40_1": {
+        "ports": [
+          "lqg_f_shift_gw_40",
+          "lqg_axi_test_1/lqg_f_shift_gw_40"
+        ]
+      },
+      "lqg_f_shift_gw_41_1": {
+        "ports": [
+          "lqg_f_shift_gw_41",
+          "lqg_axi_test_1/lqg_f_shift_gw_41"
+        ]
+      },
+      "lqg_f_shift_gw_42_1": {
+        "ports": [
+          "lqg_f_shift_gw_42",
+          "lqg_axi_test_1/lqg_f_shift_gw_42"
+        ]
+      },
+      "lqg_f_shift_gw_43_1": {
+        "ports": [
+          "lqg_f_shift_gw_43",
+          "lqg_axi_test_1/lqg_f_shift_gw_43"
+        ]
+      },
+      "lqg_f_shift_gw_44_1": {
+        "ports": [
+          "lqg_f_shift_gw_44",
+          "lqg_axi_test_1/lqg_f_shift_gw_44"
+        ]
+      },
+      "lqg_f_shift_gw_45_1": {
+        "ports": [
+          "lqg_f_shift_gw_45",
+          "lqg_axi_test_1/lqg_f_shift_gw_45"
+        ]
+      },
+      "lqg_f_shift_gw_46_1": {
+        "ports": [
+          "lqg_f_shift_gw_46",
+          "lqg_axi_test_1/lqg_f_shift_gw_46"
+        ]
+      },
+      "lqg_f_shift_gw_47_1": {
+        "ports": [
+          "lqg_f_shift_gw_47",
+          "lqg_axi_test_1/lqg_f_shift_gw_47"
+        ]
+      },
+      "lqg_f_shift_gw_48_1": {
+        "ports": [
+          "lqg_f_shift_gw_48",
+          "lqg_axi_test_1/lqg_f_shift_gw_48"
+        ]
+      },
+      "lqg_f_shift_gw_4_1": {
+        "ports": [
+          "lqg_f_shift_gw_4",
+          "lqg_axi_test_1/lqg_f_shift_gw_4"
+        ]
+      },
+      "lqg_f_shift_gw_5_1": {
+        "ports": [
+          "lqg_f_shift_gw_5",
+          "lqg_axi_test_1/lqg_f_shift_gw_5"
+        ]
+      },
+      "lqg_f_shift_gw_6_1": {
+        "ports": [
+          "lqg_f_shift_gw_6",
+          "lqg_axi_test_1/lqg_f_shift_gw_6"
+        ]
+      },
+      "lqg_f_shift_gw_7_1": {
+        "ports": [
+          "lqg_f_shift_gw_7",
+          "lqg_axi_test_1/lqg_f_shift_gw_7"
+        ]
+      },
+      "lqg_f_shift_gw_8_1": {
+        "ports": [
+          "lqg_f_shift_gw_8",
+          "lqg_axi_test_1/lqg_f_shift_gw_8"
+        ]
+      },
+      "lqg_f_shift_gw_9_1": {
+        "ports": [
+          "lqg_f_shift_gw_9",
+          "lqg_axi_test_1/lqg_f_shift_gw_9"
+        ]
+      },
+      "lqg_gamma_res_gw_0_1": {
+        "ports": [
+          "lqg_gamma_res_gw_0",
+          "lqg_axi_test_1/lqg_gamma_res_gw_0"
+        ]
+      },
+      "lqg_gamma_res_gw_10_1": {
+        "ports": [
+          "lqg_gamma_res_gw_10",
+          "lqg_axi_test_1/lqg_gamma_res_gw_10"
+        ]
+      },
+      "lqg_gamma_res_gw_11_1": {
+        "ports": [
+          "lqg_gamma_res_gw_11",
+          "lqg_axi_test_1/lqg_gamma_res_gw_11"
+        ]
+      },
+      "lqg_gamma_res_gw_12_1": {
+        "ports": [
+          "lqg_gamma_res_gw_12",
+          "lqg_axi_test_1/lqg_gamma_res_gw_12"
+        ]
+      },
+      "lqg_gamma_res_gw_13_1": {
+        "ports": [
+          "lqg_gamma_res_gw_13",
+          "lqg_axi_test_1/lqg_gamma_res_gw_13"
+        ]
+      },
+      "lqg_gamma_res_gw_1_1": {
+        "ports": [
+          "lqg_gamma_res_gw_1",
+          "lqg_axi_test_1/lqg_gamma_res_gw_1"
+        ]
+      },
+      "lqg_gamma_res_gw_2_1": {
+        "ports": [
+          "lqg_gamma_res_gw_2",
+          "lqg_axi_test_1/lqg_gamma_res_gw_2"
+        ]
+      },
+      "lqg_gamma_res_gw_3_1": {
+        "ports": [
+          "lqg_gamma_res_gw_3",
+          "lqg_axi_test_1/lqg_gamma_res_gw_3"
+        ]
+      },
+      "lqg_gamma_res_gw_4_1": {
+        "ports": [
+          "lqg_gamma_res_gw_4",
+          "lqg_axi_test_1/lqg_gamma_res_gw_4"
+        ]
+      },
+      "lqg_gamma_res_gw_5_1": {
+        "ports": [
+          "lqg_gamma_res_gw_5",
+          "lqg_axi_test_1/lqg_gamma_res_gw_5"
+        ]
+      },
+      "lqg_gamma_res_gw_6_1": {
+        "ports": [
+          "lqg_gamma_res_gw_6",
+          "lqg_axi_test_1/lqg_gamma_res_gw_6"
+        ]
+      },
+      "lqg_gamma_res_gw_7_1": {
+        "ports": [
+          "lqg_gamma_res_gw_7",
+          "lqg_axi_test_1/lqg_gamma_res_gw_7"
+        ]
+      },
+      "lqg_gamma_res_gw_8_1": {
+        "ports": [
+          "lqg_gamma_res_gw_8",
+          "lqg_axi_test_1/lqg_gamma_res_gw_8"
+        ]
+      },
+      "lqg_gamma_res_gw_9_1": {
+        "ports": [
+          "lqg_gamma_res_gw_9",
+          "lqg_axi_test_1/lqg_gamma_res_gw_9"
+        ]
+      },
+      "lqg_gamma_shift_gw_0_1": {
+        "ports": [
+          "lqg_gamma_shift_gw_0",
+          "lqg_axi_test_1/lqg_gamma_shift_gw_0"
+        ]
+      },
+      "lqg_gamma_shift_gw_10_1": {
+        "ports": [
+          "lqg_gamma_shift_gw_10",
+          "lqg_axi_test_1/lqg_gamma_shift_gw_10"
+        ]
+      },
+      "lqg_gamma_shift_gw_11_1": {
+        "ports": [
+          "lqg_gamma_shift_gw_11",
+          "lqg_axi_test_1/lqg_gamma_shift_gw_11"
+        ]
+      },
+      "lqg_gamma_shift_gw_12_1": {
+        "ports": [
+          "lqg_gamma_shift_gw_12",
+          "lqg_axi_test_1/lqg_gamma_shift_gw_12"
+        ]
+      },
+      "lqg_gamma_shift_gw_13_1": {
+        "ports": [
+          "lqg_gamma_shift_gw_13",
+          "lqg_axi_test_1/lqg_gamma_shift_gw_13"
+        ]
+      },
+      "lqg_gamma_shift_gw_1_1": {
+        "ports": [
+          "lqg_gamma_shift_gw_1",
+          "lqg_axi_test_1/lqg_gamma_shift_gw_1"
+        ]
+      },
+      "lqg_gamma_shift_gw_2_1": {
+        "ports": [
+          "lqg_gamma_shift_gw_2",
+          "lqg_axi_test_1/lqg_gamma_shift_gw_2"
+        ]
+      },
+      "lqg_gamma_shift_gw_3_1": {
+        "ports": [
+          "lqg_gamma_shift_gw_3",
+          "lqg_axi_test_1/lqg_gamma_shift_gw_3"
+        ]
+      },
+      "lqg_gamma_shift_gw_4_1": {
+        "ports": [
+          "lqg_gamma_shift_gw_4",
+          "lqg_axi_test_1/lqg_gamma_shift_gw_4"
+        ]
+      },
+      "lqg_gamma_shift_gw_5_1": {
+        "ports": [
+          "lqg_gamma_shift_gw_5",
+          "lqg_axi_test_1/lqg_gamma_shift_gw_5"
+        ]
+      },
+      "lqg_gamma_shift_gw_6_1": {
+        "ports": [
+          "lqg_gamma_shift_gw_6",
+          "lqg_axi_test_1/lqg_gamma_shift_gw_6"
+        ]
+      },
+      "lqg_gamma_shift_gw_7_1": {
+        "ports": [
+          "lqg_gamma_shift_gw_7",
+          "lqg_axi_test_1/lqg_gamma_shift_gw_7"
+        ]
+      },
+      "lqg_gamma_shift_gw_8_1": {
+        "ports": [
+          "lqg_gamma_shift_gw_8",
+          "lqg_axi_test_1/lqg_gamma_shift_gw_8"
+        ]
+      },
+      "lqg_gamma_shift_gw_9_1": {
+        "ports": [
+          "lqg_gamma_shift_gw_9",
+          "lqg_axi_test_1/lqg_gamma_shift_gw_9"
+        ]
+      },
+      "lqg_k_res_gw_0_1": {
+        "ports": [
+          "lqg_k_res_gw_0",
+          "lqg_axi_test_1/lqg_k_res_gw_0"
+        ]
+      },
+      "lqg_k_res_gw_10_1": {
+        "ports": [
+          "lqg_k_res_gw_10",
+          "lqg_axi_test_1/lqg_k_res_gw_10"
+        ]
+      },
+      "lqg_k_res_gw_11_1": {
+        "ports": [
+          "lqg_k_res_gw_11",
+          "lqg_axi_test_1/lqg_k_res_gw_11"
+        ]
+      },
+      "lqg_k_res_gw_12_1": {
+        "ports": [
+          "lqg_k_res_gw_12",
+          "lqg_axi_test_1/lqg_k_res_gw_12"
+        ]
+      },
+      "lqg_k_res_gw_13_1": {
+        "ports": [
+          "lqg_k_res_gw_13",
+          "lqg_axi_test_1/lqg_k_res_gw_13"
+        ]
+      },
+      "lqg_k_res_gw_1_1": {
+        "ports": [
+          "lqg_k_res_gw_1",
+          "lqg_axi_test_1/lqg_k_res_gw_1"
+        ]
+      },
+      "lqg_k_res_gw_2_1": {
+        "ports": [
+          "lqg_k_res_gw_2",
+          "lqg_axi_test_1/lqg_k_res_gw_2"
+        ]
+      },
+      "lqg_k_res_gw_3_1": {
+        "ports": [
+          "lqg_k_res_gw_3",
+          "lqg_axi_test_1/lqg_k_res_gw_3"
+        ]
+      },
+      "lqg_k_res_gw_4_1": {
+        "ports": [
+          "lqg_k_res_gw_4",
+          "lqg_axi_test_1/lqg_k_res_gw_4"
+        ]
+      },
+      "lqg_k_res_gw_5_1": {
+        "ports": [
+          "lqg_k_res_gw_5",
+          "lqg_axi_test_1/lqg_k_res_gw_5"
+        ]
+      },
+      "lqg_k_res_gw_6_1": {
+        "ports": [
+          "lqg_k_res_gw_6",
+          "lqg_axi_test_1/lqg_k_res_gw_6"
+        ]
+      },
+      "lqg_k_res_gw_7_1": {
+        "ports": [
+          "lqg_k_res_gw_7",
+          "lqg_axi_test_1/lqg_k_res_gw_7"
+        ]
+      },
+      "lqg_k_res_gw_8_1": {
+        "ports": [
+          "lqg_k_res_gw_8",
+          "lqg_axi_test_1/lqg_k_res_gw_8"
+        ]
+      },
+      "lqg_k_res_gw_9_1": {
+        "ports": [
+          "lqg_k_res_gw_9",
+          "lqg_axi_test_1/lqg_k_res_gw_9"
+        ]
+      },
+      "lqg_k_shift_gw_0_1": {
+        "ports": [
+          "lqg_k_shift_gw_0",
+          "lqg_axi_test_1/lqg_k_shift_gw_0"
+        ]
+      },
+      "lqg_k_shift_gw_10_1": {
+        "ports": [
+          "lqg_k_shift_gw_10",
+          "lqg_axi_test_1/lqg_k_shift_gw_10"
+        ]
+      },
+      "lqg_k_shift_gw_11_1": {
+        "ports": [
+          "lqg_k_shift_gw_11",
+          "lqg_axi_test_1/lqg_k_shift_gw_11"
+        ]
+      },
+      "lqg_k_shift_gw_12_1": {
+        "ports": [
+          "lqg_k_shift_gw_12",
+          "lqg_axi_test_1/lqg_k_shift_gw_12"
+        ]
+      },
+      "lqg_k_shift_gw_13_1": {
+        "ports": [
+          "lqg_k_shift_gw_13",
+          "lqg_axi_test_1/lqg_k_shift_gw_13"
+        ]
+      },
+      "lqg_k_shift_gw_1_1": {
+        "ports": [
+          "lqg_k_shift_gw_1",
+          "lqg_axi_test_1/lqg_k_shift_gw_1"
+        ]
+      },
+      "lqg_k_shift_gw_2_1": {
+        "ports": [
+          "lqg_k_shift_gw_2",
+          "lqg_axi_test_1/lqg_k_shift_gw_2"
+        ]
+      },
+      "lqg_k_shift_gw_3_1": {
+        "ports": [
+          "lqg_k_shift_gw_3",
+          "lqg_axi_test_1/lqg_k_shift_gw_3"
+        ]
+      },
+      "lqg_k_shift_gw_4_1": {
+        "ports": [
+          "lqg_k_shift_gw_4",
+          "lqg_axi_test_1/lqg_k_shift_gw_4"
+        ]
+      },
+      "lqg_k_shift_gw_5_1": {
+        "ports": [
+          "lqg_k_shift_gw_5",
+          "lqg_axi_test_1/lqg_k_shift_gw_5"
+        ]
+      },
+      "lqg_k_shift_gw_6_1": {
+        "ports": [
+          "lqg_k_shift_gw_6",
+          "lqg_axi_test_1/lqg_k_shift_gw_6"
+        ]
+      },
+      "lqg_k_shift_gw_7_1": {
+        "ports": [
+          "lqg_k_shift_gw_7",
+          "lqg_axi_test_1/lqg_k_shift_gw_7"
+        ]
+      },
+      "lqg_k_shift_gw_8_1": {
+        "ports": [
+          "lqg_k_shift_gw_8",
+          "lqg_axi_test_1/lqg_k_shift_gw_8"
+        ]
+      },
+      "lqg_k_shift_gw_9_1": {
+        "ports": [
+          "lqg_k_shift_gw_9",
+          "lqg_axi_test_1/lqg_k_shift_gw_9"
+        ]
+      },
+      "lqg_l_res_gw_0_1": {
+        "ports": [
+          "lqg_l_res_gw_0",
+          "lqg_axi_test_1/lqg_l_res_gw_0"
+        ]
+      },
+      "lqg_l_res_gw_10_1": {
+        "ports": [
+          "lqg_l_res_gw_10",
+          "lqg_axi_test_1/lqg_l_res_gw_10"
+        ]
+      },
+      "lqg_l_res_gw_11_1": {
+        "ports": [
+          "lqg_l_res_gw_11",
+          "lqg_axi_test_1/lqg_l_res_gw_11"
+        ]
+      },
+      "lqg_l_res_gw_12_1": {
+        "ports": [
+          "lqg_l_res_gw_12",
+          "lqg_axi_test_1/lqg_l_res_gw_12"
+        ]
+      },
+      "lqg_l_res_gw_13_1": {
+        "ports": [
+          "lqg_l_res_gw_13",
+          "lqg_axi_test_1/lqg_l_res_gw_13"
+        ]
+      },
+      "lqg_l_res_gw_1_1": {
+        "ports": [
+          "lqg_l_res_gw_1",
+          "lqg_axi_test_1/lqg_l_res_gw_1"
+        ]
+      },
+      "lqg_l_res_gw_2_1": {
+        "ports": [
+          "lqg_l_res_gw_2",
+          "lqg_axi_test_1/lqg_l_res_gw_2"
+        ]
+      },
+      "lqg_l_res_gw_3_1": {
+        "ports": [
+          "lqg_l_res_gw_3",
+          "lqg_axi_test_1/lqg_l_res_gw_3"
+        ]
+      },
+      "lqg_l_res_gw_4_1": {
+        "ports": [
+          "lqg_l_res_gw_4",
+          "lqg_axi_test_1/lqg_l_res_gw_4"
+        ]
+      },
+      "lqg_l_res_gw_5_1": {
+        "ports": [
+          "lqg_l_res_gw_5",
+          "lqg_axi_test_1/lqg_l_res_gw_5"
+        ]
+      },
+      "lqg_l_res_gw_6_1": {
+        "ports": [
+          "lqg_l_res_gw_6",
+          "lqg_axi_test_1/lqg_l_res_gw_6"
+        ]
+      },
+      "lqg_l_res_gw_7_1": {
+        "ports": [
+          "lqg_l_res_gw_7",
+          "lqg_axi_test_1/lqg_l_res_gw_7"
+        ]
+      },
+      "lqg_l_res_gw_8_1": {
+        "ports": [
+          "lqg_l_res_gw_8",
+          "lqg_axi_test_1/lqg_l_res_gw_8"
+        ]
+      },
+      "lqg_l_res_gw_9_1": {
+        "ports": [
+          "lqg_l_res_gw_9",
+          "lqg_axi_test_1/lqg_l_res_gw_9"
+        ]
+      },
+      "lqg_l_shift_gw_0_1": {
+        "ports": [
+          "lqg_l_shift_gw_0",
+          "lqg_axi_test_1/lqg_l_shift_gw_0"
+        ]
+      },
+      "lqg_l_shift_gw_10_1": {
+        "ports": [
+          "lqg_l_shift_gw_10",
+          "lqg_axi_test_1/lqg_l_shift_gw_10"
+        ]
+      },
+      "lqg_l_shift_gw_11_1": {
+        "ports": [
+          "lqg_l_shift_gw_11",
+          "lqg_axi_test_1/lqg_l_shift_gw_11"
+        ]
+      },
+      "lqg_l_shift_gw_12_1": {
+        "ports": [
+          "lqg_l_shift_gw_12",
+          "lqg_axi_test_1/lqg_l_shift_gw_12"
+        ]
+      },
+      "lqg_l_shift_gw_13_1": {
+        "ports": [
+          "lqg_l_shift_gw_13",
+          "lqg_axi_test_1/lqg_l_shift_gw_13"
+        ]
+      },
+      "lqg_l_shift_gw_1_1": {
+        "ports": [
+          "lqg_l_shift_gw_1",
+          "lqg_axi_test_1/lqg_l_shift_gw_1"
+        ]
+      },
+      "lqg_l_shift_gw_2_1": {
+        "ports": [
+          "lqg_l_shift_gw_2",
+          "lqg_axi_test_1/lqg_l_shift_gw_2"
+        ]
+      },
+      "lqg_l_shift_gw_3_1": {
+        "ports": [
+          "lqg_l_shift_gw_3",
+          "lqg_axi_test_1/lqg_l_shift_gw_3"
+        ]
+      },
+      "lqg_l_shift_gw_4_1": {
+        "ports": [
+          "lqg_l_shift_gw_4",
+          "lqg_axi_test_1/lqg_l_shift_gw_4"
+        ]
+      },
+      "lqg_l_shift_gw_5_1": {
+        "ports": [
+          "lqg_l_shift_gw_5",
+          "lqg_axi_test_1/lqg_l_shift_gw_5"
+        ]
+      },
+      "lqg_l_shift_gw_6_1": {
+        "ports": [
+          "lqg_l_shift_gw_6",
+          "lqg_axi_test_1/lqg_l_shift_gw_6"
+        ]
+      },
+      "lqg_l_shift_gw_7_1": {
+        "ports": [
+          "lqg_l_shift_gw_7",
+          "lqg_axi_test_1/lqg_l_shift_gw_7"
+        ]
+      },
+      "lqg_l_shift_gw_8_1": {
+        "ports": [
+          "lqg_l_shift_gw_8",
+          "lqg_axi_test_1/lqg_l_shift_gw_8"
+        ]
+      },
+      "lqg_l_shift_gw_9_1": {
+        "ports": [
+          "lqg_l_shift_gw_9",
+          "lqg_axi_test_1/lqg_l_shift_gw_9"
+        ]
+      },
+      "lqg_led_in_1": {
+        "ports": [
+          "lqg_led_in",
+          "lqg_axi_test_1/lqg_led_in"
+        ]
+      },
+      "proc_sys_clk_1": {
+        "ports": [
+          "proc_sys_clk",
+          "lqg_axi_test_1/proc_sys_clk"
+        ]
+      },
+      "processing_system_1_FCLK_CLK0": {
+        "ports": [
+          "processing_system_1/FCLK_CLK0",
+          "processing_system_1/M_AXI_GP0_ACLK",
+          "processing_system_1_axi_periph/S00_ACLK",
+          "rst_processing_system_1_50M/slowest_sync_clk",
+          "lqg_axi_test_1/axi_sys_clk",
+          "processing_system_1_axi_periph/M00_ACLK",
+          "processing_system_1_axi_periph/ACLK"
+        ]
+      },
+      "processing_system_1_FCLK_RESET0_N": {
+        "ports": [
+          "processing_system_1/FCLK_RESET0_N",
+          "rst_processing_system_1_50M/ext_reset_in"
+        ]
+      },
+      "rst_processing_system_1_50M_peripheral_aresetn": {
+        "ports": [
+          "rst_processing_system_1_50M/peripheral_aresetn",
+          "processing_system_1_axi_periph/S00_ARESETN",
+          "lqg_axi_test_1/axi_sys_aresetn",
+          "processing_system_1_axi_periph/M00_ARESETN",
+          "processing_system_1_axi_periph/ARESETN"
+        ]
+      },
+      "uk_factor_gw_0_1": {
+        "ports": [
+          "uk_factor_gw_0",
+          "lqg_axi_test_1/uk_factor_gw_0"
+        ]
+      },
+      "uk_factor_gw_1_1": {
+        "ports": [
+          "uk_factor_gw_1",
+          "lqg_axi_test_1/uk_factor_gw_1"
+        ]
+      },
+      "uk_offset_gw_0_1": {
+        "ports": [
+          "uk_offset_gw_0",
+          "lqg_axi_test_1/uk_offset_gw_0"
+        ]
+      },
+      "uk_offset_gw_1_1": {
+        "ports": [
+          "uk_offset_gw_1",
+          "lqg_axi_test_1/uk_offset_gw_1"
+        ]
+      },
+      "yk_factor_gw_0_1": {
+        "ports": [
+          "yk_factor_gw_0",
+          "lqg_axi_test_1/yk_factor_gw_0"
+        ]
+      },
+      "yk_factor_gw_1_1": {
+        "ports": [
+          "yk_factor_gw_1",
+          "lqg_axi_test_1/yk_factor_gw_1"
+        ]
+      },
+      "yk_gw_0_1": {
+        "ports": [
+          "yk_gw_0",
+          "lqg_axi_test_1/yk_gw_0"
+        ]
+      },
+      "yk_gw_1_1": {
+        "ports": [
+          "yk_gw_1",
+          "lqg_axi_test_1/yk_gw_1"
+        ]
+      },
+      "yk_offset_gw_0_1": {
+        "ports": [
+          "yk_offset_gw_0",
+          "lqg_axi_test_1/yk_offset_gw_0"
+        ]
+      },
+      "yk_offset_gw_1_1": {
+        "ports": [
+          "yk_offset_gw_1",
+          "lqg_axi_test_1/yk_offset_gw_1"
+        ]
+      }
+    },
+    "addressing": {
+      "/processing_system_1": {
+        "address_spaces": {
+          "Data": {
+            "segments": {
+              "SEG_lqg_axi_test_1_reg0": {
+                "address_block": "/lqg_axi_test_1/axi_sys_s_axi/reg0",
+                "offset": "0x40000000",
+                "range": "4K",
+                "offset_base_param": "C_AXI_SYS_S_AXI_BASEADDR",
+                "offset_high_param": "C_AXI_SYS_S_AXI_HIGHADDR"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
