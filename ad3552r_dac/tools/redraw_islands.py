@@ -15,9 +15,9 @@ ISLANDS = [  # net, (x0, y0, x1, y1), priority
     ('AVDD',   (52.5, 23.5, 60.5, 30.5), 1),
     ('AVDD',   (69.5, 23.0, 76.5, 28.0), 1),
     ('+12V',   ( 7.0, 11.0, 25.0, 26.5), 0),
-    ('+2V5',   ( 7.0, 27.0, 26.0, 35.5), 0),
-    ('VLOGIC', (26.5,  5.0, 37.0, 38.0), 0),
-    ('+3V3',   ( 1.0, 36.0, 26.0, 55.0), 0),
+    ('+2V5',   ( 7.0, 27.0, 26.0, 34.5), 0),   # boundary moved 1 mm north so RESET_N (In3, y = 35.6) sits over +3V3,
+    ('VLOGIC', (26.5,  5.0, 37.0, 38.0), 0),   # not along the split
+    ('+3V3',   ( 1.0, 35.0, 26.0, 55.0), 0),
 ]
 os.makedirs(os.path.join(PRJ, 'tools', 'backups'), exist_ok=True)
 shutil.copy(PCB, os.path.join(PRJ, 'tools', 'backups', 'board_%s.kicad_pcb' % time.strftime('%H%M%S')))

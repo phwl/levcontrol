@@ -1,0 +1,297 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-02T13:53:00",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/d6ca2f0b-4e16-4807-a6a1-0447e28a1825",
+            "violations": [
+                {
+                    "description": "Symbol 'PWR_FLAG' doesn't match copy in library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #FLGTRA058 [PWR_FLAG]",
+                            "pos": {
+                                "x": 83.82,
+                                "y": 205.74
+                            },
+                            "uuid": "08f17f54-c269-4e39-962e-76b13249b924"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'PWR_FLAG' doesn't match copy in library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #FLGDIG044 [PWR_FLAG]",
+                            "pos": {
+                                "x": 283.21,
+                                "y": 228.6
+                            },
+                            "uuid": "1a7da587-8819-4a86-97a9-aba6d2922ce9"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'PWR_FLAG' doesn't match copy in library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #FLGDIG045 [PWR_FLAG]",
+                            "pos": {
+                                "x": 292.1,
+                                "y": 228.6
+                            },
+                            "uuid": "6fe95ba3-642b-4d6b-b310-ba5f1f4954c4"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'PWR_FLAG' doesn't match copy in library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #FLGDIG046 [PWR_FLAG]",
+                            "pos": {
+                                "x": 300.99,
+                                "y": 222.25
+                            },
+                            "uuid": "781cfda3-084e-47a9-aea8-ee3db72a1918"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'PWR_FLAG' doesn't match copy in library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #FLGPOW048 [PWR_FLAG]",
+                            "pos": {
+                                "x": 109.22,
+                                "y": 50.8
+                            },
+                            "uuid": "e9b3f1c4-0367-47b0-ad65-5917d0fb52c5"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'PWR_FLAG' doesn't match copy in library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #FLGPOW049 [PWR_FLAG]",
+                            "pos": {
+                                "x": 124.46,
+                                "y": 200.66
+                            },
+                            "uuid": "3003b31d-8ca9-4c92-aa45-7ac5b6d6a3b0"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Conn_Coaxial' doesn't match copy in library 'Connector'",
+                    "items": [
+                        {
+                            "description": "Symbol J4 [Conn_Coaxial]",
+                            "pos": {
+                                "x": 335.28,
+                                "y": 45.72
+                            },
+                            "uuid": "8a95c60a-6615-4072-b8fe-17c637c4735d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Conn_Coaxial' doesn't match copy in library 'Connector'",
+                    "items": [
+                        {
+                            "description": "Symbol J6 [Conn_Coaxial]",
+                            "pos": {
+                                "x": 335.28,
+                                "y": 88.9
+                            },
+                            "uuid": "8664d472-f4ec-4dae-a68c-05ac92a0457a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Conn_Coaxial' doesn't match copy in library 'Connector'",
+                    "items": [
+                        {
+                            "description": "Symbol J8 [Conn_Coaxial]",
+                            "pos": {
+                                "x": 335.28,
+                                "y": 132.08
+                            },
+                            "uuid": "71a8cc3a-27e9-4852-8215-d23b41e6b74b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Conn_Coaxial' doesn't match copy in library 'Connector'",
+                    "items": [
+                        {
+                            "description": "Symbol J10 [Conn_Coaxial]",
+                            "pos": {
+                                "x": 335.28,
+                                "y": 175.26
+                            },
+                            "uuid": "9cec828d-4dd2-4a76-8d91-da4f496d2423"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Conn_Coaxial' doesn't match copy in library 'Connector'",
+                    "items": [
+                        {
+                            "description": "Symbol J5 [Conn_Coaxial]",
+                            "pos": {
+                                "x": 373.38,
+                                "y": 45.72
+                            },
+                            "uuid": "7f13b105-d52d-4c77-8117-d55fe5ab3b4c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Conn_Coaxial' doesn't match copy in library 'Connector'",
+                    "items": [
+                        {
+                            "description": "Symbol J7 [Conn_Coaxial]",
+                            "pos": {
+                                "x": 373.38,
+                                "y": 88.9
+                            },
+                            "uuid": "bb61c1a4-51df-4a1b-bd48-d2e878862bc5"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Conn_Coaxial' doesn't match copy in library 'Connector'",
+                    "items": [
+                        {
+                            "description": "Symbol J9 [Conn_Coaxial]",
+                            "pos": {
+                                "x": 373.38,
+                                "y": 132.08
+                            },
+                            "uuid": "cade3bc8-fdce-417c-ae00-ae4ed1947324"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Conn_Coaxial' doesn't match copy in library 'Connector'",
+                    "items": [
+                        {
+                            "description": "Symbol J11 [Conn_Coaxial]",
+                            "pos": {
+                                "x": 373.38,
+                                "y": 175.26
+                            },
+                            "uuid": "bf685119-c294-4f0a-bbaf-f420056f3040"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                }
+            ]
+        },
+        {
+            "path": "/E1 translators/",
+            "uuid_path": "/d6ca2f0b-4e16-4807-a6a1-0447e28a1825/e235a013-beb7-4aa4-8559-d01cacdd79ca",
+            "violations": [
+                {
+                    "description": "Pins of type Bidirectional and Power output are connected",
+                    "items": [
+                        {
+                            "description": "Symbol U11 Pin 6 [A4, Bidirectional, Line]",
+                            "pos": {
+                                "x": 144.78,
+                                "y": 218.44
+                            },
+                            "uuid": "edbb110d-3bde-405f-8c02-051f35f14e50"
+                        },
+                        {
+                            "description": "Symbol #FLGDIG046 Pin 1 [pwr, Power output, Line]",
+                            "pos": {
+                                "x": 300.99,
+                                "y": 222.25
+                            },
+                            "uuid": "7e1f685f-d389-45a4-9195-e8f1a2d61b5e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                }
+            ]
+        },
+        {
+            "path": "/DAC digital/",
+            "uuid_path": "/d6ca2f0b-4e16-4807-a6a1-0447e28a1825/d08e53fb-0ff1-43fd-841f-24c4b92798ee",
+            "violations": []
+        },
+        {
+            "path": "/Power/",
+            "uuid_path": "/d6ca2f0b-4e16-4807-a6a1-0447e28a1825/bb18675a-0972-4c4b-b15b-fabe8e481fdf",
+            "violations": []
+        },
+        {
+            "path": "/Analog channels/",
+            "uuid_path": "/d6ca2f0b-4e16-4807-a6a1-0447e28a1825/239465f8-02b3-4923-8b82-d035e3e66b06",
+            "violations": []
+        },
+        {
+            "path": "/Electrode outputs/",
+            "uuid_path": "/d6ca2f0b-4e16-4807-a6a1-0447e28a1825/c6456bc8-1c1a-4a37-8a28-27e1d2ccae4f",
+            "violations": []
+        }
+    ],
+    "source": "ad3552r_dac.kicad_sch"
+}

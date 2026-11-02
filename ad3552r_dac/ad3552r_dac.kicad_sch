@@ -4,52 +4,481 @@
 	(generator_version "10.0")
 	(uuid "d6ca2f0b-4e16-4807-a6a1-0447e28a1825")
 	(paper "A3")
+	(title_block
+		(title "AD3552R 4-channel DAC mezzanine (LQG Controller)")
+		(date "2026-11-02")
+		(rev "A")
+		(company "CEL")
+		(comment 1 "Top level: signal flow and power distribution")
+		(comment 2 "LQG Controller, CEL")
+	)
 	(lib_symbols)
-	(sheet
-		(at 30.48 30.48)
-		(size 30.48 20.32)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
+	(polyline
+		(pts
+			(xy 175.26 166.37) (xy 339.09 166.37) (xy 339.09 88.9)
+		)
 		(stroke
-			(width 0.1524)
-			(type solid)
+			(width 0.4)
+			(type dash)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(type none)
 		)
-		(uuid "d08e53fb-0ff1-43fd-841f-24c4b92798ee")
-		(property "Sheetname" "DAC digital"
-			(at 30.48 29.7684 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
+		(uuid "0d233708-47de-4767-aaab-cffef91b86e5")
+	)
+	(polyline
+		(pts
+			(xy 116.84 166.37) (xy 49.53 166.37) (xy 49.53 88.9)
+		)
+		(stroke
+			(width 0.4)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "8a380487-8ab1-4234-a6c2-6deca9409cc6")
+	)
+	(text "Red Pitaya E1/E2 headers"
+		(exclude_from_sim no)
+		(at 22.86 59.69 0)
+		(effects
+			(font
+				(size 1.778 1.778)
 			)
+			(justify left top)
 		)
-		(property "Sheetfile" "dac_digital.kicad_sch"
-			(at 30.48 51.3846 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
+		(uuid "00142edd-5589-466a-956b-392cf304349a")
+	)
+	(text "+1.8 V LDO -> DVDD, VLOGIC"
+		(exclude_from_sim no)
+		(at 119.38 168.91 0)
+		(effects
+			(font
+				(size 1.778 1.778)
 			)
+			(justify left top)
 		)
-		(instances
-			(project "ad3552r_dac"
-				(path "/d6ca2f0b-4e16-4807-a6a1-0447e28a1825"
-					(page "2")
-				)
+		(uuid "01f3f591-d563-4d41-929d-dee0f1e87fc5")
+	)
+	(text "Board: 95 x 60 mm, 6 layers (F.Cu / In1 GND / In2 / In3 / In4 power islands / B.Cu GND pour), mounts on E1 and E2."
+		(exclude_from_sim no)
+		(at 20.32 211.455 0)
+		(effects
+			(font
+				(size 1.524 1.524)
 			)
+			(justify left top)
 		)
+		(uuid "054ecd03-4d43-44c3-9b54-2b8acd16852c")
+	)
+	(text "+12 V in, polyfuse, TVS"
+		(exclude_from_sim no)
+		(at 119.38 156.21 0)
+		(effects
+			(font
+				(size 1.778 1.778)
+			)
+			(justify left top)
+		)
+		(uuid "0cb48e61-b5cd-4ad8-bc6c-2d199b475eb3")
+	)
+	(text "RESET_N, DQ_A0-3, DQ_B0-3,"
+		(exclude_from_sim no)
+		(at 80.01 77.47 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "176ad202-4a63-4ef3-a977-db5e47001152")
+	)
+	(text "2 x AD3552R 16-bit current DAC"
+		(exclude_from_sim no)
+		(at 119.38 59.69 0)
+		(effects
+			(font
+				(size 1.778 1.778)
+			)
+			(justify left top)
+		)
+		(uuid "2196ed9d-9311-4ccf-9f44-69d42602d027")
+	)
+	(text "U1: ch 0, 1   U2: ch 2, 3"
+		(exclude_from_sim no)
+		(at 119.38 72.39 0)
+		(effects
+			(font
+				(size 1.778 1.778)
+			)
+			(justify left top)
+		)
+		(uuid "2b67ef43-c30a-4997-8fc2-03acb58b57b1")
+	)
+	(text "4 x unity-gain inverter"
+		(exclude_from_sim no)
+		(at 312.42 59.69 0)
+		(effects
+			(font
+				(size 1.778 1.778)
+			)
+			(justify left top)
+		)
+		(uuid "33d58999-d1d5-42b9-89b4-ad346c4243a1")
+	)
+	(text "ALERT_A/B_N"
+		(exclude_from_sim no)
+		(at 80.01 80.01 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "5049d510-1976-4c5a-8667-a142e9e9a5e7")
+	)
+	(text "AVDD LDO, +/-5 V pump, +2.5 V buck"
+		(exclude_from_sim no)
+		(at 119.38 162.56 0)
+		(effects
+			(font
+				(size 1.778 1.778)
+			)
+			(justify left top)
+		)
+		(uuid "50c34d54-ae6b-4245-820f-979b3f9caf90")
+	)
+	(text "AVDD, DVDD, VLOGIC (VREF from U7)"
+		(exclude_from_sim no)
+		(at 147.32 120.65 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "530e861b-3a1c-444e-80df-ea2f925fe273")
+	)
+	(text "+/-5 V"
+		(exclude_from_sim no)
+		(at 340.36 120.65 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "5d31ab66-0c2c-45a7-8928-a9cfcc4b3233")
+	)
+	(text "OUTn_RFB"
+		(exclude_from_sim no)
+		(at 273.05 72.39 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "601c5222-ea99-490e-9e82-3e95827f7de3")
+	)
+	(text "+/-5 V per channel"
+		(exclude_from_sim no)
+		(at 215.9 72.39 0)
+		(effects
+			(font
+				(size 1.778 1.778)
+			)
+			(justify left top)
+		)
+		(uuid "6a996ea0-32b2-4a91-9ce4-b5536cfaabb3")
+	)
+	(text "per channel:"
+		(exclude_from_sim no)
+		(at 176.53 72.39 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "73246173-bda3-4f08-8db5-edbf86e88820")
+	)
+	(text "(TIA outputs)"
+		(exclude_from_sim no)
+		(at 273.05 74.93 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "8e64a917-f7ec-43e5-9037-eaee8dc7c83b")
+	)
+	(text "from the Red Pitaya E1 header (FPGA)"
+		(exclude_from_sim no)
+		(at 20.32 44.45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(italic yes)
+			)
+			(justify left top)
+		)
+		(uuid "99a3cdba-4ddd-4a61-ba2c-2501ba3a7848")
+	)
+	(text "RFBn back from it,"
+		(exclude_from_sim no)
+		(at 176.53 77.47 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "9f91b9e3-9199-4357-9119-c26e2b8a02d0")
+	)
+	(text "IOUTn to the TIA,"
+		(exclude_from_sim no)
+		(at 176.53 74.93 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "a513ef09-4795-4a85-85f7-d4645968c775")
+	)
+	(text "4 x ADA4807-1 TIA"
+		(exclude_from_sim no)
+		(at 215.9 59.69 0)
+		(effects
+			(font
+				(size 1.778 1.778)
+			)
+			(justify left top)
+		)
+		(uuid "a51b4698-c10a-4f7c-88a4-c37c2bc3bc48")
+	)
+	(text "4 x 74AVC4T774, 3.3 V <-> 1.8 V"
+		(exclude_from_sim no)
+		(at 22.86 66.04 0)
+		(effects
+			(font
+				(size 1.778 1.778)
+			)
+			(justify left top)
+		)
+		(uuid "a6bb7ee6-9f1c-432d-b1f0-e3f0d19e74cf")
+	)
+	(text "+/-5 V"
+		(exclude_from_sim no)
+		(at 243.84 120.65 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "b1b17801-cbb3-4d6d-9bda-0de492410cdc")
+	)
+	(text "Sockets J1/J12 must be elevated (>= 16.13 mm, e.g. Samtec ESW-113-33-T-D) to clear the Zynq heatsink."
+		(exclude_from_sim no)
+		(at 20.32 215.9 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left top)
+		)
+		(uuid "b1ff120c-a286-41e2-b917-61c0e51b9a23")
+	)
+	(text "8 x SMA (J4-J11), push-pull pairs"
+		(exclude_from_sim no)
+		(at 312.42 72.39 0)
+		(effects
+			(font
+				(size 1.778 1.778)
+			)
+			(justify left top)
+		)
+		(uuid "b974e98f-2a6c-4f56-8718-47867969d383")
+	)
+	(text "33 R series, pull-ups/downs"
+		(exclude_from_sim no)
+		(at 22.86 72.39 0)
+		(effects
+			(font
+				(size 1.778 1.778)
+			)
+			(justify left top)
+		)
+		(uuid "be9fdbc2-6251-4c17-95ff-294129f23df1")
+	)
+	(text "49.9 R, BAV99 clamps, 1 M"
+		(exclude_from_sim no)
+		(at 312.42 66.04 0)
+		(effects
+			(font
+				(size 1.778 1.778)
+			)
+			(justify left top)
+		)
+		(uuid "c0cda8dc-6b39-4b47-a1c8-436c051f2fe6")
+	)
+	(text "SCLK, CS_A/B_N, LDAC_N,"
+		(exclude_from_sim no)
+		(at 80.01 74.93 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "c15e5d7f-182d-4609-95c1-3f5dce74dcd7")
+	)
+	(text "VLOGIC (+3V3 from E1)"
+		(exclude_from_sim no)
+		(at 50.8 120.65 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "c724d1b4-f342-4c79-9f82-26448d53f363")
+	)
+	(text "1.8 V quad SPI:"
+		(exclude_from_sim no)
+		(at 80.01 72.39 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "de78423e-087c-4913-8a13-f54f217b3d31")
+	)
+	(text "AD3552R 4-channel DAC mezzanine for the Red Pitaya STEMlab 125-14 4-Input"
+		(exclude_from_sim no)
+		(at 20.32 200.66 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "eb0bfd42-8aa5-413f-8b3d-51501f74b505")
+	)
+	(text "Four bipolar outputs, each a push-pull pair (OUTn+, OUTn-), +/-5 V per side, 16-bit, up to 9.7 V p-p differential."
+		(exclude_from_sim no)
+		(at 20.32 207.01 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left top)
+		)
+		(uuid "ebb1543f-bd79-46c9-a440-ce7a6417e399")
+	)
+	(text "ADR4525 2.5 V reference"
+		(exclude_from_sim no)
+		(at 119.38 66.04 0)
+		(effects
+			(font
+				(size 1.778 1.778)
+			)
+			(justify left top)
+		)
+		(uuid "eeebe5fd-785a-4e0a-a080-c391878a8a6c")
+	)
+	(text "VCMn"
+		(exclude_from_sim no)
+		(at 176.53 80.01 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "ef981bd9-7a8b-4ecf-ab5a-a575488fd5c4")
+	)
+	(text "Net names cross sheets through global labels; rails use power symbols."
+		(exclude_from_sim no)
+		(at 20.32 220.345 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left top)
+		)
+		(uuid "f269739e-ffba-4d21-98b2-8cb0cbf3617c")
+	)
+	(text "feedback via the DAC RFB2"
+		(exclude_from_sim no)
+		(at 215.9 66.04 0)
+		(effects
+			(font
+				(size 1.778 1.778)
+			)
+			(justify left top)
+		)
+		(uuid "fb884abb-f5ad-41c4-bf32-bf970b8e995b")
+	)
+	(polyline
+		(pts
+			(xy 146.05 147.32) (xy 146.05 88.9)
+		)
+		(stroke
+			(width 0.4)
+			(type dash)
+		)
+		(uuid "01e8fdd1-09df-445f-976f-6895aae15a89")
+	)
+	(polyline
+		(pts
+			(xy 175.26 69.85) (xy 213.36 69.85)
+		)
+		(stroke
+			(width 0.4)
+			(type solid)
+		)
+		(uuid "3692bda2-5e0d-4bb4-b9aa-41053d35a269")
+	)
+	(polyline
+		(pts
+			(xy 242.57 166.37) (xy 242.57 88.9)
+		)
+		(stroke
+			(width 0.4)
+			(type dash)
+		)
+		(uuid "7d28a800-87e1-4cf8-b963-dfb6b241be86")
+	)
+	(polyline
+		(pts
+			(xy 271.78 69.85) (xy 309.88 69.85)
+		)
+		(stroke
+			(width 0.4)
+			(type solid)
+		)
+		(uuid "dca6f96f-7997-4224-a287-2aae372cf3ff")
+	)
+	(polyline
+		(pts
+			(xy 78.74 69.85) (xy 116.84 69.85)
+		)
+		(stroke
+			(width 0.4)
+			(type solid)
+		)
+		(uuid "e8a0d03f-81d1-4fc7-9fee-46cd6a657540")
 	)
 	(sheet
-		(at 110.49 30.48)
-		(size 30.48 20.32)
+		(at 213.36 50.8)
+		(size 58.42 38.1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -60,11 +489,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "239465f8-02b3-4923-8b82-d035e3e66b06")
 		(property "Sheetname" "Analog channels"
-			(at 110.49 29.7684 0)
+			(at 213.36 50.0888 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -73,7 +504,9 @@
 			)
 		)
 		(property "Sheetfile" "dac_analog.kicad_sch"
-			(at 110.49 51.3846 0)
+			(at 213.36 89.4842 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -90,8 +523,8 @@
 		)
 	)
 	(sheet
-		(at 190.5 30.48)
-		(size 30.48 20.32)
+		(at 116.84 147.32)
+		(size 58.42 38.1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -102,95 +535,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "e235a013-beb7-4aa4-8559-d01cacdd79ca")
-		(property "Sheetname" "E1 translators"
-			(at 190.5 29.7684 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "dac_translators.kicad_sch"
-			(at 190.5 51.3846 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "ad3552r_dac"
-				(path "/d6ca2f0b-4e16-4807-a6a1-0447e28a1825"
-					(page "2")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 30.48 100.33)
-		(size 30.48 20.32)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "c6456bc8-1c1a-4a37-8a28-27e1d2ccae4f")
-		(property "Sheetname" "Electrode outputs"
-			(at 30.48 99.6184 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "dac_output.kicad_sch"
-			(at 30.48 121.2346 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "ad3552r_dac"
-				(path "/d6ca2f0b-4e16-4807-a6a1-0447e28a1825"
-					(page "2")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 110.49 100.33)
-		(size 30.48 20.32)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "bb18675a-0972-4c4b-b15b-fabe8e481fdf")
 		(property "Sheetname" "Power"
-			(at 110.49 99.6184 0)
+			(at 116.84 146.6088 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -199,7 +550,147 @@
 			)
 		)
 		(property "Sheetfile" "dac_power.kicad_sch"
-			(at 110.49 121.2346 0)
+			(at 116.84 186.0042 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "ad3552r_dac"
+				(path "/d6ca2f0b-4e16-4807-a6a1-0447e28a1825"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 309.88 50.8)
+		(size 58.42 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "c6456bc8-1c1a-4a37-8a28-27e1d2ccae4f")
+		(property "Sheetname" "Electrode outputs"
+			(at 309.88 50.0888 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "dac_output.kicad_sch"
+			(at 309.88 89.4842 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "ad3552r_dac"
+				(path "/d6ca2f0b-4e16-4807-a6a1-0447e28a1825"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 116.84 50.8)
+		(size 58.42 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "d08e53fb-0ff1-43fd-841f-24c4b92798ee")
+		(property "Sheetname" "DAC digital"
+			(at 116.84 50.0888 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "dac_digital.kicad_sch"
+			(at 116.84 89.4842 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "ad3552r_dac"
+				(path "/d6ca2f0b-4e16-4807-a6a1-0447e28a1825"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 20.32 50.8)
+		(size 58.42 38.1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "e235a013-beb7-4aa4-8559-d01cacdd79ca")
+		(property "Sheetname" "E1 translators"
+			(at 20.32 50.0888 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "dac_translators.kicad_sch"
+			(at 20.32 89.4842 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)

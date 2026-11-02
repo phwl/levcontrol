@@ -1,0 +1,223 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "d6ca2f0b-4e16-4807-a6a1-0447e28a1825")
+	(paper "A3")
+	(lib_symbols)
+	(sheet
+		(at 30.48 30.48)
+		(size 30.48 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "d08e53fb-0ff1-43fd-841f-24c4b92798ee")
+		(property "Sheetname" "DAC digital"
+			(at 30.48 29.7684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "dac_digital.kicad_sch"
+			(at 30.48 51.3846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "ad3552r_dac"
+				(path "/d6ca2f0b-4e16-4807-a6a1-0447e28a1825"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 110.49 30.48)
+		(size 30.48 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "239465f8-02b3-4923-8b82-d035e3e66b06")
+		(property "Sheetname" "Analog channels"
+			(at 110.49 29.7684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "dac_analog.kicad_sch"
+			(at 110.49 51.3846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "ad3552r_dac"
+				(path "/d6ca2f0b-4e16-4807-a6a1-0447e28a1825"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 190.5 30.48)
+		(size 30.48 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "e235a013-beb7-4aa4-8559-d01cacdd79ca")
+		(property "Sheetname" "E1 translators"
+			(at 190.5 29.7684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "dac_translators.kicad_sch"
+			(at 190.5 51.3846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "ad3552r_dac"
+				(path "/d6ca2f0b-4e16-4807-a6a1-0447e28a1825"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 30.48 100.33)
+		(size 30.48 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "c6456bc8-1c1a-4a37-8a28-27e1d2ccae4f")
+		(property "Sheetname" "Electrode outputs"
+			(at 30.48 99.6184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "dac_output.kicad_sch"
+			(at 30.48 121.2346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "ad3552r_dac"
+				(path "/d6ca2f0b-4e16-4807-a6a1-0447e28a1825"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 110.49 100.33)
+		(size 30.48 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "bb18675a-0972-4c4b-b15b-fabe8e481fdf")
+		(property "Sheetname" "Power"
+			(at 110.49 99.6184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "dac_power.kicad_sch"
+			(at 110.49 121.2346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "ad3552r_dac"
+				(path "/d6ca2f0b-4e16-4807-a6a1-0447e28a1825"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)

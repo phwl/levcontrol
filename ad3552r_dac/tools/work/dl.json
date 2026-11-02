@@ -1,0 +1,113 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-02T14:07:04",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.7",
+    "schematic_parity": [],
+    "source": "deloop.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [GND] on F.Cu, length 0.0497 mm",
+                    "pos": {
+                        "x": 91.475,
+                        "y": 33.3677
+                    },
+                    "uuid": "2f2e405d-b65a-4b9b-8f99-d9e1146b0ab1"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [-5V] on F.Cu, length 0.1355 mm",
+                    "pos": {
+                        "x": 74.8791,
+                        "y": 46.5054
+                    },
+                    "uuid": "48768d56-726f-422a-ac43-6e724444bbc9"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [-5V] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 22.9844,
+                        "y": 19.2022
+                    },
+                    "uuid": "1d16098a-eab3-4105-aeb9-f48aee82fb7c"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [VLOGIC] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 32.875,
+                        "y": 49.476
+                    },
+                    "uuid": "54835c32-3de2-4031-9081-9d68287cd2d3"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [VLOGIC] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 50.9587,
+                        "y": 57.9787
+                    },
+                    "uuid": "99a22486-cf9b-42a0-8f2a-304c6cd724e5"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        }
+    ]
+}
