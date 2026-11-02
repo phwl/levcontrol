@@ -1,0 +1,175 @@
+2026-10-29 17:23:41.772 INFO   Freerouting v2.5.0 (build-date: 2026-10-05)
+2026-10-29 17:23:42.031 INFO   Hardware: 20 CPU cores, 631 CPU score, 15944 MB RAM
+2026-10-29 17:23:42.032 WARN   Deprecated settings path '-mp / --router.max_passes'; use '--router.autorouter.max_passes' instead. The old path will be removed in a future release.
+2026-10-29 17:23:42.032 WARN   GUI is disabled and you don't have a console available, so the only feedback from Freerouting is in the log.
+2026-10-29 17:23:43.064 WARN   Deprecated settings path 'router.max_passes'; use 'router.autorouter.max_passes' instead. The old path will be removed in a future release.
+2026-10-29 17:23:43.329 INFO   [006887\29575A] Loading board file 'stage_rails.dsn'...
+2026-10-29 17:23:43.451 WARN   Power-plane validation failed:
+- Dedicated power layer 'In4.Cu' has overlapping conduction areas: Area (ID 413, Net(s): [AVDD]) and Area (ID 411, Net(s): [+5V]) overlap.
+- Dedicated power layer 'In4.Cu' has overlapping conduction areas: Area (ID 411, Net(s): [+5V]) and Area (ID 409, Net(s): [AVDD]) overlap.
+
+Proper Definition and Best Practices for Power Planes:
+1. What Belongs on a Power Plane:
+   - Solid Copper Pours: A single, uninterrupted sheet of copper assigned to one voltage (e.g., +3.3V).
+   - Split Planes: Multiple distinct voltage zones divided by thin isolation gaps (puzzle pieces).
+   - Vias and Anti-Pads: Plated holes passing through the board, surrounded by circular voids (anti-pads) to prevent shorting.
+   - Thermal Reliefs: Spoked connections for vias or pins that connect to the plane, facilitating soldering.
+2. Why Signal Wires/Traces are Banned:
+   - Destroyed Return Paths: High-speed signals on adjacent layers couple to the solid plane below/above as return paths. Crossing a trace gap detours return currents, causing severe EMI and signal integrity issues.
+   - Compromised Power Delivery: Power planes should provide the lowest impedance path. Routing traces chops up the copper, creating bottleneck restrictions and voltage drops.
+
+2026-10-29 17:23:43.472 INFO   [006887\29575A] Job '006887\29575A' started at 2026-10-29T06:23:43.472472486Z.
+2026-10-29 17:23:43.570 INFO   [006887\29575A] Pipeline thread limits: autorouter pass is single-threaded, optimizer.max_threads=19.
+2026-10-29 17:23:43.635 INFO   [006887\29575A] Fanout stage started on board '2c81921e12e18c1b9781381f45189086' with 127 of 552 SMD pins needing fanout (0 already connected, 425 netless).
+2026-10-29 17:23:44.863 INFO   [006887\29575A] Fanout pass #1 on board 'c3ee0f4ce9ff032c8002128479c70a81' completed in 1.18 seconds with 67 SMD pins fanouted, 60 not routed, 0 insert errors, +2 extra vias (0 SMD pins still to check in pass, ripup costs=100).
+2026-10-29 17:23:45.447 INFO   [006887\29575A] Fanout pass #2 on board '765fb80792dbebc28555560c95f86aad' completed in 0.57 seconds with 6 SMD pins fanouted, 70 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=200).
+2026-10-29 17:23:45.545 INFO   [006887\29575A] Fanout pass #3 on board '765fb80792dbebc28555560c95f86aad' completed in 0.08 seconds with 0 SMD pins fanouted, 5 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=300).
+2026-10-29 17:23:45.550 INFO   [006887\29575A] Fanout stage completed: started with 127 total SMD pins, completed in 1.89 seconds, escaped pins: 95/127 (74.8%), using 1.54 total CPU seconds, 1.75 GB total allocated, and 324.7 MB peak heap usage.
+2026-10-29 17:23:45.616 INFO   [006887\29575A] Auto-routing stage started on board '765fb80792dbebc28555560c95f86aad' with baseline score 395.83 for 58 unrouted items.
+2026-10-29 17:23:48.790 INFO   [006887\29575A] Auto-routing pass #1 on board '765fb80792dbebc28555560c95f86aad' was completed in 3.12 seconds with score 625.00 (36 unrouted and 0 violations), using 4.32 CPU seconds and the job allocated 6.00 GB of memory so far.
+2026-10-29 17:23:50.874 INFO   [006887\29575A] Auto-routing pass #2 on board '8211ff18292f49f0838033d9fe5403e9' was completed in 2.05 seconds with score 36.46 (121 unrouted and 0 violations), using 6.25 CPU seconds and the job allocated 8.94 GB of memory so far.
+2026-10-29 17:23:53.922 INFO   [006887\29575A] Auto-routing pass #3 on board '6f437cde02618d1bfcbf45c78a095fda' was completed in 3.03 seconds with score 62.50 (116 unrouted and 0 violations), using 9.15 CPU seconds and the job allocated 13.77 GB of memory so far.
+2026-10-29 17:23:56.829 INFO   [006887\29575A] Auto-routing pass #4 on board '1a4697c1d901256e36662acc10b5e5ed' was completed in 2.89 seconds with score 36.46 (121 unrouted and 0 violations), using 12.10 CPU seconds and the job allocated 18.85 GB of memory so far.
+2026-10-29 17:23:59.731 INFO   [006887\29575A] Auto-routing pass #5 on board '22c2c871365add165511bfbca6b151dc' was completed in 2.88 seconds with score 52.08 (118 unrouted and 0 violations), using 15.07 CPU seconds and the job allocated 23.86 GB of memory so far.
+2026-10-29 17:24:02.538 INFO   [006887\29575A] Auto-routing pass #6 on board 'bc8495b4347cca50581198840f456802' was completed in 2.79 seconds with score 36.46 (121 unrouted and 0 violations), using 18.05 CPU seconds and the job allocated 29.03 GB of memory so far.
+2026-10-29 17:24:05.403 INFO   [006887\29575A] Auto-routing pass #7 on board '5350540eea05c1d84ba131ef2c26b20a' was completed in 2.85 seconds with score 52.08 (118 unrouted and 0 violations), using 20.04 CPU seconds and the job allocated 32.32 GB of memory so far.
+2026-10-29 17:24:08.269 INFO   [006887\29575A] Auto-routing pass #8 on board '8211ff18292f49f0838033d9fe5403e9' was completed in 0.00 seconds with score 625.00 (36 unrouted and 0 violations), using 23.01 CPU seconds and the job allocated 37.45 GB of memory so far.
+2026-10-29 17:24:10.159 INFO   [006887\29575A] Auto-routing pass #9 on board '8211ff18292f49f0838033d9fe5403e9' was completed in 1.88 seconds with score 36.46 (121 unrouted and 0 violations), using 24.94 CPU seconds and the job allocated 40.88 GB of memory so far.
+2026-10-29 17:24:12.967 INFO   [006887\29575A] Auto-routing pass #10 on board 'a0527cfb51e344cc7748867d12a3f77c' was completed in 2.79 seconds with score 62.50 (116 unrouted and 0 violations), using 27.89 CPU seconds and the job allocated 46.10 GB of memory so far.
+2026-10-29 17:24:15.555 INFO   [006887\29575A] Auto-routing pass #11 on board '04dafd44e8f33f13a736120fc769f53d' was completed in 2.55 seconds with score 36.46 (121 unrouted and 0 violations), using 30.86 CPU seconds and the job allocated 51.56 GB of memory so far.
+2026-10-29 17:24:18.271 INFO   [006887\29575A] Auto-routing pass #12 on board '8211ff18292f49f0838033d9fe5403e9' was completed in 0.00 seconds with score 625.00 (36 unrouted and 0 violations), using 32.84 CPU seconds and the job allocated 55.09 GB of memory so far.
+2026-10-29 17:24:20.145 INFO   [006887\29575A] Auto-routing pass #13 on board '8211ff18292f49f0838033d9fe5403e9' was completed in 1.87 seconds with score 36.46 (121 unrouted and 0 violations), using 34.81 CPU seconds and the job allocated 58.62 GB of memory so far.
+2026-10-29 17:24:22.841 INFO   [006887\29575A] Auto-routing pass #14 on board 'a0527cfb51e344cc7748867d12a3f77c' was completed in 2.69 seconds with score 62.50 (116 unrouted and 0 violations), using 37.78 CPU seconds and the job allocated 64.01 GB of memory so far.
+2026-10-29 17:24:25.399 INFO   [006887\29575A] Auto-routing pass #15 on board '9e72aa6d10e46a5dc510e8e2a9b1d388' was completed in 2.54 seconds with score 36.46 (121 unrouted and 0 violations), using 39.76 CPU seconds and the job allocated 67.59 GB of memory so far.
+2026-10-29 17:24:28.088 INFO   [006887\29575A] Auto-routing pass #16 on board '8211ff18292f49f0838033d9fe5403e9' was completed in 0.00 seconds with score 625.00 (36 unrouted and 0 violations), using 42.72 CPU seconds and the job allocated 73.02 GB of memory so far.
+2026-10-29 17:24:29.912 INFO   [006887\29575A] Auto-routing pass #17 on board '8211ff18292f49f0838033d9fe5403e9' was completed in 1.82 seconds with score 36.46 (121 unrouted and 0 violations), using 44.71 CPU seconds and the job allocated 76.66 GB of memory so far.
+2026-10-29 17:24:32.615 INFO   [006887\29575A] Auto-routing pass #18 on board 'a0527cfb51e344cc7748867d12a3f77c' was completed in 2.70 seconds with score 62.50 (116 unrouted and 0 violations), using 47.67 CPU seconds and the job allocated 82.07 GB of memory so far.
+2026-10-29 17:24:32.619 INFO   [006887\29575A] The router's best score (625.00) has not improved by more than 0.5 points since pass #8. Stopping the auto-router after 18 passes (36 items still unconnected).
+The following connections could not be routed -- please review your design (e.g. check pad clearances, trace width rules, and available routing space):
+  Net 'GND' (3 unrouted connections):
+    - U7-4  ->  C19-2
+    - U7-4  ->  C20-2
+    - U7-4  ->  conductionarea
+  Net 'AVDD' (17 unrouted connections):
+    - conductionarea  ->  C62-1
+    - C7-1  ->  C5-1
+    - C6-1  ->  C8-1
+    - C6-1  ->  U2-19
+    - C5-1  ->  U1-19
+    - C62-1  ->  C60-1
+    - R60-1  ->  conductionarea
+    - conductionarea  ->  C13-2
+    - conductionarea  ->  C19-1
+    - C16-2  ->  U2-19
+    - C16-2  ->  conductionarea
+    - C14-2  ->  C15-2
+    - U1-19  ->  C14-2
+    - C8-1  ->  C15-2
+    - conductionarea  ->  conductionarea
+    - C6-1  ->  conductionarea
+    - C15-2  ->  R68-1
+  Net '+5V' (35 unrouted connections):
+    - U6-5  ->  U6-6
+    - U4-5  ->  U4-6
+    - U5-6  ->  U5-5
+    - U3-6  ->  U3-5
+    - U18-5  ->  U18-6
+    - U17-5  ->  U17-6
+    - U19-6  ->  U19-5
+    - U16-5  ->  U16-6
+    - U6-5  ->  C32-1
+    - U4-5  ->  C30-1
+    - U18-6  ->  C51-1
+    - C49-1  ->  U16-6
+    - C31-1  ->  U5-6
+    - C29-1  ->  U3-6
+    - C50-1  ->  U17-5
+    - U18-5  ->  C31-1
+    - D1-2  ->  U16-5
+    - D1-2  ->  C29-1
+    - D6-2  ->  D5-2
+    - U17-5  ->  U4-6
+    - D1-2  ->  D2-2
+    - C49-1  ->  U17-5
+    - U13-12  ->  R62-1
+    - D5-2  ->  C32-1
+    - C51-1  ->  U19-6
+    - C32-1  ->  conductionarea
+    - C51-1  ->  U6-6
+    - U19-6  ->  C52-1
+    - U5-6  ->  C50-1
+    - D8-2  ->  conductionarea
+    - D4-2  ->  conductionarea
+    - C66-1  ->  R62-1
+    - D7-2  ->  C52-1
+    - D2-2  ->  D3-2
+    - conductionarea  ->  C66-1
+  Net 'VLOGIC' (18 unrouted connections):
+    - R2-1  ->  C4-1
+    - C3-1  ->  R1-1
+    - FB2-2  ->  R22-1
+    - U11-15  ->  C44-1
+    - R18-1  ->  conductionarea
+    - C3-1  ->  conductionarea
+    - conductionarea  ->  U2-2
+    - conductionarea  ->  R23-1
+    - U10-15  ->  R23-1
+    - R2-1  ->  R19-1
+    - R19-1  ->  R18-1
+    - R17-1  ->  R1-1
+    - U8-15  ->  U9-15
+    - U8-15  ->  C41-1
+    - C43-1  ->  U10-15
+    - U1-2  ->  R22-1
+    - C4-1  ->  FB2-2
+    - U11-15  ->  U9-15
+  Net '+3V3' (16 unrouted connections):
+    - U10-2  ->  U10-1
+    - U10-7  ->  U10-8
+    - C40-1  ->  U11-16
+    - J1-1  ->  J1-2
+    - U11-8  ->  C38-1
+    - conductionarea  ->  C39-1
+    - U10-7  ->  U10-2
+    - U11-1  ->  U11-8
+    - U9-16  ->  C37-1
+    - U10-8  ->  J1-1
+    - R16-1  ->  U10-1
+    - U11-1  ->  U11-16
+    - U10-1  ->  U10-16
+    - U10-16  ->  C39-1
+    - C40-1  ->  conductionarea
+    - U9-16  ->  U8-16
+  Net '-5V' (27 unrouted connections):
+    - U17-2  ->  C54-2
+    - C55-2  ->  U18-2
+    - U16-2  ->  C53-2
+    - C35-2  ->  U5-2
+    - C33-2  ->  U3-2
+    - C36-2  ->  U6-2
+    - D2-1  ->  U16-2
+    - U13-5  ->  C70-1
+    - R64-1  ->  C67-1
+    - U19-2  ->  C56-2
+    - C34-2  ->  U4-2
+    - D6-1  ->  U19-2
+    - D2-1  ->  D1-1
+    - C34-2  ->  U17-2
+    - C56-2  ->  U18-2
+    - C70-1  ->  R64-1
+    - U18-2  ->  C36-2
+    - C34-2  ->  C35-2
+    - U3-2  ->  D1-1
+    - D6-1  ->  D5-1
+    - U5-2  ->  C36-2
+    - U17-2  ->  C53-2
+    - D3-1  ->  C53-2
+    - D6-1  ->  D7-1
+    - D3-1  ->  D4-1
+    - D7-1  ->  D8-1
+    - U3-2  ->  U13-5
+2026-10-29 17:24:32.718 INFO   [006887\29575A] Auto-routing stage completed: started with 128 unrouted nets, completed in 49.13 seconds, final score: 625.00 (36 unrouted and 0 violations), using 47.67 total CPU seconds, 82.07 GB total allocated, and 1260.4 MB peak heap usage.
+2026-10-29 17:24:32.742 INFO   [006887\29575A] Skipping optimization stage: the board has 36 unrouted connection(s) (optimizer only runs on completely routed boards).
+2026-10-29 17:24:32.757 INFO   [006887\29575A] Job '006887\29575A' finished with state: COMPLETED (elapsed: 49.28 seconds, finished at UTC: 2026-10-29T06:24:32.757203619Z).
+2026-10-29 17:24:32.780 INFO   Saving output file '/home/phwl/src/kicad-claude/ad3552r_dac/ad3552r_dac/tools/work/stage_rails.ses' (SES)...
+2026-10-29 17:24:32.783 INFO   Successfully saved output file '/home/phwl/src/kicad-claude/ad3552r_dac/ad3552r_dac/tools/work/stage_rails.ses' (34966 bytes).

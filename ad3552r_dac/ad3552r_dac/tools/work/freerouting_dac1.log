@@ -1,0 +1,73 @@
+2026-11-02 09:21:22.360 INFO   Freerouting v2.5.0 (build-date: 2026-10-05)
+2026-11-02 09:21:22.620 INFO   Hardware: 20 CPU cores, 627 CPU score, 15944 MB RAM
+2026-11-02 09:21:22.621 WARN   Deprecated settings path '-mp / --router.max_passes'; use '--router.autorouter.max_passes' instead. The old path will be removed in a future release.
+2026-11-02 09:21:22.621 WARN   GUI is disabled and you don't have a console available, so the only feedback from Freerouting is in the log.
+2026-11-02 09:21:23.652 WARN   Deprecated settings path 'router.max_passes'; use 'router.autorouter.max_passes' instead. The old path will be removed in a future release.
+2026-11-02 09:21:23.913 INFO   [F89472\30AD09] Loading board file 'stage_dac1.dsn'...
+2026-11-02 09:21:24.057 WARN   Power-plane validation failed:
+- Dedicated power layer 'In4.Cu' has overlapping conduction areas: Area (ID 1293, Net(s): [AVDD]) and Area (ID 1291, Net(s): [+5V]) overlap.
+- Dedicated power layer 'In4.Cu' has overlapping conduction areas: Area (ID 1291, Net(s): [+5V]) and Area (ID 1289, Net(s): [AVDD]) overlap.
+
+Proper Definition and Best Practices for Power Planes:
+1. What Belongs on a Power Plane:
+   - Solid Copper Pours: A single, uninterrupted sheet of copper assigned to one voltage (e.g., +3.3V).
+   - Split Planes: Multiple distinct voltage zones divided by thin isolation gaps (puzzle pieces).
+   - Vias and Anti-Pads: Plated holes passing through the board, surrounded by circular voids (anti-pads) to prevent shorting.
+   - Thermal Reliefs: Spoked connections for vias or pins that connect to the plane, facilitating soldering.
+2. Why Signal Wires/Traces are Banned:
+   - Destroyed Return Paths: High-speed signals on adjacent layers couple to the solid plane below/above as return paths. Crossing a trace gap detours return currents, causing severe EMI and signal integrity issues.
+   - Compromised Power Delivery: Power planes should provide the lowest impedance path. Routing traces chops up the copper, creating bottleneck restrictions and voltage drops.
+
+2026-11-02 09:21:24.084 INFO   [F89472\30AD09] Job 'F89472\30AD09' started at 2026-11-01T22:21:24.084365792Z.
+2026-11-02 09:21:24.203 INFO   [F89472\30AD09] Pipeline thread limits: autorouter pass is single-threaded, optimizer.max_threads=19.
+2026-11-02 09:21:24.281 INFO   [F89472\30AD09] Fanout stage started on board '701542061f812b898ad23ba7bb5a4247' with 84 of 552 SMD pins needing fanout (0 already connected, 468 netless).
+2026-11-02 09:21:25.442 INFO   [F89472\30AD09] Fanout pass #1 on board '86fecb1e7e45fd902498868223241001' completed in 1.12 seconds with 37 SMD pins fanouted, 44 not routed, 0 insert errors, +5 extra vias (0 SMD pins still to check in pass, ripup costs=100).
+2026-11-02 09:21:25.929 INFO   [F89472\30AD09] Fanout pass #2 on board '1ab08c1573aac58401a435f887a25ea8' completed in 0.47 seconds with 6 SMD pins fanouted, 39 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=200).
+2026-11-02 09:21:26.024 INFO   [F89472\30AD09] Fanout pass #3 on board '1ab08c1573aac58401a435f887a25ea8' completed in 0.08 seconds with 0 SMD pins fanouted, 5 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=300).
+2026-11-02 09:21:26.030 INFO   [F89472\30AD09] Fanout stage completed: started with 84 total SMD pins, completed in 1.74 seconds, escaped pins: 53/84 (63.1%), using 1.39 total CPU seconds, 1.44 GB total allocated, and 349.9 MB peak heap usage.
+2026-11-02 09:21:26.100 INFO   [F89472\30AD09] Auto-routing stage started on board '1ab08c1573aac58401a435f887a25ea8' with baseline score 428.57 for 36 unrouted items.
+2026-11-02 09:21:31.087 INFO   [F89472\30AD09] Auto-routing pass #1 on board '1ab08c1573aac58401a435f887a25ea8' was completed in 4.94 seconds with score 809.52 (12 unrouted and 0 violations), using 5.35 CPU seconds and the job allocated 7.48 GB of memory so far.
+2026-11-02 09:21:31.723 INFO   [F89472\30AD09] Auto-routing pass #2 on board '2ad0cecfe7da4a85e61196bb1a792af5' was completed in 0.60 seconds with score 682.54 (20 unrouted and 0 violations), using 6.33 CPU seconds and the job allocated 8.70 GB of memory so far.
+2026-11-02 09:21:32.056 INFO   [F89472\30AD09] Auto-routing pass #3 on board '130619c8a9d5a9af120b18745182e3d5' was completed in 0.29 seconds with score 714.29 (18 unrouted and 0 violations), using 6.33 CPU seconds and the job allocated 8.70 GB of memory so far.
+2026-11-02 09:21:32.288 INFO   [F89472\30AD09] Auto-routing pass #4 on board '6e5b43ddb00307ad4f3ed73f4f0f14ff' was completed in 0.20 seconds with score 714.29 (18 unrouted and 0 violations), using 7.32 CPU seconds and the job allocated 9.90 GB of memory so far.
+2026-11-02 09:21:32.489 INFO   [F89472\30AD09] Auto-routing pass #5 on board '6e5b43ddb00307ad4f3ed73f4f0f14ff' was completed in 0.19 seconds with score 714.29 (18 unrouted and 0 violations), using 7.32 CPU seconds and the job allocated 9.90 GB of memory so far.
+2026-11-02 09:21:32.677 INFO   [F89472\30AD09] Auto-routing pass #6 on board '6e5b43ddb00307ad4f3ed73f4f0f14ff' was completed in 0.18 seconds with score 714.29 (18 unrouted and 0 violations), using 7.32 CPU seconds and the job allocated 9.90 GB of memory so far.
+2026-11-02 09:21:32.888 INFO   [F89472\30AD09] Auto-routing pass #7 on board '6e5b43ddb00307ad4f3ed73f4f0f14ff' was completed in 0.20 seconds with score 714.29 (18 unrouted and 0 violations), using 7.32 CPU seconds and the job allocated 9.90 GB of memory so far.
+2026-11-02 09:21:33.085 INFO   [F89472\30AD09] Auto-routing pass #8 on board '6e5b43ddb00307ad4f3ed73f4f0f14ff' was completed in 0.19 seconds with score 714.29 (18 unrouted and 0 violations), using 7.32 CPU seconds and the job allocated 9.90 GB of memory so far.
+2026-11-02 09:21:33.283 INFO   [F89472\30AD09] Auto-routing pass #9 on board '6e5b43ddb00307ad4f3ed73f4f0f14ff' was completed in 0.19 seconds with score 714.29 (18 unrouted and 0 violations), using 8.30 CPU seconds and the job allocated 10.98 GB of memory so far.
+2026-11-02 09:21:33.494 INFO   [F89472\30AD09] Auto-routing pass #10 on board '6e5b43ddb00307ad4f3ed73f4f0f14ff' was completed in 0.20 seconds with score 714.29 (18 unrouted and 0 violations), using 8.30 CPU seconds and the job allocated 10.98 GB of memory so far.
+2026-11-02 09:21:33.699 INFO   [F89472\30AD09] Auto-routing pass #11 on board '6e5b43ddb00307ad4f3ed73f4f0f14ff' was completed in 0.20 seconds with score 714.29 (18 unrouted and 0 violations), using 8.30 CPU seconds and the job allocated 10.98 GB of memory so far.
+2026-11-02 09:21:33.914 INFO   [F89472\30AD09] Auto-routing pass #12 on board '6e5b43ddb00307ad4f3ed73f4f0f14ff' was completed in 0.19 seconds with score 714.29 (18 unrouted and 0 violations), using 8.30 CPU seconds and the job allocated 10.98 GB of memory so far.
+2026-11-02 09:21:34.110 INFO   [F89472\30AD09] Auto-routing pass #13 on board '6e5b43ddb00307ad4f3ed73f4f0f14ff' was completed in 0.19 seconds with score 714.29 (18 unrouted and 0 violations), using 9.27 CPU seconds and the job allocated 12.05 GB of memory so far.
+2026-11-02 09:21:34.303 INFO   [F89472\30AD09] Auto-routing pass #14 on board '6e5b43ddb00307ad4f3ed73f4f0f14ff' was completed in 0.19 seconds with score 714.29 (18 unrouted and 0 violations), using 9.27 CPU seconds and the job allocated 12.05 GB of memory so far.
+2026-11-02 09:21:34.496 INFO   [F89472\30AD09] Auto-routing pass #15 on board '6e5b43ddb00307ad4f3ed73f4f0f14ff' was completed in 0.19 seconds with score 714.29 (18 unrouted and 0 violations), using 9.27 CPU seconds and the job allocated 12.05 GB of memory so far.
+2026-11-02 09:21:34.692 INFO   [F89472\30AD09] Auto-routing pass #16 on board '6e5b43ddb00307ad4f3ed73f4f0f14ff' was completed in 0.19 seconds with score 714.29 (18 unrouted and 0 violations), using 9.27 CPU seconds and the job allocated 12.05 GB of memory so far.
+2026-11-02 09:21:34.879 INFO   [F89472\30AD09] Auto-routing pass #17 on board '6e5b43ddb00307ad4f3ed73f4f0f14ff' was completed in 0.18 seconds with score 714.29 (18 unrouted and 0 violations), using 9.27 CPU seconds and the job allocated 12.05 GB of memory so far.
+2026-11-02 09:21:35.073 INFO   [F89472\30AD09] Auto-routing pass #18 on board '6e5b43ddb00307ad4f3ed73f4f0f14ff' was completed in 0.19 seconds with score 714.29 (18 unrouted and 0 violations), using 9.27 CPU seconds and the job allocated 12.05 GB of memory so far.
+2026-11-02 09:21:35.080 INFO   [F89472\30AD09] The router's best score (714.29) has not improved by more than 0.5 points since pass #8. Stopping the auto-router after 18 passes (18 items still unconnected).
+The following connections could not be routed -- please review your design (e.g. check pad clearances, trace width rules, and available routing space):
+  Net 'GND' (16 unrouted connections):
+    - U1-30  ->  C17-2
+    - U1-30  ->  U1-33
+    - U1-22  ->  U1-33
+    - C49-2  ->  C10-2
+    - R53-2  ->  R54-2
+    - R40-2  ->  C53-1
+    - C49-2  ->  R41-2
+    - R52-2  ->  C10-2
+    - J6-2@1  ->  R54-2
+    - R41-2  ->  C54-1
+    - J7-2@3  ->  R55-2
+    - R53-2  ->  R40-2
+    - R41-2  ->  C53-1
+    - U1-33  ->  C9-2
+    - C17-2  ->  J4-2@1
+    - C50-2  ->  C54-1
+  Net 'AVDD' (2 unrouted connections):
+    - conductionarea  ->  conductionarea
+    - conductionarea  ->  conductionarea
+2026-11-02 09:21:35.253 INFO   [F89472\30AD09] Auto-routing stage completed: started with 68 unrouted nets, completed in 11.02 seconds, final score: 809.52 (12 unrouted and 0 violations), using 10.26 total CPU seconds, 13.15 GB total allocated, and 739.9 MB peak heap usage.
+2026-11-02 09:21:35.293 INFO   [F89472\30AD09] Skipping optimization stage: the board has 12 unrouted connection(s) (optimizer only runs on completely routed boards).
+2026-11-02 09:21:35.320 INFO   [F89472\30AD09] Job 'F89472\30AD09' finished with state: COMPLETED (elapsed: 11.24 seconds, finished at UTC: 2026-11-01T22:21:35.320576166Z).
+2026-11-02 09:21:35.338 INFO   Saving output file '/home/phwl/src/kicad-claude/ad3552r_dac/ad3552r_dac/tools/work/stage_dac1.ses' (SES)...
+2026-11-02 09:21:35.339 INFO   Successfully saved output file '/home/phwl/src/kicad-claude/ad3552r_dac/ad3552r_dac/tools/work/stage_dac1.ses' (32182 bytes).

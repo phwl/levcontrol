@@ -1,0 +1,38 @@
+{
+  "status": "ready",
+  "schematic_path": "/home/phwl/src/kicad-claude/ad3552r_dac/ad3552r_dac/dac_translators.kicad_sch",
+  "before_snapshot": "/home/phwl/src/kicad-claude/ad3552r_dac/ad3552r_dac/.kicad-mcp/visual-diff-45b5ce256f4cf3c9-before.kicad_sch",
+  "before_sha256": "6406c03943c1d62fb4a2af49725dd8529546552a20984154264d79521712d87f",
+  "after_sha256": "1503edffa77926dc152f7db0e13ea4f29819bce9d6c4b6b4eb1f8c240c17ffb9",
+  "changed_objects": [
+    {
+      "id": "symbol:#PWR22193:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "power:GND",
+        "reference": "#PWR22193",
+        "value": "GND",
+        "footprint": "",
+        "properties": {
+          "Reference": "#PWR22193",
+          "Value": "GND",
+          "Footprint": "",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 120.65,
+        "y": 320.04,
+        "rotation": 0,
+        "unit": 1
+      }
+    }
+  ],
+  "changed_refs": [
+    "#PWR22193"
+  ],
+  "changed_nets": []
+}

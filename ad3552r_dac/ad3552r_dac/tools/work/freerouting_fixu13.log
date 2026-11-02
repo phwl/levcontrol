@@ -1,0 +1,36 @@
+2026-10-29 17:29:57.614 INFO   Freerouting v2.5.0 (build-date: 2026-10-05)
+2026-10-29 17:29:57.881 INFO   Hardware: 20 CPU cores, 627 CPU score, 15944 MB RAM
+2026-10-29 17:29:57.882 WARN   Deprecated settings path '-mp / --router.max_passes'; use '--router.autorouter.max_passes' instead. The old path will be removed in a future release.
+2026-10-29 17:29:57.882 WARN   GUI is disabled and you don't have a console available, so the only feedback from Freerouting is in the log.
+2026-10-29 17:29:58.908 WARN   Deprecated settings path 'router.max_passes'; use 'router.autorouter.max_passes' instead. The old path will be removed in a future release.
+2026-10-29 17:29:59.168 INFO   [22B86D\B9374C] Loading board file 'stage_fixu13.dsn'...
+2026-10-29 17:29:59.314 WARN   Power-plane validation failed:
+- Dedicated power layer 'In4.Cu' has overlapping conduction areas: Area (ID 1003, Net(s): [AVDD]) and Area (ID 1001, Net(s): [+5V]) overlap.
+- Dedicated power layer 'In4.Cu' has overlapping conduction areas: Area (ID 1001, Net(s): [+5V]) and Area (ID 999, Net(s): [AVDD]) overlap.
+
+Proper Definition and Best Practices for Power Planes:
+1. What Belongs on a Power Plane:
+   - Solid Copper Pours: A single, uninterrupted sheet of copper assigned to one voltage (e.g., +3.3V).
+   - Split Planes: Multiple distinct voltage zones divided by thin isolation gaps (puzzle pieces).
+   - Vias and Anti-Pads: Plated holes passing through the board, surrounded by circular voids (anti-pads) to prevent shorting.
+   - Thermal Reliefs: Spoked connections for vias or pins that connect to the plane, facilitating soldering.
+2. Why Signal Wires/Traces are Banned:
+   - Destroyed Return Paths: High-speed signals on adjacent layers couple to the solid plane below/above as return paths. Crossing a trace gap detours return currents, causing severe EMI and signal integrity issues.
+   - Compromised Power Delivery: Power planes should provide the lowest impedance path. Routing traces chops up the copper, creating bottleneck restrictions and voltage drops.
+
+2026-10-29 17:29:59.341 INFO   [22B86D\B9374C] Job '22B86D\B9374C' started at 2026-10-29T06:29:59.341197072Z.
+2026-10-29 17:29:59.451 INFO   [22B86D\B9374C] Pipeline thread limits: autorouter pass is single-threaded, optimizer.max_threads=19.
+2026-10-29 17:29:59.501 INFO   [22B86D\B9374C] Fanout stage started on board '9332833b40eabda366528603c339dbe8' with 36 of 552 SMD pins needing fanout (0 already connected, 516 netless).
+2026-10-29 17:30:00.067 INFO   [22B86D\B9374C] Fanout pass #1 on board 'd55807e82a71acaa0a6fc99580a35dda' completed in 0.54 seconds with 16 SMD pins fanouted, 20 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=100).
+2026-10-29 17:30:00.368 INFO   [22B86D\B9374C] Fanout pass #2 on board '0eb410cf8b9a006db84e8b55c5c429d3' completed in 0.28 seconds with 3 SMD pins fanouted, 13 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=200).
+2026-10-29 17:30:00.500 INFO   [22B86D\B9374C] Fanout pass #3 on board 'e7885d1dfd303f436f6fba37d4679fee' completed in 0.11 seconds with 1 SMD pin fanouted, 2 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=300).
+2026-10-29 17:30:00.570 INFO   [22B86D\B9374C] Fanout pass #4 on board 'e7885d1dfd303f436f6fba37d4679fee' completed in 0.06 seconds with 0 SMD pins fanouted, 1 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=400).
+2026-10-29 17:30:00.573 INFO   [22B86D\B9374C] Fanout stage completed: started with 36 total SMD pins, completed in 1.07 seconds, escaped pins: 26/36 (72.2%), using 0.85 total CPU seconds, 0.84 GB total allocated, and 349.7 MB peak heap usage.
+2026-10-29 17:30:00.620 INFO   [22B86D\B9374C] Auto-routing stage started on board 'e7885d1dfd303f436f6fba37d4679fee' with baseline score 450.98 for 14 unrouted items.
+2026-10-29 17:30:01.176 INFO   [22B86D\B9374C] Auto-routing pass #1 on board 'e7885d1dfd303f436f6fba37d4679fee' was completed in 0.50 seconds with score 921.57 (2 unrouted and 0 violations), using 0.70 CPU seconds and the job allocated 0.63 GB of memory so far.
+2026-10-29 17:30:01.228 INFO   [22B86D\B9374C] Auto-routing pass #2 on board '32714c5e00ccc1179d2306f984b7a755' was completed in 0.02 seconds with score 921.57 (2 unrouted and 0 violations), using 0.70 CPU seconds and the job allocated 0.63 GB of memory so far.
+2026-10-29 17:30:01.306 INFO   [22B86D\B9374C] Auto-routing stage completed: started with 34 unrouted nets, completed in 1.83 seconds, final score: 921.57 (2 unrouted and 0 violations), using 0.70 total CPU seconds, 0.63 GB total allocated, and 149.7 MB peak heap usage.
+2026-10-29 17:30:01.332 INFO   [22B86D\B9374C] Skipping optimization stage: the board has 2 unrouted connection(s) (optimizer only runs on completely routed boards).
+2026-10-29 17:30:01.344 INFO   [22B86D\B9374C] Job '22B86D\B9374C' finished with state: COMPLETED (elapsed: 2.00 seconds, finished at UTC: 2026-10-29T06:30:01.344011200Z).
+2026-10-29 17:30:01.385 INFO   Saving output file '/home/phwl/src/kicad-claude/ad3552r_dac/ad3552r_dac/tools/work/stage_fixu13.ses' (SES)...
+2026-10-29 17:30:01.387 INFO   Successfully saved output file '/home/phwl/src/kicad-claude/ad3552r_dac/ad3552r_dac/tools/work/stage_fixu13.ses' (20494 bytes).

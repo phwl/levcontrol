@@ -1,0 +1,2788 @@
+{
+  "status": "ready",
+  "schematic_path": "/home/phwl/src/kicad-claude/ad3552r_dac/ad3552r_dac/dac_analog.kicad_sch",
+  "before_snapshot": "/home/phwl/src/kicad-claude/ad3552r_dac/ad3552r_dac/.kicad-mcp/visual-diff-4ec86570512c3695-before.kicad_sch",
+  "before_sha256": "1883a9da60413f2bf52f56676454e0306ed4760fd7317604c7513213832ab0a7",
+  "after_sha256": "73e29d0b0b96332291ab50b766c6d06389b5b203c1b036b933622b071bbbaaeb",
+  "changed_objects": [
+    {
+      "id": "label:global_label:+5V",
+      "kind": "label",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "label",
+        "label_type": "global_label",
+        "name": "+5V",
+        "x": 50.8,
+        "y": 177.8,
+        "rotation": 0
+      }
+    },
+    {
+      "id": "label:global_label:-5V",
+      "kind": "label",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "label",
+        "label_type": "global_label",
+        "name": "-5V",
+        "x": 88.9,
+        "y": 177.8,
+        "rotation": 0
+      }
+    },
+    {
+      "id": "label:global_label:GND",
+      "kind": "label",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "label",
+        "label_type": "global_label",
+        "name": "GND",
+        "x": 127.0,
+        "y": 177.8,
+        "rotation": 0
+      }
+    },
+    {
+      "id": "label:global_label:OUT0_IOUT:occurrence=1",
+      "kind": "label",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "label",
+        "label_type": "global_label",
+        "name": "OUT0_IOUT",
+        "x": 93.98,
+        "y": 67.31,
+        "rotation": 180
+      }
+    },
+    {
+      "id": "label:global_label:OUT0_IOUT:occurrence=2",
+      "kind": "label",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "label",
+        "label_type": "global_label",
+        "name": "OUT0_IOUT",
+        "x": 62.23,
+        "y": 50.8,
+        "rotation": 90
+      }
+    },
+    {
+      "id": "label:global_label:OUT0_RFB:occurrence=1",
+      "kind": "label",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "label",
+        "label_type": "global_label",
+        "name": "OUT0_RFB",
+        "x": 121.92,
+        "y": 64.77,
+        "rotation": 0
+      }
+    },
+    {
+      "id": "label:global_label:OUT0_RFB:occurrence=2",
+      "kind": "label",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "label",
+        "label_type": "global_label",
+        "name": "OUT0_RFB",
+        "x": 62.23,
+        "y": 71.12,
+        "rotation": 270
+      }
+    },
+    {
+      "id": "label:global_label:OUT0_VCM:occurrence=1",
+      "kind": "label",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "label",
+        "label_type": "global_label",
+        "name": "OUT0_VCM",
+        "x": 93.98,
+        "y": 62.23,
+        "rotation": 180
+      }
+    },
+    {
+      "id": "label:global_label:OUT0_VCM:occurrence=2",
+      "kind": "label",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "label",
+        "label_type": "global_label",
+        "name": "OUT0_VCM",
+        "x": 252.73,
+        "y": 50.8,
+        "rotation": 90
+      }
+    },
+    {
+      "id": "label:global_label:OUT1_IOUT:occurrence=1",
+      "kind": "label",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "label",
+        "label_type": "global_label",
+        "name": "OUT1_IOUT",
+        "x": 132.08,
+        "y": 67.31,
+        "rotation": 180
+      }
+    },
+    {
+      "id": "label:global_label:OUT1_IOUT:occurrence=2",
+      "kind": "label",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "label",
+        "label_type": "global_label",
+        "name": "OUT1_IOUT",
+        "x": 252.73,
+        "y": 86.36,
+        "rotation": 90
+      }
+    },
+    {
+      "id": "label:global_label:OUT1_RFB:occurrence=1",
+      "kind": "label",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "label",
+        "label_type": "global_label",
+        "name": "OUT1_RFB",
+        "x": 160.02,
+        "y": 64.77,
+        "rotation": 0
+      }
+    },
+    {
+      "id": "label:global_label:OUT1_RFB:occurrence=2",
+      "kind": "label",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "label",
+        "label_type": "global_label",
+        "name": "OUT1_RFB",
+        "x": 252.73,
+        "y": 106.68,
+        "rotation": 270
+      }
+    },
+    {
+      "id": "label:global_label:OUT1_VCM:occurrence=1",
+      "kind": "label",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "label",
+        "label_type": "global_label",
+        "name": "OUT1_VCM",
+        "x": 132.08,
+        "y": 62.23,
+        "rotation": 180
+      }
+    },
+    {
+      "id": "label:global_label:OUT1_VCM:occurrence=2",
+      "kind": "label",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "label",
+        "label_type": "global_label",
+        "name": "OUT1_VCM",
+        "x": 290.83,
+        "y": 86.36,
+        "rotation": 90
+      }
+    },
+    {
+      "id": "label:global_label:OUT2_IOUT:occurrence=1",
+      "kind": "label",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "label",
+        "label_type": "global_label",
+        "name": "OUT2_IOUT",
+        "x": 170.18,
+        "y": 67.31,
+        "rotation": 180
+      }
+    },
+    {
+      "id": "label:global_label:OUT2_IOUT:occurrence=2",
+      "kind": "label",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "label",
+        "label_type": "global_label",
+        "name": "OUT2_IOUT",
+        "x": 328.93,
+        "y": 86.36,
+        "rotation": 90
+      }
+    },
+    {
+      "id": "label:global_label:OUT2_RFB:occurrence=1",
+      "kind": "label",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "label",
+        "label_type": "global_label",
+        "name": "OUT2_RFB",
+        "x": 198.12,
+        "y": 64.77,
+        "rotation": 0
+      }
+    },
+    {
+      "id": "label:global_label:OUT2_RFB:occurrence=2",
+      "kind": "label",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "label",
+        "label_type": "global_label",
+        "name": "OUT2_RFB",
+        "x": 328.93,
+        "y": 106.68,
+        "rotation": 270
+      }
+    },
+    {
+      "id": "label:global_label:OUT2_VCM:occurrence=1",
+      "kind": "label",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "label",
+        "label_type": "global_label",
+        "name": "OUT2_VCM",
+        "x": 170.18,
+        "y": 62.23,
+        "rotation": 180
+      }
+    },
+    {
+      "id": "label:global_label:OUT2_VCM:occurrence=2",
+      "kind": "label",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "label",
+        "label_type": "global_label",
+        "name": "OUT2_VCM",
+        "x": 367.03,
+        "y": 86.36,
+        "rotation": 90
+      }
+    },
+    {
+      "id": "label:global_label:OUT3_IOUT:occurrence=1",
+      "kind": "label",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "label",
+        "label_type": "global_label",
+        "name": "OUT3_IOUT",
+        "x": 208.28,
+        "y": 67.31,
+        "rotation": 180
+      }
+    },
+    {
+      "id": "label:global_label:OUT3_IOUT:occurrence=2",
+      "kind": "label",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "label",
+        "label_type": "global_label",
+        "name": "OUT3_IOUT",
+        "x": 62.23,
+        "y": 121.92,
+        "rotation": 90
+      }
+    },
+    {
+      "id": "label:global_label:OUT3_RFB:occurrence=1",
+      "kind": "label",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "label",
+        "label_type": "global_label",
+        "name": "OUT3_RFB",
+        "x": 236.22,
+        "y": 64.77,
+        "rotation": 0
+      }
+    },
+    {
+      "id": "label:global_label:OUT3_RFB:occurrence=2",
+      "kind": "label",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "label",
+        "label_type": "global_label",
+        "name": "OUT3_RFB",
+        "x": 62.23,
+        "y": 142.24,
+        "rotation": 270
+      }
+    },
+    {
+      "id": "label:global_label:OUT3_VCM:occurrence=1",
+      "kind": "label",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "label",
+        "label_type": "global_label",
+        "name": "OUT3_VCM",
+        "x": 208.28,
+        "y": 62.23,
+        "rotation": 180
+      }
+    },
+    {
+      "id": "label:global_label:OUT3_VCM:occurrence=2",
+      "kind": "label",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "label",
+        "label_type": "global_label",
+        "name": "OUT3_VCM",
+        "x": 100.33,
+        "y": 121.92,
+        "rotation": 90
+      }
+    },
+    {
+      "id": "symbol:#PWR001:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "power:+5V",
+        "reference": "#PWR001",
+        "value": "+5V",
+        "footprint": "",
+        "properties": {
+          "Reference": "#PWR001",
+          "Value": "+5V",
+          "Footprint": "",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 105.41,
+        "y": 52.07,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:#PWR002:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "power:+5V",
+        "reference": "#PWR002",
+        "value": "+5V",
+        "footprint": "",
+        "properties": {
+          "Reference": "#PWR002",
+          "Value": "+5V",
+          "Footprint": "",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 107.95,
+        "y": 77.47,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:#PWR003:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "power:+5V",
+        "reference": "#PWR003",
+        "value": "+5V",
+        "footprint": "",
+        "properties": {
+          "Reference": "#PWR003",
+          "Value": "+5V",
+          "Footprint": "",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 143.51,
+        "y": 52.07,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:#PWR004:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "power:+5V",
+        "reference": "#PWR004",
+        "value": "+5V",
+        "footprint": "",
+        "properties": {
+          "Reference": "#PWR004",
+          "Value": "+5V",
+          "Footprint": "",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 146.05,
+        "y": 77.47,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:#PWR005:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "power:+5V",
+        "reference": "#PWR005",
+        "value": "+5V",
+        "footprint": "",
+        "properties": {
+          "Reference": "#PWR005",
+          "Value": "+5V",
+          "Footprint": "",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 181.61,
+        "y": 52.07,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:#PWR006:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "power:+5V",
+        "reference": "#PWR006",
+        "value": "+5V",
+        "footprint": "",
+        "properties": {
+          "Reference": "#PWR006",
+          "Value": "+5V",
+          "Footprint": "",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 184.15,
+        "y": 77.47,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:#PWR007:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "power:+5V",
+        "reference": "#PWR007",
+        "value": "+5V",
+        "footprint": "",
+        "properties": {
+          "Reference": "#PWR007",
+          "Value": "+5V",
+          "Footprint": "",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 219.71,
+        "y": 52.07,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:#PWR008:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "power:+5V",
+        "reference": "#PWR008",
+        "value": "+5V",
+        "footprint": "",
+        "properties": {
+          "Reference": "#PWR008",
+          "Value": "+5V",
+          "Footprint": "",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 222.25,
+        "y": 77.47,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:#PWR009:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "power:+5V",
+        "reference": "#PWR009",
+        "value": "+5V",
+        "footprint": "",
+        "properties": {
+          "Reference": "#PWR009",
+          "Value": "+5V",
+          "Footprint": "",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 290.83,
+        "y": 52.07,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:#PWR010:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "power:+5V",
+        "reference": "#PWR010",
+        "value": "+5V",
+        "footprint": "",
+        "properties": {
+          "Reference": "#PWR010",
+          "Value": "+5V",
+          "Footprint": "",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 328.93,
+        "y": 52.07,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:#PWR011:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "power:+5V",
+        "reference": "#PWR011",
+        "value": "+5V",
+        "footprint": "",
+        "properties": {
+          "Reference": "#PWR011",
+          "Value": "+5V",
+          "Footprint": "",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 367.03,
+        "y": 52.07,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:#PWR012:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "power:+5V",
+        "reference": "#PWR012",
+        "value": "+5V",
+        "footprint": "",
+        "properties": {
+          "Reference": "#PWR012",
+          "Value": "+5V",
+          "Footprint": "",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 62.23,
+        "y": 87.63,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:#PWR013:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "power:-5V",
+        "reference": "#PWR013",
+        "value": "-5V",
+        "footprint": "",
+        "properties": {
+          "Reference": "#PWR013",
+          "Value": "-5V",
+          "Footprint": "",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 105.41,
+        "y": 77.47,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:#PWR014:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "power:-5V",
+        "reference": "#PWR014",
+        "value": "-5V",
+        "footprint": "",
+        "properties": {
+          "Reference": "#PWR014",
+          "Value": "-5V",
+          "Footprint": "",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 143.51,
+        "y": 77.47,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:#PWR015:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "power:-5V",
+        "reference": "#PWR015",
+        "value": "-5V",
+        "footprint": "",
+        "properties": {
+          "Reference": "#PWR015",
+          "Value": "-5V",
+          "Footprint": "",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 181.61,
+        "y": 77.47,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:#PWR016:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "power:-5V",
+        "reference": "#PWR016",
+        "value": "-5V",
+        "footprint": "",
+        "properties": {
+          "Reference": "#PWR016",
+          "Value": "-5V",
+          "Footprint": "",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 219.71,
+        "y": 77.47,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:#PWR017:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "power:-5V",
+        "reference": "#PWR017",
+        "value": "-5V",
+        "footprint": "",
+        "properties": {
+          "Reference": "#PWR017",
+          "Value": "-5V",
+          "Footprint": "",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 100.33,
+        "y": 105.41,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:#PWR018:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "power:-5V",
+        "reference": "#PWR018",
+        "value": "-5V",
+        "footprint": "",
+        "properties": {
+          "Reference": "#PWR018",
+          "Value": "-5V",
+          "Footprint": "",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 138.43,
+        "y": 105.41,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:#PWR019:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "power:-5V",
+        "reference": "#PWR019",
+        "value": "-5V",
+        "footprint": "",
+        "properties": {
+          "Reference": "#PWR019",
+          "Value": "-5V",
+          "Footprint": "",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 176.53,
+        "y": 105.41,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:#PWR020:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "power:-5V",
+        "reference": "#PWR020",
+        "value": "-5V",
+        "footprint": "",
+        "properties": {
+          "Reference": "#PWR020",
+          "Value": "-5V",
+          "Footprint": "",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 214.63,
+        "y": 105.41,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:#PWR021:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "power:GND",
+        "reference": "#PWR021",
+        "value": "GND",
+        "footprint": "",
+        "properties": {
+          "Reference": "#PWR021",
+          "Value": "GND",
+          "Footprint": "",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 252.73,
+        "y": 69.85,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:#PWR022:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "power:GND",
+        "reference": "#PWR022",
+        "value": "GND",
+        "footprint": "",
+        "properties": {
+          "Reference": "#PWR022",
+          "Value": "GND",
+          "Footprint": "",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 290.83,
+        "y": 105.41,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:#PWR023:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "power:GND",
+        "reference": "#PWR023",
+        "value": "GND",
+        "footprint": "",
+        "properties": {
+          "Reference": "#PWR023",
+          "Value": "GND",
+          "Footprint": "",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 367.03,
+        "y": 105.41,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:#PWR024:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "power:GND",
+        "reference": "#PWR024",
+        "value": "GND",
+        "footprint": "",
+        "properties": {
+          "Reference": "#PWR024",
+          "Value": "GND",
+          "Footprint": "",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 100.33,
+        "y": 140.97,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:#PWR025:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "power:GND",
+        "reference": "#PWR025",
+        "value": "GND",
+        "footprint": "",
+        "properties": {
+          "Reference": "#PWR025",
+          "Value": "GND",
+          "Footprint": "",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 290.83,
+        "y": 69.85,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:#PWR026:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "power:GND",
+        "reference": "#PWR026",
+        "value": "GND",
+        "footprint": "",
+        "properties": {
+          "Reference": "#PWR026",
+          "Value": "GND",
+          "Footprint": "",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 328.93,
+        "y": 69.85,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:#PWR027:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "power:GND",
+        "reference": "#PWR027",
+        "value": "GND",
+        "footprint": "",
+        "properties": {
+          "Reference": "#PWR027",
+          "Value": "GND",
+          "Footprint": "",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 367.03,
+        "y": 69.85,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:#PWR028:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "power:GND",
+        "reference": "#PWR028",
+        "value": "GND",
+        "footprint": "",
+        "properties": {
+          "Reference": "#PWR028",
+          "Value": "GND",
+          "Footprint": "",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 62.23,
+        "y": 105.41,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:#PWR029:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "power:GND",
+        "reference": "#PWR029",
+        "value": "GND",
+        "footprint": "",
+        "properties": {
+          "Reference": "#PWR029",
+          "Value": "GND",
+          "Footprint": "",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 100.33,
+        "y": 87.63,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:#PWR030:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "power:GND",
+        "reference": "#PWR030",
+        "value": "GND",
+        "footprint": "",
+        "properties": {
+          "Reference": "#PWR030",
+          "Value": "GND",
+          "Footprint": "",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 138.43,
+        "y": 87.63,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:#PWR031:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "power:GND",
+        "reference": "#PWR031",
+        "value": "GND",
+        "footprint": "",
+        "properties": {
+          "Reference": "#PWR031",
+          "Value": "GND",
+          "Footprint": "",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 176.53,
+        "y": 87.63,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:#PWR032:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "power:GND",
+        "reference": "#PWR032",
+        "value": "GND",
+        "footprint": "",
+        "properties": {
+          "Reference": "#PWR032",
+          "Value": "GND",
+          "Footprint": "",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 214.63,
+        "y": 87.63,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:#PWR033:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "power:PWR_FLAG",
+        "reference": "#PWR033",
+        "value": "PWR_FLAG",
+        "footprint": "",
+        "properties": {
+          "Reference": "#PWR033",
+          "Value": "PWR_FLAG",
+          "Footprint": "",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 50.8,
+        "y": 177.8,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:#PWR034:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "power:PWR_FLAG",
+        "reference": "#PWR034",
+        "value": "PWR_FLAG",
+        "footprint": "",
+        "properties": {
+          "Reference": "#PWR034",
+          "Value": "PWR_FLAG",
+          "Footprint": "",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 88.9,
+        "y": 177.8,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:#PWR035:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "power:PWR_FLAG",
+        "reference": "#PWR035",
+        "value": "PWR_FLAG",
+        "footprint": "",
+        "properties": {
+          "Reference": "#PWR035",
+          "Value": "PWR_FLAG",
+          "Footprint": "",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 127.0,
+        "y": 177.8,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:C21:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "Device:C",
+        "reference": "C21",
+        "value": "8.2pF NP0",
+        "footprint": "Capacitor_SMD:C_0402_1005Metric",
+        "properties": {
+          "Reference": "C21",
+          "Value": "8.2pF NP0",
+          "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 62.23,
+        "y": 60.96,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:C22:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "Device:C",
+        "reference": "C22",
+        "value": "8.2pF NP0",
+        "footprint": "Capacitor_SMD:C_0402_1005Metric",
+        "properties": {
+          "Reference": "C22",
+          "Value": "8.2pF NP0",
+          "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 252.73,
+        "y": 96.52,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:C23:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "Device:C",
+        "reference": "C23",
+        "value": "8.2pF NP0",
+        "footprint": "Capacitor_SMD:C_0402_1005Metric",
+        "properties": {
+          "Reference": "C23",
+          "Value": "8.2pF NP0",
+          "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 328.93,
+        "y": 96.52,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:C24:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "Device:C",
+        "reference": "C24",
+        "value": "8.2pF NP0",
+        "footprint": "Capacitor_SMD:C_0402_1005Metric",
+        "properties": {
+          "Reference": "C24",
+          "Value": "8.2pF NP0",
+          "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 62.23,
+        "y": 132.08,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:C25:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "Device:C",
+        "reference": "C25",
+        "value": "100nF",
+        "footprint": "Capacitor_SMD:C_0402_1005Metric",
+        "properties": {
+          "Reference": "C25",
+          "Value": "100nF",
+          "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 252.73,
+        "y": 60.96,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:C26:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "Device:C",
+        "reference": "C26",
+        "value": "100nF",
+        "footprint": "Capacitor_SMD:C_0402_1005Metric",
+        "properties": {
+          "Reference": "C26",
+          "Value": "100nF",
+          "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 290.83,
+        "y": 96.52,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:C27:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "Device:C",
+        "reference": "C27",
+        "value": "100nF",
+        "footprint": "Capacitor_SMD:C_0402_1005Metric",
+        "properties": {
+          "Reference": "C27",
+          "Value": "100nF",
+          "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 367.03,
+        "y": 96.52,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:C28:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "Device:C",
+        "reference": "C28",
+        "value": "100nF",
+        "footprint": "Capacitor_SMD:C_0402_1005Metric",
+        "properties": {
+          "Reference": "C28",
+          "Value": "100nF",
+          "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 100.33,
+        "y": 132.08,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:C29:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "Device:C",
+        "reference": "C29",
+        "value": "100nF",
+        "footprint": "Capacitor_SMD:C_0402_1005Metric",
+        "properties": {
+          "Reference": "C29",
+          "Value": "100nF",
+          "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 290.83,
+        "y": 60.96,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:C30:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "Device:C",
+        "reference": "C30",
+        "value": "100nF",
+        "footprint": "Capacitor_SMD:C_0402_1005Metric",
+        "properties": {
+          "Reference": "C30",
+          "Value": "100nF",
+          "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 328.93,
+        "y": 60.96,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:C31:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "Device:C",
+        "reference": "C31",
+        "value": "100nF",
+        "footprint": "Capacitor_SMD:C_0402_1005Metric",
+        "properties": {
+          "Reference": "C31",
+          "Value": "100nF",
+          "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 367.03,
+        "y": 60.96,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:C32:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "Device:C",
+        "reference": "C32",
+        "value": "100nF",
+        "footprint": "Capacitor_SMD:C_0402_1005Metric",
+        "properties": {
+          "Reference": "C32",
+          "Value": "100nF",
+          "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 62.23,
+        "y": 96.52,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:C33:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "Device:C",
+        "reference": "C33",
+        "value": "100nF",
+        "footprint": "Capacitor_SMD:C_0402_1005Metric",
+        "properties": {
+          "Reference": "C33",
+          "Value": "100nF",
+          "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 100.33,
+        "y": 96.52,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:C34:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "Device:C",
+        "reference": "C34",
+        "value": "100nF",
+        "footprint": "Capacitor_SMD:C_0402_1005Metric",
+        "properties": {
+          "Reference": "C34",
+          "Value": "100nF",
+          "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 138.43,
+        "y": 96.52,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:C35:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "Device:C",
+        "reference": "C35",
+        "value": "100nF",
+        "footprint": "Capacitor_SMD:C_0402_1005Metric",
+        "properties": {
+          "Reference": "C35",
+          "Value": "100nF",
+          "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 176.53,
+        "y": 96.52,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:C36:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "Device:C",
+        "reference": "C36",
+        "value": "100nF",
+        "footprint": "Capacitor_SMD:C_0402_1005Metric",
+        "properties": {
+          "Reference": "C36",
+          "Value": "100nF",
+          "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 214.63,
+        "y": 96.52,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:U3:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "Amplifier_Operational:ADA4807-1",
+        "reference": "U3",
+        "value": "ADA4807-1",
+        "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+        "properties": {
+          "Reference": "U3",
+          "Value": "ADA4807-1",
+          "Footprint": "Package_TO_SOT_SMD:SOT-23-6",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 107.95,
+        "y": 64.77,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:U4:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "Amplifier_Operational:ADA4807-1",
+        "reference": "U4",
+        "value": "ADA4807-1",
+        "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+        "properties": {
+          "Reference": "U4",
+          "Value": "ADA4807-1",
+          "Footprint": "Package_TO_SOT_SMD:SOT-23-6",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 146.05,
+        "y": 64.77,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:U5:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "Amplifier_Operational:ADA4807-1",
+        "reference": "U5",
+        "value": "ADA4807-1",
+        "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+        "properties": {
+          "Reference": "U5",
+          "Value": "ADA4807-1",
+          "Footprint": "Package_TO_SOT_SMD:SOT-23-6",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 184.15,
+        "y": 64.77,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:U6:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "Amplifier_Operational:ADA4807-1",
+        "reference": "U6",
+        "value": "ADA4807-1",
+        "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+        "properties": {
+          "Reference": "U6",
+          "Value": "ADA4807-1",
+          "Footprint": "Package_TO_SOT_SMD:SOT-23-6",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 222.25,
+        "y": 64.77,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "wire:[100.33, 100.33]->[100.33, 105.41]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          100.33,
+          100.33
+        ],
+        "end": [
+          100.33,
+          105.41
+        ]
+      }
+    },
+    {
+      "id": "wire:[100.33, 121.92]->[100.33, 128.27]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          100.33,
+          121.92
+        ],
+        "end": [
+          100.33,
+          128.27
+        ]
+      }
+    },
+    {
+      "id": "wire:[100.33, 135.89]->[100.33, 140.97]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          100.33,
+          135.89
+        ],
+        "end": [
+          100.33,
+          140.97
+        ]
+      }
+    },
+    {
+      "id": "wire:[100.33, 87.63]->[100.33, 92.71]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          100.33,
+          87.63
+        ],
+        "end": [
+          100.33,
+          92.71
+        ]
+      }
+    },
+    {
+      "id": "wire:[105.41, 52.07]->[105.41, 57.15]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          105.41,
+          52.07
+        ],
+        "end": [
+          105.41,
+          57.15
+        ]
+      }
+    },
+    {
+      "id": "wire:[105.41, 72.39]->[105.41, 77.47]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          105.41,
+          72.39
+        ],
+        "end": [
+          105.41,
+          77.47
+        ]
+      }
+    },
+    {
+      "id": "wire:[107.95, 72.39]->[107.95, 77.47]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          107.95,
+          72.39
+        ],
+        "end": [
+          107.95,
+          77.47
+        ]
+      }
+    },
+    {
+      "id": "wire:[115.57, 64.77]->[121.92, 64.77]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          115.57,
+          64.77
+        ],
+        "end": [
+          121.92,
+          64.77
+        ]
+      }
+    },
+    {
+      "id": "wire:[132.08, 62.23]->[138.43, 62.23]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          132.08,
+          62.23
+        ],
+        "end": [
+          138.43,
+          62.23
+        ]
+      }
+    },
+    {
+      "id": "wire:[132.08, 67.31]->[138.43, 67.31]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          132.08,
+          67.31
+        ],
+        "end": [
+          138.43,
+          67.31
+        ]
+      }
+    },
+    {
+      "id": "wire:[138.43, 100.33]->[138.43, 105.41]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          138.43,
+          100.33
+        ],
+        "end": [
+          138.43,
+          105.41
+        ]
+      }
+    },
+    {
+      "id": "wire:[138.43, 87.63]->[138.43, 92.71]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          138.43,
+          87.63
+        ],
+        "end": [
+          138.43,
+          92.71
+        ]
+      }
+    },
+    {
+      "id": "wire:[143.51, 52.07]->[143.51, 57.15]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          143.51,
+          52.07
+        ],
+        "end": [
+          143.51,
+          57.15
+        ]
+      }
+    },
+    {
+      "id": "wire:[143.51, 72.39]->[143.51, 77.47]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          143.51,
+          72.39
+        ],
+        "end": [
+          143.51,
+          77.47
+        ]
+      }
+    },
+    {
+      "id": "wire:[146.05, 72.39]->[146.05, 77.47]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          146.05,
+          72.39
+        ],
+        "end": [
+          146.05,
+          77.47
+        ]
+      }
+    },
+    {
+      "id": "wire:[153.67, 64.77]->[160.02, 64.77]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          153.67,
+          64.77
+        ],
+        "end": [
+          160.02,
+          64.77
+        ]
+      }
+    },
+    {
+      "id": "wire:[170.18, 62.23]->[176.53, 62.23]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          170.18,
+          62.23
+        ],
+        "end": [
+          176.53,
+          62.23
+        ]
+      }
+    },
+    {
+      "id": "wire:[170.18, 67.31]->[176.53, 67.31]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          170.18,
+          67.31
+        ],
+        "end": [
+          176.53,
+          67.31
+        ]
+      }
+    },
+    {
+      "id": "wire:[176.53, 100.33]->[176.53, 105.41]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          176.53,
+          100.33
+        ],
+        "end": [
+          176.53,
+          105.41
+        ]
+      }
+    },
+    {
+      "id": "wire:[176.53, 87.63]->[176.53, 92.71]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          176.53,
+          87.63
+        ],
+        "end": [
+          176.53,
+          92.71
+        ]
+      }
+    },
+    {
+      "id": "wire:[181.61, 52.07]->[181.61, 57.15]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          181.61,
+          52.07
+        ],
+        "end": [
+          181.61,
+          57.15
+        ]
+      }
+    },
+    {
+      "id": "wire:[181.61, 72.39]->[181.61, 77.47]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          181.61,
+          72.39
+        ],
+        "end": [
+          181.61,
+          77.47
+        ]
+      }
+    },
+    {
+      "id": "wire:[184.15, 72.39]->[184.15, 77.47]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          184.15,
+          72.39
+        ],
+        "end": [
+          184.15,
+          77.47
+        ]
+      }
+    },
+    {
+      "id": "wire:[191.77, 64.77]->[198.12, 64.77]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          191.77,
+          64.77
+        ],
+        "end": [
+          198.12,
+          64.77
+        ]
+      }
+    },
+    {
+      "id": "wire:[208.28, 62.23]->[214.63, 62.23]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          208.28,
+          62.23
+        ],
+        "end": [
+          214.63,
+          62.23
+        ]
+      }
+    },
+    {
+      "id": "wire:[208.28, 67.31]->[214.63, 67.31]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          208.28,
+          67.31
+        ],
+        "end": [
+          214.63,
+          67.31
+        ]
+      }
+    },
+    {
+      "id": "wire:[214.63, 100.33]->[214.63, 105.41]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          214.63,
+          100.33
+        ],
+        "end": [
+          214.63,
+          105.41
+        ]
+      }
+    },
+    {
+      "id": "wire:[214.63, 87.63]->[214.63, 92.71]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          214.63,
+          87.63
+        ],
+        "end": [
+          214.63,
+          92.71
+        ]
+      }
+    },
+    {
+      "id": "wire:[219.71, 52.07]->[219.71, 57.15]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          219.71,
+          52.07
+        ],
+        "end": [
+          219.71,
+          57.15
+        ]
+      }
+    },
+    {
+      "id": "wire:[219.71, 72.39]->[219.71, 77.47]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          219.71,
+          72.39
+        ],
+        "end": [
+          219.71,
+          77.47
+        ]
+      }
+    },
+    {
+      "id": "wire:[222.25, 72.39]->[222.25, 77.47]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          222.25,
+          72.39
+        ],
+        "end": [
+          222.25,
+          77.47
+        ]
+      }
+    },
+    {
+      "id": "wire:[229.87, 64.77]->[236.22, 64.77]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          229.87,
+          64.77
+        ],
+        "end": [
+          236.22,
+          64.77
+        ]
+      }
+    },
+    {
+      "id": "wire:[252.73, 100.33]->[252.73, 106.68]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          252.73,
+          100.33
+        ],
+        "end": [
+          252.73,
+          106.68
+        ]
+      }
+    },
+    {
+      "id": "wire:[252.73, 50.8]->[252.73, 57.15]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          252.73,
+          50.8
+        ],
+        "end": [
+          252.73,
+          57.15
+        ]
+      }
+    },
+    {
+      "id": "wire:[252.73, 64.77]->[252.73, 69.85]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          252.73,
+          64.77
+        ],
+        "end": [
+          252.73,
+          69.85
+        ]
+      }
+    },
+    {
+      "id": "wire:[252.73, 86.36]->[252.73, 92.71]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          252.73,
+          86.36
+        ],
+        "end": [
+          252.73,
+          92.71
+        ]
+      }
+    },
+    {
+      "id": "wire:[290.83, 100.33]->[290.83, 105.41]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          290.83,
+          100.33
+        ],
+        "end": [
+          290.83,
+          105.41
+        ]
+      }
+    },
+    {
+      "id": "wire:[290.83, 52.07]->[290.83, 57.15]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          290.83,
+          52.07
+        ],
+        "end": [
+          290.83,
+          57.15
+        ]
+      }
+    },
+    {
+      "id": "wire:[290.83, 64.77]->[290.83, 69.85]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          290.83,
+          64.77
+        ],
+        "end": [
+          290.83,
+          69.85
+        ]
+      }
+    },
+    {
+      "id": "wire:[290.83, 86.36]->[290.83, 92.71]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          290.83,
+          86.36
+        ],
+        "end": [
+          290.83,
+          92.71
+        ]
+      }
+    },
+    {
+      "id": "wire:[328.93, 100.33]->[328.93, 106.68]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          328.93,
+          100.33
+        ],
+        "end": [
+          328.93,
+          106.68
+        ]
+      }
+    },
+    {
+      "id": "wire:[328.93, 52.07]->[328.93, 57.15]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          328.93,
+          52.07
+        ],
+        "end": [
+          328.93,
+          57.15
+        ]
+      }
+    },
+    {
+      "id": "wire:[328.93, 64.77]->[328.93, 69.85]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          328.93,
+          64.77
+        ],
+        "end": [
+          328.93,
+          69.85
+        ]
+      }
+    },
+    {
+      "id": "wire:[328.93, 86.36]->[328.93, 92.71]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          328.93,
+          86.36
+        ],
+        "end": [
+          328.93,
+          92.71
+        ]
+      }
+    },
+    {
+      "id": "wire:[367.03, 100.33]->[367.03, 105.41]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          367.03,
+          100.33
+        ],
+        "end": [
+          367.03,
+          105.41
+        ]
+      }
+    },
+    {
+      "id": "wire:[367.03, 52.07]->[367.03, 57.15]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          367.03,
+          52.07
+        ],
+        "end": [
+          367.03,
+          57.15
+        ]
+      }
+    },
+    {
+      "id": "wire:[367.03, 64.77]->[367.03, 69.85]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          367.03,
+          64.77
+        ],
+        "end": [
+          367.03,
+          69.85
+        ]
+      }
+    },
+    {
+      "id": "wire:[367.03, 86.36]->[367.03, 92.71]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          367.03,
+          86.36
+        ],
+        "end": [
+          367.03,
+          92.71
+        ]
+      }
+    },
+    {
+      "id": "wire:[62.23, 100.33]->[62.23, 105.41]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          62.23,
+          100.33
+        ],
+        "end": [
+          62.23,
+          105.41
+        ]
+      }
+    },
+    {
+      "id": "wire:[62.23, 121.92]->[62.23, 128.27]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          62.23,
+          121.92
+        ],
+        "end": [
+          62.23,
+          128.27
+        ]
+      }
+    },
+    {
+      "id": "wire:[62.23, 135.89]->[62.23, 142.24]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          62.23,
+          135.89
+        ],
+        "end": [
+          62.23,
+          142.24
+        ]
+      }
+    },
+    {
+      "id": "wire:[62.23, 50.8]->[62.23, 57.15]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          62.23,
+          50.8
+        ],
+        "end": [
+          62.23,
+          57.15
+        ]
+      }
+    },
+    {
+      "id": "wire:[62.23, 64.77]->[62.23, 71.12]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          62.23,
+          64.77
+        ],
+        "end": [
+          62.23,
+          71.12
+        ]
+      }
+    },
+    {
+      "id": "wire:[62.23, 87.63]->[62.23, 92.71]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          62.23,
+          87.63
+        ],
+        "end": [
+          62.23,
+          92.71
+        ]
+      }
+    },
+    {
+      "id": "wire:[93.98, 62.23]->[100.33, 62.23]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          93.98,
+          62.23
+        ],
+        "end": [
+          100.33,
+          62.23
+        ]
+      }
+    },
+    {
+      "id": "wire:[93.98, 67.31]->[100.33, 67.31]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          93.98,
+          67.31
+        ],
+        "end": [
+          100.33,
+          67.31
+        ]
+      }
+    }
+  ],
+  "changed_refs": [
+    "#PWR001",
+    "#PWR002",
+    "#PWR003",
+    "#PWR004",
+    "#PWR005",
+    "#PWR006",
+    "#PWR007",
+    "#PWR008",
+    "#PWR009",
+    "#PWR010",
+    "#PWR011",
+    "#PWR012",
+    "#PWR013",
+    "#PWR014",
+    "#PWR015",
+    "#PWR016",
+    "#PWR017",
+    "#PWR018",
+    "#PWR019",
+    "#PWR020",
+    "#PWR021",
+    "#PWR022",
+    "#PWR023",
+    "#PWR024",
+    "#PWR025",
+    "#PWR026",
+    "#PWR027",
+    "#PWR028",
+    "#PWR029",
+    "#PWR030",
+    "#PWR031",
+    "#PWR032",
+    "#PWR033",
+    "#PWR034",
+    "#PWR035",
+    "C21",
+    "C22",
+    "C23",
+    "C24",
+    "C25",
+    "C26",
+    "C27",
+    "C28",
+    "C29",
+    "C30",
+    "C31",
+    "C32",
+    "C33",
+    "C34",
+    "C35",
+    "C36",
+    "U3",
+    "U4",
+    "U5",
+    "U6"
+  ],
+  "changed_nets": [
+    "+5V",
+    "-5V",
+    "GND",
+    "OUT0_IOUT",
+    "OUT0_RFB",
+    "OUT0_VCM",
+    "OUT1_IOUT",
+    "OUT1_RFB",
+    "OUT1_VCM",
+    "OUT2_IOUT",
+    "OUT2_RFB",
+    "OUT2_VCM",
+    "OUT3_IOUT",
+    "OUT3_RFB",
+    "OUT3_VCM"
+  ]
+}

@@ -1,0 +1,261 @@
+{
+  "status": "ready",
+  "schematic_path": "/home/phwl/src/kicad-claude/ad3552r_dac/ad3552r_dac/zz_scratch.kicad_sch",
+  "before_snapshot": "/home/phwl/src/kicad-claude/ad3552r_dac/ad3552r_dac/.kicad-mcp/visual-diff-e6310ad397108874-before.kicad_sch",
+  "before_sha256": "0a587c898ad7b10086a5b6f1f8475366a281200bd43409b7e350199eb6d8aa69",
+  "after_sha256": "f98ae36294b0d895e3d27cea379878ebacdebef72829f52c2eecac80730c5ff2",
+  "changed_objects": [
+    {
+      "id": "label:label:A",
+      "kind": "label",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "label",
+        "label_type": "label",
+        "name": "A",
+        "x": 106.0,
+        "y": 100.0,
+        "rotation": 0
+      }
+    },
+    {
+      "id": "label:label:B",
+      "kind": "label",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "label",
+        "label_type": "label",
+        "name": "B",
+        "x": 114.0,
+        "y": 100.0,
+        "rotation": 0
+      }
+    },
+    {
+      "id": "label:label:TESTNET",
+      "kind": "label",
+      "change": "removed",
+      "before": {
+        "kind": "label",
+        "label_type": "label",
+        "name": "TESTNET",
+        "x": 63.5,
+        "y": 46.99,
+        "rotation": 0
+      },
+      "after": null
+    },
+    {
+      "id": "symbol:#PWR001:unit=1",
+      "kind": "symbol",
+      "change": "removed",
+      "before": {
+        "kind": "symbol",
+        "lib_id": "power:GND",
+        "reference": "#PWR001",
+        "value": "GND",
+        "footprint": "",
+        "properties": {
+          "Reference": "#PWR001",
+          "Value": "GND",
+          "Footprint": "",
+          "Datasheet": "",
+          "Description": ""
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 50.8,
+        "y": 54.61,
+        "rotation": 0,
+        "unit": 1
+      },
+      "after": null
+    },
+    {
+      "id": "symbol:#PWR002:unit=1",
+      "kind": "symbol",
+      "change": "removed",
+      "before": {
+        "kind": "symbol",
+        "lib_id": "power:+12V",
+        "reference": "#PWR002",
+        "value": "+12V",
+        "footprint": "",
+        "properties": {
+          "Reference": "#PWR002",
+          "Value": "+12V",
+          "Footprint": "",
+          "Datasheet": "",
+          "Description": ""
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 50.8,
+        "y": 44.45,
+        "rotation": 0,
+        "unit": 1
+      },
+      "after": null
+    },
+    {
+      "id": "symbol:C1:unit=1",
+      "kind": "symbol",
+      "change": "removed",
+      "before": {
+        "kind": "symbol",
+        "lib_id": "Device:C",
+        "reference": "C1",
+        "value": "1u",
+        "footprint": "",
+        "properties": {
+          "Reference": "C1",
+          "Value": "1u",
+          "Footprint": "",
+          "Datasheet": "",
+          "Description": ""
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 76.2,
+        "y": 50.8,
+        "rotation": 0,
+        "unit": 1
+      },
+      "after": null
+    },
+    {
+      "id": "symbol:D1:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "Device:D_Schottky",
+        "reference": "D1",
+        "value": "t",
+        "footprint": "",
+        "properties": {
+          "Reference": "D1",
+          "Value": "t",
+          "Footprint": "",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 100.0,
+        "y": 100.0,
+        "rotation": 180,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:R1:unit=1",
+      "kind": "symbol",
+      "change": "modified",
+      "before": {
+        "kind": "symbol",
+        "lib_id": "Device:R",
+        "reference": "R1",
+        "value": "10k",
+        "footprint": "",
+        "properties": {
+          "Reference": "R1",
+          "Value": "10k",
+          "Footprint": "",
+          "Datasheet": "",
+          "Description": ""
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 50.8,
+        "y": 50.8,
+        "rotation": 0,
+        "unit": 1
+      },
+      "after": {
+        "kind": "symbol",
+        "lib_id": "Device:R",
+        "reference": "R1",
+        "value": "t",
+        "footprint": "",
+        "properties": {
+          "Reference": "R1",
+          "Value": "t",
+          "Footprint": "",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 120.0,
+        "y": 100.0,
+        "rotation": 90,
+        "unit": 1
+      }
+    },
+    {
+      "id": "wire:[103.81, 100.0]->[110.0, 100.0]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          103.81,
+          100.0
+        ],
+        "end": [
+          110.0,
+          100.0
+        ]
+      }
+    },
+    {
+      "id": "wire:[112.0, 100.0]->[116.19, 100.0]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          112.0,
+          100.0
+        ],
+        "end": [
+          116.19,
+          100.0
+        ]
+      }
+    },
+    {
+      "id": "wire:[50.8, 46.99]->[76.2, 46.99]",
+      "kind": "wire",
+      "change": "removed",
+      "before": {
+        "kind": "wire",
+        "start": [
+          50.8,
+          46.99
+        ],
+        "end": [
+          76.2,
+          46.99
+        ]
+      },
+      "after": null
+    }
+  ],
+  "changed_refs": [
+    "#PWR001",
+    "#PWR002",
+    "C1",
+    "D1",
+    "R1"
+  ],
+  "changed_nets": [
+    "A",
+    "B",
+    "TESTNET"
+  ]
+}

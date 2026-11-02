@@ -1,0 +1,33 @@
+2026-10-29 15:54:15.647 INFO   Freerouting v2.5.0 (build-date: 2026-10-05)
+2026-10-29 15:54:15.907 INFO   Hardware: 20 CPU cores, 633 CPU score, 15944 MB RAM
+2026-10-29 15:54:15.908 WARN   Deprecated settings path '-mp / --router.max_passes'; use '--router.autorouter.max_passes' instead. The old path will be removed in a future release.
+2026-10-29 15:54:15.908 WARN   GUI is disabled and you don't have a console available, so the only feedback from Freerouting is in the log.
+2026-10-29 15:54:16.934 WARN   Deprecated settings path 'router.max_passes'; use 'router.autorouter.max_passes' instead. The old path will be removed in a future release.
+2026-10-29 15:54:17.194 INFO   [BA8773\542B0C] Loading board file 'board.dsn'...
+2026-10-29 15:54:17.320 WARN   Power-plane validation failed:
+- Dedicated power layer 'In4.Cu' has overlapping conduction areas: Area (ID 8, Net(s): [+2V5]) and Area (ID 4, Net(s): [+1V8]) overlap.
+
+Proper Definition and Best Practices for Power Planes:
+1. What Belongs on a Power Plane:
+   - Solid Copper Pours: A single, uninterrupted sheet of copper assigned to one voltage (e.g., +3.3V).
+   - Split Planes: Multiple distinct voltage zones divided by thin isolation gaps (puzzle pieces).
+   - Vias and Anti-Pads: Plated holes passing through the board, surrounded by circular voids (anti-pads) to prevent shorting.
+   - Thermal Reliefs: Spoked connections for vias or pins that connect to the plane, facilitating soldering.
+2. Why Signal Wires/Traces are Banned:
+   - Destroyed Return Paths: High-speed signals on adjacent layers couple to the solid plane below/above as return paths. Crossing a trace gap detours return currents, causing severe EMI and signal integrity issues.
+   - Compromised Power Delivery: Power planes should provide the lowest impedance path. Routing traces chops up the copper, creating bottleneck restrictions and voltage drops.
+
+2026-10-29 15:54:17.350 INFO   [BA8773\542B0C] Job 'BA8773\542B0C' started at 2026-10-29T04:54:17.350005834Z.
+2026-10-29 15:54:17.458 INFO   [BA8773\542B0C] Pipeline thread limits: autorouter pass is single-threaded, optimizer.max_threads=19.
+2026-10-29 15:54:17.536 INFO   [BA8773\542B0C] Fanout stage started on board 'e4d019ed7a7232fa3c8717f2260c717d' with 531 of 552 SMD pins needing fanout (0 already connected, 21 netless).
+2026-10-29 15:54:21.202 INFO   [BA8773\542B0C] Fanout pass #1 on board 'c37c4d6affbfbd7465c5427a46687b78' completed in 3.59 seconds with 228 SMD pins fanouted, 292 not routed, 0 insert errors, +20 extra vias (0 SMD pins still to check in pass, ripup costs=100).
+2026-10-29 15:54:22.993 INFO   [BA8773\542B0C] Fanout pass #2 on board 'b45239cebb311a5002d2519a82c95adc' completed in 1.77 seconds with 19 SMD pins fanouted, 293 not routed, 0 insert errors, +2 extra vias (0 SMD pins still to check in pass, ripup costs=200).
+2026-10-29 15:54:23.436 INFO   [BA8773\542B0C] Fanout pass #3 on board '8e40505eb5c3a69a9d610f74fb67f4a2' completed in 0.43 seconds with 1 SMD pin fanouted, 52 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=300).
+2026-10-29 15:54:23.551 INFO   [BA8773\542B0C] Fanout pass #4 on board '8e40505eb5c3a69a9d610f74fb67f4a2' completed in 0.10 seconds with 0 SMD pins fanouted, 0 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=400).
+2026-10-29 15:54:23.576 INFO   [BA8773\542B0C] Fanout stage completed: started with 531 total SMD pins, completed in 6.01 seconds, escaped pins: 317/531 (59.7%), using 5.54 total CPU seconds, 6.14 GB total allocated, and 462.8 MB peak heap usage.
+2026-10-29 15:54:23.685 INFO   [BA8773\542B0C] Auto-routing stage started on board '8e40505eb5c3a69a9d610f74fb67f4a2' with baseline score 374.15 for 230 unrouted items.
+2026-10-29 15:55:02.890 INFO   [BA8773\542B0C] Auto-routing pass #1 on board '8e40505eb5c3a69a9d610f74fb67f4a2' was completed in 39.14 seconds with score 749.66 (92 unrouted and 0 violations), using 43.93 CPU seconds and the job allocated 63.66 GB of memory so far.
+2026-10-29 15:55:15.830 INFO   [BA8773\542B0C] Auto-routing pass #2 on board '9f36fd77908cc9155309835c7f040352' was completed in 12.86 seconds with score 385.03 (226 unrouted and 0 violations), using 56.84 CPU seconds and the job allocated 80.78 GB of memory so far.
+2026-10-29 15:55:31.050 INFO   [BA8773\542B0C] Auto-routing pass #3 on board '6a7aa01006719a3534243e7c6d7f7c64' was completed in 15.16 seconds with score 336.05 (244 unrouted and 0 violations), using 71.76 CPU seconds and the job allocated 100.18 GB of memory so far.
+2026-10-29 15:55:44.938 INFO   [BA8773\542B0C] Auto-routing pass #4 on board '551d4153c504ef70228d7c2a7f5dad19' was completed in 13.84 seconds with score 398.64 (221 unrouted and 0 violations), using 85.70 CPU seconds and the job allocated 117.57 GB of memory so far.
+2026-10-29 15:55:59.745 INFO   [BA8773\542B0C] Auto-routing pass #5 on board '574d88df415ae295cbde5a29208a4978' was completed in 14.75 seconds with score 393.20 (223 unrouted and 0 violations), using 100.61 CPU seconds and the job allocated 136.46 GB of memory so far.

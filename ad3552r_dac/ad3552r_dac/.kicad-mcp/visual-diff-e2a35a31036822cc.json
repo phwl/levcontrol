@@ -1,0 +1,64 @@
+{
+  "status": "ready",
+  "schematic_path": "/home/phwl/src/kicad-claude/ad3552r_dac/ad3552r_dac/dac_digital.kicad_sch",
+  "before_snapshot": "/home/phwl/src/kicad-claude/ad3552r_dac/ad3552r_dac/.kicad-mcp/visual-diff-e2a35a31036822cc-before.kicad_sch",
+  "before_sha256": "245ab3cfdae39838703d46c8b573266e130b91b9417fd0383a8853b170cb7b0f",
+  "after_sha256": "109318bea8f2d28359fc46aa87a83ed0338f4d27e8552040e9bfa0fdacc963af",
+  "changed_objects": [
+    {
+      "id": "symbol:C6:unit=1",
+      "kind": "symbol",
+      "change": "modified",
+      "before": {
+        "kind": "symbol",
+        "lib_id": "Device:C",
+        "reference": "C6",
+        "value": "10uF",
+        "footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "properties": {
+          "Reference": "C6",
+          "Value": "10uF",
+          "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+          "Datasheet": "",
+          "Description": "",
+          "Role": "AVDD bulk (U2)",
+          "Spec": "X7R, >=10V; effective >=5uF at 5V DC bias",
+          "Notes": "AVDD bulk for U2 (AD3552R pin 19). Basis: TPS7A4901 needs >=2.2uF effective, TI recommends 10uF; AD3552R AVDD current is constant (22mA typ, 28.5mA max) so the job is HF noise (AC PSRR 80dB @1kHz, 43dB @1MHz). Place within a few mm of pin 19 with a direct ground via. A 10uF X7R can lose 30-50% at 5V bias and this footprint is 0603 (0805 gives more margin): confirm effective C from the vendor bias curve. Verify AVDD ripple at the pin during bring-up; add 1uF or a ferrite if 500kHz switching noise is seen."
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 328.93,
+        "y": 96.52,
+        "rotation": 0,
+        "unit": 1
+      },
+      "after": {
+        "kind": "symbol",
+        "lib_id": "Device:C",
+        "reference": "C6",
+        "value": "10uF",
+        "footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "properties": {
+          "Reference": "C6",
+          "Value": "10uF",
+          "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+          "Datasheet": "",
+          "Description": "",
+          "Role": "AVDD bulk (U2)",
+          "Spec": "X7R, >=10V; effective >=5uF at 5V DC bias",
+          "Notes": "AVDD bulk for U2 (AD3552R pin 19). Basis: TPS7A4901 needs >=2.2uF effective, TI recommends 10uF; AD3552R AVDD current is constant (22mA typ, 28.5mA max) so the job is HF noise (AC PSRR 80dB @1kHz, 43dB @1MHz). Place within a few mm of pin 19 with a direct ground via. A 10uF X7R can lose 30-50% at 5V bias; 0805 footprint chosen for margin: confirm effective C from the vendor bias curve. Verify AVDD ripple at the pin during bring-up; add 1uF or a ferrite if 500kHz switching noise is seen."
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 328.93,
+        "y": 96.52,
+        "rotation": 0,
+        "unit": 1
+      }
+    }
+  ],
+  "changed_refs": [
+    "C6"
+  ],
+  "changed_nets": []
+}

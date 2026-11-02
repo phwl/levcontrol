@@ -1,0 +1,535 @@
+{
+  "status": "ready",
+  "schematic_path": "/home/phwl/src/kicad-claude/ad3552r_dac/ad3552r_dac/ad3552r_dac.kicad_sch",
+  "before_snapshot": "/home/phwl/src/kicad-claude/ad3552r_dac/ad3552r_dac/.kicad-mcp/visual-diff-8ba020ad7111f4ea-before.kicad_sch",
+  "before_sha256": "f88f661cccfe1e302e91fe9b5180ee158087638d62f578857e2f607664625296",
+  "after_sha256": "7507cdd126e6938183aa139f102d55c45413ed03369cb333ee0d307885efb366",
+  "changed_objects": [
+    {
+      "id": "label:global_label:CS_A_N",
+      "kind": "label",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "label",
+        "label_type": "global_label",
+        "name": "CS_A_N",
+        "x": 57.15,
+        "y": 62.23,
+        "rotation": 180
+      }
+    },
+    {
+      "id": "label:global_label:CS_B_N",
+      "kind": "label",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "label",
+        "label_type": "global_label",
+        "name": "CS_B_N",
+        "x": 133.35,
+        "y": 62.23,
+        "rotation": 180
+      }
+    },
+    {
+      "id": "label:global_label:QSPI_A:occurrence=1",
+      "kind": "label",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "label",
+        "label_type": "global_label",
+        "name": "QSPI_A",
+        "x": 57.15,
+        "y": 85.09,
+        "rotation": 180
+      }
+    },
+    {
+      "id": "label:global_label:QSPI_A:occurrence=2",
+      "kind": "label",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "label",
+        "label_type": "global_label",
+        "name": "QSPI_A",
+        "x": 214.63,
+        "y": 69.85,
+        "rotation": 270
+      }
+    },
+    {
+      "id": "label:global_label:QSPI_B:occurrence=1",
+      "kind": "label",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "label",
+        "label_type": "global_label",
+        "name": "QSPI_B",
+        "x": 133.35,
+        "y": 85.09,
+        "rotation": 180
+      }
+    },
+    {
+      "id": "label:global_label:QSPI_B:occurrence=2",
+      "kind": "label",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "label",
+        "label_type": "global_label",
+        "name": "QSPI_B",
+        "x": 252.73,
+        "y": 69.85,
+        "rotation": 270
+      }
+    },
+    {
+      "id": "label:global_label:SCLK:occurrence=1",
+      "kind": "label",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "label",
+        "label_type": "global_label",
+        "name": "SCLK",
+        "x": 133.35,
+        "y": 64.77,
+        "rotation": 180
+      }
+    },
+    {
+      "id": "label:global_label:SCLK:occurrence=2",
+      "kind": "label",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "label",
+        "label_type": "global_label",
+        "name": "SCLK",
+        "x": 57.15,
+        "y": 64.77,
+        "rotation": 180
+      }
+    },
+    {
+      "id": "label:global_label:VLOGIC:occurrence=1",
+      "kind": "label",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "label",
+        "label_type": "global_label",
+        "name": "VLOGIC",
+        "x": 50.8,
+        "y": 120.65,
+        "rotation": 0
+      }
+    },
+    {
+      "id": "label:global_label:VLOGIC:occurrence=2",
+      "kind": "label",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "label",
+        "label_type": "global_label",
+        "name": "VLOGIC",
+        "x": 147.32,
+        "y": 52.07,
+        "rotation": 90
+      }
+    },
+    {
+      "id": "label:global_label:VLOGIC:occurrence=3",
+      "kind": "label",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "label",
+        "label_type": "global_label",
+        "name": "VLOGIC",
+        "x": 214.63,
+        "y": 52.07,
+        "rotation": 90
+      }
+    },
+    {
+      "id": "label:global_label:VLOGIC:occurrence=4",
+      "kind": "label",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "label",
+        "label_type": "global_label",
+        "name": "VLOGIC",
+        "x": 252.73,
+        "y": 52.07,
+        "rotation": 90
+      }
+    },
+    {
+      "id": "label:global_label:VLOGIC:occurrence=5",
+      "kind": "label",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "label",
+        "label_type": "global_label",
+        "name": "VLOGIC",
+        "x": 71.12,
+        "y": 52.07,
+        "rotation": 90
+      }
+    },
+    {
+      "id": "symbol:#PWR001:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "power:PWR_FLAG",
+        "reference": "#PWR001",
+        "value": "PWR_FLAG",
+        "footprint": "",
+        "properties": {
+          "Reference": "#PWR001",
+          "Value": "PWR_FLAG",
+          "Footprint": "",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 50.8,
+        "y": 120.65,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:R1:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "Device:R",
+        "reference": "R1",
+        "value": "1k",
+        "footprint": "Resistor_SMD:R_0402_1005Metric",
+        "properties": {
+          "Reference": "R1",
+          "Value": "1k",
+          "Footprint": "Resistor_SMD:R_0402_1005Metric",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 214.63,
+        "y": 60.96,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:R2:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "Device:R",
+        "reference": "R2",
+        "value": "1k",
+        "footprint": "Resistor_SMD:R_0402_1005Metric",
+        "properties": {
+          "Reference": "R2",
+          "Value": "1k",
+          "Footprint": "Resistor_SMD:R_0402_1005Metric",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 252.73,
+        "y": 60.96,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:U1:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "ad3552r_custom:AD3552R",
+        "reference": "U1",
+        "value": "AD3552R",
+        "footprint": "Package_CSP:LFCSP-32-1EP_5x5mm_P0.5mm_EP3.1x3.1mm",
+        "properties": {
+          "Reference": "U1",
+          "Value": "AD3552R",
+          "Footprint": "Package_CSP:LFCSP-32-1EP_5x5mm_P0.5mm_EP3.1x3.1mm",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 71.12,
+        "y": 81.28,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "symbol:U2:unit=1",
+      "kind": "symbol",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "symbol",
+        "lib_id": "ad3552r_custom:AD3552R",
+        "reference": "U2",
+        "value": "AD3552R",
+        "footprint": "Package_CSP:LFCSP-32-1EP_5x5mm_P0.5mm_EP3.1x3.1mm",
+        "properties": {
+          "Reference": "U2",
+          "Value": "AD3552R",
+          "Footprint": "Package_CSP:LFCSP-32-1EP_5x5mm_P0.5mm_EP3.1x3.1mm",
+          "Datasheet": "~"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 147.32,
+        "y": 81.28,
+        "rotation": 0,
+        "unit": 1
+      }
+    },
+    {
+      "id": "wire:[133.35, 62.23]->[138.43, 62.23]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          133.35,
+          62.23
+        ],
+        "end": [
+          138.43,
+          62.23
+        ]
+      }
+    },
+    {
+      "id": "wire:[133.35, 64.77]->[138.43, 64.77]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          133.35,
+          64.77
+        ],
+        "end": [
+          138.43,
+          64.77
+        ]
+      }
+    },
+    {
+      "id": "wire:[133.35, 85.09]->[138.43, 85.09]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          133.35,
+          85.09
+        ],
+        "end": [
+          138.43,
+          85.09
+        ]
+      }
+    },
+    {
+      "id": "wire:[147.32, 52.07]->[147.32, 57.15]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          147.32,
+          52.07
+        ],
+        "end": [
+          147.32,
+          57.15
+        ]
+      }
+    },
+    {
+      "id": "wire:[214.63, 52.07]->[214.63, 57.15]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          214.63,
+          52.07
+        ],
+        "end": [
+          214.63,
+          57.15
+        ]
+      }
+    },
+    {
+      "id": "wire:[214.63, 64.77]->[214.63, 69.85]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          214.63,
+          64.77
+        ],
+        "end": [
+          214.63,
+          69.85
+        ]
+      }
+    },
+    {
+      "id": "wire:[252.73, 52.07]->[252.73, 57.15]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          252.73,
+          52.07
+        ],
+        "end": [
+          252.73,
+          57.15
+        ]
+      }
+    },
+    {
+      "id": "wire:[252.73, 64.77]->[252.73, 69.85]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          252.73,
+          64.77
+        ],
+        "end": [
+          252.73,
+          69.85
+        ]
+      }
+    },
+    {
+      "id": "wire:[57.15, 62.23]->[62.23, 62.23]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          57.15,
+          62.23
+        ],
+        "end": [
+          62.23,
+          62.23
+        ]
+      }
+    },
+    {
+      "id": "wire:[57.15, 64.77]->[62.23, 64.77]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          57.15,
+          64.77
+        ],
+        "end": [
+          62.23,
+          64.77
+        ]
+      }
+    },
+    {
+      "id": "wire:[57.15, 85.09]->[62.23, 85.09]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          57.15,
+          85.09
+        ],
+        "end": [
+          62.23,
+          85.09
+        ]
+      }
+    },
+    {
+      "id": "wire:[71.12, 52.07]->[71.12, 57.15]",
+      "kind": "wire",
+      "change": "added",
+      "before": null,
+      "after": {
+        "kind": "wire",
+        "start": [
+          71.12,
+          52.07
+        ],
+        "end": [
+          71.12,
+          57.15
+        ]
+      }
+    }
+  ],
+  "changed_refs": [
+    "#PWR001",
+    "R1",
+    "R2",
+    "U1",
+    "U2"
+  ],
+  "changed_nets": [
+    "CS_A_N",
+    "CS_B_N",
+    "QSPI_A",
+    "QSPI_B",
+    "SCLK",
+    "VLOGIC"
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "status": "ready",
+  "schematic_path": "/home/phwl/src/kicad-claude/ad3552r_dac/ad3552r_dac/dac_power.kicad_sch",
+  "before_snapshot": "/home/phwl/src/kicad-claude/ad3552r_dac/ad3552r_dac/.kicad-mcp/visual-diff-45111e0c73407835-before.kicad_sch",
+  "before_sha256": "88df956832a66c01cf50743e872e512e136d9e7f8ae0583ebccebd2c0256c330",
+  "after_sha256": "a9aa8ba3316706d0b6f6dd9a9f9da894d0c94ee19bf28d65179b5bd8a6839e75",
+  "changed_objects": [
+    {
+      "id": "symbol:C60:unit=1",
+      "kind": "symbol",
+      "change": "modified",
+      "before": {
+        "kind": "symbol",
+        "lib_id": "Device:C",
+        "reference": "C60",
+        "value": "10uF",
+        "footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "properties": {
+          "Reference": "C60",
+          "Value": "10uF",
+          "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+          "Datasheet": "",
+          "Description": ""
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 147.32,
+        "y": 85.09,
+        "rotation": 0,
+        "unit": 1
+      },
+      "after": {
+        "kind": "symbol",
+        "lib_id": "Device:C",
+        "reference": "C60",
+        "value": "10uF",
+        "footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "properties": {
+          "Reference": "C60",
+          "Value": "10uF",
+          "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+          "Datasheet": "",
+          "Description": "",
+          "Spec": "X7R"
+        },
+        "dnp": false,
+        "in_bom": true,
+        "x": 147.32,
+        "y": 85.09,
+        "rotation": 0,
+        "unit": 1
+      }
+    }
+  ],
+  "changed_refs": [
+    "C60"
+  ],
+  "changed_nets": []
+}

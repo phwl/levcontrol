@@ -1,0 +1,11 @@
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+./kicad/include/properties/property.h(607): assert "m_choices.GetCount() > 0" failed in PROPERTY_ENUM(): No enum choices defined
+stage fixu13: 4 nets kept
+running Freerouting (30 passes) ...
+stage completed: started with 34 unrouted nets, completed in 1.83 seconds, final score: 921.57 (2 unrouted and 0 violations), using 0.70 total CPU seconds, 0.63 GB total allocated, and 149.7 MB peak heap usage.
+mization stage: the board has 2 unrouted connection(s) (optimizer only runs on completely routed boards).
+9374C' finished with state: COMPLETED (elapsed: 2.00 seconds, finished at UTC: 2026-10-29T06:30:01.344011200Z).
+
+restored 655 earlier tracks/vias
+SES import: True  tracks+vias 754 -> 809
