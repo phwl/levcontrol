@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/home/phwl/src/kicad-claude/ad3552r_dac/ad3552r_dac/ad3552r_dac.kicad_sch</source>
-    <date>2026-11-02T13:52:59</date>
+    <date>2026-11-03T09:31:32</date>
     <tool>Eeschema 10.0.7-10.0.7~ubuntu24.04.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -118,11 +118,17 @@
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C1525</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C1525"/>
       <property name="Sheetname" value="E1 translators"/>
       <property name="Sheetfile" value="dac_translators.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -142,11 +148,17 @@
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C1525</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C1525"/>
       <property name="Sheetname" value="E1 translators"/>
       <property name="Sheetfile" value="dac_translators.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -166,11 +178,17 @@
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C1525</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C1525"/>
       <property name="Sheetname" value="E1 translators"/>
       <property name="Sheetfile" value="dac_translators.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -190,11 +208,17 @@
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C1525</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C1525"/>
       <property name="Sheetname" value="E1 translators"/>
       <property name="Sheetfile" value="dac_translators.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -214,11 +238,17 @@
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C1525</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C1525"/>
       <property name="Sheetname" value="E1 translators"/>
       <property name="Sheetfile" value="dac_translators.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -238,11 +268,17 @@
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C1525</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C1525"/>
       <property name="Sheetname" value="E1 translators"/>
       <property name="Sheetfile" value="dac_translators.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -262,11 +298,17 @@
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C1525</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C1525"/>
       <property name="Sheetname" value="E1 translators"/>
       <property name="Sheetfile" value="dac_translators.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -286,11 +328,17 @@
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C1525</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C1525"/>
       <property name="Sheetname" value="E1 translators"/>
       <property name="Sheetfile" value="dac_translators.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -310,11 +358,17 @@
       <value>Red Pitaya E1</value>
       <footprint>Connector_PinSocket_2.54mm:PinSocket_2x13_P2.54mm_Vertical</footprint>
       <fields>
+        <field name="MPN">ESW-113-33-T-D</field>
+        <field name="Manufacturer">Samtec</field>
+        <field name="LCSC">C7498573</field>
         <field name="Footprint">Connector_PinSocket_2.54mm:PinSocket_2x13_P2.54mm_Vertical</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Connector_Generic" part="Conn_02x13_Odd_Even" description="Generic connector, double row, 02x13, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="MPN" value="ESW-113-33-T-D"/>
+      <property name="Manufacturer" value="Samtec"/>
+      <property name="LCSC" value="C7498573"/>
       <property name="Sheetname" value="E1 translators"/>
       <property name="Sheetfile" value="dac_translators.kicad_sch"/>
       <property name="ki_keywords" value="connector"/>
@@ -359,11 +413,17 @@
       <footprint>Connector_PinSocket_2.54mm:PinSocket_2x13_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
       <fields>
+        <field name="MPN">ESW-113-33-T-D</field>
+        <field name="Manufacturer">Samtec</field>
+        <field name="LCSC">C7498573</field>
         <field name="Footprint">Connector_PinSocket_2.54mm:PinSocket_2x13_P2.54mm_Vertical</field>
         <field name="Datasheet">~</field>
         <field name="Description"/>
       </fields>
       <libsource lib="Connector_Generic" part="Conn_02x13_Odd_Even" description="Generic connector, double row, 02x13, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="MPN" value="ESW-113-33-T-D"/>
+      <property name="Manufacturer" value="Samtec"/>
+      <property name="LCSC" value="C7498573"/>
       <property name="Sheetname" value="E1 translators"/>
       <property name="Sheetfile" value="dac_translators.kicad_sch"/>
       <property name="ki_keywords" value="connector"/>
@@ -407,11 +467,17 @@
       <value>33</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF330JTCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C25105</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF330JTCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C25105"/>
       <property name="Sheetname" value="E1 translators"/>
       <property name="Sheetfile" value="dac_translators.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -431,11 +497,17 @@
       <value>33</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF330JTCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C25105</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF330JTCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C25105"/>
       <property name="Sheetname" value="E1 translators"/>
       <property name="Sheetfile" value="dac_translators.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -455,11 +527,17 @@
       <value>33</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF330JTCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C25105</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF330JTCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C25105"/>
       <property name="Sheetname" value="E1 translators"/>
       <property name="Sheetfile" value="dac_translators.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -479,11 +557,17 @@
       <value>33</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF330JTCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C25105</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF330JTCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C25105"/>
       <property name="Sheetname" value="E1 translators"/>
       <property name="Sheetfile" value="dac_translators.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -503,11 +587,17 @@
       <value>33</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF330JTCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C25105</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF330JTCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C25105"/>
       <property name="Sheetname" value="E1 translators"/>
       <property name="Sheetfile" value="dac_translators.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -527,11 +617,17 @@
       <value>33</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF330JTCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C25105</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF330JTCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C25105"/>
       <property name="Sheetname" value="E1 translators"/>
       <property name="Sheetfile" value="dac_translators.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -551,11 +647,17 @@
       <value>33</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF330JTCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C25105</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF330JTCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C25105"/>
       <property name="Sheetname" value="E1 translators"/>
       <property name="Sheetfile" value="dac_translators.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -575,11 +677,17 @@
       <value>33</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF330JTCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C25105</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF330JTCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C25105"/>
       <property name="Sheetname" value="E1 translators"/>
       <property name="Sheetfile" value="dac_translators.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -599,11 +707,17 @@
       <value>33</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF330JTCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C25105</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF330JTCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C25105"/>
       <property name="Sheetname" value="E1 translators"/>
       <property name="Sheetfile" value="dac_translators.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -623,11 +737,17 @@
       <value>33</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF330JTCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C25105</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF330JTCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C25105"/>
       <property name="Sheetname" value="E1 translators"/>
       <property name="Sheetfile" value="dac_translators.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -647,11 +767,17 @@
       <value>33</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF330JTCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C25105</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF330JTCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C25105"/>
       <property name="Sheetname" value="E1 translators"/>
       <property name="Sheetfile" value="dac_translators.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -671,11 +797,17 @@
       <value>33</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF330JTCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C25105</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF330JTCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C25105"/>
       <property name="Sheetname" value="E1 translators"/>
       <property name="Sheetfile" value="dac_translators.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -695,11 +827,17 @@
       <value>33</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF330JTCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C25105</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF330JTCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C25105"/>
       <property name="Sheetname" value="E1 translators"/>
       <property name="Sheetfile" value="dac_translators.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -719,11 +857,17 @@
       <value>10k</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF1002TCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C25744</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF1002TCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C25744"/>
       <property name="Sheetname" value="E1 translators"/>
       <property name="Sheetfile" value="dac_translators.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -743,11 +887,17 @@
       <value>10k</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF1002TCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C25744</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF1002TCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C25744"/>
       <property name="Sheetname" value="E1 translators"/>
       <property name="Sheetfile" value="dac_translators.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -767,11 +917,17 @@
       <value>10k</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF1002TCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C25744</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF1002TCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C25744"/>
       <property name="Sheetname" value="E1 translators"/>
       <property name="Sheetfile" value="dac_translators.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -791,11 +947,17 @@
       <value>10k</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF1002TCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C25744</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF1002TCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C25744"/>
       <property name="Sheetname" value="E1 translators"/>
       <property name="Sheetfile" value="dac_translators.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -815,11 +977,17 @@
       <value>10k</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF1002TCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C25744</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF1002TCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C25744"/>
       <property name="Sheetname" value="E1 translators"/>
       <property name="Sheetfile" value="dac_translators.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -839,11 +1007,17 @@
       <value>10k</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF1002TCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C25744</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF1002TCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C25744"/>
       <property name="Sheetname" value="E1 translators"/>
       <property name="Sheetfile" value="dac_translators.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -863,11 +1037,17 @@
       <value>10k</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF1002TCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C25744</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF1002TCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C25744"/>
       <property name="Sheetname" value="E1 translators"/>
       <property name="Sheetfile" value="dac_translators.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -887,11 +1067,17 @@
       <value>10k</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF1002TCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C25744</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF1002TCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C25744"/>
       <property name="Sheetname" value="E1 translators"/>
       <property name="Sheetfile" value="dac_translators.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -911,11 +1097,17 @@
       <value>100k</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF1003TCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C25741</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF1003TCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C25741"/>
       <property name="Sheetname" value="E1 translators"/>
       <property name="Sheetfile" value="dac_translators.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -935,11 +1127,17 @@
       <value>100k</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF1003TCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C25741</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF1003TCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C25741"/>
       <property name="Sheetname" value="E1 translators"/>
       <property name="Sheetfile" value="dac_translators.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -959,11 +1157,17 @@
       <value>100k</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF1003TCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C25741</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF1003TCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C25741"/>
       <property name="Sheetname" value="E1 translators"/>
       <property name="Sheetfile" value="dac_translators.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -983,11 +1187,17 @@
       <value>100k</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF1003TCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C25741</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF1003TCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C25741"/>
       <property name="Sheetname" value="E1 translators"/>
       <property name="Sheetfile" value="dac_translators.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1007,11 +1217,17 @@
       <value>100k</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF1003TCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C25741</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF1003TCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C25741"/>
       <property name="Sheetname" value="E1 translators"/>
       <property name="Sheetfile" value="dac_translators.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1031,11 +1247,17 @@
       <value>100k</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF1003TCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C25741</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF1003TCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C25741"/>
       <property name="Sheetname" value="E1 translators"/>
       <property name="Sheetfile" value="dac_translators.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1055,11 +1277,17 @@
       <value>100k</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF1003TCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C25741</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF1003TCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C25741"/>
       <property name="Sheetname" value="E1 translators"/>
       <property name="Sheetfile" value="dac_translators.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1079,11 +1307,17 @@
       <value>100k</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF1003TCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C25741</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF1003TCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C25741"/>
       <property name="Sheetname" value="E1 translators"/>
       <property name="Sheetfile" value="dac_translators.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1126,11 +1360,17 @@
       <value>74AVC4T774</value>
       <footprint>Package_SO:TSSOP-16_4.4x5mm_P0.65mm</footprint>
       <fields>
+        <field name="MPN">74AVC4T774PWJ</field>
+        <field name="Manufacturer">Nexperia</field>
+        <field name="LCSC">C546276</field>
         <field name="Footprint">Package_SO:TSSOP-16_4.4x5mm_P0.65mm</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="ad3552r_custom" part="74AVC4T774" description="4-bit dual-supply bus transceiver, one DIR per bit, common active-low OE, TSSOP-16"/>
+      <property name="MPN" value="74AVC4T774PWJ"/>
+      <property name="Manufacturer" value="Nexperia"/>
+      <property name="LCSC" value="C546276"/>
       <property name="Sheetname" value="E1 translators"/>
       <property name="Sheetfile" value="dac_translators.kicad_sch"/>
       <sheetpath names="/E1 translators/" tstamps="/e235a013-beb7-4aa4-8559-d01cacdd79ca/"/>
@@ -1162,11 +1402,17 @@
       <value>74AVC4T774</value>
       <footprint>Package_SO:TSSOP-16_4.4x5mm_P0.65mm</footprint>
       <fields>
+        <field name="MPN">74AVC4T774PWJ</field>
+        <field name="Manufacturer">Nexperia</field>
+        <field name="LCSC">C546276</field>
         <field name="Footprint">Package_SO:TSSOP-16_4.4x5mm_P0.65mm</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="ad3552r_custom" part="74AVC4T774" description="4-bit dual-supply bus transceiver, one DIR per bit, common active-low OE, TSSOP-16"/>
+      <property name="MPN" value="74AVC4T774PWJ"/>
+      <property name="Manufacturer" value="Nexperia"/>
+      <property name="LCSC" value="C546276"/>
       <property name="Sheetname" value="E1 translators"/>
       <property name="Sheetfile" value="dac_translators.kicad_sch"/>
       <sheetpath names="/E1 translators/" tstamps="/e235a013-beb7-4aa4-8559-d01cacdd79ca/"/>
@@ -1198,11 +1444,17 @@
       <value>74AVC4T774</value>
       <footprint>Package_SO:TSSOP-16_4.4x5mm_P0.65mm</footprint>
       <fields>
+        <field name="MPN">74AVC4T774PWJ</field>
+        <field name="Manufacturer">Nexperia</field>
+        <field name="LCSC">C546276</field>
         <field name="Footprint">Package_SO:TSSOP-16_4.4x5mm_P0.65mm</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="ad3552r_custom" part="74AVC4T774" description="4-bit dual-supply bus transceiver, one DIR per bit, common active-low OE, TSSOP-16"/>
+      <property name="MPN" value="74AVC4T774PWJ"/>
+      <property name="Manufacturer" value="Nexperia"/>
+      <property name="LCSC" value="C546276"/>
       <property name="Sheetname" value="E1 translators"/>
       <property name="Sheetfile" value="dac_translators.kicad_sch"/>
       <sheetpath names="/E1 translators/" tstamps="/e235a013-beb7-4aa4-8559-d01cacdd79ca/"/>
@@ -1234,11 +1486,17 @@
       <value>74AVC4T774</value>
       <footprint>Package_SO:TSSOP-16_4.4x5mm_P0.65mm</footprint>
       <fields>
+        <field name="MPN">74AVC4T774PWJ</field>
+        <field name="Manufacturer">Nexperia</field>
+        <field name="LCSC">C546276</field>
         <field name="Footprint">Package_SO:TSSOP-16_4.4x5mm_P0.65mm</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="ad3552r_custom" part="74AVC4T774" description="4-bit dual-supply bus transceiver, one DIR per bit, common active-low OE, TSSOP-16"/>
+      <property name="MPN" value="74AVC4T774PWJ"/>
+      <property name="Manufacturer" value="Nexperia"/>
+      <property name="LCSC" value="C546276"/>
       <property name="Sheetname" value="E1 translators"/>
       <property name="Sheetfile" value="dac_translators.kicad_sch"/>
       <sheetpath names="/E1 translators/" tstamps="/e235a013-beb7-4aa4-8559-d01cacdd79ca/"/>
@@ -1270,11 +1528,17 @@
       <value>1uF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">CL05A105KA5NQNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C52923</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05A105KA5NQNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C52923"/>
       <property name="Sheetname" value="DAC digital"/>
       <property name="Sheetfile" value="dac_digital.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1294,11 +1558,17 @@
       <value>1uF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">CL05A105KA5NQNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C52923</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05A105KA5NQNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C52923"/>
       <property name="Sheetname" value="DAC digital"/>
       <property name="Sheetfile" value="dac_digital.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1318,11 +1588,17 @@
       <value>1uF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">CL05A105KA5NQNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C52923</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05A105KA5NQNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C52923"/>
       <property name="Sheetname" value="DAC digital"/>
       <property name="Sheetfile" value="dac_digital.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1342,11 +1618,17 @@
       <value>1uF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">CL05A105KA5NQNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C52923</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05A105KA5NQNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C52923"/>
       <property name="Sheetname" value="DAC digital"/>
       <property name="Sheetfile" value="dac_digital.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1369,6 +1651,9 @@
         <field name="Role">AVDD bulk (U1)</field>
         <field name="Spec">X7R, &gt;=10V; effective &gt;=5uF at 5V DC bias</field>
         <field name="Notes">AVDD bulk for U1 (AD3552R pin 19). Basis: TPS7A4901 needs &gt;=2.2uF effective, TI recommends 10uF; AD3552R AVDD current is constant (22mA typ, 28.5mA max) so the job is HF noise (AC PSRR 80dB @1kHz, 43dB @1MHz). Place within a few mm of pin 19 with a direct ground via. A 10uF X7R can lose 30-50% at 5V bias; 0805 footprint chosen for margin: confirm effective C from the vendor bias curve. Verify AVDD ripple at the pin during bring-up; add 1uF or a ferrite if 500kHz switching noise is seen.</field>
+        <field name="MPN">CGA0805X7R106K250MT</field>
+        <field name="Manufacturer">HRE</field>
+        <field name="LCSC">C6119932</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
@@ -1377,6 +1662,9 @@
       <property name="Role" value="AVDD bulk (U1)"/>
       <property name="Spec" value="X7R, &gt;=10V; effective &gt;=5uF at 5V DC bias"/>
       <property name="Notes" value="AVDD bulk for U1 (AD3552R pin 19). Basis: TPS7A4901 needs &gt;=2.2uF effective, TI recommends 10uF; AD3552R AVDD current is constant (22mA typ, 28.5mA max) so the job is HF noise (AC PSRR 80dB @1kHz, 43dB @1MHz). Place within a few mm of pin 19 with a direct ground via. A 10uF X7R can lose 30-50% at 5V bias; 0805 footprint chosen for margin: confirm effective C from the vendor bias curve. Verify AVDD ripple at the pin during bring-up; add 1uF or a ferrite if 500kHz switching noise is seen."/>
+      <property name="MPN" value="CGA0805X7R106K250MT"/>
+      <property name="Manufacturer" value="HRE"/>
+      <property name="LCSC" value="C6119932"/>
       <property name="Sheetname" value="DAC digital"/>
       <property name="Sheetfile" value="dac_digital.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1399,6 +1687,9 @@
         <field name="Role">AVDD bulk (U2)</field>
         <field name="Spec">X7R, &gt;=10V; effective &gt;=5uF at 5V DC bias</field>
         <field name="Notes">AVDD bulk for U2 (AD3552R pin 19). Basis: TPS7A4901 needs &gt;=2.2uF effective, TI recommends 10uF; AD3552R AVDD current is constant (22mA typ, 28.5mA max) so the job is HF noise (AC PSRR 80dB @1kHz, 43dB @1MHz). Place within a few mm of pin 19 with a direct ground via. A 10uF X7R can lose 30-50% at 5V bias; 0805 footprint chosen for margin: confirm effective C from the vendor bias curve. Verify AVDD ripple at the pin during bring-up; add 1uF or a ferrite if 500kHz switching noise is seen.</field>
+        <field name="MPN">CGA0805X7R106K250MT</field>
+        <field name="Manufacturer">HRE</field>
+        <field name="LCSC">C6119932</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
@@ -1407,6 +1698,9 @@
       <property name="Role" value="AVDD bulk (U2)"/>
       <property name="Spec" value="X7R, &gt;=10V; effective &gt;=5uF at 5V DC bias"/>
       <property name="Notes" value="AVDD bulk for U2 (AD3552R pin 19). Basis: TPS7A4901 needs &gt;=2.2uF effective, TI recommends 10uF; AD3552R AVDD current is constant (22mA typ, 28.5mA max) so the job is HF noise (AC PSRR 80dB @1kHz, 43dB @1MHz). Place within a few mm of pin 19 with a direct ground via. A 10uF X7R can lose 30-50% at 5V bias; 0805 footprint chosen for margin: confirm effective C from the vendor bias curve. Verify AVDD ripple at the pin during bring-up; add 1uF or a ferrite if 500kHz switching noise is seen."/>
+      <property name="MPN" value="CGA0805X7R106K250MT"/>
+      <property name="Manufacturer" value="HRE"/>
+      <property name="LCSC" value="C6119932"/>
       <property name="Sheetname" value="DAC digital"/>
       <property name="Sheetfile" value="dac_digital.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1429,6 +1723,9 @@
         <field name="Role">AVDD HF decoupling (U1)</field>
         <field name="Spec">X7R, &gt;=10V</field>
         <field name="Notes">High-frequency decoupling at U1 AVDD (pin 19). The DAC's AC PSRR falls to 43dB at 1MHz, so this sits closest to the pin: place it as close as possible with a direct ground via, closer than the bulk capacitor C5.</field>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C1525</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
@@ -1437,6 +1734,9 @@
       <property name="Role" value="AVDD HF decoupling (U1)"/>
       <property name="Spec" value="X7R, &gt;=10V"/>
       <property name="Notes" value="High-frequency decoupling at U1 AVDD (pin 19). The DAC's AC PSRR falls to 43dB at 1MHz, so this sits closest to the pin: place it as close as possible with a direct ground via, closer than the bulk capacitor C5."/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C1525"/>
       <property name="Sheetname" value="DAC digital"/>
       <property name="Sheetfile" value="dac_digital.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1459,6 +1759,9 @@
         <field name="Role">AVDD HF decoupling (U2)</field>
         <field name="Spec">X7R, &gt;=10V</field>
         <field name="Notes">High-frequency decoupling at U2 AVDD (pin 19). The DAC's AC PSRR falls to 43dB at 1MHz, so this sits closest to the pin: place it as close as possible with a direct ground via, closer than the bulk capacitor C6.</field>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C1525</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
@@ -1467,6 +1770,9 @@
       <property name="Role" value="AVDD HF decoupling (U2)"/>
       <property name="Spec" value="X7R, &gt;=10V"/>
       <property name="Notes" value="High-frequency decoupling at U2 AVDD (pin 19). The DAC's AC PSRR falls to 43dB at 1MHz, so this sits closest to the pin: place it as close as possible with a direct ground via, closer than the bulk capacitor C6."/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C1525"/>
       <property name="Sheetname" value="DAC digital"/>
       <property name="Sheetfile" value="dac_digital.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1486,11 +1792,17 @@
       <value>470nF NP0</value>
       <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
       <fields>
+        <field name="MPN">GRM31C5C1E474JE01L</field>
+        <field name="Manufacturer">Murata</field>
+        <field name="LCSC">C6049896</field>
         <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM31C5C1E474JE01L"/>
+      <property name="Manufacturer" value="Murata"/>
+      <property name="LCSC" value="C6049896"/>
       <property name="Sheetname" value="DAC digital"/>
       <property name="Sheetfile" value="dac_digital.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1510,11 +1822,17 @@
       <value>470nF NP0</value>
       <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
       <fields>
+        <field name="MPN">GRM31C5C1E474JE01L</field>
+        <field name="Manufacturer">Murata</field>
+        <field name="LCSC">C6049896</field>
         <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM31C5C1E474JE01L"/>
+      <property name="Manufacturer" value="Murata"/>
+      <property name="LCSC" value="C6049896"/>
       <property name="Sheetname" value="DAC digital"/>
       <property name="Sheetfile" value="dac_digital.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1534,11 +1852,17 @@
       <value>470nF NP0</value>
       <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
       <fields>
+        <field name="MPN">GRM31C5C1E474JE01L</field>
+        <field name="Manufacturer">Murata</field>
+        <field name="LCSC">C6049896</field>
         <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM31C5C1E474JE01L"/>
+      <property name="Manufacturer" value="Murata"/>
+      <property name="LCSC" value="C6049896"/>
       <property name="Sheetname" value="DAC digital"/>
       <property name="Sheetfile" value="dac_digital.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1558,11 +1882,17 @@
       <value>470nF NP0</value>
       <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
       <fields>
+        <field name="MPN">GRM31C5C1E474JE01L</field>
+        <field name="Manufacturer">Murata</field>
+        <field name="LCSC">C6049896</field>
         <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM31C5C1E474JE01L"/>
+      <property name="Manufacturer" value="Murata"/>
+      <property name="LCSC" value="C6049896"/>
       <property name="Sheetname" value="DAC digital"/>
       <property name="Sheetfile" value="dac_digital.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1582,11 +1912,17 @@
       <value>470nF NP0</value>
       <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
       <fields>
+        <field name="MPN">GRM31C5C1E474JE01L</field>
+        <field name="Manufacturer">Murata</field>
+        <field name="LCSC">C6049896</field>
         <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM31C5C1E474JE01L"/>
+      <property name="Manufacturer" value="Murata"/>
+      <property name="LCSC" value="C6049896"/>
       <property name="Sheetname" value="DAC digital"/>
       <property name="Sheetfile" value="dac_digital.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1606,11 +1942,17 @@
       <value>470nF NP0</value>
       <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
       <fields>
+        <field name="MPN">GRM31C5C1E474JE01L</field>
+        <field name="Manufacturer">Murata</field>
+        <field name="LCSC">C6049896</field>
         <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM31C5C1E474JE01L"/>
+      <property name="Manufacturer" value="Murata"/>
+      <property name="LCSC" value="C6049896"/>
       <property name="Sheetname" value="DAC digital"/>
       <property name="Sheetfile" value="dac_digital.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1630,11 +1972,17 @@
       <value>470nF NP0</value>
       <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
       <fields>
+        <field name="MPN">GRM31C5C1E474JE01L</field>
+        <field name="Manufacturer">Murata</field>
+        <field name="LCSC">C6049896</field>
         <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM31C5C1E474JE01L"/>
+      <property name="Manufacturer" value="Murata"/>
+      <property name="LCSC" value="C6049896"/>
       <property name="Sheetname" value="DAC digital"/>
       <property name="Sheetfile" value="dac_digital.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1654,11 +2002,17 @@
       <value>470nF NP0</value>
       <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
       <fields>
+        <field name="MPN">GRM31C5C1E474JE01L</field>
+        <field name="Manufacturer">Murata</field>
+        <field name="LCSC">C6049896</field>
         <field name="Footprint">Capacitor_SMD:C_1206_3216Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM31C5C1E474JE01L"/>
+      <property name="Manufacturer" value="Murata"/>
+      <property name="LCSC" value="C6049896"/>
       <property name="Sheetname" value="DAC digital"/>
       <property name="Sheetfile" value="dac_digital.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1678,11 +2032,17 @@
       <value>470nF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <fields>
+        <field name="MPN">CL10B474KA8NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C1623</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL10B474KA8NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C1623"/>
       <property name="Sheetname" value="DAC digital"/>
       <property name="Sheetfile" value="dac_digital.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1702,11 +2062,17 @@
       <value>470nF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <fields>
+        <field name="MPN">CL10B474KA8NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C1623</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL10B474KA8NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C1623"/>
       <property name="Sheetname" value="DAC digital"/>
       <property name="Sheetfile" value="dac_digital.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1726,11 +2092,17 @@
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C1525</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C1525"/>
       <property name="Sheetname" value="DAC digital"/>
       <property name="Sheetfile" value="dac_digital.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1750,11 +2122,17 @@
       <value>4.7uF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <fields>
+        <field name="MPN">CL10A475KO8NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C19666</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL10A475KO8NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C19666"/>
       <property name="Sheetname" value="DAC digital"/>
       <property name="Sheetfile" value="dac_digital.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1774,11 +2152,17 @@
       <value>1k</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF1001TCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C11702</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF1001TCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C11702"/>
       <property name="Sheetname" value="DAC digital"/>
       <property name="Sheetfile" value="dac_digital.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1798,11 +2182,17 @@
       <value>1k</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF1001TCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C11702</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF1001TCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C11702"/>
       <property name="Sheetname" value="DAC digital"/>
       <property name="Sheetfile" value="dac_digital.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1820,13 +2210,19 @@
     </comp>
     <comp ref="U1">
       <value>AD3552R</value>
-      <footprint>Package_CSP:LFCSP-32-1EP_5x5mm_P0.5mm_EP3.1x3.1mm</footprint>
+      <footprint>ad3552r_custom:LFCSP-32-1EP_5x5mm_P0.5mm_EP3.6x3.6mm_AD3552R</footprint>
       <fields>
-        <field name="Footprint">Package_CSP:LFCSP-32-1EP_5x5mm_P0.5mm_EP3.1x3.1mm</field>
+        <field name="MPN">AD3552RBCPZ16</field>
+        <field name="Manufacturer">Analog Devices</field>
+        <field name="LCSC">C4748801</field>
+        <field name="Footprint">ad3552r_custom:LFCSP-32-1EP_5x5mm_P0.5mm_EP3.6x3.6mm_AD3552R</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="ad3552r_custom" part="AD3552R" description="AD3552R dual 16-bit 33 MUPS multispan DAC, 32-lead LFCSP (pin map per Rev. B datasheet Table 7)"/>
+      <property name="MPN" value="AD3552RBCPZ16"/>
+      <property name="Manufacturer" value="Analog Devices"/>
+      <property name="LCSC" value="C4748801"/>
       <property name="Sheetname" value="DAC digital"/>
       <property name="Sheetfile" value="dac_digital.kicad_sch"/>
       <sheetpath names="/DAC digital/" tstamps="/d08e53fb-0ff1-43fd-841f-24c4b92798ee/"/>
@@ -1873,13 +2269,19 @@
     </comp>
     <comp ref="U2">
       <value>AD3552R</value>
-      <footprint>Package_CSP:LFCSP-32-1EP_5x5mm_P0.5mm_EP3.1x3.1mm</footprint>
+      <footprint>ad3552r_custom:LFCSP-32-1EP_5x5mm_P0.5mm_EP3.6x3.6mm_AD3552R</footprint>
       <fields>
-        <field name="Footprint">Package_CSP:LFCSP-32-1EP_5x5mm_P0.5mm_EP3.1x3.1mm</field>
+        <field name="MPN">AD3552RBCPZ16</field>
+        <field name="Manufacturer">Analog Devices</field>
+        <field name="LCSC">C4748801</field>
+        <field name="Footprint">ad3552r_custom:LFCSP-32-1EP_5x5mm_P0.5mm_EP3.6x3.6mm_AD3552R</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="ad3552r_custom" part="AD3552R" description="AD3552R dual 16-bit 33 MUPS multispan DAC, 32-lead LFCSP (pin map per Rev. B datasheet Table 7)"/>
+      <property name="MPN" value="AD3552RBCPZ16"/>
+      <property name="Manufacturer" value="Analog Devices"/>
+      <property name="LCSC" value="C4748801"/>
       <property name="Sheetname" value="DAC digital"/>
       <property name="Sheetfile" value="dac_digital.kicad_sch"/>
       <sheetpath names="/DAC digital/" tstamps="/d08e53fb-0ff1-43fd-841f-24c4b92798ee/"/>
@@ -1928,11 +2330,17 @@
       <value>ADR4525BRZ</value>
       <footprint>Package_SO:SOIC-8_3.9x4.9mm_P1.27mm</footprint>
       <fields>
+        <field name="MPN">ADR4525BRZ-R7</field>
+        <field name="Manufacturer">Analog Devices</field>
+        <field name="LCSC">C403914</field>
         <field name="Footprint">Package_SO:SOIC-8_3.9x4.9mm_P1.27mm</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Reference_Voltage" part="ADR4525" description="2.5V, Ultralow Noise, High Accuracy Voltage Reference, SOIC-8"/>
+      <property name="MPN" value="ADR4525BRZ-R7"/>
+      <property name="Manufacturer" value="Analog Devices"/>
+      <property name="LCSC" value="C403914"/>
       <property name="Sheetname" value="DAC digital"/>
       <property name="Sheetfile" value="dac_digital.kicad_sch"/>
       <property name="ki_keywords" value="vref"/>
@@ -1958,11 +2366,17 @@
       <value>47uF</value>
       <footprint>Capacitor_SMD:CP_Elec_6.3x5.4</footprint>
       <fields>
+        <field name="MPN">FVH025ADA470M0654</field>
+        <field name="Manufacturer">FOSAN</field>
+        <field name="LCSC">C7469965</field>
         <field name="Footprint">Capacitor_SMD:CP_Elec_6.3x5.4</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C_Polarized" description="Polarized capacitor"/>
+      <property name="MPN" value="FVH025ADA470M0654"/>
+      <property name="Manufacturer" value="FOSAN"/>
+      <property name="LCSC" value="C7469965"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="dac_power.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1982,11 +2396,17 @@
       <value>10uF 25V</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <fields>
+        <field name="MPN">CGA0805X7R106K250MT</field>
+        <field name="Manufacturer">HRE</field>
+        <field name="LCSC">C6119932</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CGA0805X7R106K250MT"/>
+      <property name="Manufacturer" value="HRE"/>
+      <property name="LCSC" value="C6119932"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="dac_power.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2007,12 +2427,18 @@
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <fields>
         <field name="Spec">25V X7R</field>
+        <field name="MPN">CGA0805X7R106K250MT</field>
+        <field name="Manufacturer">HRE</field>
+        <field name="LCSC">C6119932</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Spec" value="25V X7R"/>
+      <property name="MPN" value="CGA0805X7R106K250MT"/>
+      <property name="Manufacturer" value="HRE"/>
+      <property name="LCSC" value="C6119932"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="dac_power.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2033,12 +2459,18 @@
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <fields>
         <field name="Spec">X7R</field>
+        <field name="MPN">CGA0805X7R106K250MT</field>
+        <field name="Manufacturer">HRE</field>
+        <field name="LCSC">C6119932</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Spec" value="X7R"/>
+      <property name="MPN" value="CGA0805X7R106K250MT"/>
+      <property name="Manufacturer" value="HRE"/>
+      <property name="LCSC" value="C6119932"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="dac_power.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2058,11 +2490,17 @@
       <value>10nF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">CL05B103KB5NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C15195</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05B103KB5NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C15195"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="dac_power.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2082,11 +2520,17 @@
       <value>10nF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">CL05B103KB5NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C15195</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05B103KB5NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C15195"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="dac_power.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2107,12 +2551,18 @@
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <fields>
         <field name="Spec">25V X7R</field>
+        <field name="MPN">CGA0805X7R106K250MT</field>
+        <field name="Manufacturer">HRE</field>
+        <field name="LCSC">C6119932</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Spec" value="25V X7R"/>
+      <property name="MPN" value="CGA0805X7R106K250MT"/>
+      <property name="Manufacturer" value="HRE"/>
+      <property name="LCSC" value="C6119932"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="dac_power.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2132,11 +2582,17 @@
       <value>1uF 25V X7R</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <fields>
+        <field name="MPN">CC0603KRX7R8BB105</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC">C106858</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CC0603KRX7R8BB105"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC" value="C106858"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="dac_power.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2157,12 +2613,18 @@
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <fields>
         <field name="Spec">25V X7R</field>
+        <field name="MPN">CGA0805X7R106K250MT</field>
+        <field name="Manufacturer">HRE</field>
+        <field name="LCSC">C6119932</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Spec" value="25V X7R"/>
+      <property name="MPN" value="CGA0805X7R106K250MT"/>
+      <property name="Manufacturer" value="HRE"/>
+      <property name="LCSC" value="C6119932"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="dac_power.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2183,12 +2645,18 @@
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <fields>
         <field name="Spec">25V X7R</field>
+        <field name="MPN">CGA0805X7R106K250MT</field>
+        <field name="Manufacturer">HRE</field>
+        <field name="LCSC">C6119932</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Spec" value="25V X7R"/>
+      <property name="MPN" value="CGA0805X7R106K250MT"/>
+      <property name="Manufacturer" value="HRE"/>
+      <property name="LCSC" value="C6119932"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="dac_power.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2209,12 +2677,18 @@
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <fields>
         <field name="Spec">25V X7R</field>
+        <field name="MPN">CGA0805X7R106K250MT</field>
+        <field name="Manufacturer">HRE</field>
+        <field name="LCSC">C6119932</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Spec" value="25V X7R"/>
+      <property name="MPN" value="CGA0805X7R106K250MT"/>
+      <property name="Manufacturer" value="HRE"/>
+      <property name="LCSC" value="C6119932"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="dac_power.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2234,11 +2708,17 @@
       <value>10nF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">CL05B103KB5NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C15195</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05B103KB5NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C15195"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="dac_power.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2258,11 +2738,17 @@
       <value>10nF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">CL05B103KB5NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C15195</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05B103KB5NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C15195"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="dac_power.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2282,11 +2768,17 @@
       <value>10pF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402CG100J500NT</field>
+        <field name="Manufacturer">FH</field>
+        <field name="LCSC">C1545</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="0402CG100J500NT"/>
+      <property name="Manufacturer" value="FH"/>
+      <property name="LCSC" value="C1545"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="dac_power.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2307,12 +2799,18 @@
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <fields>
         <field name="Spec">25V X7R</field>
+        <field name="MPN">CGA0805X7R106K250MT</field>
+        <field name="Manufacturer">HRE</field>
+        <field name="LCSC">C6119932</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Spec" value="25V X7R"/>
+      <property name="MPN" value="CGA0805X7R106K250MT"/>
+      <property name="Manufacturer" value="HRE"/>
+      <property name="LCSC" value="C6119932"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="dac_power.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2332,11 +2830,17 @@
       <value>22uF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <fields>
+        <field name="MPN">CL21A226MAQNNNE</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C45783</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL21A226MAQNNNE"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C45783"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="dac_power.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2356,11 +2860,17 @@
       <value>22uF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
       <fields>
+        <field name="MPN">CL21A226MAQNNNE</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C45783</field>
         <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL21A226MAQNNNE"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C45783"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="dac_power.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2380,11 +2890,17 @@
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C1525</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C1525"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="dac_power.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2404,11 +2920,17 @@
       <value>100pF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402CG101J500NT</field>
+        <field name="Manufacturer">FH</field>
+        <field name="LCSC">C1546</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="0402CG101J500NT"/>
+      <property name="Manufacturer" value="FH"/>
+      <property name="LCSC" value="C1546"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="dac_power.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2428,11 +2950,17 @@
       <value>1uF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">CL05A105KA5NQNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C52923</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05A105KA5NQNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C52923"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="dac_power.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2452,11 +2980,17 @@
       <value>1uF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">CL05A105KA5NQNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C52923</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05A105KA5NQNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C52923"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="dac_power.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -2476,11 +3010,17 @@
       <value>40V 2A</value>
       <footprint>Diode_SMD:D_SMA</footprint>
       <fields>
+        <field name="MPN">SS24</field>
+        <field name="Manufacturer">MDD</field>
+        <field name="LCSC">C50645</field>
         <field name="Footprint">Diode_SMD:D_SMA</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
+      <property name="MPN" value="SS24"/>
+      <property name="Manufacturer" value="MDD"/>
+      <property name="LCSC" value="C50645"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="dac_power.kicad_sch"/>
       <property name="ki_keywords" value="diode Schottky"/>
@@ -2500,11 +3040,17 @@
       <value>SMAJ15A</value>
       <footprint>Diode_SMD:D_SMA</footprint>
       <fields>
+        <field name="MPN">SMAJ15A/TR13</field>
+        <field name="Manufacturer">Brightking</field>
+        <field name="LCSC">C86819</field>
         <field name="Footprint">Diode_SMD:D_SMA</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Diode" part="SMAJ15A" description="400W unidirectional Transient Voltage Suppressor, 15.0Vr, SMA(DO-214AC)"/>
+      <property name="MPN" value="SMAJ15A/TR13"/>
+      <property name="Manufacturer" value="Brightking"/>
+      <property name="LCSC" value="C86819"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="dac_power.kicad_sch"/>
       <property name="ki_keywords" value="unidirectional diode TVS voltage suppressor"/>
@@ -2524,11 +3070,17 @@
       <value>0.5A hold</value>
       <footprint>Fuse:Fuse_1206_3216Metric</footprint>
       <fields>
+        <field name="MPN">SMD1206P050TF/24</field>
+        <field name="Manufacturer">Polytronics (PTTC)</field>
+        <field name="LCSC">C492011</field>
         <field name="Footprint">Fuse:Fuse_1206_3216Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="Polyfuse" description="Resettable fuse, polymeric positive temperature coefficient"/>
+      <property name="MPN" value="SMD1206P050TF/24"/>
+      <property name="Manufacturer" value="Polytronics (PTTC)"/>
+      <property name="LCSC" value="C492011"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="dac_power.kicad_sch"/>
       <property name="ki_keywords" value="resettable fuse PTC PPTC polyfuse polyswitch"/>
@@ -2548,11 +3100,17 @@
       <value>FB DVDD</value>
       <footprint>Inductor_SMD:L_0603_1608Metric</footprint>
       <fields>
+        <field name="MPN">BLM18PG221SN1D</field>
+        <field name="Manufacturer">Murata</field>
+        <field name="LCSC">C80165</field>
         <field name="Footprint">Inductor_SMD:L_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="FerriteBead" description="Ferrite bead"/>
+      <property name="MPN" value="BLM18PG221SN1D"/>
+      <property name="Manufacturer" value="Murata"/>
+      <property name="LCSC" value="C80165"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="dac_power.kicad_sch"/>
       <property name="ki_keywords" value="L ferrite bead inductor filter"/>
@@ -2572,11 +3130,17 @@
       <value>FB VLOGIC</value>
       <footprint>Inductor_SMD:L_0603_1608Metric</footprint>
       <fields>
+        <field name="MPN">BLM18PG221SN1D</field>
+        <field name="Manufacturer">Murata</field>
+        <field name="LCSC">C80165</field>
         <field name="Footprint">Inductor_SMD:L_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="FerriteBead" description="Ferrite bead"/>
+      <property name="MPN" value="BLM18PG221SN1D"/>
+      <property name="Manufacturer" value="Murata"/>
+      <property name="LCSC" value="C80165"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="dac_power.kicad_sch"/>
       <property name="ki_keywords" value="L ferrite bead inductor filter"/>
@@ -2596,11 +3160,17 @@
       <value>+12V IN</value>
       <footprint>Connector_BarrelJack:BarrelJack_Horizontal</footprint>
       <fields>
+        <field name="MPN">PJ-102AH</field>
+        <field name="Manufacturer">CUI Devices</field>
+        <field name="LCSC">C3096093</field>
         <field name="Footprint">Connector_BarrelJack:BarrelJack_Horizontal</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Connector" part="Barrel_Jack" description="DC Barrel Jack"/>
+      <property name="MPN" value="PJ-102AH"/>
+      <property name="Manufacturer" value="CUI Devices"/>
+      <property name="LCSC" value="C3096093"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="dac_power.kicad_sch"/>
       <property name="ki_keywords" value="DC power barrel jack connector"/>
@@ -2620,11 +3190,17 @@
       <value>3.3uH</value>
       <footprint>Inductor_SMD:L_Taiyo-Yuden_NR-50xx</footprint>
       <fields>
+        <field name="MPN">SWPA5040S3R3NT</field>
+        <field name="Manufacturer">Sunlord</field>
+        <field name="LCSC">C305173</field>
         <field name="Footprint">Inductor_SMD:L_Taiyo-Yuden_NR-50xx</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="L" description="Inductor"/>
+      <property name="MPN" value="SWPA5040S3R3NT"/>
+      <property name="Manufacturer" value="Sunlord"/>
+      <property name="LCSC" value="C305173"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="dac_power.kicad_sch"/>
       <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
@@ -2644,11 +3220,17 @@
       <value>324k</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF3243TCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C113480</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF3243TCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C113480"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="dac_power.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2668,11 +3250,17 @@
       <value>100k</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF1003TCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C25741</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF1003TCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C25741"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="dac_power.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2692,11 +3280,17 @@
       <value>316k</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF3163TCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C25777</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF3163TCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C25777"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="dac_power.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2716,11 +3310,17 @@
       <value>100k</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF1003TCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C25741</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF1003TCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C25741"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="dac_power.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2740,11 +3340,17 @@
       <value>316k</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF3163TCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C25777</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF3163TCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C25777"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="dac_power.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2764,11 +3370,17 @@
       <value>100k</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF1003TCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C25741</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF1003TCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C25741"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="dac_power.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2785,14 +3397,20 @@
       </units>
     </comp>
     <comp ref="R66">
-      <value>131k</value>
+      <value>130k</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF1303TCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C52929</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF1303TCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C52929"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="dac_power.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2812,11 +3430,17 @@
       <value>62k</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF6202TCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C37825</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF6202TCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C37825"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="dac_power.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2836,11 +3460,17 @@
       <value>100k</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF1003TCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C25741</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF1003TCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C25741"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="dac_power.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2860,11 +3490,17 @@
       <value>36k</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF3602TCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C43676</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF3602TCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C43676"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="dac_power.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -2884,11 +3520,17 @@
       <value>TPS7A4901</value>
       <footprint>Package_SO:HVSSOP-8-1EP_3x3mm_P0.65mm_EP1.57x1.89mm</footprint>
       <fields>
+        <field name="MPN">TPS7A4901DGNR</field>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="LCSC">C16430</field>
         <field name="Footprint">Package_SO:HVSSOP-8-1EP_3x3mm_P0.65mm_EP1.57x1.89mm</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="ad3552r_custom" part="TPS7A4901" description="TPS7A4901 36 V, 150 mA, ultralow-noise adjustable LDO, HVSSOP-8 PowerPAD"/>
+      <property name="MPN" value="TPS7A4901DGNR"/>
+      <property name="Manufacturer" value="Texas Instruments"/>
+      <property name="LCSC" value="C16430"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="dac_power.kicad_sch"/>
       <sheetpath names="/Power/" tstamps="/bb18675a-0972-4c4b-b15b-fabe8e481fdf/"/>
@@ -2913,11 +3555,17 @@
       <value>LTC3260</value>
       <footprint>Package_SO:MSOP-16-1EP_3x4mm_P0.5mm_EP1.65x2.85mm</footprint>
       <fields>
+        <field name="MPN">LTC3260EMSE#TRPBF</field>
+        <field name="Manufacturer">Analog Devices</field>
+        <field name="LCSC">C684387</field>
         <field name="Footprint">Package_SO:MSOP-16-1EP_3x4mm_P0.5mm_EP1.65x2.85mm</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="ad3552r_custom" part="LTC3260" description="LTC3260 low-noise dual supply: inverting charge pump with positive and negative LDOs, MSOP-16(12) exposed pad"/>
+      <property name="MPN" value="LTC3260EMSE#TRPBF"/>
+      <property name="Manufacturer" value="Analog Devices"/>
+      <property name="LCSC" value="C684387"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="dac_power.kicad_sch"/>
       <sheetpath names="/Power/" tstamps="/bb18675a-0972-4c4b-b15b-fabe8e481fdf/"/>
@@ -2950,11 +3598,17 @@
       <value>AP63201</value>
       <footprint>Package_TO_SOT_SMD:TSOT-23-6</footprint>
       <fields>
+        <field name="MPN">AP63201WU-7</field>
+        <field name="Manufacturer">Diodes Incorporated</field>
+        <field name="LCSC">C2071044</field>
         <field name="Footprint">Package_TO_SOT_SMD:TSOT-23-6</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Regulator_Switching" part="AP63201WU" description="2A, 500kHz Buck DC/DC Converter, adjustable output voltage, TSOT-23-6"/>
+      <property name="MPN" value="AP63201WU-7"/>
+      <property name="Manufacturer" value="Diodes Incorporated"/>
+      <property name="LCSC" value="C2071044"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="dac_power.kicad_sch"/>
       <property name="ki_keywords" value="2A Buck DC/DC"/>
@@ -2978,11 +3632,17 @@
       <value>TLV75518P</value>
       <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
       <fields>
+        <field name="MPN">TLV75518PDBVR</field>
+        <field name="Manufacturer">Texas Instruments</field>
+        <field name="LCSC">C2877863</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Regulator_Linear" part="TLV75518PDBV" description="500mA Low Dropout Voltage Regulator, Fixed Output 1.8V, SOT-23-5"/>
+      <property name="MPN" value="TLV75518PDBVR"/>
+      <property name="Manufacturer" value="Texas Instruments"/>
+      <property name="LCSC" value="C2877863"/>
       <property name="Sheetname" value="Power"/>
       <property name="Sheetfile" value="dac_power.kicad_sch"/>
       <property name="ki_keywords" value="LDO Regulator Fixed Positive"/>
@@ -3005,11 +3665,17 @@
       <value>8.2pF NP0</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402CG8R2C500NT</field>
+        <field name="Manufacturer">FH</field>
+        <field name="LCSC">C1579</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="0402CG8R2C500NT"/>
+      <property name="Manufacturer" value="FH"/>
+      <property name="LCSC" value="C1579"/>
       <property name="Sheetname" value="Analog channels"/>
       <property name="Sheetfile" value="dac_analog.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -3029,11 +3695,17 @@
       <value>8.2pF NP0</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402CG8R2C500NT</field>
+        <field name="Manufacturer">FH</field>
+        <field name="LCSC">C1579</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="0402CG8R2C500NT"/>
+      <property name="Manufacturer" value="FH"/>
+      <property name="LCSC" value="C1579"/>
       <property name="Sheetname" value="Analog channels"/>
       <property name="Sheetfile" value="dac_analog.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -3053,11 +3725,17 @@
       <value>8.2pF NP0</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402CG8R2C500NT</field>
+        <field name="Manufacturer">FH</field>
+        <field name="LCSC">C1579</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="0402CG8R2C500NT"/>
+      <property name="Manufacturer" value="FH"/>
+      <property name="LCSC" value="C1579"/>
       <property name="Sheetname" value="Analog channels"/>
       <property name="Sheetfile" value="dac_analog.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -3077,11 +3755,17 @@
       <value>8.2pF NP0</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402CG8R2C500NT</field>
+        <field name="Manufacturer">FH</field>
+        <field name="LCSC">C1579</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="0402CG8R2C500NT"/>
+      <property name="Manufacturer" value="FH"/>
+      <property name="LCSC" value="C1579"/>
       <property name="Sheetname" value="Analog channels"/>
       <property name="Sheetfile" value="dac_analog.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -3101,11 +3785,17 @@
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C1525</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C1525"/>
       <property name="Sheetname" value="Analog channels"/>
       <property name="Sheetfile" value="dac_analog.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -3125,11 +3815,17 @@
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C1525</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C1525"/>
       <property name="Sheetname" value="Analog channels"/>
       <property name="Sheetfile" value="dac_analog.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -3149,11 +3845,17 @@
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C1525</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C1525"/>
       <property name="Sheetname" value="Analog channels"/>
       <property name="Sheetfile" value="dac_analog.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -3173,11 +3875,17 @@
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C1525</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C1525"/>
       <property name="Sheetname" value="Analog channels"/>
       <property name="Sheetfile" value="dac_analog.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -3197,11 +3905,17 @@
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C1525</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C1525"/>
       <property name="Sheetname" value="Analog channels"/>
       <property name="Sheetfile" value="dac_analog.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -3221,11 +3935,17 @@
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C1525</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C1525"/>
       <property name="Sheetname" value="Analog channels"/>
       <property name="Sheetfile" value="dac_analog.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -3245,11 +3965,17 @@
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C1525</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C1525"/>
       <property name="Sheetname" value="Analog channels"/>
       <property name="Sheetfile" value="dac_analog.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -3269,11 +3995,17 @@
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C1525</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C1525"/>
       <property name="Sheetname" value="Analog channels"/>
       <property name="Sheetfile" value="dac_analog.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -3293,11 +4025,17 @@
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C1525</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C1525"/>
       <property name="Sheetname" value="Analog channels"/>
       <property name="Sheetfile" value="dac_analog.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -3317,11 +4055,17 @@
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C1525</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C1525"/>
       <property name="Sheetname" value="Analog channels"/>
       <property name="Sheetfile" value="dac_analog.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -3341,11 +4085,17 @@
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C1525</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C1525"/>
       <property name="Sheetname" value="Analog channels"/>
       <property name="Sheetfile" value="dac_analog.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -3365,11 +4115,17 @@
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C1525</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C1525"/>
       <property name="Sheetname" value="Analog channels"/>
       <property name="Sheetfile" value="dac_analog.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -3389,11 +4145,17 @@
       <value>ADA4807-1</value>
       <footprint>Package_TO_SOT_SMD:SOT-23-6</footprint>
       <fields>
+        <field name="MPN">ADA4807-1ARJZ-R7</field>
+        <field name="Manufacturer">Analog Devices</field>
+        <field name="LCSC">C2058411</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23-6</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Amplifier_Operational" part="ADA4807-1" description="Single Rail-to-Rail Input/Output Amplifiers, with disable, SC-70-6/SOT-23-6"/>
+      <property name="MPN" value="ADA4807-1ARJZ-R7"/>
+      <property name="Manufacturer" value="Analog Devices"/>
+      <property name="LCSC" value="C2058411"/>
       <property name="Sheetname" value="Analog channels"/>
       <property name="Sheetfile" value="dac_analog.kicad_sch"/>
       <property name="ki_keywords" value="single opamp"/>
@@ -3417,11 +4179,17 @@
       <value>ADA4807-1</value>
       <footprint>Package_TO_SOT_SMD:SOT-23-6</footprint>
       <fields>
+        <field name="MPN">ADA4807-1ARJZ-R7</field>
+        <field name="Manufacturer">Analog Devices</field>
+        <field name="LCSC">C2058411</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23-6</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Amplifier_Operational" part="ADA4807-1" description="Single Rail-to-Rail Input/Output Amplifiers, with disable, SC-70-6/SOT-23-6"/>
+      <property name="MPN" value="ADA4807-1ARJZ-R7"/>
+      <property name="Manufacturer" value="Analog Devices"/>
+      <property name="LCSC" value="C2058411"/>
       <property name="Sheetname" value="Analog channels"/>
       <property name="Sheetfile" value="dac_analog.kicad_sch"/>
       <property name="ki_keywords" value="single opamp"/>
@@ -3445,11 +4213,17 @@
       <value>ADA4807-1</value>
       <footprint>Package_TO_SOT_SMD:SOT-23-6</footprint>
       <fields>
+        <field name="MPN">ADA4807-1ARJZ-R7</field>
+        <field name="Manufacturer">Analog Devices</field>
+        <field name="LCSC">C2058411</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23-6</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Amplifier_Operational" part="ADA4807-1" description="Single Rail-to-Rail Input/Output Amplifiers, with disable, SC-70-6/SOT-23-6"/>
+      <property name="MPN" value="ADA4807-1ARJZ-R7"/>
+      <property name="Manufacturer" value="Analog Devices"/>
+      <property name="LCSC" value="C2058411"/>
       <property name="Sheetname" value="Analog channels"/>
       <property name="Sheetfile" value="dac_analog.kicad_sch"/>
       <property name="ki_keywords" value="single opamp"/>
@@ -3473,11 +4247,17 @@
       <value>ADA4807-1</value>
       <footprint>Package_TO_SOT_SMD:SOT-23-6</footprint>
       <fields>
+        <field name="MPN">ADA4807-1ARJZ-R7</field>
+        <field name="Manufacturer">Analog Devices</field>
+        <field name="LCSC">C2058411</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23-6</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Amplifier_Operational" part="ADA4807-1" description="Single Rail-to-Rail Input/Output Amplifiers, with disable, SC-70-6/SOT-23-6"/>
+      <property name="MPN" value="ADA4807-1ARJZ-R7"/>
+      <property name="Manufacturer" value="Analog Devices"/>
+      <property name="LCSC" value="C2058411"/>
       <property name="Sheetname" value="Analog channels"/>
       <property name="Sheetfile" value="dac_analog.kicad_sch"/>
       <property name="ki_keywords" value="single opamp"/>
@@ -3501,11 +4281,17 @@
       <value>1pF NP0</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402CG1R0C500NT</field>
+        <field name="Manufacturer">FH</field>
+        <field name="LCSC">C1550</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="0402CG1R0C500NT"/>
+      <property name="Manufacturer" value="FH"/>
+      <property name="LCSC" value="C1550"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -3525,11 +4311,17 @@
       <value>1pF NP0</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402CG1R0C500NT</field>
+        <field name="Manufacturer">FH</field>
+        <field name="LCSC">C1550</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="0402CG1R0C500NT"/>
+      <property name="Manufacturer" value="FH"/>
+      <property name="LCSC" value="C1550"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -3549,11 +4341,17 @@
       <value>1pF NP0</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402CG1R0C500NT</field>
+        <field name="Manufacturer">FH</field>
+        <field name="LCSC">C1550</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="0402CG1R0C500NT"/>
+      <property name="Manufacturer" value="FH"/>
+      <property name="LCSC" value="C1550"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -3573,11 +4371,17 @@
       <value>1pF NP0</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402CG1R0C500NT</field>
+        <field name="Manufacturer">FH</field>
+        <field name="LCSC">C1550</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="0402CG1R0C500NT"/>
+      <property name="Manufacturer" value="FH"/>
+      <property name="LCSC" value="C1550"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -3597,11 +4401,17 @@
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C1525</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C1525"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -3621,11 +4431,17 @@
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C1525</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C1525"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -3645,11 +4461,17 @@
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C1525</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C1525"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -3669,11 +4491,17 @@
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C1525</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C1525"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -3693,11 +4521,17 @@
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C1525</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C1525"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -3717,11 +4551,17 @@
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C1525</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C1525"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -3741,11 +4581,17 @@
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C1525</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C1525"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -3765,11 +4611,17 @@
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="Manufacturer">Samsung</field>
+        <field name="LCSC">C1525</field>
         <field name="Footprint">Capacitor_SMD:C_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="Manufacturer" value="Samsung"/>
+      <property name="LCSC" value="C1525"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -3789,11 +4641,17 @@
       <value>BAV99</value>
       <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
       <fields>
+        <field name="MPN">BAV99,215</field>
+        <field name="Manufacturer">Nexperia</field>
+        <field name="LCSC">C2500</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Diode" part="BAV99" description="BAV99 High-speed switching diodes, SOT-23"/>
+      <property name="MPN" value="BAV99,215"/>
+      <property name="Manufacturer" value="Nexperia"/>
+      <property name="LCSC" value="C2500"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="diode"/>
@@ -3814,11 +4672,17 @@
       <value>BAV99</value>
       <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
       <fields>
+        <field name="MPN">BAV99,215</field>
+        <field name="Manufacturer">Nexperia</field>
+        <field name="LCSC">C2500</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Diode" part="BAV99" description="BAV99 High-speed switching diodes, SOT-23"/>
+      <property name="MPN" value="BAV99,215"/>
+      <property name="Manufacturer" value="Nexperia"/>
+      <property name="LCSC" value="C2500"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="diode"/>
@@ -3839,11 +4703,17 @@
       <value>BAV99</value>
       <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
       <fields>
+        <field name="MPN">BAV99,215</field>
+        <field name="Manufacturer">Nexperia</field>
+        <field name="LCSC">C2500</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Diode" part="BAV99" description="BAV99 High-speed switching diodes, SOT-23"/>
+      <property name="MPN" value="BAV99,215"/>
+      <property name="Manufacturer" value="Nexperia"/>
+      <property name="LCSC" value="C2500"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="diode"/>
@@ -3864,11 +4734,17 @@
       <value>BAV99</value>
       <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
       <fields>
+        <field name="MPN">BAV99,215</field>
+        <field name="Manufacturer">Nexperia</field>
+        <field name="LCSC">C2500</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Diode" part="BAV99" description="BAV99 High-speed switching diodes, SOT-23"/>
+      <property name="MPN" value="BAV99,215"/>
+      <property name="Manufacturer" value="Nexperia"/>
+      <property name="LCSC" value="C2500"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="diode"/>
@@ -3889,11 +4765,17 @@
       <value>BAV99</value>
       <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
       <fields>
+        <field name="MPN">BAV99,215</field>
+        <field name="Manufacturer">Nexperia</field>
+        <field name="LCSC">C2500</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Diode" part="BAV99" description="BAV99 High-speed switching diodes, SOT-23"/>
+      <property name="MPN" value="BAV99,215"/>
+      <property name="Manufacturer" value="Nexperia"/>
+      <property name="LCSC" value="C2500"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="diode"/>
@@ -3914,11 +4796,17 @@
       <value>BAV99</value>
       <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
       <fields>
+        <field name="MPN">BAV99,215</field>
+        <field name="Manufacturer">Nexperia</field>
+        <field name="LCSC">C2500</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Diode" part="BAV99" description="BAV99 High-speed switching diodes, SOT-23"/>
+      <property name="MPN" value="BAV99,215"/>
+      <property name="Manufacturer" value="Nexperia"/>
+      <property name="LCSC" value="C2500"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="diode"/>
@@ -3939,11 +4827,17 @@
       <value>BAV99</value>
       <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
       <fields>
+        <field name="MPN">BAV99,215</field>
+        <field name="Manufacturer">Nexperia</field>
+        <field name="LCSC">C2500</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Diode" part="BAV99" description="BAV99 High-speed switching diodes, SOT-23"/>
+      <property name="MPN" value="BAV99,215"/>
+      <property name="Manufacturer" value="Nexperia"/>
+      <property name="LCSC" value="C2500"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="diode"/>
@@ -3964,11 +4858,17 @@
       <value>BAV99</value>
       <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
       <fields>
+        <field name="MPN">BAV99,215</field>
+        <field name="Manufacturer">Nexperia</field>
+        <field name="LCSC">C2500</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Diode" part="BAV99" description="BAV99 High-speed switching diodes, SOT-23"/>
+      <property name="MPN" value="BAV99,215"/>
+      <property name="Manufacturer" value="Nexperia"/>
+      <property name="LCSC" value="C2500"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="diode"/>
@@ -3989,11 +4889,17 @@
       <value>OUT0+</value>
       <footprint>Connector_Coaxial:SMA_Amphenol_132134_Vertical</footprint>
       <fields>
+        <field name="MPN">132134</field>
+        <field name="Manufacturer">Amphenol</field>
+        <field name="LCSC">C3174425</field>
         <field name="Footprint">Connector_Coaxial:SMA_Amphenol_132134_Vertical</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Connector" part="Conn_Coaxial" description="coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"/>
+      <property name="MPN" value="132134"/>
+      <property name="Manufacturer" value="Amphenol"/>
+      <property name="LCSC" value="C3174425"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="BNC SMA SMB SMC LEMO coaxial connector CINCH RCA MCX MMCX U.FL UMRF"/>
@@ -4013,11 +4919,17 @@
       <value>OUT0-</value>
       <footprint>Connector_Coaxial:SMA_Amphenol_132134_Vertical</footprint>
       <fields>
+        <field name="MPN">132134</field>
+        <field name="Manufacturer">Amphenol</field>
+        <field name="LCSC">C3174425</field>
         <field name="Footprint">Connector_Coaxial:SMA_Amphenol_132134_Vertical</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Connector" part="Conn_Coaxial" description="coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"/>
+      <property name="MPN" value="132134"/>
+      <property name="Manufacturer" value="Amphenol"/>
+      <property name="LCSC" value="C3174425"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="BNC SMA SMB SMC LEMO coaxial connector CINCH RCA MCX MMCX U.FL UMRF"/>
@@ -4037,11 +4949,17 @@
       <value>OUT1+</value>
       <footprint>Connector_Coaxial:SMA_Amphenol_132134_Vertical</footprint>
       <fields>
+        <field name="MPN">132134</field>
+        <field name="Manufacturer">Amphenol</field>
+        <field name="LCSC">C3174425</field>
         <field name="Footprint">Connector_Coaxial:SMA_Amphenol_132134_Vertical</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Connector" part="Conn_Coaxial" description="coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"/>
+      <property name="MPN" value="132134"/>
+      <property name="Manufacturer" value="Amphenol"/>
+      <property name="LCSC" value="C3174425"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="BNC SMA SMB SMC LEMO coaxial connector CINCH RCA MCX MMCX U.FL UMRF"/>
@@ -4061,11 +4979,17 @@
       <value>OUT1-</value>
       <footprint>Connector_Coaxial:SMA_Amphenol_132134_Vertical</footprint>
       <fields>
+        <field name="MPN">132134</field>
+        <field name="Manufacturer">Amphenol</field>
+        <field name="LCSC">C3174425</field>
         <field name="Footprint">Connector_Coaxial:SMA_Amphenol_132134_Vertical</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Connector" part="Conn_Coaxial" description="coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"/>
+      <property name="MPN" value="132134"/>
+      <property name="Manufacturer" value="Amphenol"/>
+      <property name="LCSC" value="C3174425"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="BNC SMA SMB SMC LEMO coaxial connector CINCH RCA MCX MMCX U.FL UMRF"/>
@@ -4085,11 +5009,17 @@
       <value>OUT2+</value>
       <footprint>Connector_Coaxial:SMA_Amphenol_132134_Vertical</footprint>
       <fields>
+        <field name="MPN">132134</field>
+        <field name="Manufacturer">Amphenol</field>
+        <field name="LCSC">C3174425</field>
         <field name="Footprint">Connector_Coaxial:SMA_Amphenol_132134_Vertical</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Connector" part="Conn_Coaxial" description="coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"/>
+      <property name="MPN" value="132134"/>
+      <property name="Manufacturer" value="Amphenol"/>
+      <property name="LCSC" value="C3174425"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="BNC SMA SMB SMC LEMO coaxial connector CINCH RCA MCX MMCX U.FL UMRF"/>
@@ -4109,11 +5039,17 @@
       <value>OUT2-</value>
       <footprint>Connector_Coaxial:SMA_Amphenol_132134_Vertical</footprint>
       <fields>
+        <field name="MPN">132134</field>
+        <field name="Manufacturer">Amphenol</field>
+        <field name="LCSC">C3174425</field>
         <field name="Footprint">Connector_Coaxial:SMA_Amphenol_132134_Vertical</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Connector" part="Conn_Coaxial" description="coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"/>
+      <property name="MPN" value="132134"/>
+      <property name="Manufacturer" value="Amphenol"/>
+      <property name="LCSC" value="C3174425"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="BNC SMA SMB SMC LEMO coaxial connector CINCH RCA MCX MMCX U.FL UMRF"/>
@@ -4133,11 +5069,17 @@
       <value>OUT3+</value>
       <footprint>Connector_Coaxial:SMA_Amphenol_132134_Vertical</footprint>
       <fields>
+        <field name="MPN">132134</field>
+        <field name="Manufacturer">Amphenol</field>
+        <field name="LCSC">C3174425</field>
         <field name="Footprint">Connector_Coaxial:SMA_Amphenol_132134_Vertical</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Connector" part="Conn_Coaxial" description="coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"/>
+      <property name="MPN" value="132134"/>
+      <property name="Manufacturer" value="Amphenol"/>
+      <property name="LCSC" value="C3174425"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="BNC SMA SMB SMC LEMO coaxial connector CINCH RCA MCX MMCX U.FL UMRF"/>
@@ -4157,11 +5099,17 @@
       <value>OUT3-</value>
       <footprint>Connector_Coaxial:SMA_Amphenol_132134_Vertical</footprint>
       <fields>
+        <field name="MPN">132134</field>
+        <field name="Manufacturer">Amphenol</field>
+        <field name="LCSC">C3174425</field>
         <field name="Footprint">Connector_Coaxial:SMA_Amphenol_132134_Vertical</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Connector" part="Conn_Coaxial" description="coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"/>
+      <property name="MPN" value="132134"/>
+      <property name="Manufacturer" value="Amphenol"/>
+      <property name="LCSC" value="C3174425"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="BNC SMA SMB SMC LEMO coaxial connector CINCH RCA MCX MMCX U.FL UMRF"/>
@@ -4179,13 +5127,19 @@
     </comp>
     <comp ref="R32">
       <value>2.49k 0.1%</value>
-      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="MPN">RT0603BRD072K49L</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC">C861299</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RT0603BRD072K49L"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC" value="C861299"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4203,13 +5157,19 @@
     </comp>
     <comp ref="R33">
       <value>2.49k 0.1%</value>
-      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="MPN">RT0603BRD072K49L</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC">C861299</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RT0603BRD072K49L"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC" value="C861299"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4227,13 +5187,19 @@
     </comp>
     <comp ref="R34">
       <value>2.49k 0.1%</value>
-      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="MPN">RT0603BRD072K49L</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC">C861299</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RT0603BRD072K49L"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC" value="C861299"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4251,13 +5217,19 @@
     </comp>
     <comp ref="R35">
       <value>2.49k 0.1%</value>
-      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="MPN">RT0603BRD072K49L</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC">C861299</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RT0603BRD072K49L"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC" value="C861299"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4275,13 +5247,19 @@
     </comp>
     <comp ref="R36">
       <value>2.49k 0.1%</value>
-      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="MPN">RT0603BRD072K49L</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC">C861299</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RT0603BRD072K49L"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC" value="C861299"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4299,13 +5277,19 @@
     </comp>
     <comp ref="R37">
       <value>2.49k 0.1%</value>
-      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="MPN">RT0603BRD072K49L</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC">C861299</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RT0603BRD072K49L"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC" value="C861299"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4323,13 +5307,19 @@
     </comp>
     <comp ref="R38">
       <value>2.49k 0.1%</value>
-      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="MPN">RT0603BRD072K49L</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC">C861299</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RT0603BRD072K49L"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC" value="C861299"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4347,13 +5337,19 @@
     </comp>
     <comp ref="R39">
       <value>2.49k 0.1%</value>
-      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
       <fields>
-        <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
+        <field name="MPN">RT0603BRD072K49L</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="LCSC">C861299</field>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="RT0603BRD072K49L"/>
+      <property name="Manufacturer" value="YAGEO"/>
+      <property name="LCSC" value="C861299"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4373,11 +5369,17 @@
       <value>1.24k</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF1241TCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C25864</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF1241TCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C25864"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4397,11 +5399,17 @@
       <value>1.24k</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF1241TCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C25864</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF1241TCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C25864"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4421,11 +5429,17 @@
       <value>1.24k</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF1241TCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C25864</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF1241TCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C25864"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4445,11 +5459,17 @@
       <value>1.24k</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF1241TCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C25864</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF1241TCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C25864"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4469,11 +5489,17 @@
       <value>49.9</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF499JTCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C25120</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF499JTCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C25120"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4493,11 +5519,17 @@
       <value>49.9</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF499JTCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C25120</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF499JTCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C25120"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4517,11 +5549,17 @@
       <value>49.9</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF499JTCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C25120</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF499JTCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C25120"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4541,11 +5579,17 @@
       <value>49.9</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF499JTCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C25120</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF499JTCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C25120"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4565,11 +5609,17 @@
       <value>49.9</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF499JTCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C25120</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF499JTCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C25120"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4589,11 +5639,17 @@
       <value>49.9</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF499JTCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C25120</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF499JTCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C25120"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4613,11 +5669,17 @@
       <value>49.9</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF499JTCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C25120</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF499JTCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C25120"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4637,11 +5699,17 @@
       <value>49.9</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF499JTCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C25120</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF499JTCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C25120"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4661,11 +5729,17 @@
       <value>1M</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF1004TCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C26083</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF1004TCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C26083"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4685,11 +5759,17 @@
       <value>1M</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF1004TCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C26083</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF1004TCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C26083"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4709,11 +5789,17 @@
       <value>1M</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF1004TCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C26083</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF1004TCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C26083"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4733,11 +5819,17 @@
       <value>1M</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF1004TCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C26083</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF1004TCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C26083"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4757,11 +5849,17 @@
       <value>1M</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF1004TCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C26083</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF1004TCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C26083"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4781,11 +5879,17 @@
       <value>1M</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF1004TCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C26083</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF1004TCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C26083"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4805,11 +5909,17 @@
       <value>1M</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF1004TCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C26083</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF1004TCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C26083"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4829,11 +5939,17 @@
       <value>1M</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <fields>
+        <field name="MPN">0402WGF1004TCE</field>
+        <field name="Manufacturer">UNI-ROYAL</field>
+        <field name="LCSC">C26083</field>
         <field name="Footprint">Resistor_SMD:R_0402_1005Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="MPN" value="0402WGF1004TCE"/>
+      <property name="Manufacturer" value="UNI-ROYAL"/>
+      <property name="LCSC" value="C26083"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -4853,11 +5969,17 @@
       <value>ADA4807-1</value>
       <footprint>Package_TO_SOT_SMD:SOT-23-6</footprint>
       <fields>
+        <field name="MPN">ADA4807-1ARJZ-R7</field>
+        <field name="Manufacturer">Analog Devices</field>
+        <field name="LCSC">C2058411</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23-6</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Amplifier_Operational" part="ADA4807-1" description="Single Rail-to-Rail Input/Output Amplifiers, with disable, SC-70-6/SOT-23-6"/>
+      <property name="MPN" value="ADA4807-1ARJZ-R7"/>
+      <property name="Manufacturer" value="Analog Devices"/>
+      <property name="LCSC" value="C2058411"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="single opamp"/>
@@ -4881,11 +6003,17 @@
       <value>ADA4807-1</value>
       <footprint>Package_TO_SOT_SMD:SOT-23-6</footprint>
       <fields>
+        <field name="MPN">ADA4807-1ARJZ-R7</field>
+        <field name="Manufacturer">Analog Devices</field>
+        <field name="LCSC">C2058411</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23-6</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Amplifier_Operational" part="ADA4807-1" description="Single Rail-to-Rail Input/Output Amplifiers, with disable, SC-70-6/SOT-23-6"/>
+      <property name="MPN" value="ADA4807-1ARJZ-R7"/>
+      <property name="Manufacturer" value="Analog Devices"/>
+      <property name="LCSC" value="C2058411"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="single opamp"/>
@@ -4909,11 +6037,17 @@
       <value>ADA4807-1</value>
       <footprint>Package_TO_SOT_SMD:SOT-23-6</footprint>
       <fields>
+        <field name="MPN">ADA4807-1ARJZ-R7</field>
+        <field name="Manufacturer">Analog Devices</field>
+        <field name="LCSC">C2058411</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23-6</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Amplifier_Operational" part="ADA4807-1" description="Single Rail-to-Rail Input/Output Amplifiers, with disable, SC-70-6/SOT-23-6"/>
+      <property name="MPN" value="ADA4807-1ARJZ-R7"/>
+      <property name="Manufacturer" value="Analog Devices"/>
+      <property name="LCSC" value="C2058411"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="single opamp"/>
@@ -4937,11 +6071,17 @@
       <value>ADA4807-1</value>
       <footprint>Package_TO_SOT_SMD:SOT-23-6</footprint>
       <fields>
+        <field name="MPN">ADA4807-1ARJZ-R7</field>
+        <field name="Manufacturer">Analog Devices</field>
+        <field name="LCSC">C2058411</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23-6</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="Amplifier_Operational" part="ADA4807-1" description="Single Rail-to-Rail Input/Output Amplifiers, with disable, SC-70-6/SOT-23-6"/>
+      <property name="MPN" value="ADA4807-1ARJZ-R7"/>
+      <property name="Manufacturer" value="Analog Devices"/>
+      <property name="LCSC" value="C2058411"/>
       <property name="Sheetname" value="Electrode outputs"/>
       <property name="Sheetfile" value="dac_output.kicad_sch"/>
       <property name="ki_keywords" value="single opamp"/>

@@ -1,0 +1,1286 @@
+[
+ {
+  "refs": "U1,U2",
+  "keyword": "AD3552RBCPZ",
+  "need": "LFCSP-32 5x5",
+  "hits": [
+   {
+    "lcsc": "C4748801",
+    "type": "Extended",
+    "pref": false,
+    "stock": 0,
+    "mpn": "AD3552RBCPZ16",
+    "pkg": "VFQFN-32",
+    "brand": "Analog Devices",
+    "desc": "-40\u2103~+105\u2103 1.2V~1.8V 16 2 2LSB 33MHz 600uA 65ns Power-on reset\u3001Bipolar"
+   },
+   {
+    "lcsc": "C7453360",
+    "type": "Extended",
+    "pref": false,
+    "stock": 0,
+    "mpn": "AD3552RBCPZ16-RL7",
+    "pkg": "LFCSP-32(5x5)",
+    "brand": "Analog Devices",
+    "desc": "-40\u2103~+105\u2103 1.2V~1.8V 16 2 22MHz\u300133MHz 22mA 2LSB 65ns Power-on reset\u3001Bi"
+   }
+  ]
+ },
+ {
+  "refs": "U7",
+  "keyword": "ADR4525BRZ",
+  "need": "SOIC-8",
+  "hits": [
+   {
+    "lcsc": "C395112",
+    "type": "Extended",
+    "pref": false,
+    "stock": 211,
+    "mpn": "ADR4525BRZ",
+    "pkg": "SOIC-8",
+    "brand": "Analog Devices",
+    "desc": "-40\u2103~+125\u2103@(Ta) 1.25uVp-p 10mA 2.5V 2ppm/\u2103 3V~15V 950uA Fixed Series \u00b1"
+   },
+   {
+    "lcsc": "C403914",
+    "type": "Extended",
+    "pref": false,
+    "stock": 4869,
+    "mpn": "ADR4525BRZ-R7",
+    "pkg": "SOIC-8",
+    "brand": "Analog Devices",
+    "desc": "-40\u2103~+125\u2103@(Ta) 1.25uVp-p 10mA 2.5V 2ppm/\u2103 3V~15V 950uA Fixed Series \u00b1"
+   },
+   {
+    "lcsc": "C18214521",
+    "type": "Extended",
+    "pref": false,
+    "stock": 2,
+    "mpn": "ADR4525BRZ-R7(TOKMAS)",
+    "pkg": "SOIC-8",
+    "brand": "Tokmas",
+    "desc": "-40\u2103~+125\u2103 10mA 2.5V 3V~15V 5ppm/\u2103 715uA 7uVp-p Fixed \u00b10.04% SOIC-8 Vo"
+   }
+  ]
+ },
+ {
+  "refs": "U3-U6,U16-U19",
+  "keyword": "ADA4807-1ARJZ",
+  "need": "SOT-23-6",
+  "hits": [
+   {
+    "lcsc": "C208024",
+    "type": "Extended",
+    "pref": false,
+    "stock": 0,
+    "mpn": "ADA4807-1ARJZ-R2",
+    "pkg": "SOT-23-6",
+    "brand": "Analog Devices",
+    "desc": "-40\u2103~+125\u2103 -5V~5V 1 1.2uA 100nA 110dB 125uV 180MHz 1mA 2.7V~11V 225V/u"
+   },
+   {
+    "lcsc": "C2058411",
+    "type": "Extended",
+    "pref": false,
+    "stock": 0,
+    "mpn": "ADA4807-1ARJZ-R7",
+    "pkg": "SOT-23-6",
+    "brand": "Analog Devices",
+    "desc": "-40\u2103~+125\u2103 -5V~5V 1 100nA 110dB 125uV 180MHz 1mA 2.7V~11V 225V/us 2uA "
+   }
+  ]
+ },
+ {
+  "refs": "U8-U11",
+  "keyword": "74AVC4T774PW",
+  "need": "TSSOP-16",
+  "hits": [
+   {
+    "lcsc": "C546276",
+    "type": "Extended",
+    "pref": false,
+    "stock": 2500,
+    "mpn": "74AVC4T774PWJ",
+    "pkg": "TSSOP-16",
+    "brand": "Nexperia",
+    "desc": "-40\u2103~+125\u2103 1 380Mbps 4 800mV~3.6V 800mV~3.6V Bidirectional Power-Off P"
+   },
+   {
+    "lcsc": "C1549700",
+    "type": "Extended",
+    "pref": false,
+    "stock": 0,
+    "mpn": "SN74AVC4T774PW",
+    "pkg": "TSSOP-16",
+    "brand": "Texas Instruments",
+    "desc": "-40\u2103~+85\u2103 1 1.1V~3.6V 1.1V~3.6V 380Mbps 4 Bidirectional Tri-State TSSO"
+   },
+   {
+    "lcsc": "C129363",
+    "type": "Extended",
+    "pref": false,
+    "stock": 20293,
+    "mpn": "SN74AVC4T774PWR",
+    "pkg": "TSSOP-16",
+    "brand": "Texas Instruments",
+    "desc": "-40\u2103~+85\u2103 1 1.2V~3.6V 1.2V~3.6V 380Mbps 4 Bidirectional Level translat"
+   },
+   {
+    "lcsc": "C5915882",
+    "type": "Extended",
+    "pref": false,
+    "stock": 2469,
+    "mpn": "74AVC4T774PW-Q100J",
+    "pkg": "TSSOP-16",
+    "brand": "Nexperia",
+    "desc": "-40\u2103~+125\u2103 1 380Mbps 4 800mV~3.6V 800mV~3.6V Bidirectional Tri-State T"
+   }
+  ]
+ },
+ {
+  "refs": "U12",
+  "keyword": "TPS7A4901DGNR",
+  "need": "HVSSOP-8 (MSOP-8 PowerPAD)",
+  "hits": [
+   {
+    "lcsc": "C22358802",
+    "type": "Extended",
+    "pref": false,
+    "stock": 785,
+    "mpn": "GM14001ARHZ-R7",
+    "pkg": "MSOP-8",
+    "brand": "GONGMOSEMI",
+    "desc": "-40\u2103~+150\u2103@(Tj) 1 1.188V~39.6V 130uA 150mA 15uVrms 400mV@(150mA) 40V 7"
+   },
+   {
+    "lcsc": "C16430",
+    "type": "Extended",
+    "pref": false,
+    "stock": 7255,
+    "mpn": "TPS7A4901DGNR",
+    "pkg": "HVSSOP-8",
+    "brand": "Texas Instruments",
+    "desc": "-40\u2103~+125\u2103@(Tj) 1 1.194V~33V 15.4uVrms 150mA 260mV@(100mA) 35V 49uA 72"
+   }
+  ]
+ },
+ {
+  "refs": "U13",
+  "keyword": "LTC3260EMSE",
+  "need": "MSOP-16 EP",
+  "hits": [
+   {
+    "lcsc": "C107823",
+    "type": "Extended",
+    "pref": false,
+    "stock": 112,
+    "mpn": "LTC3260EMSE#PBF",
+    "pkg": "MSOP-16-EP",
+    "brand": "Analog Devices",
+    "desc": "-40\u2103~+125\u2103 100mA 100uA 32\u03a9 4.5V~32V 500kHz Inverted Support MSOP-16-EP"
+   },
+   {
+    "lcsc": "C684387",
+    "type": "Extended",
+    "pref": false,
+    "stock": 2396,
+    "mpn": "LTC3260EMSE#TRPBF",
+    "pkg": "MSOP-16-EP",
+    "brand": "Analog Devices",
+    "desc": "-40\u2103~+125\u2103 100mA 200uA 32\u03a9 4.5V~32V 500kHz Inverted Support MSOP-16-EP"
+   }
+  ]
+ },
+ {
+  "refs": "U14",
+  "keyword": "AP63201WU-7",
+  "need": "TSOT-23-6",
+  "hits": [
+   {
+    "lcsc": "C2071044",
+    "type": "Extended",
+    "pref": false,
+    "stock": 2629,
+    "mpn": "AP63201WU-7",
+    "pkg": "TSOT-23-6",
+    "brand": "Diodes Incorporated",
+    "desc": "-40\u2103~+85\u2103 1 22uA 2A 3.8V~32V 500kHz Adjustable Buck Built-in Overcurre"
+   }
+  ]
+ },
+ {
+  "refs": "U15",
+  "keyword": "TLV75518PDBVR",
+  "need": "SOT-23-5",
+  "hits": [
+   {
+    "lcsc": "C723785",
+    "type": "Extended",
+    "pref": false,
+    "stock": 4779,
+    "mpn": "HE9073A18M5R",
+    "pkg": "SOT-23-5",
+    "brand": "HEERMICR",
+    "desc": "-40\u2103~+85\u2103 1 1.8V 100mV@(100mA) 300nA 500mA 70dB@(1kHz) 7V Fixed Over C"
+   },
+   {
+    "lcsc": "C2877863",
+    "type": "Extended",
+    "pref": false,
+    "stock": 5391,
+    "mpn": "TLV75518PDBVR",
+    "pkg": "SOT-23-5",
+    "brand": "Texas Instruments",
+    "desc": "-40\u2103~+125\u2103@(Tj) 1 1.8V 33uA 380mV@(500mA) 46dB@(100kHz) 5.5V 500mA 71."
+   },
+   {
+    "lcsc": "C2940636",
+    "type": "Extended",
+    "pref": false,
+    "stock": 2165,
+    "mpn": "TPTLV75518PDBVR",
+    "pkg": "SOT-23-5",
+    "brand": "TECH PUBLIC",
+    "desc": "-40\u2103~+85\u2103@(Ta) 1 1.8V 5.5V 500mA 570mV@(600mA) 5uA 75dB@(1kHz) Fixed O"
+   }
+  ]
+ },
+ {
+  "refs": "D1-D8",
+  "keyword": "BAV99",
+  "need": "SOT-23",
+  "hits": [
+   {
+    "lcsc": "C2500",
+    "type": "Basic",
+    "pref": false,
+    "stock": 1306381,
+    "mpn": "BAV99,215",
+    "pkg": "SOT-23",
+    "brand": "Nexperia",
+    "desc": "1 Pair Series Connection 1.25V@150mA 100V 215mA 250mW 4A 4ns 500nA@80V"
+   },
+   {
+    "lcsc": "C8662",
+    "type": "Extended",
+    "pref": false,
+    "stock": 104253,
+    "mpn": "BAV99W,115",
+    "pkg": "SOT-323-3",
+    "brand": "Nexperia",
+    "desc": "1 Pair Series Connection 1.25V@150mA 100V 150mA 200mW 4A 4ns 500nA@80V"
+   },
+   {
+    "lcsc": "C26216",
+    "type": "Extended",
+    "pref": false,
+    "stock": 63233,
+    "mpn": "BAV99W",
+    "pkg": "SOT-323-3",
+    "brand": "Jiangsu Changjing Electronics Technology Co., Ltd.",
+    "desc": "1 Pair Series Connection 1.25V@150mA 150mA 2.5uA@75V 200mW 2A 4ns 75V "
+   },
+   {
+    "lcsc": "C68983",
+    "type": "Extended",
+    "pref": false,
+    "stock": 684005,
+    "mpn": "BAV99",
+    "pkg": "SOT-23",
+    "brand": "Jiangsu Changjing Electronics Technology Co., Ltd.",
+    "desc": "-55\u2103~+150\u2103 1 Pair Series Connection 1.25V@150mA 2.5uA@70V 200mA 225mW "
+   }
+  ]
+ },
+ {
+  "refs": "D10",
+  "keyword": "SMAJ15A",
+  "need": "SMA",
+  "hits": [
+   {
+    "lcsc": "C23424",
+    "type": "Extended",
+    "pref": false,
+    "stock": 555,
+    "mpn": "SMAJ15A",
+    "pkg": "DO-214AC(SMA)",
+    "brand": "RUILON(Shenzhen Ruilongyuan Elec)",
+    "desc": "-55\u2103~+150\u2103 15V 16.4A 19.2V 1uA 24.4V 400W@10/1000us IEC 61000-4-2\u3001IEC "
+   },
+   {
+    "lcsc": "C86819",
+    "type": "Extended",
+    "pref": false,
+    "stock": 60116,
+    "mpn": "SMAJ15A/TR13",
+    "pkg": "SMA(DO-214AC)",
+    "brand": "Brightking",
+    "desc": "-65\u2103~+150\u2103 15V 16.4A 16.7V 1uA 24.4V 400W TVS Unidirectional SMA(DO-21"
+   },
+   {
+    "lcsc": "C110520",
+    "type": "Extended",
+    "pref": false,
+    "stock": 12256,
+    "mpn": "SMAJ15A-13-F",
+    "pkg": "SMA",
+    "brand": "Diodes Incorporated",
+    "desc": "-55\u2103~+150\u2103 15V 16.4A 18.5V 24.4V 400W@8.3ms 5uA TVS Unidirectional SMA"
+   },
+   {
+    "lcsc": "C113958",
+    "type": "Extended",
+    "pref": false,
+    "stock": 9939,
+    "mpn": "SMAJ15A",
+    "pkg": "DO-214AC(SMA)",
+    "brand": "MDD(Microdiode Semiconductor)",
+    "desc": "-65\u2103~+150\u2103 15V 16.4A@10/1000us 18.5V 1uA 24.4V 400W@10/1000us TVS Unid"
+   }
+  ]
+ },
+ {
+  "refs": "D9",
+  "keyword": "SS24",
+  "need": "SMA, 40 V 2 A Schottky",
+  "hits": [
+   {
+    "lcsc": "C35501",
+    "type": "Extended",
+    "pref": false,
+    "stock": 117360,
+    "mpn": "SS24B",
+    "pkg": "SMB(DO-214AA)",
+    "brand": "MDD(Microdiode Semiconductor)",
+    "desc": "-50\u2103~+125\u2103 2A 40V 500uA@40V 550mV@2A Independent SMB(DO-214AA) Schottk"
+   },
+   {
+    "lcsc": "C50645",
+    "type": "Extended",
+    "pref": false,
+    "stock": 722963,
+    "mpn": "SS24",
+    "pkg": "SMA(DO-214AC)",
+    "brand": "MDD(Microdiode Semiconductor)",
+    "desc": "-55\u2103~+125\u2103 2A 40V 500uA@40V 550mV@2A Independent SMA(DO-214AC) Schottk"
+   },
+   {
+    "lcsc": "C64881",
+    "type": "Extended",
+    "pref": false,
+    "stock": 6615,
+    "mpn": "SS24F",
+    "pkg": "SMAF",
+    "brand": "MDD(Microdiode Semiconductor)",
+    "desc": "-55\u2103~+125\u2103 2A 40V 500uA@40V 550mV@2A Independent SMAF Schottky Diodes "
+   },
+   {
+    "lcsc": "C78573",
+    "type": "Extended",
+    "pref": false,
+    "stock": 2175,
+    "mpn": "SS24-LTP",
+    "pkg": "SMA(DO-214AC)",
+    "brand": "MCC(Micro Commercial Components)",
+    "desc": "-55\u2103~+125\u2103 1 Independent 2A 40V 500uA@40V 50A 550mV@2A SMA(DO-214AC) S"
+   }
+  ]
+ },
+ {
+  "refs": "F1",
+  "keyword": "1206L050",
+  "need": "1206 PTC 0.5 A hold",
+  "hits": [
+   {
+    "lcsc": "C163512",
+    "type": "Extended",
+    "pref": false,
+    "stock": 11276,
+    "mpn": "1206L050YR",
+    "pkg": "1206",
+    "brand": "Littelfuse",
+    "desc": "-40\u2103~+85\u2103 100A 100ms 150m\u03a9 1A 500mA 600mW 6V 700m\u03a9 1206 Resettable Fus"
+   },
+   {
+    "lcsc": "C2892420",
+    "type": "Extended",
+    "pref": false,
+    "stock": 563,
+    "mpn": "K1206L050YR",
+    "pkg": "1206",
+    "brand": "KUU",
+    "desc": "-40\u2103~+85\u2103 0.75mm 1.8mm 100ms 13.2V 150m\u03a9 1A 3.4mm 400mW 40A 500mA 750m"
+   },
+   {
+    "lcsc": "C49318356",
+    "type": "Extended",
+    "pref": false,
+    "stock": 3871,
+    "mpn": "1206L050/6V",
+    "pkg": "1206",
+    "brand": "YTL",
+    "desc": "-40\u2103~+85\u2103 1.6mm 100A 100ms 150m\u03a9 1A 3.2mm 500mA 6V 700m\u03a9 800mW 1206 Re"
+   },
+   {
+    "lcsc": "C49318357",
+    "type": "Extended",
+    "pref": false,
+    "stock": 4560,
+    "mpn": "1206L050/8V",
+    "pkg": "1206",
+    "brand": "YTL",
+    "desc": "-40\u2103~+85\u2103 1.6mm 100A 100ms 150m\u03a9 1A 1mm 3.2mm 500mA 700m\u03a9 800mW 8V 120"
+   }
+  ]
+ },
+ {
+  "refs": "FB1,FB2",
+  "keyword": "BLM18PG221SN1D",
+  "need": "0603 ferrite bead",
+  "hits": [
+   {
+    "lcsc": "C80165",
+    "type": "Extended",
+    "pref": false,
+    "stock": 240398,
+    "mpn": "BLM18PG221SN1D",
+    "pkg": "0603",
+    "brand": "Murata Electronics",
+    "desc": "-55\u2103~+125\u2103 1 1.4A 100m\u03a9 220\u03a9@100MHz \u00b125% 0603 Ferrite Beads ROHS"
+   }
+  ]
+ },
+ {
+  "refs": "L1",
+  "keyword": "NR5040T3R3N",
+  "need": "3.3 uH, Taiyo NR50xx",
+  "hits": [
+   {
+    "lcsc": "C9900204449",
+    "type": "Extended",
+    "pref": false,
+    "stock": 0,
+    "mpn": "NR5040T3R3N",
+    "pkg": "SMD,5X5mm",
+    "brand": "JLCPCB Assembly",
+    "desc": "SMD,5X5mm SMT ROHS"
+   }
+  ]
+ },
+ {
+  "refs": "J4-J11",
+  "keyword": "132134",
+  "need": "Amphenol SMA vertical THT",
+  "hits": [
+   {
+    "lcsc": "C3174425",
+    "type": "Extended",
+    "pref": false,
+    "stock": 1216,
+    "mpn": "132134",
+    "pkg": "Plugin",
+    "brand": "Amphenol ICC",
+    "desc": "-65\u2103~+165\u2103 1 18GHz 50\u03a9 9.53mm Board Side Inner Bore Positive Pin SMA \u63d2"
+   },
+   {
+    "lcsc": "C3176135",
+    "type": "Extended",
+    "pref": false,
+    "stock": 2,
+    "mpn": "132134RP",
+    "pkg": "Plugin",
+    "brand": "Amphenol ICC",
+    "desc": "-65\u2103~+165\u2103 1 375V 50\u03a9 Board Side Inner pin Normal Contact RP-SMA Plugi"
+   },
+   {
+    "lcsc": "C3172297",
+    "type": "Extended",
+    "pref": false,
+    "stock": 702,
+    "mpn": "132134-15",
+    "pkg": "SMD",
+    "brand": "Amphenol ICC",
+    "desc": "-65\u2103~+165\u2103 1 12.4GHz 50\u03a9 Board Side SMA \u63d2\u4ef6 Coaxial Connectors (RF) ROH"
+   },
+   {
+    "lcsc": "C3172499",
+    "type": "Extended",
+    "pref": false,
+    "stock": 273,
+    "mpn": "132134-10",
+    "pkg": "SMD",
+    "brand": "Amphenol ICC",
+    "desc": "-65\u2103~+165\u2103 1 18GHz 50\u03a9 Board Side Inner Bore Positive Pin SMA SMD Coax"
+   }
+  ]
+ },
+ {
+  "refs": "J1,J12",
+  "keyword": "ESW-113-33-T-D",
+  "need": "2x13 elevated socket",
+  "hits": [
+   {
+    "lcsc": "C7498573",
+    "type": "Extended",
+    "pref": false,
+    "stock": 0,
+    "mpn": "ESW-113-33-T-D",
+    "pkg": "TH-2X13P,P=2.54mm",
+    "brand": "Samtec",
+    "desc": "TH-2X13P,P=2.54mm IC / Transistor Socket ROHS"
+   }
+  ]
+ },
+ {
+  "refs": "J2",
+  "keyword": "PJ-102AH",
+  "need": "barrel jack (KiCad BarrelJack_Horizontal)",
+  "hits": [
+   {
+    "lcsc": "C3096093",
+    "type": "Extended",
+    "pref": false,
+    "stock": 1024,
+    "mpn": "PJ-102AH",
+    "pkg": "Plugin",
+    "brand": "CUI",
+    "desc": "-25\u2103~+85\u2103 24V 2mm 5A 6.5mm DC Power Jack Right Angle Plugin DC Power C"
+   },
+   {
+    "lcsc": "C9900001188",
+    "type": "Extended",
+    "pref": false,
+    "stock": 0,
+    "mpn": "PJ-102AH",
+    "pkg": "DC-IN-TH_3P-L14.4-W9.0",
+    "brand": "JLCPCB Assembly",
+    "desc": "DC-IN-TH_3P-L14.4-W9.0 SMT ROHS"
+   },
+   {
+    "lcsc": "C9900155931",
+    "type": "Extended",
+    "pref": false,
+    "stock": 0,
+    "mpn": "PJ-102AH",
+    "pkg": "Plugin",
+    "brand": "JLCPCB Assembly",
+    "desc": "\u63d2\u4ef6 New Arrivals ROHS"
+   },
+   {
+    "lcsc": "C3095677",
+    "type": "Extended",
+    "pref": false,
+    "stock": 0,
+    "mpn": "PJ-102AH-C2",
+    "pkg": "-",
+    "brand": "CUI",
+    "desc": "- DC Power Connectors"
+   }
+  ]
+ },
+ {
+  "refs": "R32-R39",
+  "keyword": "0402 2.49k\u03a9 \u00b10.1%",
+  "need": "0402 2.49k 0.1%",
+  "hits": [
+   {
+    "lcsc": "C319792",
+    "type": "Extended",
+    "pref": false,
+    "stock": 5,
+    "mpn": "AR02BTD2491",
+    "pkg": "0402",
+    "brand": "Viking Tech",
+    "desc": "-55\u2103~+155\u2103 2.49k\u03a9 25V 62.5mW Thin Film Resistor \u00b10.1% \u00b150ppm/\u2103 0402 Ch"
+   },
+   {
+    "lcsc": "C319793",
+    "type": "Extended",
+    "pref": false,
+    "stock": 7550,
+    "mpn": "AR02BTC2491",
+    "pkg": "0402",
+    "brand": "Viking Tech",
+    "desc": "-55\u2103~+155\u2103 2.49k\u03a9 25V 62.5mW Thin Film Resistor \u00b10.1% \u00b125ppm/\u2103 0402 Ch"
+   },
+   {
+    "lcsc": "C852700",
+    "type": "Extended",
+    "pref": false,
+    "stock": 27766,
+    "mpn": "RT0402BRD072K49L",
+    "pkg": "0402",
+    "brand": "YAGEO",
+    "desc": "-55\u2103~+155\u2103 2.49k\u03a9 50V 62.5mW Thin Film Resistor \u00b10.1% \u00b125ppm/\u2103 0402 Ch"
+   },
+   {
+    "lcsc": "C2073434",
+    "type": "Extended",
+    "pref": false,
+    "stock": 1346,
+    "mpn": "ERA-2AEB2491X",
+    "pkg": "0402",
+    "brand": "PANASONIC",
+    "desc": "-55\u2103~+155\u2103 2.49k\u03a9 50V 63mW Thin Film Resistor \u00b10.1% \u00b125ppm/\u2103 0402 Chip"
+   }
+  ]
+ },
+ {
+  "refs": "C9-C16",
+  "keyword": "1206 470nF C0G",
+  "need": "1206 470 nF NP0/C0G",
+  "hits": [
+   {
+    "lcsc": "C19487998",
+    "type": "Extended",
+    "pref": false,
+    "stock": 0,
+    "mpn": "C3216C0G1E104J",
+    "pkg": "1206",
+    "brand": "TDK",
+    "desc": "100nF 25V NP0\u3001C0G \u00b15% 1206 Multilayer Ceramic Capacitors MLCC - SMD/SM"
+   },
+   {
+    "lcsc": "C19599885",
+    "type": "Extended",
+    "pref": false,
+    "stock": 0,
+    "mpn": "C3216C0G1E103J",
+    "pkg": "1206",
+    "brand": "TDK",
+    "desc": "10nF 25V C0G\u3001NP0 \u00b15% 1206 Multilayer Ceramic Capacitors MLCC - SMD/SMT"
+   },
+   {
+    "lcsc": "C19443824",
+    "type": "Extended",
+    "pref": false,
+    "stock": 0,
+    "mpn": "CGA5F2C0G1H822J",
+    "pkg": "1206",
+    "brand": "TDK",
+    "desc": "50V 8.2nF C0G\u3001NP0 \u00b15% 1206 Multilayer Ceramic Capacitors MLCC - SMD/SM"
+   },
+   {
+    "lcsc": "C19573709",
+    "type": "Extended",
+    "pref": false,
+    "stock": 0,
+    "mpn": "C3216C0G1H822J/1.15",
+    "pkg": "1206",
+    "brand": "TDK",
+    "desc": "50V 8.2nF C0G\u3001NP0 \u00b15% 1206 Multilayer Ceramic Capacitors MLCC - SMD/SM"
+   }
+  ]
+ },
+ {
+  "refs": "C21-C24",
+  "keyword": "0402 8.2pF C0G",
+  "need": "0402 8.2 pF NP0",
+  "hits": [
+   {
+    "lcsc": "C19290386",
+    "type": "Extended",
+    "pref": false,
+    "stock": 0,
+    "mpn": "C0402C0G1C040B",
+    "pkg": "0402",
+    "brand": "TDK",
+    "desc": "16V 4pF C0G\u3001NP0 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+   },
+   {
+    "lcsc": "C19392877",
+    "type": "Extended",
+    "pref": false,
+    "stock": 0,
+    "mpn": "C1005C0G1H360J",
+    "pkg": "0402",
+    "brand": "TDK",
+    "desc": "36pF 50V C0G\u3001NP0 \u00b15% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT"
+   },
+   {
+    "lcsc": "C19478007",
+    "type": "Extended",
+    "pref": false,
+    "stock": 0,
+    "mpn": "C1005C0G1H2R2C",
+    "pkg": "0402",
+    "brand": "TDK",
+    "desc": "2.2pF 50V C0G\u3001NP0 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT RO"
+   },
+   {
+    "lcsc": "C19610005",
+    "type": "Extended",
+    "pref": false,
+    "stock": 0,
+    "mpn": "C1005C0G1H5R6C",
+    "pkg": "0402",
+    "brand": "TDK",
+    "desc": "5.6pF 50V NP0\u3001C0G 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT RO"
+   }
+  ]
+ },
+ {
+  "refs": "C45-C48",
+  "keyword": "0402 1pF C0G",
+  "need": "0402 1 pF NP0",
+  "hits": [
+   {
+    "lcsc": "C19290386",
+    "type": "Extended",
+    "pref": false,
+    "stock": 0,
+    "mpn": "C0402C0G1C040B",
+    "pkg": "0402",
+    "brand": "TDK",
+    "desc": "16V 4pF C0G\u3001NP0 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS"
+   },
+   {
+    "lcsc": "C19392877",
+    "type": "Extended",
+    "pref": false,
+    "stock": 0,
+    "mpn": "C1005C0G1H360J",
+    "pkg": "0402",
+    "brand": "TDK",
+    "desc": "36pF 50V C0G\u3001NP0 \u00b15% 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT"
+   },
+   {
+    "lcsc": "C19478007",
+    "type": "Extended",
+    "pref": false,
+    "stock": 0,
+    "mpn": "C1005C0G1H2R2C",
+    "pkg": "0402",
+    "brand": "TDK",
+    "desc": "2.2pF 50V C0G\u3001NP0 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT RO"
+   },
+   {
+    "lcsc": "C19610005",
+    "type": "Extended",
+    "pref": false,
+    "stock": 0,
+    "mpn": "C1005C0G1H5R6C",
+    "pkg": "0402",
+    "brand": "TDK",
+    "desc": "5.6pF 50V NP0\u3001C0G 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT RO"
+   }
+  ]
+ },
+ {
+  "refs": "C57",
+  "keyword": "47uF 25V 6.3x5.4",
+  "need": "electrolytic 6.3x5.4, >=16 V",
+  "hits": [
+   {
+    "lcsc": "C7469965",
+    "type": "Extended",
+    "pref": false,
+    "stock": 14618,
+    "mpn": "FVH025ADA470M0654",
+    "pkg": "6.3x5.4",
+    "brand": "FOSAN",
+    "desc": "-55\u2103~+105\u2103 25V 47uF 5.4mm 6.3mm \u00b120% 6.3x5.4 Aluminum Electrolytic Cap"
+   },
+   {
+    "lcsc": "C165624",
+    "type": "Extended",
+    "pref": false,
+    "stock": 2459,
+    "mpn": "MVK 25V47 6.3*6",
+    "pkg": "SMD,D6.3xL6mm",
+    "brand": "SamYoung Electronics",
+    "desc": "-40\u2103~+105\u2103 1000hrs@105\u2103 25V 47uF 52mA@120Hz 6.3mm 6mm \u00b120% SMD,D6.3xL6"
+   },
+   {
+    "lcsc": "C346941",
+    "type": "Extended",
+    "pref": false,
+    "stock": 491,
+    "mpn": "MVK25V47M6.3*5 6.3TP",
+    "pkg": "SMD,D6.3xL5mm",
+    "brand": "SamYoung Electronics",
+    "desc": "-40\u2103~+105\u2103 1000hrs@105\u2103 25V 47uF 49mA@120Hz 5mm 6.3mm \u00b120% SMD,D6.3xL5"
+   },
+   {
+    "lcsc": "C346942",
+    "type": "Extended",
+    "pref": false,
+    "stock": 670,
+    "mpn": "NXA25V47M5*11 LO",
+    "pkg": "Plugin,D5xL11mm",
+    "brand": "SamYoung Electronics",
+    "desc": "-40\u2103~+105\u2103 11mm 210mA@100kHz 25V 2mm 47uF 5000hrs@105\u2103 580m\u03a9@100kHz 5m"
+   }
+  ]
+ },
+ {
+  "refs": "C59 etc",
+  "keyword": "0805 10uF 25V X7R",
+  "need": "0805 10 uF 25 V X7R",
+  "hits": [
+   {
+    "lcsc": "C6119932",
+    "type": "Extended",
+    "pref": false,
+    "stock": 53365,
+    "mpn": "CGA0805X7R106K250MT",
+    "pkg": "0805",
+    "brand": "HRE",
+    "desc": "10uF 25V X7R \u00b110% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT RO"
+   },
+   {
+    "lcsc": "C48543594",
+    "type": "Extended",
+    "pref": false,
+    "stock": 4,
+    "mpn": "TCC0805X7R106K250FT",
+    "pkg": "0805",
+    "brand": "CCTC",
+    "desc": "10uF 25V X7R \u00b110% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT RO"
+   },
+   {
+    "lcsc": "C17414226",
+    "type": "Extended",
+    "pref": false,
+    "stock": 0,
+    "mpn": "GMC21X7R106K25NT",
+    "pkg": "0805",
+    "brand": "CAL-CHIP ELECTRONICS, INC.",
+    "desc": "10uF 25V X7R \u00b110% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT RO"
+   },
+   {
+    "lcsc": "C17693826",
+    "type": "Extended",
+    "pref": false,
+    "stock": 0,
+    "mpn": "GMC21X7R106M25NT",
+    "pkg": "0805",
+    "brand": "CAL-CHIP ELECTRONICS, INC.",
+    "desc": "10uF 25V X7R \u00b120% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT RO"
+   }
+  ]
+ },
+ {
+  "refs": "C72,C73",
+  "keyword": "0805 22uF",
+  "need": "0805 22 uF",
+  "hits": [
+   {
+    "lcsc": "C5674",
+    "type": "Extended",
+    "pref": false,
+    "stock": 2852877,
+    "mpn": "CL21A226MQQNNNE",
+    "pkg": "0805",
+    "brand": "Samsung Electro-Mechanics",
+    "desc": "22uF 6.3V X5R \u00b120% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT R"
+   },
+   {
+    "lcsc": "C29277",
+    "type": "Extended",
+    "pref": false,
+    "stock": 460033,
+    "mpn": "CL21A226MPQNNNE",
+    "pkg": "0805",
+    "brand": "Samsung Electro-Mechanics",
+    "desc": "10V 22uF X5R \u00b120% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT RO"
+   },
+   {
+    "lcsc": "C45783",
+    "type": "Basic",
+    "pref": false,
+    "stock": 3689312,
+    "mpn": "CL21A226MAQNNNE",
+    "pkg": "0805",
+    "brand": "Samsung Electro-Mechanics",
+    "desc": "22uF 25V X5R \u00b120% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT RO"
+   },
+   {
+    "lcsc": "C76634",
+    "type": "Extended",
+    "pref": false,
+    "stock": 5131,
+    "mpn": "C2012X5R1A226KT000N",
+    "pkg": "0805",
+    "brand": "TDK",
+    "desc": "10V 22uF X5R \u00b110% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT RO"
+   }
+  ]
+ },
+ {
+  "refs": "C64",
+  "keyword": "0603 1uF 25V X7R",
+  "need": "0603 1 uF 25 V",
+  "hits": [
+   {
+    "lcsc": "C106858",
+    "type": "Extended",
+    "pref": false,
+    "stock": 129565,
+    "mpn": "CC0603KRX7R8BB105",
+    "pkg": "0603",
+    "brand": "YAGEO",
+    "desc": "1uF 25V X7R \u00b110% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROH"
+   },
+   {
+    "lcsc": "C726560",
+    "type": "Extended",
+    "pref": false,
+    "stock": 5550,
+    "mpn": "AC0603KRX7R8BB105",
+    "pkg": "0603",
+    "brand": "YAGEO",
+    "desc": "1uF 25V X7R \u00b110% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROH"
+   },
+   {
+    "lcsc": "C5972986",
+    "type": "Extended",
+    "pref": false,
+    "stock": 63,
+    "mpn": "CS0603KRX7R8BB105",
+    "pkg": "0603",
+    "brand": "YAGEO",
+    "desc": "1uF 25V X7R \u00b110% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROH"
+   },
+   {
+    "lcsc": "C76619",
+    "type": "Extended",
+    "pref": false,
+    "stock": 10669,
+    "mpn": "C1608X7R1E105KT000N",
+    "pkg": "0603",
+    "brand": "TDK",
+    "desc": "1uF 25V X7R \u00b110% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROH"
+   }
+  ]
+ },
+ {
+  "refs": "C17,C18",
+  "keyword": "0603 470nF",
+  "need": "0603 470 nF",
+  "hits": [
+   {
+    "lcsc": "C1623",
+    "type": "Basic",
+    "pref": false,
+    "stock": 665416,
+    "mpn": "CL10B474KA8NNNC",
+    "pkg": "0603",
+    "brand": "Samsung Electro-Mechanics",
+    "desc": "25V 470nF X7R \u00b110% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT R"
+   },
+   {
+    "lcsc": "C76613",
+    "type": "Extended",
+    "pref": false,
+    "stock": 3865,
+    "mpn": "C1608X5R1C474KT000N",
+    "pkg": "0603",
+    "brand": "TDK",
+    "desc": "16V 470nF X5R \u00b110% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT R"
+   },
+   {
+    "lcsc": "C77052",
+    "type": "Extended",
+    "pref": false,
+    "stock": 34620,
+    "mpn": "GRM188R71E474KA12D",
+    "pkg": "0603",
+    "brand": "Murata Electronics",
+    "desc": "25V 470nF X7R \u00b110% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT R"
+   },
+   {
+    "lcsc": "C77572",
+    "type": "Extended",
+    "pref": false,
+    "stock": 151046,
+    "mpn": "0603B474K500NT",
+    "pkg": "0603",
+    "brand": "FH (Guangdong Fenghua Advanced Tech)",
+    "desc": "470nF 50V X7R \u00b110% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT R"
+   }
+  ]
+ },
+ {
+  "refs": "C20",
+  "keyword": "0603 4.7uF",
+  "need": "0603 4.7 uF",
+  "hits": [
+   {
+    "lcsc": "C1705",
+    "type": "Extended",
+    "pref": false,
+    "stock": 1970773,
+    "mpn": "CL10A475KP8NNNC",
+    "pkg": "0603",
+    "brand": "Samsung Electro-Mechanics",
+    "desc": "10V 4.7uF X5R \u00b110% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT R"
+   },
+   {
+    "lcsc": "C8032",
+    "type": "Extended",
+    "pref": false,
+    "stock": 692910,
+    "mpn": "CL10A475KQ8NNNC",
+    "pkg": "0603",
+    "brand": "Samsung Electro-Mechanics",
+    "desc": "4.7uF 6.3V X5R \u00b110% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT "
+   },
+   {
+    "lcsc": "C19666",
+    "type": "Basic",
+    "pref": false,
+    "stock": 4134647,
+    "mpn": "CL10A475KO8NNNC",
+    "pkg": "0603",
+    "brand": "Samsung Electro-Mechanics",
+    "desc": "16V 4.7uF X5R \u00b110% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT R"
+   },
+   {
+    "lcsc": "C69182",
+    "type": "Extended",
+    "pref": false,
+    "stock": 261075,
+    "mpn": "0603X475K100NT",
+    "pkg": "0603",
+    "brand": "FH (Guangdong Fenghua Advanced Tech)",
+    "desc": "10V 4.7uF X5R \u00b110% 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT R"
+   }
+  ]
+ },
+ {
+  "refs": "R44-R51",
+  "keyword": "0402 49.9\u03a9 1%",
+  "need": "0402 49.9",
+  "hits": [
+   {
+    "lcsc": "C25120",
+    "type": "Basic",
+    "pref": false,
+    "stock": 1208603,
+    "mpn": "0402WGF499JTCE",
+    "pkg": "0402",
+    "brand": "UNI-ROYAL(Uniroyal Elec)",
+    "desc": "-55\u2103~+155\u2103 49.9\u03a9 50V 62.5mW Thick Film Resistor \u00b11% \u00b1100ppm/\u2103 0402 Chi"
+   },
+   {
+    "lcsc": "C87044",
+    "type": "Extended",
+    "pref": false,
+    "stock": 3,
+    "mpn": "RC0402FR-0749R9L",
+    "pkg": "0402",
+    "brand": "YAGEO",
+    "desc": "-55\u2103~+155\u2103 49.9\u03a9 50V 62.5mW Thick Film Resistor \u00b11% \u00b1100ppm/\u2103 0402 Chi"
+   },
+   {
+    "lcsc": "C103074",
+    "type": "Extended",
+    "pref": false,
+    "stock": 24047,
+    "mpn": "RTT0249R9FTH",
+    "pkg": "0402",
+    "brand": "RALEC",
+    "desc": "-55\u2103~+155\u2103 49.9\u03a9 50V 62.5mW Thick Film Resistor \u00b11% \u00b1100ppm/\u2103 0402 Chi"
+   },
+   {
+    "lcsc": "C140147",
+    "type": "Extended",
+    "pref": false,
+    "stock": 1387062,
+    "mpn": "RC-02K49R9FT",
+    "pkg": "0402",
+    "brand": "FH (Guangdong Fenghua Advanced Tech)",
+    "desc": "-55\u2103~+155\u2103 49.9\u03a9 50V 62.5mW Thick Film Resistor \u00b11% \u00b1100ppm/\u2103 0402 Chi"
+   }
+  ]
+ },
+ {
+  "refs": "R60",
+  "keyword": "0402 324k\u03a9 1%",
+  "need": "0402 324k",
+  "hits": [
+   {
+    "lcsc": "C113480",
+    "type": "Extended",
+    "pref": false,
+    "stock": 39935,
+    "mpn": "0402WGF3243TCE",
+    "pkg": "0402",
+    "brand": "UNI-ROYAL(Uniroyal Elec)",
+    "desc": "-55\u2103~+155\u2103 324k\u03a9 50V 62.5mW Thick Film Resistor \u00b11% \u00b1100ppm/\u2103 0402 Chi"
+   },
+   {
+    "lcsc": "C159034",
+    "type": "Extended",
+    "pref": false,
+    "stock": 5292,
+    "mpn": "RTT023243FTH",
+    "pkg": "0402",
+    "brand": "RALEC",
+    "desc": "-55\u2103~+155\u2103 324k\u03a9 50V 62.5mW Thick Film Resistor \u00b11% \u00b1100ppm/\u2103 0402 Chi"
+   },
+   {
+    "lcsc": "C172049",
+    "type": "Extended",
+    "pref": false,
+    "stock": 38,
+    "mpn": "WR04X3243FTL",
+    "pkg": "0402",
+    "brand": "Walsin Tech Corp",
+    "desc": "-55\u2103~+155\u2103 324k\u03a9 50V 62.5mW Thick Film Resistor \u00b11% \u00b1100ppm/\u2103 0402 Chi"
+   },
+   {
+    "lcsc": "C185426",
+    "type": "Extended",
+    "pref": false,
+    "stock": 9717,
+    "mpn": "RC0402FR-07324KL",
+    "pkg": "0402",
+    "brand": "YAGEO",
+    "desc": "-55\u2103~+155\u2103 324k\u03a9 50V 62.5mW Thick Film Resistor \u00b11% \u00b1100ppm/\u2103 0402 Chi"
+   }
+  ]
+ },
+ {
+  "refs": "R62,R64",
+  "keyword": "0402 316k\u03a9 1%",
+  "need": "0402 316k",
+  "hits": [
+   {
+    "lcsc": "C25777",
+    "type": "Extended",
+    "pref": false,
+    "stock": 17190,
+    "mpn": "0402WGF3163TCE",
+    "pkg": "0402",
+    "brand": "UNI-ROYAL(Uniroyal Elec)",
+    "desc": "-55\u2103~+155\u2103 316k\u03a9 50V 62.5mW Thick Film Resistor \u00b11% \u00b1100ppm/\u2103 0402 Chi"
+   },
+   {
+    "lcsc": "C100372",
+    "type": "Extended",
+    "pref": false,
+    "stock": 25,
+    "mpn": "CR0402FF3163G",
+    "pkg": "0402",
+    "brand": "LIZ Elec",
+    "desc": "-55\u2103~+125\u2103 316k\u03a9 50V 62.5mW Thick Film Resistor \u00b11% \u00b1200ppm/\u2103 0402 Chi"
+   },
+   {
+    "lcsc": "C226987",
+    "type": "Extended",
+    "pref": false,
+    "stock": 2174,
+    "mpn": "AC0402FR-07316KL",
+    "pkg": "0402",
+    "brand": "YAGEO",
+    "desc": "-55\u2103~+155\u2103 316k\u03a9 50V 62.5mW Thick Film Resistor \u00b11% \u00b1100ppm/\u2103 0402 Chi"
+   },
+   {
+    "lcsc": "C911867",
+    "type": "Extended",
+    "pref": false,
+    "stock": 699,
+    "mpn": "RMS04FT3163",
+    "pkg": "0402",
+    "brand": "TA-I Tech",
+    "desc": "-55\u2103~+155\u2103 316k\u03a9 50V 62.5mW Thick Film Resistor \u00b11% \u00b1100ppm/\u2103 0402 Chi"
+   }
+  ]
+ },
+ {
+  "refs": "R66",
+  "keyword": "0402 131k\u03a9 1%",
+  "need": "0402 131k",
+  "hits": [
+   {
+    "lcsc": "C1395767",
+    "type": "Extended",
+    "pref": false,
+    "stock": 0,
+    "mpn": "RN55C1313FB14",
+    "pkg": "Plugin,D2.3xL6.1mm",
+    "brand": "Vishay Intertech",
+    "desc": "-65\u2103~+175\u2103 125mW 131k\u03a9 Metal Film Resistor \u00b11% \u00b150ppm/\u2103 \u63d2\u4ef6,D2.3xL6.1mm"
+   },
+   {
+    "lcsc": "C1788633",
+    "type": "Extended",
+    "pref": false,
+    "stock": 0,
+    "mpn": "RN55C1313FRE6",
+    "pkg": "Plugin,D2.3xL6.1mm",
+    "brand": "Vishay Intertech",
+    "desc": "-65\u2103~+175\u2103 125mW 131k\u03a9 Metal Film Resistor \u00b11% \u00b150ppm/\u2103 \u63d2\u4ef6,D2.3xL6.1mm"
+   },
+   {
+    "lcsc": "C3463086",
+    "type": "Extended",
+    "pref": false,
+    "stock": 0,
+    "mpn": "RCMS0513102FHS14",
+    "pkg": "Plugin,D3.65xL10.2mm",
+    "brand": "Vishay Intertech",
+    "desc": "131k\u03a9 \u00b11% \u00b150ppm/\u2103 \u63d2\u4ef6,D3.65xL10.2mm Through Hole Resistors ROHS"
+   },
+   {
+    "lcsc": "C3505103",
+    "type": "Extended",
+    "pref": false,
+    "stock": 0,
+    "mpn": "RCMS0513102FHA20",
+    "pkg": "Plugin,D3.65xL10.2mm",
+    "brand": "Vishay Intertech",
+    "desc": "131k\u03a9 \u00b11% \u00b150ppm/\u2103 \u63d2\u4ef6,D3.65xL10.2mm Through Hole Resistors ROHS"
+   }
+  ]
+ },
+ {
+  "refs": "R40-R43",
+  "keyword": "0402 1.24k\u03a9 1%",
+  "need": "0402 1.24k",
+  "hits": [
+   {
+    "lcsc": "C11691",
+    "type": "Extended",
+    "pref": false,
+    "stock": 6,
+    "mpn": "RTT021241FTH",
+    "pkg": "0402",
+    "brand": "RALEC",
+    "desc": "-55\u2103~+155\u2103 1.24k\u03a9 50V 62.5mW Thick Film Resistor \u00b11% \u00b1100ppm/\u2103 0402 Ch"
+   },
+   {
+    "lcsc": "C25864",
+    "type": "Extended",
+    "pref": false,
+    "stock": 6194,
+    "mpn": "0402WGF1241TCE",
+    "pkg": "0402",
+    "brand": "UNI-ROYAL(Uniroyal Elec)",
+    "desc": "-55\u2103~+155\u2103 1.24k\u03a9 50V 62.5mW Thick Film Resistor \u00b11% \u00b1100ppm/\u2103 0402 Ch"
+   },
+   {
+    "lcsc": "C100228",
+    "type": "Extended",
+    "pref": false,
+    "stock": 10315,
+    "mpn": "CR0402FF1241G",
+    "pkg": "0402",
+    "brand": "LIZ Elec",
+    "desc": "-55\u2103~+125\u2103 1.24k\u03a9 50V 62.5mW Thick Film Resistor \u00b11% \u00b1200ppm/\u2103 0402 Ch"
+   },
+   {
+    "lcsc": "C170218",
+    "type": "Extended",
+    "pref": false,
+    "stock": 2467,
+    "mpn": "WR04X1241FTL",
+    "pkg": "0402",
+    "brand": "Walsin Tech Corp",
+    "desc": "-55\u2103~+155\u2103 1.24k\u03a9 50V 62.5mW Thick Film Resistor \u00b11% \u00b1100ppm/\u2103 0402 Ch"
+   }
+  ]
+ }
+]

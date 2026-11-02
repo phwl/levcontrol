@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "ad3552r_custom")(type "KiCad")(uri "${KIPRJMOD}/ad3552r_custom.pretty")(options "")(descr "AD3552R project footprints"))
+)

@@ -1,0 +1,44 @@
+2026-11-03 09:02:04.435 INFO   Freerouting v2.5.0 (build-date: 2026-10-05)
+2026-11-03 09:02:04.693 INFO   Hardware: 20 CPU cores, 626 CPU score, 15944 MB RAM
+2026-11-03 09:02:04.693 WARN   Deprecated settings path '-mp / --router.max_passes'; use '--router.autorouter.max_passes' instead. The old path will be removed in a future release.
+2026-11-03 09:02:04.694 WARN   GUI is disabled and you don't have a console available, so the only feedback from Freerouting is in the log.
+2026-11-03 09:02:05.723 WARN   Deprecated settings path 'router.max_passes'; use 'router.autorouter.max_passes' instead. The old path will be removed in a future release.
+2026-11-03 09:02:05.986 INFO   [131EB2\599F96] Loading board file 'stage_gain0603.dsn'...
+2026-11-03 09:02:06.080 WARN   Non-ansi character '{' found at position 338307 just after ' '.
+2026-11-03 09:02:06.080 WARN   Non-ansi character '}' found at position 338313 just after ' '.
+2026-11-03 09:02:06.219 WARN   Power-plane validation failed:
+- Dedicated power layer 'In4.Cu' has overlapping conduction areas: Area (ID 4719, Net(s): [AVDD]) and Area (ID 4716, Net(s): [GND]) overlap.
+- Dedicated power layer 'In4.Cu' has overlapping conduction areas: Area (ID 4719, Net(s): [AVDD]) and Area (ID 4713, Net(s): [+5V]) overlap.
+- Dedicated power layer 'In4.Cu' has overlapping conduction areas: Area (ID 4718, Net(s): [AVDD]) and Area (ID 4716, Net(s): [GND]) overlap.
+- Dedicated power layer 'In4.Cu' has overlapping conduction areas: Area (ID 4717, Net(s): [+12V]) and Area (ID 4716, Net(s): [GND]) overlap.
+- Dedicated power layer 'In4.Cu' has overlapping conduction areas: Area (ID 4716, Net(s): [GND]) and Area (ID 4715, Net(s): [AVDD]) overlap.
+- Dedicated power layer 'In4.Cu' has overlapping conduction areas: Area (ID 4716, Net(s): [GND]) and Area (ID 4714, Net(s): [+2V5]) overlap.
+- Dedicated power layer 'In4.Cu' has overlapping conduction areas: Area (ID 4716, Net(s): [GND]) and Area (ID 4713, Net(s): [+5V]) overlap.
+- Dedicated power layer 'In4.Cu' has overlapping conduction areas: Area (ID 4716, Net(s): [GND]) and Area (ID 4712, Net(s): [VLOGIC]) overlap.
+- Dedicated power layer 'In4.Cu' has overlapping conduction areas: Area (ID 4716, Net(s): [GND]) and Area (ID 4711, Net(s): [+3V3]) overlap.
+- Dedicated power layer 'In4.Cu' has overlapping conduction areas: Area (ID 4715, Net(s): [AVDD]) and Area (ID 4713, Net(s): [+5V]) overlap.
+
+Proper Definition and Best Practices for Power Planes:
+1. What Belongs on a Power Plane:
+   - Solid Copper Pours: A single, uninterrupted sheet of copper assigned to one voltage (e.g., +3.3V).
+   - Split Planes: Multiple distinct voltage zones divided by thin isolation gaps (puzzle pieces).
+   - Vias and Anti-Pads: Plated holes passing through the board, surrounded by circular voids (anti-pads) to prevent shorting.
+   - Thermal Reliefs: Spoked connections for vias or pins that connect to the plane, facilitating soldering.
+2. Why Signal Wires/Traces are Banned:
+   - Destroyed Return Paths: High-speed signals on adjacent layers couple to the solid plane below/above as return paths. Crossing a trace gap detours return currents, causing severe EMI and signal integrity issues.
+   - Compromised Power Delivery: Power planes should provide the lowest impedance path. Routing traces chops up the copper, creating bottleneck restrictions and voltage drops.
+
+2026-11-03 09:02:06.260 INFO   [131EB2\599F96] Job '131EB2\599F96' started at 2026-11-02T22:02:06.260656714Z.
+2026-11-03 09:02:06.468 INFO   [131EB2\599F96] Pipeline thread limits: autorouter pass is single-threaded, optimizer.max_threads=19.
+2026-11-03 09:02:06.581 INFO   [131EB2\599F96] Fanout stage started on board 'ef73fd0eab9e9d5431af6e61eb50f779' with 52 of 552 SMD pins needing fanout (0 already connected, 500 netless).
+2026-11-03 09:02:07.671 INFO   [131EB2\599F96] Fanout pass #1 on board '146819a1cab796c8ad71d22e68113575' completed in 1.04 seconds with 22 SMD pins fanouted, 30 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=100).
+2026-11-03 09:02:08.088 INFO   [131EB2\599F96] Fanout pass #2 on board '146819a1cab796c8ad71d22e68113575' completed in 0.39 seconds with 0 SMD pins fanouted, 28 not routed, 0 insert errors, +0 extra vias (0 SMD pins still to check in pass, ripup costs=200).
+2026-11-03 09:02:08.091 INFO   [131EB2\599F96] Fanout stage completed: started with 52 total SMD pins, completed in 1.50 seconds, escaped pins: 37/52 (71.2%), using 1.14 total CPU seconds, 1.12 GB total allocated, and 368.6 MB peak heap usage.
+2026-11-03 09:02:08.216 INFO   [131EB2\599F96] Auto-routing stage started on board '146819a1cab796c8ad71d22e68113575' with baseline score 333.33 for 22 unrouted items.
+2026-11-03 09:02:09.611 INFO   [131EB2\599F96] Auto-routing pass #1 on board '146819a1cab796c8ad71d22e68113575' was completed in 1.33 seconds with score 878.79 (4 unrouted and 0 violations), using 2.27 CPU seconds and the job allocated 2.27 GB of memory so far.
+2026-11-03 09:02:09.722 INFO   [131EB2\599F96] Auto-routing pass #2 on board 'da6905745824b3f08d4b48da9698577d' was completed in 0.05 seconds with score 878.79 (4 unrouted and 0 violations), using 2.27 CPU seconds and the job allocated 2.27 GB of memory so far.
+2026-11-03 09:02:09.858 INFO   [131EB2\599F96] Auto-routing stage completed: started with 44 unrouted nets, completed in 3.35 seconds, final score: 878.79 (4 unrouted and 0 violations), using 2.27 total CPU seconds, 2.27 GB total allocated, and 360.5 MB peak heap usage.
+2026-11-03 09:02:09.923 INFO   [131EB2\599F96] Skipping optimization stage: the board has 4 unrouted connection(s) (optimizer only runs on completely routed boards).
+2026-11-03 09:02:09.958 INFO   [131EB2\599F96] Job '131EB2\599F96' finished with state: COMPLETED (elapsed: 3.70 seconds, finished at UTC: 2026-11-02T22:02:09.958100931Z).
+2026-11-03 09:02:09.997 INFO   Saving output file '/home/phwl/src/kicad-claude/ad3552r_dac/ad3552r_dac/tools/work/stage_gain0603.ses' (SES)...
+2026-11-03 09:02:09.999 INFO   Successfully saved output file '/home/phwl/src/kicad-claude/ad3552r_dac/ad3552r_dac/tools/work/stage_gain0603.ses' (28686 bytes).

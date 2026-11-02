@@ -10,7 +10,7 @@ import os, re, sys, shutil, subprocess, time
 import pcbnew
 
 PRJ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-PCB = os.path.join(PRJ, 'ad3552r_dac.kicad_pcb')
+PCB = os.environ.get('ROUTE_PCB') or os.path.join(PRJ, 'ad3552r_dac.kicad_pcb')     # ROUTE_PCB: route a copy instead
 WORK = os.path.join(PRJ, 'tools', 'work')
 FR = os.path.join(PRJ, 'tools', 'freerouting', 'app', 'freerouting-2.5.0-linux-x64', 'bin', 'freerouting')
 
@@ -37,6 +37,8 @@ STAGES = {
     'gnd': dict(nets='GND', restrict={}),
     'spi3': dict(nets='VLOGIC DVDD SCLK DQ_A0 DQ_A1 DQ_A2 DQ_A3 CS_A_N ALERT_A_N LDAC_N DQ_B0 CS_B_N B_DQ_B1', restrict={}),
     'fix': dict(nets='-5V VLOGIC', restrict={}),
+    # gain resistors R32-R39 upsized to 0603 (tools/upsize_0603.py rips these nets up first)
+    'gain0603': dict(nets='OUT0_RFB OUT0_INV OUT0_NEG OUT1_RFB OUT1_INV OUT1_NEG OUT2_RFB OUT2_INV OUT2_NEG OUT3_RFB OUT3_INV OUT3_NEG', restrict={}),
     'fixu13': dict(nets='-5V ADJN VNEG_PUMP BYPN', restrict={}),
     # stage 1: the power block, +12V (incl. its feed to U12) and +2V5
     'power': dict(nets='VIN_JACK VIN_FUSED +12V +2V5 CP_PLUS CP_MINUS VNEG_PUMP ADJP ADJN BYPP BYPN BUCK_EN BUCK_SW BUCK_BST BUCK_FB',
